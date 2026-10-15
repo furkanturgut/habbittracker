@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#1c110b;font-family:'Fredoka',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#e2b04a}a:hover{color:#fff}
+@keyframes idleAnim{to{background-position:-1650px 0}}
+@keyframes paintAnim{to{background-position:-3135px 0}}
+@keyframes sheetUp{0%{transform:translateY(100%)}100%{transform:translateY(0)}}
+@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}
+@keyframes popIn{0%{transform:translate(-50%,-10px);opacity:0}100%{transform:translate(-50%,0);opacity:1}}
+</style>
+</helmet>
+<div style="min-height:100vh;display:flex;flex-wrap:wrap;gap:48px;align-items:center;justify-content:center;padding:32px 16px;box-sizing:border-box;background:radial-gradient(120% 90% at 50% 20%,#6a4528 0%,#3a2416 55%,#1c110b 100%)">
+<div data-screen-label="03 Galeri" style="position:relative;width:390px;height:844px;border-radius:56px;padding:12px;background:#0a0d16;box-shadow:0 0 0 2px #2b3040,0 40px 80px rgba(0,0,0,.55);flex:none">
+<div ref="{{ galRef }}" style="position:relative;width:100%;height:100%;border-radius:44px;overflow:hidden;background:linear-gradient(180deg,#3b2618 0%,#2b1b12 40%);display:flex;flex-direction:column">
+<div style="position:relative;height:50px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:0 30px 0 36px;color:#f3e6cc;font:600 15px 'Fredoka',sans-serif">
+<span>9:41</span>
+<div style="position:absolute;left:50%;top:10px;width:120px;height:34px;border-radius:20px;background:#000;transform:translateX(-50%)"></div>
+<span style="letter-spacing:1px;font-size:12px">●●● ▮</span>
+</div>
+<div style="flex:none;display:flex;align-items:center;justify-content:space-between;padding:6px 18px 0">
+<div style="width:38px;height:38px;border-radius:50%;background:#7a1f22;border:2px solid rgba(226,176,74,.6);display:flex;align-items:center;justify-content:center;color:#f3e6cc;font:600 20px 'Fredoka';box-shadow:0 3px 0 rgba(0,0,0,.35)">‹</div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:2px">
+<span style="font:500 14px 'Fredoka';color:rgba(243,230,204,.7)">{{ galleryTotal }} eser</span>
+<span style="font:700 28px/1.1 'Fredoka';color:#f3e6cc">Galeri</span>
+</div>
+<div style="width:38px;height:38px"></div>
+</div>
+<div style="flex:1;overflow-y:auto;padding:20px 0 44px;display:flex;flex-direction:column;gap:26px">
+<sc-for list="{{ walls }}" as="w" hint-placeholder-count="3">
+<div onClick="{{ w.open }}" style="display:flex;flex-direction:column;gap:10px;cursor:pointer" style-active="transform:scale(.985)">
+<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 24px">
+<div style="display:flex;align-items:center;gap:8px;min-width:0">
+<span style="font:600 17px 'Fredoka';color:#f3e6cc;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ w.title }}</span>
+<span style="flex:none;padding:2px 8px;border-radius:999px;background:rgba(20,10,4,.35);font:600 10px 'Fredoka';letter-spacing:.05em;color:{{ w.typeColor }}">{{ w.typeLabel }}</span>
+</div>
+<span style="flex:none;display:flex;align-items:center;gap:6px;font:400 12px 'Fredoka';color:rgba(243,230,204,.62)"><span>{{ w.countLabel }}</span><span style="font:600 16px 'Fredoka';color:#e2b04a">›</span></span>
+</div>
+<div style="margin:0 20px;border-radius:20px;overflow:hidden;background:linear-gradient(160deg,#5a3d28 0%,#3e2a1c 100%);border:2px solid rgba(243,230,204,.08);box-shadow:0 4px 0 rgba(0,0,0,.3)">
+<div style="height:6px;background:#3b2618;border-bottom:1px solid rgba(226,176,74,.35)"></div>
+<sc-if value="{{ isRaf }}" hint-placeholder-val="{{ false }}">
+<div style="display:flex;gap:18px;overflow-x:auto;padding:16px 18px 14px;scrollbar-width:none">
+<sc-for list="{{ w.items }}" as="it" hint-placeholder-count="3">
+<div style="flex:none;display:flex;flex-direction:column;align-items:center;gap:8px">
+<div style="height:112px;min-width:84px;display:flex;align-items:center;justify-content:center">
+<div style="position:relative;width:{{ it.w }}px;height:{{ it.h }}px;background:url({{ it.src }}) center/100% 100% no-repeat;image-rendering:pixelated;box-shadow:0 6px 10px rgba(0,0,0,.45)">
+<div style="position:absolute;inset:0;display:grid;grid-template-columns:repeat(8,1fr);grid-template-rows:repeat({{ it.rows }},1fr)">
+<sc-for list="{{ it.cells }}" as="c" hint-placeholder-count="16"><div style="background:{{ c.bg }};backdrop-filter:{{ c.fx }};-webkit-backdrop-filter:{{ c.fx }}"></div></sc-for>
+</div>
+<sc-if value="{{ it.hasHoles }}" hint-placeholder-val="{{ false }}">
+<div style="position:absolute;top:-8px;right:-8px;min-width:22px;height:22px;padding:0 5px;box-sizing:border-box;border-radius:11px;background:#2b1b12;border:2px solid rgba(243,230,204,.45);color:#f3e6cc;font:600 11px/18px 'Fredoka';text-align:center">{{ it.holes }}</div>
+</sc-if>
+</div>
+</div>
+<span style="padding:2px 8px;border-radius:4px;background:{{ it.plaqueBg }};border:1px solid {{ it.plaqueBorder }};color:{{ it.plaqueFg }};font:500 11px 'Fredoka';white-space:nowrap;box-shadow:0 2px 0 rgba(0,0,0,.3)">{{ it.plaque }}</span>
+</div>
+</sc-for>
+</div>
+</sc-if>
+<sc-if value="{{ isDuvar }}" hint-placeholder-val="{{ true }}">
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px 16px;padding:16px 12px 14px">
+<sc-for list="{{ w.items }}" as="it" hint-placeholder-count="3">
+<div style="flex:none;display:flex;flex-direction:column;align-items:center;gap:8px">
+<div style="height:112px;min-width:84px;display:flex;align-items:center;justify-content:center">
+<div style="position:relative;width:{{ it.w }}px;height:{{ it.h }}px;background:url({{ it.src }}) center/100% 100% no-repeat;image-rendering:pixelated;box-shadow:0 6px 10px rgba(0,0,0,.45)">
+<div style="position:absolute;inset:0;display:grid;grid-template-columns:repeat(8,1fr);grid-template-rows:repeat({{ it.rows }},1fr)">
+<sc-for list="{{ it.cells }}" as="c" hint-placeholder-count="16"><div style="background:{{ c.bg }};backdrop-filter:{{ c.fx }};-webkit-backdrop-filter:{{ c.fx }}"></div></sc-for>
+</div>
+<sc-if value="{{ it.hasHoles }}" hint-placeholder-val="{{ false }}">
+<div style="position:absolute;top:-8px;right:-8px;min-width:22px;height:22px;padding:0 5px;box-sizing:border-box;border-radius:11px;background:#2b1b12;border:2px solid rgba(243,230,204,.45);color:#f3e6cc;font:600 11px/18px 'Fredoka';text-align:center">{{ it.holes }}</div>
+</sc-if>
+</div>
+</div>
+<span style="padding:2px 8px;border-radius:4px;background:{{ it.plaqueBg }};border:1px solid {{ it.plaqueBorder }};color:{{ it.plaqueFg }};font:500 11px 'Fredoka';white-space:nowrap;box-shadow:0 2px 0 rgba(0,0,0,.3)">{{ it.plaque }}</span>
+</div>
+</sc-for>
+</div>
+</sc-if>
+<div style="height:12px;background:linear-gradient(180deg,#3e2a1c,#2b1b12);border-top:2px solid rgba(226,176,74,.25)"></div>
+</div>
+</div>
+</sc-for>
+</div>
+<sc-if value="{{ expOpen }}" hint-placeholder-val="{{ false }}">
+<div style="position:absolute;z-index:4;top:{{ x.top }}px;left:{{ x.left }}px;width:{{ x.width }}px;height:{{ x.height }}px;border-radius:{{ x.r }}px;overflow:hidden;background:linear-gradient(180deg,#3b2618 0%,#2b1b12 40%);box-shadow:0 10px 30px rgba(0,0,0,.4);transition:top .38s cubic-bezier(.2,.8,.2,1),left .38s cubic-bezier(.2,.8,.2,1),width .38s cubic-bezier(.2,.8,.2,1),height .38s cubic-bezier(.2,.8,.2,1),border-radius .38s cubic-bezier(.2,.8,.2,1)">
+<div style="position:absolute;inset:0;background:linear-gradient(160deg,#5a3d28 0%,#3e2a1c 100%);opacity:{{ x.skinOp }};transition:opacity .38s"></div>
+<div style="position:absolute;top:0;left:0;width:390px;height:844px;display:flex;flex-direction:column;opacity:{{ x.op }};transition:opacity .22s ease {{ x.delay }}s">
+<div style="position:relative;height:50px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:0 30px 0 36px;color:#f3e6cc;font:600 15px 'Fredoka',sans-serif">
+<span>9:41</span>
+<div style="position:absolute;left:50%;top:10px;width:120px;height:34px;border-radius:20px;background:#000;transform:translateX(-50%)"></div>
+<span style="letter-spacing:1px;font-size:12px">●●● ▮</span>
+</div>
+<div style="flex:none;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:6px 18px 0">
+<div onClick="{{ closeHabit }}" style="flex:none;width:38px;height:38px;border-radius:50%;background:#7a1f22;border:2px solid rgba(226,176,74,.6);display:flex;align-items:center;justify-content:center;color:#f3e6cc;font:600 20px 'Fredoka';box-shadow:0 3px 0 rgba(0,0,0,.35);cursor:pointer">‹</div>
+<div style="min-width:0;display:flex;flex-direction:column;align-items:center;gap:2px;text-align:center">
+<span style="font:500 14px 'Fredoka';color:rgba(243,230,204,.7)">{{ x.sub }}</span>
+<span style="font:700 28px/1.1 'Fredoka';color:#f3e6cc;text-wrap:balance">{{ x.title }}</span>
+</div>
+<div style="flex:none;width:38px;height:38px"></div>
+</div>
+<div style="flex:1;overflow-y:auto;padding:24px 20px 44px;display:flex;flex-direction:column;gap:24px">
+<div style="display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center">
+<span style="font:700 64px/1 'Fredoka';color:#e2b04a;text-shadow:0 4px 0 rgba(0,0,0,.3)">{{ x.total }}</span>
+<span style="font:500 16px 'Fredoka';color:#f3e6cc">{{ x.totalLabel }}</span>
+<span style="font:400 12px 'Fredoka';color:rgba(243,230,204,.62)">{{ x.note }}</span>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px">
+<sc-for list="{{ x.stats }}" as="st" hint-placeholder-count="3">
+<div style="padding:12px 6px;border-radius:16px;background:linear-gradient(160deg,#5a3d28 0%,#3e2a1c 100%);border:2px solid rgba(243,230,204,.08);box-shadow:0 4px 0 rgba(0,0,0,.3);display:flex;flex-direction:column;align-items:center;gap:2px;text-align:center">
+<span style="font:700 22px 'Fredoka';color:#f3e6cc">{{ st.v }}</span>
+<span style="font:400 11px 'Fredoka';color:rgba(243,230,204,.62)">{{ st.l }}</span>
+</div>
+</sc-for>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;padding:0 4px">
+<span style="font:600 12px 'Fredoka';color:#e2b04a;text-transform:uppercase;letter-spacing:.08em">Plan</span>
+<span style="font:400 12px 'Fredoka';color:rgba(243,230,204,.62)">{{ x.planLabel }}</span>
+</div>
+<div style="display:grid;grid-template-columns:repeat(7,1fr);gap:6px">
+<sc-for list="{{ x.dayDots }}" as="d" hint-placeholder-count="7"><div style="height:36px;border-radius:10px;background:{{ d.bg }};color:{{ d.fg }};font:600 12px 'Fredoka';display:flex;align-items:center;justify-content:center">{{ d.l }}</div></sc-for>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;padding:0 4px">
+<span style="font:600 12px 'Fredoka';color:#e2b04a;text-transform:uppercase;letter-spacing:.08em">Eserler</span>
+<span style="font:400 12px 'Fredoka';color:rgba(243,230,204,.62)">{{ x.worksLabel }}</span>
+</div>
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px">
+<sc-for list="{{ x.tiles }}" as="it" hint-placeholder-count="2">
+<div onClick="{{ it.open }}" style="border-radius:18px;background:linear-gradient(160deg,#5a3d28 0%,#3e2a1c 100%);border:2px solid rgba(243,230,204,.08);box-shadow:0 4px 0 rgba(0,0,0,.3);padding:12px 10px;display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer" style-active="transform:scale(.97)">
+<div style="height:116px;display:flex;align-items:center;justify-content:center">
+<div style="position:relative;width:{{ it.w }}px;height:{{ it.h }}px;background:url({{ it.src }}) center/100% 100% no-repeat;image-rendering:pixelated;box-shadow:0 6px 10px rgba(0,0,0,.45)">
+<div style="position:absolute;inset:0;display:grid;grid-template-columns:repeat(8,1fr);grid-template-rows:repeat({{ it.rows }},1fr)">
+<sc-for list="{{ it.cells }}" as="c" hint-placeholder-count="16"><div style="background:{{ c.bg }};backdrop-filter:{{ c.fx }};-webkit-backdrop-filter:{{ c.fx }}"></div></sc-for>
+</div>
+<sc-if value="{{ it.hasHoles }}" hint-placeholder-val="{{ false }}">
+<div style="position:absolute;top:-8px;right:-8px;min-width:22px;height:22px;padding:0 5px;box-sizing:border-box;border-radius:11px;background:#2b1b12;border:2px solid rgba(243,230,204,.45);color:#f3e6cc;font:600 11px/18px 'Fredoka';text-align:center">{{ it.holes }}</div>
+</sc-if>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:1px;text-align:center">
+<span style="font:500 14px/1.2 'Fredoka';color:#f3e6cc">{{ it.name }}</span>
+<span style="font:400 11px 'Fredoka';color:{{ it.subFg }}">{{ it.sub }}</span>
+</div>
+</div>
+</sc-for>
+</div>
+</div>
+</div>
+</div>
+</div>
+</sc-if>
+<sc-if value="{{ viewerOpen }}" hint-placeholder-val="{{ false }}">
+<div style="position:absolute;inset:0;z-index:5;display:flex;flex-direction:column;background:linear-gradient(180deg,#3b2618 0%,#2b1b12 40%);animation:fadeIn .2s ease-out">
+<div style="position:relative;height:50px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:0 30px 0 36px;color:#f3e6cc;font:600 15px 'Fredoka',sans-serif">
+<span>9:41</span>
+<div style="position:absolute;left:50%;top:10px;width:120px;height:34px;border-radius:20px;background:#000;transform:translateX(-50%)"></div>
+<span style="letter-spacing:1px;font-size:12px">●●● ▮</span>
+</div>
+<div style="flex:none;display:flex;align-items:center;justify-content:space-between;padding:6px 18px 0">
+<div onClick="{{ closeViewer }}" style="width:38px;height:38px;border-radius:50%;background:#7a1f22;border:2px solid rgba(226,176,74,.6);display:flex;align-items:center;justify-content:center;color:#f3e6cc;font:600 16px 'Fredoka';box-shadow:0 3px 0 rgba(0,0,0,.35);cursor:pointer">✕</div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:2px">
+<span style="font:500 14px 'Fredoka';color:rgba(243,230,204,.7)">{{ v.habit }}</span>
+<span style="font:600 15px 'Fredoka';color:#f3e6cc">{{ v.pos }}</span>
+</div>
+<div style="width:38px;height:38px"></div>
+</div>
+<div style="flex:1;position:relative;display:flex;align-items:center;justify-content:center">
+<div style="position:relative;width:{{ v.w }}px;height:{{ v.h }}px;background:url({{ v.src }}) center/100% 100% no-repeat;image-rendering:pixelated;box-shadow:0 16px 34px rgba(0,0,0,.55)">
+<div style="position:absolute;inset:0;display:grid;grid-template-columns:repeat(8,1fr);grid-template-rows:repeat({{ v.rows }},1fr)">
+<sc-for list="{{ v.cells }}" as="c" hint-placeholder-count="16"><div style="background:{{ c.bg }};backdrop-filter:{{ c.fx }};-webkit-backdrop-filter:{{ c.fx }}"></div></sc-for>
+</div>
+</div>
+<div onClick="{{ v.prev }}" style="position:absolute;left:12px;top:50%;margin-top:-20px;width:40px;height:40px;border-radius:50%;background:rgba(20,10,4,.55);border:2px solid rgba(226,176,74,.45);display:flex;align-items:center;justify-content:center;color:#f3e6cc;font:600 20px 'Fredoka';cursor:pointer;opacity:{{ v.prevOp }}">‹</div>
+<div onClick="{{ v.next }}" style="position:absolute;right:12px;top:50%;margin-top:-20px;width:40px;height:40px;border-radius:50%;background:rgba(20,10,4,.55);border:2px solid rgba(226,176,74,.45);display:flex;align-items:center;justify-content:center;color:#f3e6cc;font:600 20px 'Fredoka';cursor:pointer;opacity:{{ v.nextOp }}">›</div>
+</div>
+<div style="flex:none;display:flex;flex-direction:column;align-items:center;gap:8px;padding:0 28px;text-align:center">
+<span style="font:700 28px/1.1 'Fredoka';color:#f3e6cc">{{ v.name }}</span>
+<span style="font:400 14px 'Fredoka';color:rgba(243,230,204,.7)">{{ v.meta }}</span>
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:4px">
+<span style="height:28px;padding:0 12px;border-radius:999px;box-sizing:border-box;border:2px solid #e2b04a;background:{{ v.statusBg }};color:{{ v.statusFg }};font:600 12px/24px 'Fredoka'">{{ v.status }}</span>
+<sc-if value="{{ v.hasHoles }}" hint-placeholder-val="{{ false }}">
+<span style="height:28px;padding:0 12px 0 8px;border-radius:999px;box-sizing:border-box;border:2px solid rgba(243,230,204,.25);display:flex;align-items:center;gap:6px;color:rgba(243,230,204,.85);font:600 12px 'Fredoka'"><span style="width:12px;height:12px;border-radius:3px;background:repeating-linear-gradient(45deg,rgba(243,230,204,.35) 0 1.5px,#5b4a3c 1.5px 4px);border:1px solid rgba(243,230,204,.4)"></span>{{ v.holesLabel }}</span>
+</sc-if>
+</div>
+</div>
+<div style="flex:none;display:flex;justify-content:center;gap:10px;padding:26px 20px 40px;overflow-x:auto;scrollbar-width:none">
+<sc-for list="{{ v.thumbs }}" as="t" hint-placeholder-count="3">
+<div onClick="{{ t.pick }}" style="flex:none;width:52px;height:52px;border-radius:12px;box-sizing:border-box;border:2px solid {{ t.border }};background:rgba(20,10,4,.4);display:flex;align-items:center;justify-content:center;cursor:pointer">
+<div style="width:{{ t.w }}px;height:{{ t.h }}px;background:url({{ t.src }}) center/100% 100% no-repeat;image-rendering:pixelated;opacity:{{ t.op }}"></div>
+</div>
+</sc-for>
+</div>
+</div>
+</sc-if>
+<div style="position:absolute;bottom:8px;left:50%;transform:translateX(-50%);width:134px;height:5px;border-radius:3px;background:rgba(255,255,255,.85);z-index:6"></div>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showActive&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  DAYS = ['Pt','Sa','Ça','Pe','Cu','Ct','Pz'];
+  CATS = ['Sağlık','Zihin','Beslenme','Üretkenlik'];
+  PAINT = {
+    '108': { name: 'Ocak Başı', w: 42, h: 40, size: 16 }, '214': { name: 'Tılsım', w: 40, h: 41, size: 16 }, '216': { name: 'Oyun Kolu', w: 40, h: 39, size: 16 },
+    '126': { name: 'Şömine', w: 44, h: 37, size: 32 }, '19': { name: 'Kedi Portresi', w: 42, h: 55, size: 32 }, '20': { name: 'Şövalye', w: 43, h: 42, size: 32 },
+    '133': { name: 'Yeşil Salon', w: 60, h: 46, size: 64 }, '36': { name: 'Sonbahar Yolu', w: 42, h: 51, size: 64 }, '48': { name: 'Natürmort', w: 46, h: 46, size: 64 }, '62': { name: 'Şimşek', w: 45, h: 43, size: 64 }
+  };
+  blankForm() { return { title: '', type: 'Build', cat: 'Sağlık', days: [], size: 32, hasEnd: false, end: '' }; }
+  state = {
+    sheet: false, editId: null, form: null, viewer: null, exp: null,
+    mood: this.props.startMood ?? 5,
+    filter: 0,
+    focusId: 'h1',
+    painting: false,
+    paintKey: 0,
+    toast: null,
+    rewarded: false,
+    habits: [
+      { id: 'h1', days: [], longest: 18, title: 'Su iç', cat: 'Sağlık', type: 'Build', streak: 12, size: 16, opened: 9, done: false, img: 'sprites/TabloDisiInciKupe.png', active: '216', start: '2026-08-25', gallery: [{ id: '108' }, { id: '214' }] },
+      { id: 'h2', days: [0,1,2,3,4], longest: 9, title: 'Kitap oku', cat: 'Zihin', type: 'Build', streak: 5, size: 32, opened: 14, done: false, img: 'sprites/TabloDisiInciKupe.png', active: '126', start: '2026-08-03', gallery: [{ id: '19' }] },
+      { id: 'h3', days: [], longest: 21, title: 'Sigara yok', cat: 'Sağlık', type: 'Quit', streak: 21, size: 64, opened: 40, done: true, img: 'sprites/TabloDisiInciKupe.png', active: '133', start: '2026-02-18', gallery: [{ id: '36' }, { id: '48', holes: [5, 12, 13, 30] }, { id: '62' }] },
+      { id: 'h4', days: [0,2,4], longest: 6, title: 'Meditasyon', cat: 'Zihin', type: 'Build', streak: 3, size: 16, opened: 3, done: false, img: 'sprites/TabloDisiInciKupe.png', active: '214', start: '2026-09-28', gallery: [] },
+      { id: 'h5', days: [5,6], longest: 11, title: 'Yürüyüş', cat: 'Sağlık', type: 'Build', streak: 7, size: 32, opened: 20, done: true, img: 'sprites/TabloDisiInciKupe.png', active: '19', start: '2026-01-10', gallery: [{ id: '20', holes: [3, 4, 11] }, { id: '126' }] },
+      { id: 'h6', days: [], longest: 4, title: 'Şekersiz gün', cat: 'Beslenme', type: 'Quit', streak: 2, size: 32, opened: 6, done: false, img: 'sprites/TabloDisiInciKupe.png', active: '20', start: '2026-09-29', gallery: [] }
+    ]
+  };
+  galRef = React.createRef();
+  componentWillUnmount() { clearTimeout(this.t1); clearTimeout(this.t2); clearTimeout(this.t3); }
+  openHabit(e, hid) {
+    const card = e.currentTarget.lastElementChild || e.currentTarget, box = this.galRef.current;
+    if (!box) return;
+    const a = card.getBoundingClientRect(), b = box.getBoundingClientRect(), k = b.width / 390 || 1;
+    const rect = { top: (a.top - b.top) / k, left: (a.left - b.left) / k, width: a.width / k, height: a.height / k };
+    clearTimeout(this.t3);
+    this.setState({ exp: { hid, rect, on: false } }, () => requestAnimationFrame(() => requestAnimationFrame(() => this.setState(s => s.exp ? { exp: { ...s.exp, on: true } } : null))));
+  }
+  closeHabit() {
+    this.setState(s => s.exp ? { exp: { ...s.exp, on: false }, viewer: null } : null);
+    clearTimeout(this.t3);
+    this.t3 = setTimeout(() => this.setState({ exp: null }), 400);
+  }
+  moodKey(p) {
+    if (p >= 11) return ['UltraRich_', 'Çok zengin'];
+    if (p >= 9) return ['Rich_', 'Zengin'];
+    if (p >= 7) return ['Happy_', 'Mutlu'];
+    if (p >= 4) return ['', 'Normal'];
+    if (p >= 2) return ['Sad_', 'Üzgün'];
+    return ['Starve_', 'Aç'];
+  }
+  showToast(msg) {
+    clearTimeout(this.t2);
+    this.setState({ toast: msg });
+    this.t2 = setTimeout(() => this.setState({ toast: null }), 2200);
+  }
+  toggle(id) {
+    this.setState(s => {
+      const habits = s.habits.map(h => {
+        if (h.id !== id) return h;
+        const done = !h.done;
+        const opened = Math.max(0, Math.min(h.size, h.opened + (done ? 1 : -1)));
+        return { ...h, done, opened, streak: Math.max(0, h.streak + (done ? 1 : -1)) };
+      });
+      const target = habits.find(h => h.id === id);
+      const allDone = habits.every(h => h.done);
+      let mood = s.mood, rewarded = s.rewarded;
+      if (allDone && !rewarded) { mood = Math.min(12, mood + 1); rewarded = true; }
+      if (!allDone && rewarded) { mood = Math.max(0, mood - 1); rewarded = false; }
+      if (target.done) {
+        clearTimeout(this.t1);
+        this.t1 = setTimeout(() => this.setState({ painting: false }), 1900);
+      }
+      if (allDone && !s.rewarded) setTimeout(() => this.showToast('Hepsi tamam! Ruh hali +1'), 0);
+      else if (target.done && target.opened === target.size) setTimeout(() => this.showToast('Tablo bitti! Galeriye eklendi'), 0);
+      return { habits, mood, rewarded, focusId: id, painting: target.done ? true : s.painting, paintKey: target.done ? s.paintKey + 1 : s.paintKey };
+    });
+  }
+  openNew() { this.setState({ sheet: true, editId: null, form: this.blankForm() }); }
+  openEdit(h) { this.setState({ sheet: true, editId: h.id, form: { title: h.title, type: h.type, cat: h.cat, days: h.days.slice(), size: h.size, hasEnd: !!h.hasEnd, end: h.end || '' } }); }
+  setF(patch) { this.setState(s => ({ form: { ...s.form, ...patch } })); }
+  save() {
+    const f = this.state.form; if (!f.title.trim()) return;
+    this.setState(s => {
+      if (s.editId) return { sheet: false, habits: s.habits.map(h => h.id === s.editId ? { ...h, ...f, title: f.title.trim(), opened: Math.min(h.opened, f.size) } : h) };
+      const nh = { id: 'h' + Date.now(), ...f, title: f.title.trim(), streak: 0, longest: 0, opened: 0, done: false };
+      return { sheet: false, habits: [...s.habits, nh] };
+    });
+  }
+  remove() { this.setState(s => ({ sheet: false, habits: s.habits.filter(h => h.id !== s.editId) })); }
+  cells(h) {
+    const out = [];
+    for (let i = 0; i < h.size; i++) out.push({ bg: i < h.opened ? 'transparent' : 'rgba(34,21,13,.9)' });
+    return out;
+  }
+  renderVals() {
+    const s = this.state;
+    const [mk, moodLabel] = this.moodKey(s.mood);
+    const scale = 5, fw = 33 * scale, fh = 36 * scale;
+    const painterEl = React.createElement('div', {
+      key: s.painting ? 'p' + s.paintKey : 'idle' + mk,
+      style: {
+        width: fw, height: fh, imageRendering: 'pixelated',
+        backgroundImage: `url(sprites/${mk}${s.painting ? 'Painting' : 'Idle'}_sprite.png)`,
+        backgroundSize: `${(s.painting ? 19 : 10) * fw}px ${fh}px`, backgroundRepeat: 'no-repeat',
+        animation: s.painting ? 'paintAnim 1.9s steps(19) 1 forwards' : 'idleAnim 1.1s steps(10) infinite'
+      }
+    });
+    const defs = [
+      ['Tümü', () => true], ['Yap', h => h.type === 'Build'], ['Bırak', h => h.type === 'Quit'],
+      ['Sağlık', h => h.cat === 'Sağlık'], ['Zihin', h => h.cat === 'Zihin']
+    ];
+    const filters = defs.map(([name, fn], i) => {
+      const on = i === s.filter;
+      return {
+        name, count: s.habits.filter(fn).length, pick: () => this.setState({ filter: i }),
+        size: on ? 50 : 40, mt: on ? 4 : 10,
+        bg: on ? 'linear-gradient(160deg,#9e2b2c,#7a1f22)' : 'linear-gradient(160deg,#5a3d28,#3e2a1c)',
+        border: on ? '#e2b04a' : 'rgba(243,230,204,.14)', fg: on ? '#f3e6cc' : 'rgba(243,230,204,.75)',
+        label: on ? '#e2b04a' : 'rgba(243,230,204,.62)'
+      };
+    });
+    const decorate = h => ({
+      ...h, rows: h.size / 8, cells: this.cells(h), toggle: () => this.toggle(h.id),
+      border: h.done ? '#e2b04a' : 'rgba(243,230,204,.1)',
+      typeLabel: h.type === 'Quit' ? 'BIRAK' : 'YAP',
+      typeColor: h.type === 'Quit' ? '#eb8f6e' : '#b5cc86',
+      checkBg: h.done ? '#e2b04a' : 'transparent', checkMark: h.done ? '✓' : ''
+    });
+    const shown = s.habits.filter(defs[s.filter][1]).map(decorate);
+    const ratio = s.habits.filter(h => h.done).length / Math.max(1, s.habits.length);
+    const easelCells = Array.from({ length: 36 }, (_, i) => ({ bg: i < Math.round(ratio * 36) ? 'transparent' : '#e9dcbf' }));
+    const moodSegs = Array.from({ length: 12 }, (_, i) => ({ bg: i < s.mood ? '#e2b04a' : 'rgba(243,230,204,.18)' }));
+    const layout = this.props.layout ?? 'grid';
+    const gold = '#e2b04a', faint = 'rgba(243,230,204,.12)';
+    const cats = [...new Set(s.habits.map(h => h.cat))];
+    const groups = cats.map(c => {
+      const items = s.habits.filter(h => h.cat === c).map(h => ({
+        ...decorate(h), edit: () => this.openEdit(h), pct: Math.round(h.opened / h.size * 100),
+        dayDots: this.DAYS.map((l, i) => { const on = h.days.length === 0 || h.days.includes(i); return { l: l[0], bg: on ? 'rgba(226,176,74,.22)' : 'rgba(20,10,4,.3)', fg: on ? gold : 'rgba(243,230,204,.3)' }; })
+      }));
+      return { name: c, count: items.length, items };
+    });
+    const f = s.form || this.blankForm();
+    const pickBox = on => ({ bg: on ? 'rgba(226,176,74,.12)' : '#2b1b12', border: on ? gold : faint });
+    const typeOpts = [['Build', 'Yap', 'Her gün yapınca tik at', '#b5cc86'], ['Quit', 'Bırak', 'Yapmadığın gün tik at', '#eb8f6e']].map(([v, label, hint, col]) => ({ label, hint, color: f.type === v ? col : '#f3e6cc', ...pickBox(f.type === v), pick: () => this.setF({ type: v }) }));
+    const catOpts = this.CATS.map(c => ({ label: c, bg: f.cat === c ? gold : 'transparent', border: f.cat === c ? gold : 'rgba(243,230,204,.2)', fg: f.cat === c ? '#2b1b12' : '#f3e6cc', pick: () => this.setF({ cat: c }) }));
+    const dayOpts = this.DAYS.map((l, i) => { const on = f.days.includes(i); return { l, bg: on ? gold : '#2b1b12', border: on ? gold : faint, fg: on ? '#2b1b12' : 'rgba(243,230,204,.75)', pick: () => this.setF({ days: on ? f.days.filter(d => d !== i) : [...f.days, i].sort() }) }; });
+    const sizeOpts = [[16, 'Kısa'], [32, 'Orta'], [64, 'Uzun']].map(([n, hint]) => ({ n, hint, color: f.size === n ? gold : '#f3e6cc', cellBg: f.size === n ? gold : 'rgba(243,230,204,.25)', cells: Array.from({ length: n }, () => ({})), ...pickBox(f.size === n), pick: () => this.setF({ size: n }) }));
+    const valid = f.title.trim().length > 0;
+    const showActive = this.props.showActive ?? true;
+    const galLayout = this.props.galleryLayout ?? 'duvar';
+    const works = h => {
+      const fin = (h.gallery || []).map((x, k) => ({ pid: x.id, holes: x.holes || [], done: true, n: k + 1 })).reverse();
+      return (showActive && h.active ? [{ pid: h.active, holes: [], done: false }] : []).concat(fin);
+    };
+    const missBg = 'repeating-linear-gradient(45deg,rgba(43,27,18,.45) 0 1.5px,rgba(43,27,18,0) 1.5px 4px)', missFx = 'grayscale(1) sepia(.35) brightness(.62)';
+    const cover = (h, w) => Array.from({ length: this.PAINT[w.pid].size }, (_, i) => {
+      const miss = w.done && w.holes.includes(i);
+      return { bg: miss ? missBg : (w.done || i < h.opened ? 'transparent' : 'rgba(34,21,13,.9)'), fx: miss ? missFx : 'none' };
+    });
+    const src = pid => 'sprites/paintings/p' + pid + '.png';
+    const walls = s.habits.map(h => {
+      const n = (h.gallery || []).length;
+      return {
+        title: h.title, typeLabel: h.type === 'Quit' ? 'BIRAK' : 'YAP', typeColor: h.type === 'Quit' ? '#eb8f6e' : '#b5cc86',
+        countLabel: n ? n + ' eser' : 'Henüz eser yok', open: e => this.openHabit(e, h.id),
+        items: works(h).map((w, idx) => {
+          const P = this.PAINT[w.pid];
+          return {
+            src: src(w.pid), w: P.w * 2, h: P.h * 2, rows: P.size / 8, cells: cover(h, w),
+            hasHoles: w.holes.length > 0, holes: w.holes.length,
+            plaque: w.done ? P.name : `Sürüyor · ${h.opened}/${P.size}`,
+            plaqueBg: w.done ? '#e9dcbf' : 'rgba(20,10,4,.45)', plaqueFg: w.done ? '#2b1b12' : '#e2b04a', plaqueBorder: w.done ? '#e9dcbf' : 'rgba(226,176,74,.55)',
+            open: () => this.setState({ viewer: { hid: h.id, idx } })
+          };
+        })
+      };
+    });
+    let viewer = null;
+    if (s.viewer) {
+      const h = s.habits.find(x => x.id === s.viewer.hid);
+      const list = h ? works(h) : [];
+      if (list.length) {
+        const idx = Math.min(s.viewer.idx, list.length - 1), w = list[idx], P = this.PAINT[w.pid];
+        const k = Math.max(1, Math.floor(Math.min(260 / P.w, 290 / P.h)));
+        const go = i => () => this.setState({ viewer: { hid: h.id, idx: i } });
+        viewer = {
+          habit: h.title, pos: `${idx + 1} / ${list.length}`, name: P.name, src: src(w.pid),
+          w: P.w * k, h: P.h * k, rows: P.size / 8, cells: cover(h, w),
+          meta: w.done ? `${P.size} parça · ${w.n}. eser` : `${P.size} parça · şu an tuvalde`,
+          status: w.done ? 'Tamamlandı' : `Sürüyor · ${h.opened}/${P.size}`,
+          statusBg: w.done ? '#e2b04a' : 'transparent', statusFg: w.done ? '#2b1b12' : '#e2b04a',
+          hasHoles: w.holes.length > 0, holesLabel: w.holes.length + ' parça yandı',
+          prevOp: idx > 0 ? 1 : .3, nextOp: idx < list.length - 1 ? 1 : .3,
+          prev: idx > 0 ? go(idx - 1) : undefined, next: idx < list.length - 1 ? go(idx + 1) : undefined,
+          thumbs: list.map((t, i) => { const Q = this.PAINT[t.pid], r = Math.min(36 / Q.w, 36 / Q.h); return { src: src(t.pid), w: Math.round(Q.w * r), h: Math.round(Q.h * r), border: i === idx ? '#e2b04a' : 'rgba(243,230,204,.12)', op: t.done ? 1 : .55, pick: go(i) }; })
+        };
+      }
+    }
+    let x = {};
+    if (s.exp) {
+      const h = s.habits.find(q => q.id === s.exp.hid);
+      if (h) {
+        const fin = h.gallery || [], on = s.exp.on, R = s.exp.rect;
+        const missed = fin.reduce((a, g) => a + (g.holes || []).length, 0);
+        const total = fin.reduce((a, g) => a + this.PAINT[g.id].size - (g.holes || []).length, 0) + h.opened;
+        const M = ['Oca','Şub','Mar','Nis','May','Haz','Tem','Ağu','Eyl','Eki','Kas','Ara'];
+        const fmt = d => { const [y, m, dd] = (d || '').split('-').map(Number); return y ? dd + ' ' + M[m - 1] + ' ' + y : ''; };
+        const quit = h.type === 'Quit';
+        x = {
+          top: on ? 0 : R.top, left: on ? 0 : R.left, width: on ? 390 : R.width, height: on ? 844 : R.height, r: on ? 44 : 20,
+          skinOp: on ? 0 : 1, op: on ? 1 : 0, delay: on ? .14 : 0,
+          title: h.title, sub: h.cat + ' · ' + (quit ? 'Bırak' : 'Yap'),
+          total, totalLabel: quit ? 'temiz gün' : 'gün yapıldı',
+          note: [missed ? missed + ' gün kaçırıldı' : null, h.start ? fmt(h.start) + ' tarihinden beri' : null].filter(Boolean).join(' · '),
+          stats: [{ v: h.streak, l: 'Şu anki seri' }, { v: h.longest, l: 'En iyi seri' }, { v: fin.length, l: 'Eser' }],
+          planLabel: h.days.length ? 'Haftada ' + h.days.length + ' gün' : 'Her gün',
+          dayDots: this.DAYS.map((l, i) => { const d = h.days.length === 0 || h.days.includes(i); return { l, bg: d ? 'rgba(226,176,74,.22)' : 'rgba(20,10,4,.3)', fg: d ? '#e2b04a' : 'rgba(243,230,204,.3)' }; }),
+          worksLabel: fin.length ? fin.length + ' tamamlandı' : 'Henüz eser yok',
+          tiles: works(h).map((w, idx) => {
+            const P = this.PAINT[w.pid];
+            return {
+              src: src(w.pid), w: P.w * 2, h: P.h * 2, rows: P.size / 8, cells: cover(h, w), hasHoles: w.holes.length > 0, holes: w.holes.length,
+              name: P.name, sub: w.done ? P.size + ' parça' + (w.holes.length ? ' · ' + w.holes.length + ' yandı' : '') : 'Sürüyor · ' + h.opened + '/' + P.size,
+              subFg: w.done ? 'rgba(243,230,204,.62)' : '#e2b04a',
+              open: () => this.setState({ viewer: { hid: h.id, idx } })
+            };
+          })
+        };
+      }
+    }
+    return {
+      expOpen: !!s.exp, x, galRef: this.galRef, closeHabit: () => this.closeHabit(),
+      walls, isRaf: galLayout !== 'duvar', isDuvar: galLayout === 'duvar',
+      galleryTotal: s.habits.reduce((a, h) => a + (h.gallery || []).length, 0),
+      viewerOpen: !!viewer, v: viewer || {}, closeViewer: () => this.setState({ viewer: null }),
+      painterEl, filters, shown, easelCells, moodSegs, moodLabel,
+      toast: s.toast, doneCount: s.habits.filter(h => h.done).length, totalCount: s.habits.length,
+      isGrid: layout === 'grid', isList: layout === 'list',
+      groups, activeCount: s.habits.length, openNew: () => this.openNew(), closeSheet: () => this.setState({ sheet: false }),
+      sheetOpen: s.sheet, isEdit: !!s.editId, sheetTitle: s.editId ? 'Düzenle' : 'Yeni alışkanlık', saveLabel: s.editId ? 'Kaydet' : 'Ekle',
+      saveBg: valid ? 'linear-gradient(180deg,#e9bd5c,#d39d38)' : 'rgba(226,176,74,.35)',
+      form: f, onTitle: e => this.setF({ title: e.target.value }), onEnd: e => this.setF({ end: e.target.value }),
+      typeOpts, catOpts, dayOpts, sizeOpts, daysHint: f.days.length ? f.days.length + ' gün seçili' : 'Seçilmezse her gün',
+      toggleEnd: () => this.setF({ hasEnd: !f.hasEnd }), endTrack: f.hasEnd ? gold : 'rgba(243,230,204,.18)', endKnob: f.hasEnd ? 23 : 3,
+      save: () => this.save(), removeHabit: () => this.remove()
+    };
+  }
+}
+</script>
+</body>
+</html>

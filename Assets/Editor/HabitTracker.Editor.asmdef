@@ -1,0 +1,28 @@
+{
+    "name": "HabitTracker.Editor",
+    "rootNamespace": "",
+    "references": [
+        "HabitTracker.Runtime",
+        "UnityEngine.UI",
+        "Unity.TextMeshPro",
+        "Unity.Notifications",
+        "Unity.2D.Sprite.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.mobile.notifications",
+            "expression": "2.3.0",
+            "define": "HABIT_NOTIFICATIONS"
+        }
+    ],
+    "noEngineReferences": false
+}

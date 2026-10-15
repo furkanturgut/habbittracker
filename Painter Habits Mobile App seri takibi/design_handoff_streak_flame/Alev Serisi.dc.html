@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#1c110b;font-family:'Fredoka',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#e2b04a}a:hover{color:#f3e6cc}
+@keyframes flameAnim{to{background-position-x:calc(var(--fw) * -4)}}
+@keyframes flamePop{0%{transform:scale(.2);opacity:0}55%{transform:scale(1.18);opacity:1}75%{transform:scale(.94)}100%{transform:scale(1)}}
+@keyframes raysSpin{to{transform:rotate(360deg)}}
+@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}
+@keyframes riseIn{0%{transform:translateY(14px);opacity:0}100%{transform:translateY(0);opacity:1}}
+input[type=range]{accent-color:#e2b04a}
+</style>
+</helmet>
+<div style="min-height:100vh;padding:48px 24px 72px;box-sizing:border-box;background:radial-gradient(120% 80% at 50% 0%,#4a2f1c 0%,#2b1b12 55%,#1c110b 100%);display:flex;flex-direction:column;align-items:center;gap:56px">
+
+<div style="display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center">
+<span style="font:600 13px 'Fredoka';color:#e2b04a;text-transform:uppercase;letter-spacing:.1em">Atölye · Galeri · Seri</span>
+<span style="font:700 34px/1.1 'Fredoka';color:#f3e6cc">Seri alevi</span>
+<span style="font:400 15px/1.45 'Fredoka';color:rgba(243,230,204,.62);max-width:560px;text-wrap:pretty">Seri uzadıkça alev büyür ve renk değiştirir. Basamak kodları (T0–T8) yalnızca geliştirme içindir, uygulamada görünmez. Bugün tamamlanmamış bir alışkanlığın alevi gri bekler, tik atılınca yanar. Yeni bir basamağa ulaşıldığında kutlama ekranı açılır.</span>
+</div>
+
+<div data-screen-label="01 Basamaklar" style="display:flex;flex-direction:column;align-items:center;gap:16px;max-width:1080px">
+<span style="font:600 13px 'Fredoka';color:#e2b04a;text-transform:uppercase;letter-spacing:.08em">Basamaklar · 32×32, 4 kare</span>
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px">
+<sc-for list="{{ tiers }}" as="t" hint-placeholder-count="9">
+<div onClick="{{ t.pick }}" style="width:150px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;gap:10px;padding:14px 12px;border-radius:22px;background:linear-gradient(160deg,#5a3d28 0%,#3e2a1c 100%);border:2px solid {{ t.border }};box-shadow:0 5px 0 rgba(0,0,0,.3);cursor:pointer">
+<div style="width:96px;height:96px;border-radius:12px;background:rgba(20,10,4,.35);display:flex;align-items:center;justify-content:center">{{ t.el }}</div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:2px;text-align:center">
+<span style="font:600 16px 'Fredoka';color:#f3e6cc">{{ t.name }}</span>
+<span style="font:400 12px 'Fredoka';color:rgba(243,230,204,.62)">{{ t.range }}</span>
+<span style="font:500 11px 'Fredoka';color:#e2b04a;margin-top:4px">{{ t.file }}</span>
+</div>
+</div>
+</sc-for>
+</div>
+</div>
+
+<div data-screen-label="02 Simülatör" style="display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:32px">
+<div style="display:flex;flex-direction:column;gap:12px;align-items:center">
+<span style="font:600 13px 'Fredoka';color:#e2b04a;text-transform:uppercase;letter-spacing:.08em">Simülatör</span>
+<div style="position:relative;width:360px;box-sizing:border-box;padding:28px 24px 24px;border-radius:28px;background:linear-gradient(160deg,#5a3d28 0%,#3e2a1c 100%);box-shadow:0 30px 60px rgba(0,0,0,.4);display:flex;flex-direction:column;align-items:center;gap:18px;overflow:hidden">
+<div style="width:128px;height:128px;display:flex;align-items:center;justify-content:center">{{ bigFlame }}</div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:2px;text-align:center">
+<span style="font:700 56px/1 'Fredoka';color:{{ numColor }};text-shadow:0 4px 0 rgba(0,0,0,.3)">{{ days }}</span>
+<span style="font:500 16px 'Fredoka';color:#f3e6cc">gün seri</span>
+<span style="font:400 12px 'Fredoka';color:rgba(243,230,204,.62)">{{ stateLabel }}</span>
+</div>
+<div style="width:100%;display:flex;flex-direction:column;gap:6px">
+<div style="display:flex;justify-content:space-between;font:400 12px 'Fredoka';color:rgba(243,230,204,.62)"><span>{{ nextLabel }}</span><span>{{ nextDays }}</span></div>
+<div style="height:8px;border-radius:4px;background:rgba(20,10,4,.45);overflow:hidden"><div style="width:{{ barPct }}%;height:100%;border-radius:4px;background:{{ barColor }};transition:width .3s"></div></div>
+</div>
+<div style="width:100%;display:flex;justify-content:space-between">
+<sc-for list="{{ milestones }}" as="m" hint-placeholder-count="8">
+<div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+<div style="width:12px;height:12px;border-radius:50%;background:{{ m.bg }};border:2px solid {{ m.border }};box-sizing:border-box"></div>
+<span style="font:500 10px 'Fredoka';color:{{ m.fg }}">{{ m.n }}</span>
+</div>
+</sc-for>
+</div>
+<input type="range" min="0" max="400" value="{{ days }}" onInput="{{ onSlide }}" style="width:100%">
+<div style="width:100%;display:flex;gap:8px">
+<div onClick="{{ dec }}" style="flex:none;width:44px;height:44px;border-radius:14px;background:#2b1b12;border:2px solid rgba(243,230,204,.12);display:flex;align-items:center;justify-content:center;color:#f3e6cc;font:600 20px 'Fredoka';cursor:pointer">−</div>
+<div onClick="{{ toggleToday }}" style="flex:1;height:44px;border-radius:14px;background:{{ todayBg }};border:2px solid #e2b04a;display:flex;align-items:center;justify-content:center;color:{{ todayFg }};font:600 15px 'Fredoka';cursor:pointer">{{ todayLabel }}</div>
+<div onClick="{{ inc }}" style="flex:none;width:44px;height:44px;border-radius:14px;background:#2b1b12;border:2px solid rgba(243,230,204,.12);display:flex;align-items:center;justify-content:center;color:#f3e6cc;font:600 20px 'Fredoka';cursor:pointer">+</div>
+</div>
+<div onClick="{{ showCeleb }}" style="font:500 13px 'Fredoka';color:#e2b04a;cursor:pointer;text-decoration:underline">Kutlamayı göster</div>
+<sc-if value="{{ celebOpen }}" hint-placeholder-val="{{ false }}">
+<div style="position:absolute;inset:0;z-index:3;background:radial-gradient(90% 70% at 50% 38%,{{ c.glow }} 0%,#2b1b12 70%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:24px;animation:fadeIn .25s ease-out">
+<div style="position:relative;width:200px;height:200px;display:flex;align-items:center;justify-content:center">
+{{ c.rays }}
+<div style="position:relative">{{ c.flame }}</div>
+</div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center;animation:riseIn .4s ease-out .35s both">
+<span style="font:600 13px 'Fredoka';color:#e2b04a;text-transform:uppercase;letter-spacing:.1em">Yeni alev</span>
+<span style="font:700 30px/1.1 'Fredoka';color:#f3e6cc">{{ c.name }}</span>
+<span style="font:400 14px 'Fredoka';color:rgba(243,230,204,.75)">{{ c.line }}</span>
+</div>
+<div onClick="{{ closeCeleb }}" style="margin-top:8px;padding:12px 40px;border-radius:16px;background:linear-gradient(180deg,#e9bd5c,#d39d38);box-shadow:0 4px 0 #8a5f1c;color:#2b1b12;font:600 16px 'Fredoka';cursor:pointer;animation:riseIn .4s ease-out .5s both">Devam</div>
+</div>
+</sc-if>
+</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:12px;align-items:center">
+<span style="font:600 13px 'Fredoka';color:#e2b04a;text-transform:uppercase;letter-spacing:.08em">Uygulamada</span>
+<div style="width:360px;box-sizing:border-box;display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:8px">
+<span style="font:400 12px 'Fredoka';color:rgba(243,230,204,.62)">Atölye · alışkanlık kartı</span>
+<div style="display:flex;gap:12px">
+<div style="width:120px;display:flex;flex-direction:column;align-items:center;gap:6px">
+<div style="width:100px;height:100px;border-radius:14px;background:linear-gradient(160deg,#5a3d28 0%,#3e2a1c 100%);border:3px solid {{ tileBorder }};box-shadow:0 4px 0 rgba(0,0,0,.3)"></div>
+<span style="font:500 13px/1.15 'Fredoka';color:#f3e6cc">Kitap oku</span>
+<div style="display:flex;align-items:center;gap:3px;padding:2px 9px 2px 4px;border-radius:12px;background:rgba(20,10,4,.42)">{{ tileFlame }}<span style="font:600 12px/1 'Fredoka';color:{{ tileNum }}">{{ days }}</span></div>
+</div>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<span style="font:400 12px 'Fredoka';color:rgba(243,230,204,.62)">Galeri · alışkanlık detayı</span>
+<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px">
+<div style="padding:10px 6px 12px;border-radius:16px;background:linear-gradient(160deg,#5a3d28 0%,#3e2a1c 100%);border:2px solid rgba(243,230,204,.08);box-shadow:0 4px 0 rgba(0,0,0,.3);display:flex;flex-direction:column;align-items:center;gap:2px;text-align:center">
+<div style="display:flex;align-items:center;gap:4px">{{ cellFlame }}<span style="font:700 22px 'Fredoka';color:#f3e6cc">{{ days }}</span></div>
+<span style="font:400 11px 'Fredoka';color:rgba(243,230,204,.62)">Şu anki seri</span>
+<div style="width:70%;height:4px;margin-top:4px;border-radius:2px;background:rgba(20,10,4,.45);overflow:hidden"><div style="width:{{ barPct }}%;height:100%;background:{{ barColor }}"></div></div>
+<span style="font:400 10px 'Fredoka';color:rgba(243,230,204,.5)">{{ nextShort }}</span>
+</div>
+<div style="padding:12px 6px;border-radius:16px;background:linear-gradient(160deg,#5a3d28 0%,#3e2a1c 100%);border:2px solid rgba(243,230,204,.08);box-shadow:0 4px 0 rgba(0,0,0,.3);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px">
+<span style="font:700 22px 'Fredoka';color:#f3e6cc">{{ best }}</span>
+<span style="font:400 11px 'Fredoka';color:rgba(243,230,204,.62)">En iyi seri</span>
+</div>
+<div style="padding:12px 6px;border-radius:16px;background:linear-gradient(160deg,#5a3d28 0%,#3e2a1c 100%);border:2px solid rgba(243,230,204,.08);box-shadow:0 4px 0 rgba(0,0,0,.3);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px">
+<span style="font:700 22px 'Fredoka';color:#f3e6cc">3</span>
+<span style="font:400 11px 'Fredoka';color:rgba(243,230,204,.62)">Eser</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  TIERS = [
+    { min: 0, name: 'Sönük', glow: '#4f4038', num: '#a89888' },
+    { min: 1, name: 'Kıvılcım', glow: '#8a3a12', num: '#f7a12e' },
+    { min: 7, name: 'Mum', glow: '#8a3a12', num: '#f7a12e' },
+    { min: 14, name: 'Kandil', glow: '#9a3d10', num: '#f7a12e' },
+    { min: 30, name: 'Meşale', glow: '#9a2a0e', num: '#f58a26' },
+    { min: 50, name: 'Ocak', glow: '#8a1410', num: '#f26a1f' },
+    { min: 100, name: 'Mavi alev', glow: '#1f4fae', num: '#5fb6ff' },
+    { min: 200, name: 'Mor alev', glow: '#5a2aa6', num: '#b685ff' },
+    { min: 365, name: 'Altın alev', glow: '#b07414', num: '#ffd34d' }
+  ];
+  state = { days: 12, today: true, celeb: null, pick: null };
+  tierOf(d) { let i = 0; this.TIERS.forEach((t, k) => { if (d >= t.min) i = k; }); return i; }
+  src(i, pending) { return 'sprites/flame/Flame_T' + i + (pending && i > 0 ? '_Pending' : '') + '.png'; }
+  flame(i, pending, px, key) {
+    return React.createElement('div', { key: key || ('f' + i + (pending ? 'p' : '') + px), style: {
+      '--fw': px + 'px', width: px, height: px, flex: 'none', imageRendering: 'pixelated',
+      backgroundImage: `url(${this.src(i, pending)})`, backgroundSize: `${px * 4}px ${px}px`, backgroundRepeat: 'no-repeat',
+      animation: `flameAnim ${pending ? 1.2 : .6}s steps(4) infinite`
+    } });
+  }
+  icon(i, pending, px) {
+    return React.createElement('div', { key: 'i' + i + (pending ? 'p' : '') + px, style: {
+      '--fw': px + 'px', width: px, height: px, flex: 'none', imageRendering: 'pixelated',
+      backgroundImage: `url(sprites/flame/FlameIcon_T${i}${pending && i > 0 ? '_Pending' : ''}.png)`, backgroundSize: `${px * 4}px ${px}px`, backgroundRepeat: 'no-repeat',
+      animation: `flameAnim ${pending ? 1.2 : .6}s steps(4) infinite`
+    } });
+  }
+  setDays(d) {
+    const days = Math.max(0, Math.min(400, d));
+    const prev = this.tierOf(this.state.days), next = this.tierOf(days);
+    this.setState({ days, celeb: next > prev && days > this.state.days && next > 0 ? next : this.state.celeb });
+  }
+  renderVals() {
+    const s = this.state, d = s.days, ti = this.tierOf(d), T = this.TIERS[ti], pending = !s.today && d > 0;
+    const nxt = this.TIERS[ti + 1];
+    const barPct = nxt ? Math.round((d - T.min) / (nxt.min - T.min) * 100) : 100;
+    const c = s.celeb != null ? this.TIERS[s.celeb] : null;
+    const rays = c ? React.createElement('div', { key: 'r' + s.celeb, style: { position: 'absolute', inset: -20, borderRadius: '50%', background: `repeating-conic-gradient(${c.num}33 0 12deg, transparent 12deg 30deg)`, WebkitMaskImage: 'radial-gradient(closest-side,#000 40%,transparent)', maskImage: 'radial-gradient(closest-side,#000 40%,transparent)', animation: 'raysSpin 14s linear infinite, fadeIn .6s ease-out' } }) : null;
+    const cf = c ? React.createElement('div', { key: 'cf' + s.celeb, style: { animation: 'flamePop .7s cubic-bezier(.2,.8,.2,1) both' } }, this.flame(s.celeb, false, 160, 'cfi')) : null;
+    return {
+      tiers: this.TIERS.map((t, i) => {
+        const n = this.TIERS[i + 1];
+        return { name: 'T' + i, range: i === 0 ? '0 gün' : n ? `${t.min}–${n.min - 1} gün` : `${t.min}+ gün`, file: `Flame_T${i}.png`, el: this.flame(i, false, 96), border: i === ti ? '#e2b04a' : 'rgba(243,230,204,.08)', pick: () => this.setState({ days: t.min, today: true }) };
+      }),
+      days: d, tierName: T.name, numColor: pending ? '#a89888' : T.num,
+      bigFlame: this.flame(ti, pending, 128),
+      stateLabel: d === 0 ? 'Seri yok · ilk tikte alev yanar' : pending ? 'Bugün henüz yapılmadı · alev bekliyor' : 'Bugün yapıldı · alev yanıyor',
+      nextLabel: nxt ? `Sonraki alev ${nxt.min}. günde` : 'En büyük alev', nextDays: nxt ? `${nxt.min - d} gün kaldı` : `${d} gün`,
+      nextShort: nxt ? `Yeni alev: ${nxt.min - d} gün` : 'En büyük alev',
+      barPct, barColor: pending ? '#8f7d70' : T.num,
+      milestones: this.TIERS.slice(1).map(t => { const on = d >= t.min; return { n: t.min, bg: on ? t.num : 'transparent', border: on ? t.num : 'rgba(243,230,204,.25)', fg: on ? '#f3e6cc' : 'rgba(243,230,204,.45)' }; }),
+      onSlide: e => this.setState({ days: Number(e.target.value) }),
+      inc: () => this.setDays(d + 1), dec: () => this.setDays(d - 1),
+      toggleToday: () => s.today ? this.setState({ today: false, days: Math.max(0, d - 1) }) : (this.setState({ today: true }), this.setDays(d + 1)),
+      todayLabel: s.today ? 'Bugün yapıldı ✓' : 'Bugün tamamla', todayBg: s.today ? '#e2b04a' : 'transparent', todayFg: s.today ? '#2b1b12' : '#e2b04a',
+      celebOpen: !!c, c: c ? { name: `${Math.max(d, c.min)} gün seri!`, line: s.celeb < 8 ? `Sonraki alev ${this.TIERS[s.celeb + 1].min}. günde` : 'En büyük alevine ulaştın', glow: c.glow, rays, flame: cf } : {},
+      showCeleb: () => this.setState({ celeb: Math.max(1, ti) }), closeCeleb: () => this.setState({ celeb: null }),
+      tileFlame: this.icon(ti, pending, 24), tileNum: pending ? 'rgba(243,230,204,.62)' : T.num, tileBorder: s.today ? '#e2b04a' : 'rgba(243,230,204,.1)',
+      cellFlame: this.icon(ti, pending, 24), best: Math.max(d, 18)
+    };
+  }
+}
+</script>
+</body>
+</html>

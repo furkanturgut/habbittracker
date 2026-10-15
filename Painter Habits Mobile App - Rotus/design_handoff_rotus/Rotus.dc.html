@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#1c110b;font-family:'Fredoka',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#e2b04a}a:hover{color:#f3e6cc}
+@keyframes flameAnim{to{background-position-x:calc(var(--fw) * -4)}}
+@keyframes holeGlow{0%,100%{box-shadow:0 0 0 0 rgba(126,162,242,0),0 0 6px rgba(126,162,242,.55)}50%{box-shadow:0 0 0 4px rgba(126,162,242,.22),0 0 16px rgba(126,162,242,.95)}}
+@keyframes restoreFlash{0%{opacity:1;transform:scale(.4)}100%{opacity:0;transform:scale(2.4)}}
+</style>
+</helmet>
+<div style="min-height:100vh;padding:48px 24px 72px;box-sizing:border-box;background:radial-gradient(120% 80% at 50% 0%,#4a2f1c 0%,#2b1b12 55%,#1c110b 100%);display:flex;flex-direction:column;align-items:center;gap:48px">
+
+<div style="display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center">
+<span style="font:600 13px 'Fredoka';color:#a9c2ff;text-transform:uppercase;letter-spacing:.1em">Galeri · Rötuş</span>
+<span style="font:700 34px/1.1 'Fredoka';color:#f3e6cc">Rötuş</span>
+<span style="font:400 15px/1.45 'Fredoka';color:rgba(243,230,204,.62);max-width:520px;text-wrap:pretty">Bitmiş tablolardaki yanan parçaları geri getirir. Bir rötuş, bir parçayı onarır.</span>
+</div>
+
+<div data-screen-label="01 Simge" style="display:flex;flex-direction:column;align-items:center;gap:14px">
+<span style="font:600 13px 'Fredoka';color:#e2b04a;text-transform:uppercase;letter-spacing:.08em">Simge · 32×32</span>
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px">
+<sc-for list="{{ icons }}" as="i" hint-placeholder-count="3">
+<div style="width:170px;box-sizing:border-box;padding:16px 12px;border-radius:22px;background:linear-gradient(160deg,#5a3d28 0%,#3e2a1c 100%);box-shadow:0 5px 0 rgba(0,0,0,.3);display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center">
+<div style="width:128px;height:128px;border-radius:12px;background:#7a1f22;display:flex;align-items:center;justify-content:center">{{ i.el }}</div>
+<span style="font:600 14px 'Fredoka';color:#f3e6cc">{{ i.file }}</span>
+<span style="font:400 12px/1.35 'Fredoka';color:rgba(243,230,204,.62)">{{ i.note }}</span>
+</div>
+</sc-for>
+</div>
+</div>
+
+<div data-screen-label="02 Sayaç" style="display:flex;flex-direction:column;align-items:center;gap:14px;width:100%;max-width:400px">
+<span style="font:600 13px 'Fredoka';color:#e2b04a;text-transform:uppercase;letter-spacing:.08em">Galeri başlığı</span>
+<div style="width:100%;box-sizing:border-box;padding:16px 18px;border-radius:24px;background:#3e2a1c;display:flex;align-items:center">
+<div style="flex:1;display:flex"><div style="width:38px;height:38px;border-radius:12px;background:#2b1b12;border:2px solid rgba(243,230,204,.12);display:flex;align-items:center;justify-content:center;color:#f3e6cc;font:500 22px 'Fredoka'">‹</div></div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:2px"><span style="font:500 14px 'Fredoka';color:rgba(243,230,204,.7)">12 eser</span><span style="font:700 28px/1.1 'Fredoka';color:#f3e6cc">Galeri</span></div>
+<div style="flex:1;display:flex;justify-content:flex-end"><div onClick="{{ addStock }}" style="height:38px;box-sizing:border-box;padding:0 12px 0 2px;border-radius:19px;background:#7a1f22;border:2px solid rgba(226,176,74,.6);box-shadow:0 3px 0 rgba(0,0,0,.35);display:flex;align-items:center;gap:1px;cursor:pointer">{{ pillIcon }}<span style="font:600 16px 'Fredoka';color:{{ stockFg }}">{{ stock }}</span></div></div>
+</div>
+<span style="font:400 12px 'Fredoka';color:rgba(243,230,204,.5)">Sayaca tıkla: rötuş ekler (önizleme için)</span>
+</div>
+
+<div data-screen-label="03 Tetik" style="display:flex;flex-wrap:wrap;justify-content:center;gap:32px">
+<div style="display:flex;flex-direction:column;align-items:center;gap:14px">
+<span style="font:600 13px 'Fredoka';color:#e2b04a;text-transform:uppercase;letter-spacing:.08em">Eser karesi · rozet</span>
+<div style="position:relative;width:120px;height:120px;border-radius:6px;background:repeating-conic-gradient(#6b4a2e 0 25%,#7d5838 0 50%) 0 0/30px 30px;box-shadow:0 8px 16px rgba(0,0,0,.4)">
+<div onClick="{{ openSheet }}" style="position:absolute;top:-10px;right:-10px;min-width:26px;height:26px;padding:0 7px;box-sizing:border-box;border-radius:13px;background:{{ badgeBg }};border:2px solid {{ badgeBorder }};color:#fff;font:600 12px/22px 'Fredoka';text-align:center;cursor:pointer;animation:{{ glow }}">{{ holes }}</div>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:14px">
+<span style="font:600 13px 'Fredoka';color:#e2b04a;text-transform:uppercase;letter-spacing:.08em">Tablo görüntüleyici · etiket</span>
+<div style="height:120px;display:flex;align-items:center">
+<span onClick="{{ openSheet }}" style="height:28px;padding:0 12px 0 8px;border-radius:999px;box-sizing:border-box;border:2px solid {{ chipBorder }};background:{{ chipBg }};display:flex;align-items:center;gap:6px;color:#f3e6cc;font:600 12px 'Fredoka';cursor:pointer;animation:{{ glow }}"><span style="width:12px;height:12px;border-radius:3px;background:repeating-linear-gradient(45deg,rgba(243,230,204,.35) 0 1.5px,#5b4a3c 1.5px 4px);border:1px solid rgba(243,230,204,.4)"></span>{{ holes }} parça yandı<span style="color:#a9c2ff">{{ fixHint }}</span></span>
+</div>
+</div>
+</div>
+
+<div data-screen-label="04 Onarım" style="display:flex;flex-direction:column;align-items:center;gap:14px">
+<span style="font:600 13px 'Fredoka';color:#e2b04a;text-transform:uppercase;letter-spacing:.08em">Onarım sayfası</span>
+<div style="width:360px;border-radius:28px 28px 0 0;background:linear-gradient(180deg,#4a301e 0%,#2b1b12 100%);border-top:2px solid rgba(226,176,74,.35);padding:10px 22px 40px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;gap:18px">
+<div style="width:40px;height:5px;border-radius:3px;background:rgba(243,230,204,.25)"></div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center">
+<div style="width:64px;height:64px">{{ bigIcon }}</div>
+<span style="font:600 12px 'Fredoka';color:#a9c2ff;text-transform:uppercase;letter-spacing:.1em">Rötuş</span>
+<span style="font:700 24px/1.15 'Fredoka';color:#f3e6cc">Yanan parçaları onar</span>
+<span style="font:400 13px 'Fredoka';color:rgba(243,230,204,.62)">Mona Lisa · {{ holesLabel }}</span>
+</div>
+<div style="padding:14px;border-radius:18px;background:rgba(20,10,4,.4)">
+<div style="position:relative;width:192px;height:192px;background:repeating-conic-gradient(#8a6a44 0 25%,#9c7a50 0 50%) 0 0/48px 48px;box-shadow:0 10px 20px rgba(0,0,0,.5)">
+<div style="position:absolute;inset:0;display:grid;grid-template-columns:repeat(8,1fr);grid-template-rows:repeat(8,1fr)">
+<sc-for list="{{ cells }}" as="c" hint-placeholder-count="64"><div style="position:relative;background:{{ c.bg }};box-shadow:{{ c.ring }}"><sc-if value="{{ c.flash }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle,#ffffff 0%,rgba(126,162,242,.85) 40%,rgba(126,162,242,0) 70%);animation:restoreFlash .9s ease-out forwards;pointer-events:none"></div></sc-if></div></sc-for>
+</div>
+</div>
+</div>
+<span style="font:400 13px/1.4 'Fredoka';color:rgba(243,230,204,.7);text-align:center;max-width:280px;text-wrap:pretty">Her rötuş yanan bir parçayı geri getirir. Elinde <span style="color:#f3e6cc;font-weight:600">{{ stock }}</span> rötuş var.</span>
+<div style="width:100%;display:flex;flex-direction:column;gap:10px">
+<div onClick="{{ use }}" style="height:52px;border-radius:16px;background:{{ ctaBg }};box-shadow:{{ ctaShadow }};display:flex;align-items:center;justify-content:center;color:{{ ctaFg }};font:600 17px 'Fredoka';cursor:pointer">{{ cta }}</div>
+<div onClick="{{ reset }}" style="height:44px;display:flex;align-items:center;justify-content:center;color:rgba(243,230,204,.7);font:500 15px 'Fredoka';cursor:pointer">Sıfırla (önizleme)</div>
+</div>
+</div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  HOLES = [10, 21, 35, 44, 53];
+  state = { stock: 2, holes: this.HOLES.slice(), flash: null };
+  icon(file, px, anim, key) {
+    return React.createElement('div', { key, style: { '--fw': px + 'px', width: px, height: px, flex: 'none', imageRendering: 'pixelated',
+      backgroundImage: `url(sprites/rotus/${file})`, backgroundSize: `${anim ? px * 4 : px}px ${px}px`, backgroundRepeat: 'no-repeat',
+      animation: anim ? 'flameAnim 1.6s steps(4) infinite' : 'none' } });
+  }
+  componentWillUnmount() { clearTimeout(this.t); }
+  renderVals() {
+    const s = this.state, has = s.stock > 0, n = s.holes.length, can = has && n > 0;
+    const live = has ? (px, k) => this.icon('Rotus.png', px, true, k) : (px, k) => this.icon('Rotus_Empty.png', px, false, k + 'e');
+    return {
+      icons: [
+        { file: 'Rotus.png', note: 'Stok > 0 · 4 kare, 0.4 s/kare', el: this.icon('Rotus.png', 128, true, 'a') },
+        { file: 'Rotus_Static.png', note: 'Hareketsiz kullanım (isteğe bağlı)', el: this.icon('Rotus_Static.png', 128, false, 'b') },
+        { file: 'Rotus_Empty.png', note: 'Stok = 0', el: this.icon('Rotus_Empty.png', 128, false, 'c') }
+      ],
+      pillIcon: live(32, 'p'), bigIcon: live(64, 'g'),
+      stock: s.stock, stockFg: has ? '#f3e6cc' : 'rgba(243,230,204,.5)',
+      addStock: () => this.setState({ stock: s.stock + 1 }),
+      holes: n, holesLabel: n ? n + ' parça yanık' : 'Yanık parça kalmadı',
+      glow: has && n ? 'holeGlow 1.6s ease-in-out infinite' : 'none',
+      badgeBg: has ? '#2c4fb8' : '#2b1b12', badgeBorder: has ? '#a9c2ff' : 'rgba(243,230,204,.45)',
+      chipBg: has ? 'rgba(44,79,184,.35)' : 'transparent', chipBorder: has ? '#7ea2f2' : 'rgba(243,230,204,.25)', fixHint: has ? '· Onar' : '',
+      openSheet: () => {},
+      cells: Array.from({ length: 64 }, (_, i) => { const m = s.holes.includes(i); return { bg: m ? 'repeating-linear-gradient(45deg,rgba(243,230,204,.35) 0 1.5px,#5b4a3c 1.5px 4px)' : 'transparent', ring: m ? 'inset 0 0 0 1px rgba(169,194,255,.9)' : 'none', flash: s.flash === i }; }),
+      use: can ? () => { const cell = s.holes[0]; this.setState({ stock: s.stock - 1, holes: s.holes.slice(1), flash: cell }); clearTimeout(this.t); this.t = setTimeout(() => this.setState({ flash: null }), 900); } : undefined,
+      cta: !n ? 'Tablo onarıldı ✓' : has ? 'Bir parçayı onar' : 'Rötuş kalmadı',
+      ctaBg: can ? 'linear-gradient(180deg,#e9bd5c,#d39d38)' : 'rgba(226,176,74,.22)', ctaShadow: can ? '0 4px 0 #8a5f1c' : 'none', ctaFg: can ? '#2b1b12' : 'rgba(243,230,204,.55)',
+      reset: () => this.setState({ stock: 2, holes: this.HOLES.slice(), flash: null })
+    };
+  }
+}
+</script>
+</body>
+</html>

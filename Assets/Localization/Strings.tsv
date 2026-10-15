@@ -1,0 +1,219 @@
+key	Turkish	English	French	German	Italian	PortugueseBR	Russian	Spanish
+common.cancel_button	Vazgeç	Cancel	Annuler	Abbrechen	Annulla	Cancelar	Отмена	Cancelar
+common.close_button	Kapat	Close	Fermer	Schließen	Chiudi	Fechar	Закрыть	Cerrar
+common.ok_button	Tamam	OK	OK	OK	OK	OK	ОК	Aceptar
+common.delete_button	Sil	Delete	Supprimer	Löschen	Elimina	Excluir	Удалить	Eliminar
+common.save_button	Kaydet	Save	Enregistrer	Speichern	Salva	Salvar	Сохранить	Guardar
+common.add_button	Ekle	Add	Ajouter	Hinzufügen	Aggiungi	Adicionar	Добавить	Añadir
+common.archive_button	Arşivle	Archive	Archiver	Archivieren	Archivia	Arquivar	В архив	Archivar
+common.unarchive_button	Geri al	Unarchive	Désarchiver	Wiederherstellen	Ripristina	Desarquivar	Из архива	Desarchivar
+common.restore_button	Geri yükle	Restore	Restaurer	Wiederherstellen	Ripristina	Restaurar	Восстановить	Restaurar
+common.reset_button	Sıfırla	Reset	Réinitialiser	Zurücksetzen	Reimposta	Redefinir	Сбросить	Restablecer
+nav.tab.workshop	Atölye	Studio	Atelier	Atelier	Studio	Ateliê	Студия	Estudio
+nav.tab.habits	Alışkanlıklar	Habits	Habitudes	Gewohnheiten	Abitudini	Hábitos	Привычки	Hábitos
+nav.tab.gallery	Galeri	Gallery	Galerie	Galerie	Galleria	Galeria	Галерея	Galería
+archive_sheet.title	Arşiv	Archive	Archive	Archiv	Archivio	Arquivo	Архив	Archivo
+archive_sheet.empty_state	Arşivde alışkanlık yok	No habits in the archive	Aucune habitude archivée	Keine Gewohnheiten im Archiv	Nessuna abitudine archiviata	Nenhum hábito no arquivo	В архиве нет привычек	No hay hábitos archivados
+category_picker.title	Kategori seç	Choose a category	Choisir une catégorie	Kategorie wählen	Scegli una categoria	Escolher categoria	Выберите категорию	Elegir categoría
+category_picker.create_row.placeholder	Kategori adı	Category name	Nom de la catégorie	Kategoriename	Nome categoria	Nome da categoria	Название категории	Nombre de categoría
+category_picker.confirm_button	Seç	Choose	Choisir	Auswählen	Scegli	Escolher	Выбрать	Elegir
+category_picker.create_chip_label	+ Kategori oluştur	+ Create category	+ Créer une catégorie	+ Kategorie erstellen	+ Crea categoria	+ Criar categoria	+ Создать категорию	+ Crear categoría
+category_picker.name_unavailable	Bu ad kullanılamaz	This name isn't available	Ce nom n'est pas disponible	Dieser Name ist nicht verfügbar	Questo nome non è disponibile	Esse nome não está disponível	Это имя недоступно	Este nombre no está disponible
+category_settings.title	Kategoriler ve filtreler	Categories and filters	Catégories et filtres	Kategorien und Filter	Categorie e filtri	Categorias e filtros	Категории и фильтры	Categorías y filtros
+category_settings.filters_caption	FİLTRELER	FILTERS	FILTRES	FILTER	FILTRI	FILTROS	ФИЛЬТРЫ	FILTROS
+category_settings.custom_caption	KENDİ KATEGORİLERİM	MY CATEGORIES	MES CATÉGORIES	MEINE KATEGORIEN	LE MIE CATEGORIE	MINHAS CATEGORIAS	МОИ КАТЕГОРИИ	MIS CATEGORÍAS
+category_settings.custom_empty_state	Henüz kendi kategorin yok	You don't have any categories yet	Vous n'avez pas encore de catégorie	Du hast noch keine eigene Kategorie	Non hai ancora nessuna categoria	Você ainda não tem categorias	У вас пока нет своих категорий	Aún no tienes categorías propias
+settings.delete_category_confirm_title	Kategoriyi sil	Delete category	Supprimer la catégorie	Kategorie löschen	Elimina categoria	Excluir categoria	Удалить категорию	Eliminar categoría
+settings.delete_category_confirm_body	"{0}" kategorisini kullanan alışkanlıklar "{1}"a taşınacak.	Habits using "{0}" will be moved to "{1}".	Les habitudes utilisant « {0} » seront déplacées vers « {1} ».	Gewohnheiten mit „{0}“ werden nach „{1}“ verschoben.	Le abitudini che usano "{0}" saranno spostate in "{1}".	Hábitos que usam "{0}" serão movidos para "{1}".	Привычки с категорией «{0}» будут перенесены в «{1}».	Los hábitos que usan "{0}" se moverán a "{1}".
+settings.reset_progress_title	İlerlemeyi sıfırla	Reset progress	Réinitialiser la progression	Fortschritt zurücksetzen	Reimposta i progressi	Redefinir progresso	Сбросить прогресс	Restablecer progreso
+settings.reset_progress_confirm_body	Bütün alışkanlıklar, tablolar ve galeri geri alınamaz şekilde silinecek.	All habits, paintings, and the gallery will be permanently deleted.	Toutes les habitudes, tableaux et la galerie seront définitivement supprimés.	Alle Gewohnheiten, Bilder und die Galerie werden unwiderruflich gelöscht.	Tutte le abitudini, i quadri e la galleria saranno eliminati definitivamente.	Todos os hábitos, quadros e a galeria serão excluídos permanentemente.	Все привычки, картины и галерея будут удалены без возможности восстановления.	Todos los hábitos, cuadros y la galería se eliminarán de forma permanente.
+settings.version_label	Painter Habits · sürüm {0}	Painter Habits · version {0}	Painter Habits · version {0}	Painter Habits · Version {0}	Painter Habits · versione {0}	Painter Habits · versão {0}	Painter Habits · версия {0}	Painter Habits · versión {0}
+gallery_panel.title	Galeri	Gallery	Galerie	Galerie	Galleria	Galeria	Галерея	Galería
+gallery_detail.plan_caption	PLAN	PLAN	PLAN	PLAN	PIANO	PLANO	ПЛАН	PLAN
+gallery_detail.works_caption	ESERLER	WORKS	ŒUVRES	WERKE	OPERE	OBRAS	РАБОТЫ	OBRAS
+gallery_detail.hero_label_quit	temiz gün	clean days	jours sans	saubere Tage	giorni puliti	dias limpos	чистых дней	días limpios
+gallery_detail.hero_label_build	gün yapıldı	days done	jours réalisés	Tage erledigt	giorni completati	dias concluídos	дней выполнено	días completados
+gallery_detail.sub_label	{0} · {1}	{0} · {1}	{0} · {1}	{0} · {1}	{0} · {1}	{0} · {1}	{0} · {1}	{0} · {1}
+gallery_detail.stat_current_streak	Şu anki seri	Current streak	Série actuelle	Aktuelle Serie	Serie attuale	Sequência atual	Текущая серия	Racha actual
+gallery_detail.stat_best_streak	En iyi seri	Best streak	Meilleure série	Beste Serie	Serie migliore	Melhor sequência	Лучшая серия	Mejor racha
+gallery_detail.stat_works	Eser	Works	Œuvres	Werke	Opere	Obras	Работы	Obras
+gallery_detail.stat_completion	Tamamlanma	Completion	Réussite	Abschluss	Completamento	Conclusão	Выполнение	Finalización
+gallery_detail.stat_miss_rate	Kaçırma	Missed	Manqué	Verpasst	Mancato	Perdido	Пропуски	Perdido
+gallery_detail.stat_days_per_work	Gün/eser	Days/work	Jours/œuvre	Tage/Werk	Giorni/opera	Dias/obra	Дней/работа	Días/obra
+gallery_detail.plan_days_per_week	Haftada {0} gün	{0} days a week	{0} jours par semaine	{0} Tage pro Woche	{0} giorni a settimana	{0} dias por semana	{0} дней в неделю	{0} días a la semana
+gallery_detail.plan_every_day	Her gün	Every day	Tous les jours	Jeden Tag	Ogni giorno	Todos os dias	Каждый день	Todos los días
+gallery_detail.works_count	{0} tamamlandı	{0} finished	{0} terminées	{0} fertig	{0} completate	{0} concluídas	{0} завершено	{0} terminadas
+gallery_detail.no_works_yet	Henüz eser yok	No works yet	Aucune œuvre encore	Noch keine Werke	Nessuna opera ancora	Nenhuma obra ainda	Пока нет работ	Aún no hay obras
+gallery_detail.streak_max	En büyük alev	Biggest flame	Plus grande flamme	Größte Flamme	Fiamma più grande	Maior chama	Самое большое пламя	Llama más grande
+gallery_detail.streak_next	Yeni alev: {0} gün	New flame: {0} days	Nouvelle flamme : {0} jours	Neue Flamme: {0} Tage	Nuova fiamma: {0} giorni	Nova chama: {0} dias	Новое пламя: {0} дней	Nueva llama: {0} días
+gallery_detail.missed_since	{0} gün kaçırıldı · {1} tarihinden beri	{0} days missed · since {1}	{0} jours manqués · depuis le {1}	{0} Tage verpasst · seit {1}	{0} giorni persi · dal {1}	{0} dias perdidos · desde {1}	{0} дней пропущено · с {1}	{0} días perdidos · desde {1}
+gallery_detail.missed_only	{0} gün kaçırıldı	{0} days missed	{0} jours manqués	{0} Tage verpasst	{0} giorni persi	{0} dias perdidos	{0} дней пропущено	{0} días perdidos
+gallery_detail.since_only	{0} tarihinden beri	Since {0}	Depuis le {0}	Seit {0}	Dal {0}	Desde {0}	С {0}	Desde {0}
+gallery_card.works_count	{0} eser	{0} works	{0} œuvres	{0} Werke	{0} opere	{0} obras	{0} работ	{0} obras
+gallery_tile.finished_sub_pieces	{0} parça	{0} pieces	{0} pièces	{0} Teile	{0} pezzi	{0} peças	{0} частей	{0} piezas
+gallery_tile.finished_sub_burned_suffix	 · {0} yandı	 · {0} burned	 · {0} brûlées	 · {0} verbrannt	 · {0} bruciati	 · {0} queimadas	 · {0} сгорело	 · {0} quemadas
+gallery_tile.in_progress_sub	Sürüyor · {0}/{1}	In progress · {0}/{1}	En cours · {0}/{1}	Läuft · {0}/{1}	In corso · {0}/{1}	Em andamento · {0}/{1}	В процессе · {0}/{1}	En curso · {0}/{1}
+gallery_viewer.meta_finished	{0} parça · {1}. eser	{0} pieces · work {1}	{0} pièces · œuvre {1}	{0} Teile · Werk {1}	{0} pezzi · opera {1}	{0} peças · obra {1}	{0} частей · работа {1}	{0} piezas · obra {1}
+gallery_viewer.meta_in_progress	{0} parça · şu an tuvalde	{0} pieces · currently on the easel	{0} pièces · en cours sur le chevalet	{0} Teile · gerade auf der Leinwand	{0} pezzi · attualmente sul cavalletto	{0} peças · atualmente no cavalete	{0} частей · сейчас на холсте	{0} piezas · ahora en el caballete
+gallery_viewer.status_finished	Tamamlandı	Finished	Terminé	Fertig	Completato	Concluído	Завершено	Terminado
+gallery_viewer.holes_count_label	{0} parça yandı	{0} pieces burned	{0} pièces brûlées	{0} Teile verbrannt	{0} pezzi bruciati	{0} peças queimadas	{0} частей сгорело	{0} piezas quemadas
+gallery_viewer.holes_repair_action	Onar	Repair	Réparer	Reparieren	Ripara	Reparar	Починить	Reparar
+rotus_restore.eyebrow	RÖTUŞ	RETOUCH	RETOUCHE	RETUSCHE	RITOCCO	RETOQUE	РЕТУШЬ	RETOQUE
+rotus_restore.title	Yanan parçaları onar	Repair the burned pieces	Réparer les pièces brûlées	Verbrannte Teile reparieren	Ripara i pezzi bruciati	Reparar as peças queimadas	Починить сгоревшие части	Reparar las piezas quemadas
+rotus_restore.sub_with_holes	{0} · {1} parça yanık	{0} · {1} pieces burned	{0} · {1} pièces brûlées	{0} · {1} Teile verbrannt	{0} · {1} pezzi bruciati	{0} · {1} peças queimadas	{0} · {1} частей сгорело	{0} · {1} piezas quemadas
+rotus_restore.sub_no_holes	Yanık parça kalmadı	No burned pieces left	Plus aucune pièce brûlée	Keine verbrannten Teile mehr	Nessun pezzo bruciato rimasto	Não há mais peças queimadas	Сгоревших частей не осталось	No quedan piezas quemadas
+rotus_restore.primary_can_repair	Bir parçayı onar	Repair one piece	Réparer une pièce	Ein Teil reparieren	Ripara un pezzo	Reparar uma peça	Починить одну часть	Reparar una pieza
+rotus_restore.primary_fully_repaired	Tablo onarıldı ✓	Painting repaired ✓	Tableau réparé ✓	Bild repariert ✓	Quadro riparato ✓	Quadro reparado ✓	Картина восстановлена ✓	Cuadro reparado ✓
+rotus_restore.primary_no_rotus	Rötuş kalmadı	No retouches left	Plus de retouches	Keine Retuschen mehr	Nessun ritocco rimasto	Não há mais retoques	Ретушей не осталось	No quedan retoques
+rotus_restore.body	Her rötuş yanan bir parçayı geri getirir. Elinde {0} rötuş var.	Each retouch brings back one burned piece. You have {0} retouches.	Chaque retouche restaure une pièce brûlée. Vous avez {0} retouches.	Jede Retusche bringt ein verbranntes Teil zurück. Du hast {0} Retuschen.	Ogni ritocco recupera un pezzo bruciato. Hai {0} ritocchi.	Cada retoque recupera uma peça queimada. Você tem {0} retoques.	Каждая ретушь восстанавливает одну сгоревшую часть. У вас {0} ретуши.	Cada retoque recupera una pieza quemada. Tienes {0} retoques.
+painting_choice.title	Sıradaki tablo	Next painting	Prochain tableau	Nächstes Bild	Prossimo quadro	Próximo quadro	Следующая картина	Siguiente cuadro
+painting_choice.confirm_button	Bu tabloyu seç	Choose this painting	Choisir ce tableau	Dieses Bild wählen	Scegli questo quadro	Escolher este quadro	Выбрать эту картину	Elegir este cuadro
+time_picker.title	Saat	Time	Heure	Uhrzeit	Ora	Horário	Время	Hora
+settings_panel.title	Ayarlar	Settings	Paramètres	Einstellungen	Impostazioni	Configurações	Настройки	Ajustes
+premium_card.title	Painter Premium	Painter Premium	Painter Premium	Painter Premium	Painter Premium	Painter Premium	Painter Premium	Painter Premium
+premium_card.perk.gallery_stats	Galerideki her alışkanlığın detaylı istatistikleri	Detailed stats for every habit in the gallery	Statistiques détaillées pour chaque habitude de la galerie	Detaillierte Statistiken für jede Gewohnheit in der Galerie	Statistiche dettagliate per ogni abitudine nella galleria	Estatísticas detalhadas de cada hábito na galeria	Подробная статистика по каждой привычке в галерее	Estadísticas detalladas de cada hábito en la galería
+premium_card.perk.export	Verilerini dışa aktarma	Export your data	Exporter vos données	Deine Daten exportieren	Esporta i tuoi dati	Exportar seus dados	Экспорт данных	Exportar tus datos
+premium_card.perk.support	Bağımsız bir geliştiriciye destek	Support an independent developer	Soutenir un développeur indépendant	Unterstütze einen unabhängigen Entwickler	Sostieni uno sviluppatore indipendente	Apoie um desenvolvedor independente	Поддержка независимого разработчика	Apoya a un desarrollador independiente
+premium_card.purchase_button	Premium'a geç	Upgrade to Premium	Passer à Premium	Auf Premium upgraden	Passa a Premium	Assinar o Premium	Перейти на Premium	Pasar a Premium
+premium_active.title	Premium aktif	Premium active	Premium actif	Premium aktiv	Premium attivo	Premium ativo	Premium активен	Premium activo
+premium_active.subtitle	Bağımsız bir geliştiriciye destek olduğun için teşekkürler	Thanks for supporting an independent developer	Merci de soutenir un développeur indépendant	Danke, dass du einen unabhängigen Entwickler unterstützt	Grazie per sostenere uno sviluppatore indipendente	Obrigado por apoiar um desenvolvedor independente	Спасибо за поддержку независимого разработчика	Gracias por apoyar a un desarrollador independiente
+settings_section.painter	Ressam	Painter	Peintre	Maler	Pittore	Pintor	Художник	Pintor
+settings_row.painter_name	Adı	Name	Nom	Name	Nome	Nome	Имя	Nombre
+settings_section.reminder	Hatırlatma	Reminder	Rappel	Erinnerung	Promemoria	Lembrete	Напоминание	Recordatorio
+settings_row.reminder_toggle	Günlük hatırlatma	Daily reminder	Rappel quotidien	Tägliche Erinnerung	Promemoria giornaliero	Lembrete diário	Ежедневное напоминание	Recordatorio diario
+settings_row.reminder_sublabel	Her gün aynı saatte	Same time every day	Chaque jour à la même heure	Jeden Tag zur gleichen Zeit	Ogni giorno alla stessa ora	Todos os dias no mesmo horário	Каждый день в одно время	Todos los días a la misma hora
+settings_row.reminder_time	Saat	Time	Heure	Uhrzeit	Ora	Horário	Время	Hora
+settings_section.experience	Deneyim	Experience	Expérience	Erlebnis	Esperienza	Experiência	Опыт использования	Experiencia
+settings_row.sound	Ses efektleri	Sound effects	Effets sonores	Soundeffekte	Effetti sonori	Efeitos sonoros	Звуковые эффекты	Efectos de sonido
+settings_row.haptics	Titreşim	Vibration	Vibration	Vibration	Vibrazione	Vibração	Вибрация	Vibración
+settings_section.calendar	Takvim	Calendar	Calendrier	Kalender	Calendario	Calendário	Календарь	Calendario
+settings_row.week_start	Hafta başlangıcı	Start of week	Début de semaine	Wochenbeginn	Inizio settimana	Início da semana	Начало недели	Inicio de semana
+settings_section.language	Dil	Language	Langue	Sprache	Lingua	Idioma	Язык	Idioma
+language_picker.title	Dil seç	Choose a language	Choisir une langue	Sprache wählen	Scegli una lingua	Escolher idioma	Выберите язык	Elegir idioma
+language_picker.confirm_button	Seç	Choose	Choisir	Auswählen	Scegli	Escolher	Выбрать	Elegir
+settings_section.categories	Kategoriler	Categories	Catégories	Kategorien	Categorie	Categorias	Категории	Categorías
+settings_section.data	Veri	Data	Données	Daten	Dati	Dados	Данные	Datos
+settings_row.export	Verileri dışa aktar	Export data	Exporter les données	Daten exportieren	Esporta dati	Exportar dados	Экспортировать данные	Exportar datos
+settings_row.import	Verileri içe aktar	Import data	Importer les données	Daten importieren	Importa dati	Importar dados	Импортировать данные	Importar datos
+settings_row.premium_badge	PREMIUM	PREMIUM	PREMIUM	PREMIUM	PREMIUM	PREMIUM	PREMIUM	PREMIUM
+workshop.toast_all_done	Hepsi tamam! Ruh hali +1	All done! Mood +1	Tout est fait ! Humeur +1	Alles erledigt! Stimmung +1	Tutto fatto! Umore +1	Tudo feito! Humor +1	Всё готово! Настроение +1	¡Todo listo! Ánimo +1
+workshop.toast_painting_finished	Tablo bitti! Galeriye eklendi	Painting finished! Added to the gallery	Tableau terminé ! Ajouté à la galerie	Bild fertig! Zur Galerie hinzugefügt	Quadro completato! Aggiunto alla galleria	Quadro concluído! Adicionado à galeria	Картина готова! Добавлена в галерею	¡Cuadro terminado! Añadido a la galería
+workshop.toast_rotus_earned	Rötuş kazandın! Galeride yanan bir parçayı onarabilirsin	You earned a retouch! You can repair a burned piece in the gallery	Vous avez gagné une retouche ! Vous pouvez réparer une pièce brûlée dans la galerie	Du hast eine Retusche verdient! Du kannst ein verbranntes Teil in der Galerie reparieren	Hai guadagnato un ritocco! Puoi riparare un pezzo bruciato nella galleria	Você ganhou um retoque! Pode reparar uma peça queimada na galeria	Вы получили ретушь! Можно починить сгоревшую часть в галерее	¡Ganaste un retoque! Puedes reparar una pieza quemada en la galería
+streak_celebration.eyebrow	YENİ ALEV	NEW FLAME	NOUVELLE FLAMME	NEUE FLAMME	NUOVA FIAMMA	NOVA CHAMA	НОВОЕ ПЛАМЯ	NUEVA LLAMA
+streak_celebration.title	{0} gün seri!	{0}-day streak!	Série de {0} jours !	{0} Tage Serie!	Serie di {0} giorni!	Sequência de {0} dias!	Серия {0} дней!	¡Racha de {0} días!
+streak_celebration.continue_button	Devam	Continue	Continuer	Weiter	Continua	Continuar	Продолжить	Continuar
+streak_celebration.max_tier_line	En büyük alevine ulaştın	You've reached your biggest flame	Vous avez atteint votre plus grande flamme	Du hast deine größte Flamme erreicht	Hai raggiunto la tua fiamma più grande	Você alcançou sua maior chama	Вы достигли самого большого пламени	Has alcanzado tu llama más grande
+streak_celebration.next_tier_line	Sonraki alev {0}. günde	Next flame on day {0}	Prochaine flamme au jour {0}	Nächste Flamme an Tag {0}	Prossima fiamma al giorno {0}	Próxima chama no dia {0}	Следующее пламя на {0}-й день	Próxima llama en el día {0}
+habit_sheet.title_new	Yeni alışkanlık	New habit	Nouvelle habitude	Neue Gewohnheit	Nuova abitudine	Novo hábito	Новая привычка	Nuevo hábito
+habit_sheet.title_edit	Düzenle	Edit	Modifier	Bearbeiten	Modifica	Editar	Изменить	Editar
+habit_sheet.section.title	Başlık	Title	Titre	Titel	Titolo	Título	Название	Título
+habit_sheet.title_input.placeholder	Örn. Su iç	e.g. Drink water	ex. Boire de l'eau	z. B. Wasser trinken	es. Bevi acqua	ex. Beber água	напр. Пить воду	ej. Beber agua
+habit_sheet.section.type	Tür	Type	Type	Art	Tipo	Tipo	Тип	Tipo
+habit_type.build	Yap	Build	Faire	Aufbauen	Crea	Construir	Выполнять	Crear
+habit_type.build_hint	Her gün yapınca tik at	Check it off every day you do it	Cochez chaque jour où vous le faites	Häkchen setzen, wenn du es jeden Tag machst	Spunta ogni giorno in cui la fai	Marque todos os dias em que você fizer	Отмечайте каждый день, когда выполняете	Márcalo cada día que lo hagas
+habit_type.build_pill	YAP	BUILD	FAIRE	AUFBAUEN	CREA	CONSTRUIR	ВЫПОЛНЯТЬ	CREAR
+habit_type.quit	Bırak	Quit	Arrêter	Aufhören	Smetti	Parar	Отказаться	Dejar
+habit_type.quit_hint	Yapmadığın gün tik at	Check it off on days you don't do it	Cochez les jours où vous ne le faites pas	Häkchen setzen an Tagen, an denen du es nicht machst	Spunta i giorni in cui non la fai	Marque os dias em que você não fizer	Отмечайте дни, когда не делаете этого	Márcalo los días que no lo hagas
+habit_type.quit_pill	BIRAK	QUIT	ARRÊTER	AUFHÖREN	SMETTI	PARAR	ОТКАЗАТЬСЯ	DEJAR
+habit_sheet.section.category	Kategori	Category	Catégorie	Kategorie	Categoria	Categoria	Категория	Categoría
+habit_sheet.section.days	Günler	Days	Jours	Tage	Giorni	Dias	Дни	Días
+habit_sheet.days_hint	Seçilmezse her gün	Every day if none selected	Tous les jours si aucun n'est sélectionné	Jeden Tag, wenn keiner ausgewählt ist	Ogni giorno se nessuno è selezionato	Todos os dias se nenhum for selecionado	Каждый день, если ничего не выбрано	Todos los días si no se selecciona ninguno
+habit_sheet.days_hint_selected	{0} gün seçili	{0} days selected	{0} jours sélectionnés	{0} Tage ausgewählt	{0} giorni selezionati	{0} dias selecionados	{0} дней выбрано	{0} días seleccionados
+habit_sheet.section.canvas	Tuval	Canvas	Toile	Leinwand	Tela	Tela	Холст	Lienzo
+habit_sheet.section.end_date	Bitiş tarihi	End date	Date de fin	Enddatum	Data di fine	Data de término	Дата окончания	Fecha de fin
+habit_sheet.end_date_input.placeholder	YYYY-AA-GG	YYYY-MM-DD	AAAA-MM-JJ	JJJJ-MM-TT	AAAA-MM-GG	AAAA-MM-DD	ГГГГ-ММ-ДД	AAAA-MM-DD
+habit_sheet.section.painting	Tablo	Painting	Tableau	Bild	Quadro	Quadro	Картина	Cuadro
+habits_panel.new_habit_button	+  Yeni alışkanlık	+  New habit	+  Nouvelle habitude	+  Neue Gewohnheit	+  Nuova abitudine	+  Novo hábito	+  Новая привычка	+  Nuevo hábito
+habits.archive_count_label	Arşiv ({0})	Archive ({0})	Archive ({0})	Archiv ({0})	Archivio ({0})	Arquivo ({0})	Архив ({0})	Archivo ({0})
+habits.active_count_label	{0} aktif	{0} active	{0} actives	{0} aktiv	{0} attive	{0} ativos	{0} активных	{0} activos
+archive_sheet.row_streak	seri {0}	streak {0}	série {0}	Serie {0}	serie {0}	sequência {0}	серия {0}	racha {0}
+painting.random_label	Rastgele	Random	Aléatoire	Zufällig	Casuale	Aleatório	Случайно	Aleatorio
+filter.all_label	Tümü	All	Tous	Alle	Tutte	Todos	Все	Todos
+habit_card.streak_label	{0} gün · en iyi {1}	{0} days · best {1}	{0} jours · meilleur {1}	{0} Tage · bester {1}	{0} giorni · migliore {1}	{0} dias · melhor {1}	{0} дней · лучшая {1}	{0} días · mejor {1}
+mood.ultra_rich	Çok zengin	Thriving	Épanoui	Blühend	Florido	Radiante	Процветает	Próspero
+mood.rich	Zengin	Great	Bien	Gut	Bene	Bem	Хорошо	Bien
+mood.happy	Mutlu	Happy	Heureux	Glücklich	Felice	Feliz	Счастлив	Feliz
+mood.sad	Üzgün	Sad	Triste	Traurig	Triste	Triste	Печален	Triste
+mood.starve	Aç	Starving	Affamé	Hungrig	Affamato	Faminto	Голоден	Hambriento
+mood.normal	Normal	Normal	Normal	Normal	Normale	Normal	Обычно	Normal
+canvas_size.piece_count_label	{0} parça	{0} pieces	{0} pièces	{0} Teile	{0} pezzi	{0} peças	{0} частей	{0} piezas
+canvas_size.hint_short	Kısa	Short	Court	Kurz	Corto	Curto	Короткий	Corto
+canvas_size.hint_medium	Orta	Medium	Moyen	Mittel	Medio	Médio	Средний	Medio
+canvas_size.hint_long	Uzun	Long	Long	Lang	Lungo	Longo	Длинный	Largo
+save_transfer.error.clipboard_empty	Pano boş görünüyor.	The clipboard looks empty.	Le presse-papiers semble vide.	Die Zwischenablage scheint leer zu sein.	Gli appunti sembrano vuoti.	A área de transferência parece vazia.	Буфер обмена пуст.	El portapapeles parece estar vacío.
+save_transfer.error.not_habittracker_backup	Bu metin bir HabitTracker yedeği değil.	This text isn't a HabitTracker backup.	Ce texte n'est pas une sauvegarde HabitTracker.	Dieser Text ist keine HabitTracker-Sicherung.	Questo testo non è un backup di HabitTracker.	Esse texto não é um backup do HabitTracker.	Этот текст не является резервной копией HabitTracker.	Este texto no es una copia de seguridad de HabitTracker.
+save_transfer.error.backup_corrupt	Yedek bozuk görünüyor.	The backup looks corrupted.	La sauvegarde semble corrompue.	Die Sicherung scheint beschädigt zu sein.	Il backup sembra danneggiato.	O backup parece corrompido.	Резервная копия повреждена.	La copia de seguridad parece estar dañada.
+save_transfer.error.backup_too_new	Yedek daha yeni bir sürümden -- uygulamayı güncelle.	The backup is from a newer version -- update the app.	La sauvegarde provient d'une version plus récente -- mettez à jour l'application.	Die Sicherung stammt von einer neueren Version -- aktualisiere die App.	Il backup proviene da una versione più recente -- aggiorna l'app.	O backup é de uma versão mais recente -- atualize o aplicativo.	Резервная копия создана в более новой версии -- обновите приложение.	La copia de seguridad es de una versión más reciente -- actualiza la app.
+save_transfer.error.backup_incomplete	Yedek eksik görünüyor.	The backup looks incomplete.	La sauvegarde semble incomplète.	Die Sicherung scheint unvollständig zu sein.	Il backup sembra incompleto.	O backup parece incompleto.	Резервная копия неполная.	La copia de seguridad parece incompleta.
+save_transfer.describe.summary	{0} alışkanlık, {1} eser, {2} rotus -- {3} tarihli yedek	{0} habits, {1} works, {2} retouches -- backup from {3}	{0} habitudes, {1} œuvres, {2} retouches -- sauvegarde du {3}	{0} Gewohnheiten, {1} Werke, {2} Retuschen -- Sicherung vom {3}	{0} abitudini, {1} opere, {2} ritocchi -- backup del {3}	{0} hábitos, {1} obras, {2} retoques -- backup de {3}	{0} привычек, {1} работ, {2} ретушей -- резервная копия от {3}	{0} hábitos, {1} obras, {2} retoques -- copia de seguridad del {3}
+save_transfer.describe.library_mismatch	Bu cihazın tablo kütüphanesi farklı: {0} eser/tablo yeniden atanacak.	This device's painting library is different: {0} works/paintings will be reassigned.	La bibliothèque de tableaux de cet appareil est différente : {0} œuvres/tableaux seront réattribués.	Die Bilderbibliothek dieses Geräts ist anders: {0} Werke/Bilder werden neu zugewiesen.	La libreria di quadri di questo dispositivo è diversa: {0} opere/quadri saranno riassegnati.	A biblioteca de quadros deste dispositivo é diferente: {0} obras/quadros serão reatribuídos.	Библиотека картин на этом устройстве отличается: {0} работ/картин будут переназначены.	La biblioteca de cuadros de este dispositivo es diferente: {0} obras/cuadros se reasignarán.
+native_file.error.backup_not_found	Kaydedilecek yedek dosyası bulunamadı.	The backup file to save wasn't found.	Le fichier de sauvegarde à enregistrer n'a pas été trouvé.	Die zu speichernde Sicherungsdatei wurde nicht gefunden.	Il file di backup da salvare non è stato trovato.	O arquivo de backup a ser salvo não foi encontrado.	Файл резервной копии для сохранения не найден.	No se encontró el archivo de copia de seguridad para guardar.
+native_file.error.save_dialog_failed	Dosya kaydetme penceresi açılamadı.	The save dialog couldn't be opened.	La fenêtre d'enregistrement n'a pas pu s'ouvrir.	Der Speicherdialog konnte nicht geöffnet werden.	La finestra di salvataggio non si è aperta.	A janela de salvar arquivo não pôde ser aberta.	Не удалось открыть окно сохранения файла.	No se pudo abrir la ventana para guardar el archivo.
+native_file.error.temp_path_failed	Geçici dosya yolu hazırlanamadı.	The temporary file path couldn't be prepared.	Le chemin de fichier temporaire n'a pas pu être préparé.	Der temporäre Dateipfad konnte nicht vorbereitet werden.	Il percorso del file temporaneo non è stato preparato.	O caminho do arquivo temporário não pôde ser preparado.	Не удалось подготовить путь к временному файлу.	No se pudo preparar la ruta del archivo temporal.
+native_file.error.pick_dialog_failed	Dosya seçme penceresi açılamadı.	The file picker couldn't be opened.	Le sélecteur de fichier n'a pas pu s'ouvrir.	Der Dateiauswahldialog konnte nicht geöffnet werden.	Il selettore file non si è aperto.	O seletor de arquivos não pôde ser aberto.	Не удалось открыть окно выбора файла.	No se pudo abrir el selector de archivos.
+native_file.error.no_picker_on_device	Bu cihazda dosya seçici yok.	This device has no file picker.	Cet appareil n'a pas de sélecteur de fichier.	Dieses Gerät hat keinen Dateiauswahldialog.	Questo dispositivo non ha un selettore file.	Este dispositivo não tem um seletor de arquivos.	На этом устройстве нет средства выбора файлов.	Este dispositivo no tiene selector de archivos.
+native_file.error.operation_in_progress	Başka bir dosya işlemi sürüyor.	Another file operation is in progress.	Une autre opération de fichier est en cours.	Ein anderer Dateivorgang läuft bereits.	È in corso un'altra operazione sui file.	Outra operação de arquivo está em andamento.	Выполняется другая операция с файлом.	Hay otra operación de archivo en curso.
+native_file.error.result_unreadable	Dosya işleminin sonucu okunamadı.	The file operation's result couldn't be read.	Le résultat de l'opération de fichier n'a pas pu être lu.	Das Ergebnis des Dateivorgangs konnte nicht gelesen werden.	Il risultato dell'operazione sul file non è leggibile.	O resultado da operação de arquivo não pôde ser lido.	Не удалось прочитать результат операции с файлом.	No se pudo leer el resultado de la operación de archivo.
+native_file.error.operation_failed_generic	Dosya işlemi tamamlanamadı.	The file operation couldn't be completed.	L'opération de fichier n'a pas pu être terminée.	Der Dateivorgang konnte nicht abgeschlossen werden.	L'operazione sul file non è stata completata.	A operação de arquivo não pôde ser concluída.	Не удалось выполнить операцию с файлом.	No se pudo completar la operación de archivo.
+native_file.error.write_failed	Yedek seçilen yere yazılamadı.	The backup couldn't be written to the chosen location.	La sauvegarde n'a pas pu être écrite à l'emplacement choisi.	Die Sicherung konnte nicht am gewählten Ort gespeichert werden.	Il backup non è stato scritto nella posizione scelta.	O backup não pôde ser gravado no local escolhido.	Не удалось записать резервную копию в выбранное место.	No se pudo escribir la copia de seguridad en la ubicación elegida.
+native_file.error.read_failed	Seçilen dosya okunamadı.	The chosen file couldn't be read.	Le fichier choisi n'a pas pu être lu.	Die gewählte Datei konnte nicht gelesen werden.	Il file scelto non è leggibile.	O arquivo escolhido não pôde ser lido.	Не удалось прочитать выбранный файл.	No se pudo leer el archivo elegido.
+native_file.error.no_picker_found	Bu cihazda dosya seçici bulunamadı.	No file picker was found on this device.	Aucun sélecteur de fichier trouvé sur cet appareil.	Auf diesem Gerät wurde kein Dateiauswahldialog gefunden.	Nessun selettore file trovato su questo dispositivo.	Nenhum seletor de arquivos foi encontrado neste dispositivo.	На этом устройстве не найдено средство выбора файлов.	No se encontró selector de archivos en este dispositivo.
+save_export.error.write_failed	Yedek ne panoya ne cihaza yazılabildi.	The backup couldn't be written to the clipboard or the device.	La sauvegarde n'a pu être écrite ni dans le presse-papiers ni sur l'appareil.	Die Sicherung konnte weder in die Zwischenablage noch auf das Gerät geschrieben werden.	Il backup non è stato scritto né negli appunti né sul dispositivo.	O backup não pôde ser salvo na área de transferência nem no dispositivo.	Резервную копию не удалось записать ни в буфер обмена, ни на устройство.	No se pudo escribir la copia de seguridad ni en el portapapeles ni en el dispositivo.
+save_export.error.no_backup_on_device	Cihazda kayıtlı bir yedek yok.	There's no saved backup on this device.	Il n'y a pas de sauvegarde enregistrée sur cet appareil.	Es gibt keine gespeicherte Sicherung auf diesem Gerät.	Non c'è nessun backup salvato su questo dispositivo.	Não há backup salvo neste dispositivo.	На этом устройстве нет сохранённой резервной копии.	No hay copia de seguridad guardada en este dispositivo.
+save_export.error.backup_file_unreadable	Yedek dosyası okunamadı.	The backup file couldn't be read.	Le fichier de sauvegarde n'a pas pu être lu.	Die Sicherungsdatei konnte nicht gelesen werden.	Il file di backup non è leggibile.	O arquivo de backup não pôde ser lido.	Не удалось прочитать файл резервной копии.	No se pudo leer el archivo de copia de seguridad.
+save_export.error.empty_path	Dosya yolu boş.	The file path is empty.	Le chemin du fichier est vide.	Der Dateipfad ist leer.	Il percorso del file è vuoto.	O caminho do arquivo está vazio.	Путь к файлу пуст.	La ruta del archivo está vacía.
+reminder.channel_name	Hatırlatıcılar	Reminders	Rappels	Erinnerungen	Promemoria	Lembretes	Напоминания	Recordatorios
+reminder.channel_description	Günlük fırçanı bekleyen hatırlatmalar.	Reminders waiting for your daily brushstroke.	Rappels en attente de votre coup de pinceau quotidien.	Erinnerungen, die auf deinen täglichen Pinselstrich warten.	Promemoria che aspettano la tua pennellata quotidiana.	Lembretes esperando sua pincelada diária.	Напоминания, ждущие вашего ежедневного мазка кистью.	Recordatorios esperando tu pincelada diaria.
+reminder.notification_title	{0} fırçayı bekliyor	{0} is waiting for the brush	{0} attend le pinceau	{0} wartet auf den Pinsel	{0} aspetta il pennello	{0} está esperando o pincel	{0} ждёт кисть	{0} espera el pincel
+reminder.notification_text	Her gün aynı saatte -- bugünkü tuvaline bir dokunuş daha.	Same time every day -- one more touch on today's canvas.	Chaque jour à la même heure -- une touche de plus sur votre toile du jour.	Jeden Tag zur gleichen Zeit -- noch ein Pinselstrich auf deiner heutigen Leinwand.	Ogni giorno alla stessa ora -- un altro tocco sulla tua tela di oggi.	Todos os dias no mesmo horário -- mais um toque na sua tela de hoje.	Каждый день в одно время -- ещё один штрих на сегодняшнем холсте.	Todos los días a la misma hora -- un toque más en tu lienzo de hoy.
+data.export_failed_title	Dışa aktarılamadı	Couldn't export	Impossible d'exporter	Export fehlgeschlagen	Esportazione non riuscita	Não foi possível exportar	Не удалось экспортировать	No se pudo exportar
+data.backup_ready_title	Yedek hazır	Backup ready	Sauvegarde prête	Sicherung bereit	Backup pronto	Backup pronto	Резервная копия готова	Copia de seguridad lista
+data.backup_saved_title	Yedek kaydedildi	Backup saved	Sauvegarde enregistrée	Sicherung gespeichert	Backup salvato	Backup salvo	Резервная копия сохранена	Copia de seguridad guardada
+data.backup_saved_body	{0} alışkanlık {1} KB olarak kaydedildi: {2}	{0} habits saved as {1} KB: {2}	{0} habitudes enregistrées, {1} Ko : {2}	{0} Gewohnheiten als {1} KB gespeichert: {2}	{0} abitudini salvate, {1} KB: {2}	{0} hábitos salvos, {1} KB: {2}	{0} привычек сохранено, {1} КБ: {2}	{0} hábitos guardados, {1} KB: {2}
+data.backup_copied_title	Yedek panoya kopyalandı	Backup copied to clipboard	Sauvegarde copiée dans le presse-papiers	Sicherung in die Zwischenablage kopiert	Backup copiato negli appunti	Backup copiado para a área de transferência	Резервная копия скопирована в буфер обмена	Copia de seguridad copiada al portapapeles
+data.save_cancelled_suffix	Dosyaya kaydetme iptal edildi.	Saving to file was cancelled.	L'enregistrement du fichier a été annulé.	Das Speichern in eine Datei wurde abgebrochen.	Il salvataggio su file è stato annullato.	O salvamento em arquivo foi cancelado.	Сохранение в файл отменено.	Se canceló el guardado en archivo.
+data.import_failed_title	İçe aktarılamadı	Couldn't import	Impossible d'importer	Import fehlgeschlagen	Importazione non riuscita	Não foi possível importar	Не удалось импортировать	No se pudo importar
+data.restore_confirm_suffix	Mevcut bütün veriler silinip bu yedekle değiştirilecek.	All current data will be deleted and replaced with this backup.	Toutes les données actuelles seront supprimées et remplacées par cette sauvegarde.	Alle aktuellen Daten werden gelöscht und durch diese Sicherung ersetzt.	Tutti i dati attuali saranno eliminati e sostituiti con questo backup.	Todos os dados atuais serão excluídos e substituídos por este backup.	Все текущие данные будут удалены и заменены этой резервной копией.	Se eliminarán todos los datos actuales y se sustituirán por esta copia de seguridad.
+data.restore_confirm_title	Yedeği geri yükle	Restore backup	Restaurer la sauvegarde	Sicherung wiederherstellen	Ripristina backup	Restaurar backup	Восстановить резервную копию	Restaurar copia de seguridad
+data.clipboard_copied_body	{0} alışkanlık panoya kopyalandı ({1} KB).	{0} habits copied to the clipboard ({1} KB).	{0} habitudes copiées dans le presse-papiers ({1} Ko).	{0} Gewohnheiten in die Zwischenablage kopiert ({1} KB).	{0} abitudini copiate negli appunti ({1} KB).	{0} hábitos copiados para a área de transferência ({1} KB).	{0} привычек скопировано в буфер обмена ({1} КБ).	{0} hábitos copiados al portapapeles ({1} KB).
+data.recovery_copy_suffix	Cihazda ayrıca bir kurtarma kopyası saklandı: {0}	A recovery copy was also saved on the device: {0}	Une copie de secours a aussi été enregistrée sur l'appareil : {0}	Auf dem Gerät wurde zusätzlich eine Wiederherstellungskopie gespeichert: {0}	Sul dispositivo è stata salvata anche una copia di recupero: {0}	Uma cópia de recuperação também foi salva no dispositivo: {0}	На устройстве также сохранена копия для восстановления: {0}	También se guardó una copia de recuperación en el dispositivo: {0}
+category.nutrition	Beslenme	Nutrition	Nutrition	Ernährung	Nutrizione	Nutrição	Питание	Nutrición
+category.finance	Finans	Finance	Finances	Finanzen	Finanze	Finanças	Финансы	Finanzas
+category.fitness	Fitness	Fitness	Fitness	Fitness	Fitness	Fitness	Фитнес	Fitness
+category.art	Sanat	Art	Art	Kunst	Arte	Arte	Искусство	Arte
+category.health	Sağlık	Health	Santé	Gesundheit	Salute	Saúde	Здоровье	Salud
+category.social	Sosyal	Social	Social	Sozial	Sociale	Social	Общение	Social
+category.study	Çalışma	Study	Étude	Lernen	Studio	Estudo	Учёба	Estudio
+category.work	İş	Work	Travail	Arbeit	Lavoro	Trabalho	Работа	Trabajo
+category.other	Diğer	Other	Autre	Sonstiges	Altro	Outro	Другое	Otro
+category.morning	Sabah	Morning	Matin	Morgen	Mattina	Manhã	Утро	Mañana
+category.day	Gün	Day	Jour	Tag	Giorno	Dia	День	Día
+category.evening	Akşam	Evening	Soir	Abend	Sera	Noite	Вечер	Noche
+category.mind	Zihin	Mind	Esprit	Geist	Mente	Mente	Разум	Mente
+category.productivity	Üretkenlik	Productivity	Productivité	Produktivität	Produttività	Produtividade	Продуктивность	Productividad
+weekday.0.short	Pt	Mo	Lu	Mo	Lu	Seg	Пн	Lu
+weekday.0.initial	P	M	L	M	L	S	П	L
+weekday.1.short	Sa	Tu	Ma	Di	Ma	Ter	Вт	Ma
+weekday.1.initial	S	T	M	D	M	T	В	M
+weekday.2.short	Ça	We	Me	Mi	Me	Qua	Ср	Mi
+weekday.2.initial	Ç	W	M	M	M	Q	С	M
+weekday.3.short	Pe	Th	Je	Do	Gi	Qui	Чт	Ju
+weekday.3.initial	P	T	J	D	G	Q	Ч	J
+weekday.4.short	Cu	Fr	Ve	Fr	Ve	Sex	Пт	Vi
+weekday.4.initial	C	F	V	F	V	S	П	V
+weekday.5.short	Ct	Sa	Sa	Sa	Sa	Sáb	Сб	Sá
+weekday.5.initial	C	S	S	S	S	S	С	S
+weekday.6.short	Pz	Su	Di	So	Do	Dom	Вс	Do
+weekday.6.initial	P	S	D	S	D	D	В	D
+month.1	Oca	Jan	Jan	Jan	Gen	Jan	янв	Ene
+month.2	Şub	Feb	Fév	Feb	Feb	Fev	фев	Feb
+month.3	Mar	Mar	Mar	Mär	Mar	Mar	мар	Mar
+month.4	Nis	Apr	Avr	Apr	Apr	Abr	апр	Abr
+month.5	May	May	Mai	Mai	Mag	Mai	май	May
+month.6	Haz	Jun	Jun	Jun	Giu	Jun	июн	Jun
+month.7	Tem	Jul	Jul	Jul	Lug	Jul	июл	Jul
+month.8	Ağu	Aug	Aoû	Aug	Ago	Ago	авг	Ago
+month.9	Eyl	Sep	Sep	Sep	Set	Set	сен	Sep
+month.10	Eki	Oct	Oct	Okt	Ott	Out	окт	Oct
+month.11	Kas	Nov	Nov	Nov	Nov	Nov	ноя	Nov
+month.12	Ara	Dec	Déc	Dez	Dic	Dez	дек	Dic

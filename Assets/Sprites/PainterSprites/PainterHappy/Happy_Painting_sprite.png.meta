@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: 48960c788ed2af54db5ebe4b86b610ae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6090694531093409836
+    second: Happy_Painting_sprite_0
+  - first:
+      213: 5070181288431088770
+    second: Happy_Painting_sprite_1
+  - first:
+      213: 7326633070329864021
+    second: Happy_Painting_sprite_2
+  - first:
+      213: 341038853157318603
+    second: Happy_Painting_sprite_3
+  - first:
+      213: -2343279070445573385
+    second: Happy_Painting_sprite_4
+  - first:
+      213: -3994270714440630158
+    second: Happy_Painting_sprite_5
+  - first:
+      213: 6337004990385865288
+    second: Happy_Painting_sprite_6
+  - first:
+      213: 113628623728550508
+    second: Happy_Painting_sprite_7
+  - first:
+      213: -999224890324688146
+    second: Happy_Painting_sprite_8
+  - first:
+      213: -7954252609372577048
+    second: Happy_Painting_sprite_9
+  - first:
+      213: -8732489737366781331
+    second: Happy_Painting_sprite_10
+  - first:
+      213: 3471043775093699994
+    second: Happy_Painting_sprite_11
+  - first:
+      213: 4435467665831352712
+    second: Happy_Painting_sprite_12
+  - first:
+      213: 2928728978133935367
+    second: Happy_Painting_sprite_13
+  - first:
+      213: 1776496855546259529
+    second: Happy_Painting_sprite_14
+  - first:
+      213: -3016496615146928780
+    second: Happy_Painting_sprite_15
+  - first:
+      213: -5477745745044719206
+    second: Happy_Painting_sprite_16
+  - first:
+      213: -4039759891573965372
+    second: Happy_Painting_sprite_17
+  - first:
+      213: 1285767926193448296
+    second: Happy_Painting_sprite_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Happy_Painting_sprite_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c20bc39f76e768450800000000000000
+      internalID: 6090694531093409836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Happy_Painting_sprite_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28474c3d407ec5640800000000000000
+      internalID: 5070181288431088770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Happy_Painting_sprite_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55f14a495fd6da560800000000000000
+      internalID: 7326633070329864021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Happy_Painting_sprite_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcf6c01b70d9bb400800000000000000
+      internalID: 341038853157318603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Happy_Painting_sprite_4
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 0
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7faeb74c9100b7fd0800000000000000
+      internalID: -2343279070445573385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Happy_Painting_sprite_5
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 0
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2704501a2ff7198c0800000000000000
+      internalID: -3994270714440630158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Happy_Painting_sprite_6
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 0
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 842c3dfb67091f750800000000000000
+      internalID: 6337004990385865288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Happy_Painting_sprite_7
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 0
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6228a991a0b39100800000000000000
+      internalID: 113628623728550508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Happy_Painting_sprite_8
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 0
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee2e771a14a0222f0800000000000000
+      internalID: -999224890324688146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Happy_Painting_sprite_9
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 0
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e2af9c2561dc9190800000000000000
+      internalID: -7954252609372577048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Happy_Painting_sprite_10
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 0
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d62428fb9d6ffc680800000000000000
+      internalID: -8732489737366781331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Happy_Painting_sprite_11
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 0
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a957a4e4cef9b2030800000000000000
+      internalID: 3471043775093699994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Happy_Painting_sprite_12
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 889db9a8752fd8d30800000000000000
+      internalID: 4435467665831352712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Happy_Painting_sprite_13
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 0
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 705e0111d7fe4a820800000000000000
+      internalID: 2928728978133935367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Happy_Painting_sprite_14
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 0
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 948ee635a7267a810800000000000000
+      internalID: 1776496855546259529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Happy_Painting_sprite_15
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 0
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 475cff38f404326d0800000000000000
+      internalID: -3016496615146928780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Happy_Painting_sprite_16
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 0
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a99b3b864432bf3b0800000000000000
+      internalID: -5477745745044719206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Happy_Painting_sprite_17
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 0
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cdfcdc38c3efe7c0800000000000000
+      internalID: -4039759891573965372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Happy_Painting_sprite_18
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 0
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 865e958dd17f7d110800000000000000
+      internalID: 1285767926193448296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Happy_Painting_sprite_0: 6090694531093409836
+      Happy_Painting_sprite_1: 5070181288431088770
+      Happy_Painting_sprite_10: -8732489737366781331
+      Happy_Painting_sprite_11: 3471043775093699994
+      Happy_Painting_sprite_12: 4435467665831352712
+      Happy_Painting_sprite_13: 2928728978133935367
+      Happy_Painting_sprite_14: 1776496855546259529
+      Happy_Painting_sprite_15: -3016496615146928780
+      Happy_Painting_sprite_16: -5477745745044719206
+      Happy_Painting_sprite_17: -4039759891573965372
+      Happy_Painting_sprite_18: 1285767926193448296
+      Happy_Painting_sprite_2: 7326633070329864021
+      Happy_Painting_sprite_3: 341038853157318603
+      Happy_Painting_sprite_4: -2343279070445573385
+      Happy_Painting_sprite_5: -3994270714440630158
+      Happy_Painting_sprite_6: 6337004990385865288
+      Happy_Painting_sprite_7: 113628623728550508
+      Happy_Painting_sprite_8: -999224890324688146
+      Happy_Painting_sprite_9: -7954252609372577048
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

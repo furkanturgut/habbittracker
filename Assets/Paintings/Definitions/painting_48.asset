@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc90a59f7fa9d424d82ebec013720218, type: 3}
+  m_Name: painting_48
+  m_EditorClassIdentifier: 
+  id: painting_48
+  displayName: Naturmort
+  sprite: {fileID: 21300000, guid: 981ea6330ae2eae44b86936fccd270dc, type: 3}
+  resolution: 64
+  revealOrder: 1
+  revealMode: 1

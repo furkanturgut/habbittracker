@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: 96f7569b3c71f1e418acec2f2f89474d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6154924315745457815
+    second: Rich_Painting_sprite_0
+  - first:
+      213: 6779185878857742848
+    second: Rich_Painting_sprite_1
+  - first:
+      213: 5273793674500695661
+    second: Rich_Painting_sprite_2
+  - first:
+      213: 6907021879405289088
+    second: Rich_Painting_sprite_3
+  - first:
+      213: 1544967723351411816
+    second: Rich_Painting_sprite_4
+  - first:
+      213: -56854530279997531
+    second: Rich_Painting_sprite_5
+  - first:
+      213: -1738295745971813240
+    second: Rich_Painting_sprite_6
+  - first:
+      213: -6049409685800336871
+    second: Rich_Painting_sprite_7
+  - first:
+      213: -5565299538072314949
+    second: Rich_Painting_sprite_8
+  - first:
+      213: 1815632792251195887
+    second: Rich_Painting_sprite_9
+  - first:
+      213: 3642324469053985396
+    second: Rich_Painting_sprite_10
+  - first:
+      213: -7010702950629664972
+    second: Rich_Painting_sprite_11
+  - first:
+      213: -8926905686216829694
+    second: Rich_Painting_sprite_12
+  - first:
+      213: -8350909199683208391
+    second: Rich_Painting_sprite_13
+  - first:
+      213: -6841639342136842886
+    second: Rich_Painting_sprite_14
+  - first:
+      213: 521031188515280638
+    second: Rich_Painting_sprite_15
+  - first:
+      213: 6537500293505282868
+    second: Rich_Painting_sprite_16
+  - first:
+      213: 1032633012010604703
+    second: Rich_Painting_sprite_17
+  - first:
+      213: -6623157874444555783
+    second: Rich_Painting_sprite_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rich_Painting_sprite_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 969e39ce1f0559aa0800000000000000
+      internalID: -6154924315745457815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rich_Painting_sprite_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00af8af93a1841e50800000000000000
+      internalID: 6779185878857742848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rich_Painting_sprite_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d66e05bb767403940800000000000000
+      internalID: 5273793674500695661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rich_Painting_sprite_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08e9dc9edcbaadf50800000000000000
+      internalID: 6907021879405289088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rich_Painting_sprite_4
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 0
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86c0ec375f3d07510800000000000000
+      internalID: 1544967723351411816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rich_Painting_sprite_5
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 0
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aff9ce1b13063ff0800000000000000
+      internalID: -56854530279997531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rich_Painting_sprite_6
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 0
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88407ca9a3550e7e0800000000000000
+      internalID: -1738295745971813240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rich_Painting_sprite_7
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 0
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 912401121fd2c0ca0800000000000000
+      internalID: -6049409685800336871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rich_Painting_sprite_8
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 0
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbbdd8c6e8514c2b0800000000000000
+      internalID: -5565299538072314949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rich_Painting_sprite_9
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 0
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe1eea8a76c623910800000000000000
+      internalID: 1815632792251195887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rich_Painting_sprite_10
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 0
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4721da68ec22c8230800000000000000
+      internalID: 3642324469053985396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rich_Painting_sprite_11
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 0
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4379fe98fcaf4be90800000000000000
+      internalID: -7010702950629664972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rich_Painting_sprite_12
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20591ad33924d1480800000000000000
+      internalID: -8926905686216829694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rich_Painting_sprite_13
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 0
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b3751f35c9b1c80800000000000000
+      internalID: -8350909199683208391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rich_Painting_sprite_14
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 0
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a75a892544d9d01a0800000000000000
+      internalID: -6841639342136842886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rich_Painting_sprite_15
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 0
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef65a5cfa131b3700800000000000000
+      internalID: 521031188515280638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rich_Painting_sprite_16
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 0
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 433f46931edd9ba50800000000000000
+      internalID: 6537500293505282868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rich_Painting_sprite_17
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 0
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f98db38d046a45e00800000000000000
+      internalID: 1032633012010604703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rich_Painting_sprite_18
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 0
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f9a6621101d514a0800000000000000
+      internalID: -6623157874444555783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Rich_Painting_sprite_0: -6154924315745457815
+      Rich_Painting_sprite_1: 6779185878857742848
+      Rich_Painting_sprite_10: 3642324469053985396
+      Rich_Painting_sprite_11: -7010702950629664972
+      Rich_Painting_sprite_12: -8926905686216829694
+      Rich_Painting_sprite_13: -8350909199683208391
+      Rich_Painting_sprite_14: -6841639342136842886
+      Rich_Painting_sprite_15: 521031188515280638
+      Rich_Painting_sprite_16: 6537500293505282868
+      Rich_Painting_sprite_17: 1032633012010604703
+      Rich_Painting_sprite_18: -6623157874444555783
+      Rich_Painting_sprite_2: 5273793674500695661
+      Rich_Painting_sprite_3: 6907021879405289088
+      Rich_Painting_sprite_4: 1544967723351411816
+      Rich_Painting_sprite_5: -56854530279997531
+      Rich_Painting_sprite_6: -1738295745971813240
+      Rich_Painting_sprite_7: -6049409685800336871
+      Rich_Painting_sprite_8: -5565299538072314949
+      Rich_Painting_sprite_9: 1815632792251195887
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

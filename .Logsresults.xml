@@ -1,0 +1,1898 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="300" result="Passed" total="300" passed="300" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:21Z" duration="0,2636534">
+  <test-suite type="TestSuite" id="1000" name="HabbitTracker" fullname="HabbitTracker" runstate="Runnable" testcasecount="300" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:21Z" duration="0.263653" total="300" passed="300" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1320" name="HabitTracker.Tests.dll" fullname="C:/Users/pc/HabbitTracker/Library/ScriptAssemblies/HabitTracker.Tests.dll" runstate="Runnable" testcasecount="300" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:21Z" duration="0.207899" total="300" passed="300" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="30188" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestFixture" id="1001" name="BurnedPaintingArtTests" fullname="BurnedPaintingArtTests" classname="BurnedPaintingArtTests" runstate="Runnable" testcasecount="20" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.065015" total="20" passed="20" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1007" name="Burn_AlwaysDarkensAndDesaturates" fullname="BurnedPaintingArtTests.Burn_AlwaysDarkensAndDesaturates" methodname="Burn_AlwaysDarkensAndDesaturates" classname="BurnedPaintingArtTests" runstate="Runnable" seed="1909235250" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.012609" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1002" name="Burn_Black_StaysBlack" fullname="BurnedPaintingArtTests.Burn_Black_StaysBlack" methodname="Burn_Black_StaysBlack" classname="BurnedPaintingArtTests" runstate="Runnable" seed="1924690594" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.003062" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1005" name="Burn_EqualLuma_DifferentHues_ProduceSameColor" fullname="BurnedPaintingArtTests.Burn_EqualLuma_DifferentHues_ProduceSameColor" methodname="Burn_EqualLuma_DifferentHues_ProduceSameColor" classname="BurnedPaintingArtTests" runstate="Runnable" seed="377610441" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000374" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1006" name="Burn_IsMonotonicInLuma" fullname="BurnedPaintingArtTests.Burn_IsMonotonicInLuma" methodname="Burn_IsMonotonicInLuma" classname="BurnedPaintingArtTests" runstate="Runnable" seed="502225773" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000247" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1004" name="Burn_PreservesAlpha" fullname="BurnedPaintingArtTests.Burn_PreservesAlpha" methodname="Burn_PreservesAlpha" classname="BurnedPaintingArtTests" runstate="Runnable" seed="554045551" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000156" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1003" name="Burn_White_LandsOnSepiaDarkGrey" fullname="BurnedPaintingArtTests.Burn_White_LandsOnSepiaDarkGrey" methodname="Burn_White_LandsOnSepiaDarkGrey" classname="BurnedPaintingArtTests" runstate="Runnable" seed="1477584077" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000254" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1014" name="Compose_HatchPhaseRestartsOnEveryPiece" fullname="BurnedPaintingArtTests.Compose_HatchPhaseRestartsOnEveryPiece" methodname="Compose_HatchPhaseRestartsOnEveryPiece" classname="BurnedPaintingArtTests" runstate="Runnable" seed="235728643" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.002976" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1015" name="Compose_IgnoresOutOfRangeMissedIndices" fullname="BurnedPaintingArtTests.Compose_IgnoresOutOfRangeMissedIndices" methodname="Compose_IgnoresOutOfRangeMissedIndices" classname="BurnedPaintingArtTests" runstate="Runnable" seed="2043869792" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.001123" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1013" name="Compose_MissedPiece_HatchDarkensSomeTexelsMoreThanOthers" fullname="BurnedPaintingArtTests.Compose_MissedPiece_HatchDarkensSomeTexelsMoreThanOthers" methodname="Compose_MissedPiece_HatchDarkensSomeTexelsMoreThanOthers" classname="BurnedPaintingArtTests" runstate="Runnable" seed="840318751" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000478" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1012" name="Compose_MissedPiece_OnlyTouchesItsOwnBlock" fullname="BurnedPaintingArtTests.Compose_MissedPiece_OnlyTouchesItsOwnBlock" methodname="Compose_MissedPiece_OnlyTouchesItsOwnBlock" classname="BurnedPaintingArtTests" runstate="Runnable" seed="203715883" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000935" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1011" name="Compose_NoMissedPieces_IsPlainNearestUpscale" fullname="BurnedPaintingArtTests.Compose_NoMissedPieces_IsPlainNearestUpscale" methodname="Compose_NoMissedPieces_IsPlainNearestUpscale" classname="BurnedPaintingArtTests" runstate="Runnable" seed="334563703" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000706" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1010" name="HatchCoverage_HasBothCoveredAndEmptyTexels" fullname="BurnedPaintingArtTests.HatchCoverage_HasBothCoveredAndEmptyTexels" methodname="HatchCoverage_HasBothCoveredAndEmptyTexels" classname="BurnedPaintingArtTests" runstate="Runnable" seed="1285295280" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000392" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1009" name="HatchCoverage_IsConstantAlongTheDiagonal" fullname="BurnedPaintingArtTests.HatchCoverage_IsConstantAlongTheDiagonal" methodname="HatchCoverage_IsConstantAlongTheDiagonal" classname="BurnedPaintingArtTests" runstate="Runnable" seed="199971645" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.001128" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1008" name="HatchCoverage_OverOnePeriod_AveragesLineRatio" fullname="BurnedPaintingArtTests.HatchCoverage_OverOnePeriod_AveragesLineRatio" methodname="HatchCoverage_OverOnePeriod_AveragesLineRatio" classname="BurnedPaintingArtTests" runstate="Runnable" seed="1793703000" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000300" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1018" name="PieceBounds_AgreesWithTextureRowForPiece" fullname="BurnedPaintingArtTests.PieceBounds_AgreesWithTextureRowForPiece" methodname="PieceBounds_AgreesWithTextureRowForPiece" classname="BurnedPaintingArtTests" runstate="Runnable" seed="2009093271" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000505" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1017" name="PieceBounds_PieceZeroIsTopLeft" fullname="BurnedPaintingArtTests.PieceBounds_PieceZeroIsTopLeft" methodname="PieceBounds_PieceZeroIsTopLeft" classname="BurnedPaintingArtTests" runstate="Runnable" seed="815535636" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000222" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1016" name="PieceBounds_TilesTheTextureWithoutGapOrOverlap" fullname="BurnedPaintingArtTests.PieceBounds_TilesTheTextureWithoutGapOrOverlap" methodname="PieceBounds_TilesTheTextureWithoutGapOrOverlap" classname="BurnedPaintingArtTests" runstate="Runnable" seed="781763222" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.011609" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1021" name="SpriteFor_MissedPieces_BakesOnceAndReusesIt" fullname="BurnedPaintingArtTests.SpriteFor_MissedPieces_BakesOnceAndReusesIt" methodname="SpriteFor_MissedPieces_BakesOnceAndReusesIt" classname="BurnedPaintingArtTests" runstate="Runnable" seed="1647270424" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.008668" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1019" name="SpriteFor_NoMissedPieces_ReturnsTheDefinitionsOwnSprite" fullname="BurnedPaintingArtTests.SpriteFor_NoMissedPieces_ReturnsTheDefinitionsOwnSprite" methodname="SpriteFor_NoMissedPieces_ReturnsTheDefinitionsOwnSprite" classname="BurnedPaintingArtTests" runstate="Runnable" seed="255040203" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000537" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1020" name="SpriteFor_UnreadableTexture_FallsBackToTheDefinitionsSprite" fullname="BurnedPaintingArtTests.SpriteFor_UnreadableTexture_FallsBackToTheDefinitionsSprite" methodname="SpriteFor_UnreadableTexture_FallsBackToTheDefinitionsSprite" classname="BurnedPaintingArtTests" runstate="Runnable" seed="1879906269" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000291" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1022" name="DevToolsTests" fullname="DevToolsTests" classname="DevToolsTests" runstate="Runnable" testcasecount="23" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.017776" total="23" passed="23" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1023" name="AppClock_Default_MatchesRealDate" fullname="DevToolsTests.AppClock_Default_MatchesRealDate" methodname="AppClock_Default_MatchesRealDate" classname="DevToolsTests" runstate="Runnable" seed="1457289215" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.001622" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1026" name="AppClock_MaxOffset_MatchesCatchUpWindow" fullname="DevToolsTests.AppClock_MaxOffset_MatchesCatchUpWindow" methodname="AppClock_MaxOffset_MatchesCatchUpWindow" classname="DevToolsTests" runstate="Runnable" seed="273464619" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000131" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1027" name="AppClock_Reset_ReturnsToRealTime" fullname="DevToolsTests.AppClock_Reset_ReturnsToRealTime" methodname="AppClock_Reset_ReturnsToRealTime" classname="DevToolsTests" runstate="Runnable" seed="697430661" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000227" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1025" name="AppClock_SetDayOffset_ClampsToMaxOffset" fullname="DevToolsTests.AppClock_SetDayOffset_ClampsToMaxOffset" methodname="AppClock_SetDayOffset_ClampsToMaxOffset" classname="DevToolsTests" runstate="Runnable" seed="1768211969" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000130" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1024" name="AppClock_SetDayOffset_ShiftsTodayByWholeDays" fullname="DevToolsTests.AppClock_SetDayOffset_ShiftsTodayByWholeDays" methodname="AppClock_SetDayOffset_ShiftsTodayByWholeDays" classname="DevToolsTests" runstate="Runnable" seed="1541204545" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000280" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1028" name="DevClock_DayOffsetFor_CountsWholeDaysOnly" fullname="DevToolsTests.DevClock_DayOffsetFor_CountsWholeDaysOnly" methodname="DevClock_DayOffsetFor_CountsWholeDaysOnly" classname="DevToolsTests" runstate="Runnable" seed="760045896" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000239" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1030" name="DevClock_DayOffsetFor_PastTarget_IsNegative" fullname="DevToolsTests.DevClock_DayOffsetFor_PastTarget_IsNegative" methodname="DevClock_DayOffsetFor_PastTarget_IsNegative" classname="DevToolsTests" runstate="Runnable" seed="1996059937" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000140" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1029" name="DevClock_DayOffsetFor_SameDay_IsZero" fullname="DevToolsTests.DevClock_DayOffsetFor_SameDay_IsZero" methodname="DevClock_DayOffsetFor_SameDay_IsZero" classname="DevToolsTests" runstate="Runnable" seed="468608104" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000134" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1038" name="DevHabit_SetStreak_CompletedToday_StampsToday" fullname="DevToolsTests.DevHabit_SetStreak_CompletedToday_StampsToday" methodname="DevHabit_SetStreak_CompletedToday_StampsToday" classname="DevToolsTests" runstate="Runnable" seed="2122697143" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000606" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1036" name="DevHabit_SetStreak_LongestNeverBelowCurrent" fullname="DevToolsTests.DevHabit_SetStreak_LongestNeverBelowCurrent" methodname="DevHabit_SetStreak_LongestNeverBelowCurrent" classname="DevToolsTests" runstate="Runnable" seed="86422202" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000480" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1039" name="DevHabit_SetStreak_NotCompletedToday_StampsPreviousDueDay" fullname="DevToolsTests.DevHabit_SetStreak_NotCompletedToday_StampsPreviousDueDay" methodname="DevHabit_SetStreak_NotCompletedToday_StampsPreviousDueDay" classname="DevToolsTests" runstate="Runnable" seed="286687393" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000440" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1040" name="DevHabit_SetStreak_SurvivesNextDailyReset_EveryDay" fullname="DevToolsTests.DevHabit_SetStreak_SurvivesNextDailyReset_EveryDay" methodname="DevHabit_SetStreak_SurvivesNextDailyReset_EveryDay" classname="DevToolsTests" runstate="Runnable" seed="1015006920" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.001115" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1041" name="DevHabit_SetStreak_SurvivesNextDailyReset_WeeklySchedule" fullname="DevToolsTests.DevHabit_SetStreak_SurvivesNextDailyReset_WeeklySchedule" methodname="DevHabit_SetStreak_SurvivesNextDailyReset_WeeklySchedule" classname="DevToolsTests" runstate="Runnable" seed="1820501097" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000366" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1037" name="DevHabit_SetStreak_Zero_ClearsStamp" fullname="DevToolsTests.DevHabit_SetStreak_Zero_ClearsStamp" methodname="DevHabit_SetStreak_Zero_ClearsStamp" classname="DevToolsTests" runstate="Runnable" seed="1063464600" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000234" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1043" name="DevMood_LowestPointFor_IsTheLowestRepresentative" fullname="DevToolsTests.DevMood_LowestPointFor_IsTheLowestRepresentative" methodname="DevMood_LowestPointFor_IsTheLowestRepresentative" classname="DevToolsTests" runstate="Runnable" seed="635108715" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000691" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1042" name="DevMood_LowestPointFor_ResolvesEveryMoodOnTheScale" fullname="DevToolsTests.DevMood_LowestPointFor_ResolvesEveryMoodOnTheScale" methodname="DevMood_LowestPointFor_ResolvesEveryMoodOnTheScale" classname="DevToolsTests" runstate="Runnable" seed="296820417" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000395" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1033" name="DevPainting_SetOpenedPieces_AboveCanvasSize_ClampsToFull" fullname="DevToolsTests.DevPainting_SetOpenedPieces_AboveCanvasSize_ClampsToFull" methodname="DevPainting_SetOpenedPieces_AboveCanvasSize_ClampsToFull" classname="DevToolsTests" runstate="Runnable" seed="479262598" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.003294" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1034" name="DevPainting_SetOpenedPieces_DoesNotAccumulate" fullname="DevToolsTests.DevPainting_SetOpenedPieces_DoesNotAccumulate" methodname="DevPainting_SetOpenedPieces_DoesNotAccumulate" classname="DevToolsTests" runstate="Runnable" seed="1421453714" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000243" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1032" name="DevPainting_SetOpenedPieces_Random_OpensUniqueValidIndices" fullname="DevToolsTests.DevPainting_SetOpenedPieces_Random_OpensUniqueValidIndices" methodname="DevPainting_SetOpenedPieces_Random_OpensUniqueValidIndices" classname="DevToolsTests" runstate="Runnable" seed="1075612633" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000995" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1031" name="DevPainting_SetOpenedPieces_Sequential_WritesCount" fullname="DevToolsTests.DevPainting_SetOpenedPieces_Sequential_WritesCount" methodname="DevPainting_SetOpenedPieces_Sequential_WritesCount" classname="DevToolsTests" runstate="Runnable" seed="1372691507" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000235" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1035" name="DevPainting_SetOpenedPieces_Zero_ClearsBothRepresentations" fullname="DevToolsTests.DevPainting_SetOpenedPieces_Zero_ClearsBothRepresentations" methodname="DevPainting_SetOpenedPieces_Zero_ClearsBothRepresentations" classname="DevToolsTests" runstate="Runnable" seed="1988228712" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000250" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1045" name="DevSampleHabits_All_CoverEveryCategoryAndCanvasSize" fullname="DevToolsTests.DevSampleHabits_All_CoverEveryCategoryAndCanvasSize" methodname="DevSampleHabits_All_CoverEveryCategoryAndCanvasSize" classname="DevToolsTests" runstate="Runnable" seed="1570895153" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000737" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1044" name="DevSampleHabits_All_UseCanonicalOptions" fullname="DevToolsTests.DevSampleHabits_All_UseCanonicalOptions" methodname="DevSampleHabits_All_UseCanonicalOptions" classname="DevToolsTests" runstate="Runnable" seed="106629092" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.001078" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1046" name="GalleryLogicTests" fullname="GalleryLogicTests" classname="GalleryLogicTests" runstate="Runnable" testcasecount="24" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.015322" total="24" passed="24" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1047" name="Collect_ActiveFirst_ThenFinishedNewestToOldest" fullname="GalleryLogicTests.Collect_ActiveFirst_ThenFinishedNewestToOldest" methodname="Collect_ActiveFirst_ThenFinishedNewestToOldest" classname="GalleryLogicTests" runstate="Runnable" seed="505949629" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.001964" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1048" name="Collect_AwaitingChoice_SkipsActiveSlot" fullname="GalleryLogicTests.Collect_AwaitingChoice_SkipsActiveSlot" methodname="Collect_AwaitingChoice_SkipsActiveSlot" classname="GalleryLogicTests" runstate="Runnable" seed="1075940835" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000423" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1049" name="Collect_EmptyActivePaintingId_SkipsActiveSlot" fullname="GalleryLogicTests.Collect_EmptyActivePaintingId_SkipsActiveSlot" methodname="Collect_EmptyActivePaintingId_SkipsActiveSlot" classname="GalleryLogicTests" runstate="Runnable" seed="111482531" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000305" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1051" name="Collect_FinishedHoles_ComeFromGalleryHolesNotMissedPixels" fullname="GalleryLogicTests.Collect_FinishedHoles_ComeFromGalleryHolesNotMissedPixels" methodname="Collect_FinishedHoles_ComeFromGalleryHolesNotMissedPixels" classname="GalleryLogicTests" runstate="Runnable" seed="38777661" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.002359" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1052" name="Collect_NoWorksAtAll_ReturnsEmptyBuffer" fullname="GalleryLogicTests.Collect_NoWorksAtAll_ReturnsEmptyBuffer" methodname="Collect_NoWorksAtAll_ReturnsEmptyBuffer" classname="GalleryLogicTests" runstate="Runnable" seed="1143882522" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000229" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1050" name="Collect_UnresolvedGalleryId_IsSkippedButIndexSurvives" fullname="GalleryLogicTests.Collect_UnresolvedGalleryId_IsSkippedButIndexSurvives" methodname="Collect_UnresolvedGalleryId_IsSkippedButIndexSurvives" classname="GalleryLogicTests" runstate="Runnable" seed="1544943391" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000487" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1055" name="FinishedCount_ReturnsGalleryListLength" fullname="GalleryLogicTests.FinishedCount_ReturnsGalleryListLength" methodname="FinishedCount_ReturnsGalleryListLength" classname="GalleryLogicTests" runstate="Runnable" seed="1314362864" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000154" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1061" name="FlowLayout_EmptyList_ReturnsZeroHeight" fullname="GalleryLogicTests.FlowLayout_EmptyList_ReturnsZeroHeight" methodname="FlowLayout_EmptyList_ReturnsZeroHeight" classname="GalleryLogicTests" runstate="Runnable" seed="64766820" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.001276" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1059" name="FlowLayout_Overflow_WrapsToSecondRow" fullname="GalleryLogicTests.FlowLayout_Overflow_WrapsToSecondRow" methodname="FlowLayout_Overflow_WrapsToSecondRow" classname="GalleryLogicTests" runstate="Runnable" seed="2114193185" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000598" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1060" name="FlowLayout_SingleOversizedItem_StillPlacedAlone" fullname="GalleryLogicTests.FlowLayout_SingleOversizedItem_StillPlacedAlone" methodname="FlowLayout_SingleOversizedItem_StillPlacedAlone" classname="GalleryLogicTests" runstate="Runnable" seed="1300126367" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000141" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1058" name="FlowLayout_SingleRow_CentersAroundAvailableWidth" fullname="GalleryLogicTests.FlowLayout_SingleRow_CentersAroundAvailableWidth" methodname="FlowLayout_SingleRow_CentersAroundAvailableWidth" classname="GalleryLogicTests" runstate="Runnable" seed="880430636" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000188" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1057" name="ForFinished_NoHoles_EveryPieceIsOpened" fullname="GalleryLogicTests.ForFinished_NoHoles_EveryPieceIsOpened" methodname="ForFinished_NoHoles_EveryPieceIsOpened" classname="GalleryLogicTests" runstate="Runnable" seed="948206248" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000276" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1056" name="ForFinished_NonHolePieces_AreOpened_HolesAreMissed" fullname="GalleryLogicTests.ForFinished_NonHolePieces_AreOpened_HolesAreMissed" methodname="ForFinished_NonHolePieces_AreOpened_HolesAreMissed" classname="GalleryLogicTests" runstate="Runnable" seed="251886282" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000248" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1068" name="Format_UsesTurkishMonthAbbreviation" fullname="GalleryLogicTests.Format_UsesTurkishMonthAbbreviation" methodname="Format_UsesTurkishMonthAbbreviation" classname="GalleryLogicTests" runstate="Runnable" seed="1268360684" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000488" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1062" name="SlotWidth_PicksLargestOfMinimumNativeAndPlaque" fullname="GalleryLogicTests.SlotWidth_PicksLargestOfMinimumNativeAndPlaque" methodname="SlotWidth_PicksLargestOfMinimumNativeAndPlaque" classname="GalleryLogicTests" runstate="Runnable" seed="1794344020" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000253" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1067" name="ThumbFit_InvalidSize_ReturnsZero" fullname="GalleryLogicTests.ThumbFit_InvalidSize_ReturnsZero" methodname="ThumbFit_InvalidSize_ReturnsZero" classname="GalleryLogicTests" runstate="Runnable" seed="2141599966" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000345" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1066" name="ThumbFit_PreservesAspectRatio_WithinThirtySixBox" fullname="GalleryLogicTests.ThumbFit_PreservesAspectRatio_WithinThirtySixBox" methodname="ThumbFit_PreservesAspectRatio_WithinThirtySixBox" classname="GalleryLogicTests" runstate="Runnable" seed="1854599422" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000676" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1054" name="Totals_AwaitingChoice_DoesNotDoubleCountMissedPixels" fullname="GalleryLogicTests.Totals_AwaitingChoice_DoesNotDoubleCountMissedPixels" methodname="Totals_AwaitingChoice_DoesNotDoubleCountMissedPixels" classname="GalleryLogicTests" runstate="Runnable" seed="1760284976" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000478" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1053" name="Totals_SumsOpenedAndHolesAcrossActiveAndFinished" fullname="GalleryLogicTests.Totals_SumsOpenedAndHolesAcrossActiveAndFinished" methodname="Totals_SumsOpenedAndHolesAcrossActiveAndFinished" classname="GalleryLogicTests" runstate="Runnable" seed="1487286364" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000322" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1070" name="TryFormat_EmptyOrMalformedKey_ReturnsFalse" fullname="GalleryLogicTests.TryFormat_EmptyOrMalformedKey_ReturnsFalse" methodname="TryFormat_EmptyOrMalformedKey_ReturnsFalse" classname="GalleryLogicTests" runstate="Runnable" seed="293431719" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000192" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1069" name="TryFormat_ValidKey_ReturnsTrueAndFormattedLabel" fullname="GalleryLogicTests.TryFormat_ValidKey_ReturnsTrueAndFormattedLabel" methodname="TryFormat_ValidKey_ReturnsTrueAndFormattedLabel" classname="GalleryLogicTests" runstate="Runnable" seed="1446363319" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000138" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1065" name="ViewerScale_InvalidSize_ReturnsOneInsteadOfDividingByZero" fullname="GalleryLogicTests.ViewerScale_InvalidSize_ReturnsOneInsteadOfDividingByZero" methodname="ViewerScale_InvalidSize_ReturnsOneInsteadOfDividingByZero" classname="GalleryLogicTests" runstate="Runnable" seed="1440644140" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000173" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1064" name="ViewerScale_NeverBelowOne_EvenForOversizedSprite" fullname="GalleryLogicTests.ViewerScale_NeverBelowOne_EvenForOversizedSprite" methodname="ViewerScale_NeverBelowOne_EvenForOversizedSprite" classname="GalleryLogicTests" runstate="Runnable" seed="46623104" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000108" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1063" name="ViewerScale_PicksIntegerFloorOfTighterAxis" fullname="GalleryLogicTests.ViewerScale_PicksIntegerFloorOfTighterAxis" methodname="ViewerScale_PicksIntegerFloorOfTighterAxis" classname="GalleryLogicTests" runstate="Runnable" seed="26447404" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000100" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1071" name="HabitDataLogicTests" fullname="HabitDataLogicTests" classname="HabitDataLogicTests" runstate="Runnable" testcasecount="31" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.018909" total="31" passed="31" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1082" name="AdvanceStreak_AfterGap_RestartsAtOne" fullname="HabitDataLogicTests.AdvanceStreak_AfterGap_RestartsAtOne" methodname="AdvanceStreak_AfterGap_RestartsAtOne" classname="HabitDataLogicTests" runstate="Runnable" seed="1312811524" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000522" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1081" name="AdvanceStreak_ConsecutiveDueDays_Increments" fullname="HabitDataLogicTests.AdvanceStreak_ConsecutiveDueDays_Increments" methodname="AdvanceStreak_ConsecutiveDueDays_Increments" classname="HabitDataLogicTests" runstate="Runnable" seed="14072331" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000190" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1080" name="DailyReset_ClockMovedBackwards_DoesNotBreakStreak" fullname="HabitDataLogicTests.DailyReset_ClockMovedBackwards_DoesNotBreakStreak" methodname="DailyReset_ClockMovedBackwards_DoesNotBreakStreak" classname="HabitDataLogicTests" runstate="Runnable" seed="1988402192" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000283" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1078" name="DailyReset_MissedScheduledDay_BreaksStreak" fullname="HabitDataLogicTests.DailyReset_MissedScheduledDay_BreaksStreak" methodname="DailyReset_MissedScheduledDay_BreaksStreak" classname="HabitDataLogicTests" runstate="Runnable" seed="507130250" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000277" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1076" name="DailyReset_NewDay_ClearsTodayFlags" fullname="HabitDataLogicTests.DailyReset_NewDay_ClearsTodayFlags" methodname="DailyReset_NewDay_ClearsTodayFlags" classname="HabitDataLogicTests" runstate="Runnable" seed="1090429336" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000339" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1077" name="DailyReset_SameDay_IsNoOp" fullname="HabitDataLogicTests.DailyReset_SameDay_IsNoOp" methodname="DailyReset_SameDay_IsNoOp" classname="HabitDataLogicTests" runstate="Runnable" seed="1899995248" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000206" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1079" name="DailyReset_UnscheduledGap_KeepsStreak" fullname="HabitDataLogicTests.DailyReset_UnscheduledGap_KeepsStreak" methodname="DailyReset_UnscheduledGap_KeepsStreak" classname="HabitDataLogicTests" runstate="Runnable" seed="685961246" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000269" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1075" name="FlushIfDirty_DoesNothingWhenClean" fullname="HabitDataLogicTests.FlushIfDirty_DoesNothingWhenClean" methodname="FlushIfDirty_DoesNothingWhenClean" classname="HabitDataLogicTests" runstate="Runnable" seed="702705330" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000738" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1085" name="IsActiveOn_RespectsStartAndEndDates" fullname="HabitDataLogicTests.IsActiveOn_RespectsStartAndEndDates" methodname="IsActiveOn_RespectsStartAndEndDates" classname="HabitDataLogicTests" runstate="Runnable" seed="1725842088" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000337" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1084" name="IsScheduledOn_EmptyFrequency_MeansEveryDay" fullname="HabitDataLogicTests.IsScheduledOn_EmptyFrequency_MeansEveryDay" methodname="IsScheduledOn_EmptyFrequency_MeansEveryDay" classname="HabitDataLogicTests" runstate="Runnable" seed="507684155" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000143" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1091" name="Library_PickNext_RecyclesWhenPoolExhausted" fullname="HabitDataLogicTests.Library_PickNext_RecyclesWhenPoolExhausted" methodname="Library_PickNext_RecyclesWhenPoolExhausted" classname="HabitDataLogicTests" runstate="Runnable" seed="1504119818" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.001153" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1090" name="Library_PickNext_SkipsPaintingsAlreadyInGallery" fullname="HabitDataLogicTests.Library_PickNext_SkipsPaintingsAlreadyInGallery" methodname="Library_PickNext_SkipsPaintingsAlreadyInGallery" classname="HabitDataLogicTests" runstate="Runnable" seed="712029983" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000433" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1092" name="Library_TryGet_ResolvesById" fullname="HabitDataLogicTests.Library_TryGet_ResolvesById" methodname="Library_TryGet_ResolvesById" classname="HabitDataLogicTests" runstate="Runnable" seed="1866768306" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000220" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1074" name="Load_CorruptJson_FallsBackToEmptySave" fullname="HabitDataLogicTests.Load_CorruptJson_FallsBackToEmptySave" methodname="Load_CorruptJson_FallsBackToEmptySave" classname="HabitDataLogicTests" runstate="Runnable" seed="1348452826" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.002136" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[
+IgnoreFailingMessages:true
+HabitSaveSystem: kayit okunamadi, sifirdan baslaniyor. JSON parse error: Missing a name for object member.
+
+IgnoreFailingMessages:false
+]]></output>
+        </test-case>
+        <test-case id="1093" name="Mood_AllDueCompleted_ReturnsTrue" fullname="HabitDataLogicTests.Mood_AllDueCompleted_ReturnsTrue" methodname="Mood_AllDueCompleted_ReturnsTrue" classname="HabitDataLogicTests" runstate="Runnable" seed="763124454" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000406" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1096" name="Mood_NoDueHabits_HasAnyDueHabitIsFalse" fullname="HabitDataLogicTests.Mood_NoDueHabits_HasAnyDueHabitIsFalse" methodname="Mood_NoDueHabits_HasAnyDueHabitIsFalse" classname="HabitDataLogicTests" runstate="Runnable" seed="2110824257" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000240" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1094" name="Mood_OneDueMissing_ReturnsFalse" fullname="HabitDataLogicTests.Mood_OneDueMissing_ReturnsFalse" methodname="Mood_OneDueMissing_ReturnsFalse" classname="HabitDataLogicTests" runstate="Runnable" seed="1487739910" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000210" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1100" name="Mood_SettleClosedDays_AlreadySettledLastDay_SkipsThatDay" fullname="HabitDataLogicTests.Mood_SettleClosedDays_AlreadySettledLastDay_SkipsThatDay" methodname="Mood_SettleClosedDays_AlreadySettledLastDay_SkipsThatDay" classname="HabitDataLogicTests" runstate="Runnable" seed="420530483" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000445" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1101" name="Mood_SettleClosedDays_ClockMovedBackwards_ReturnsZero" fullname="HabitDataLogicTests.Mood_SettleClosedDays_ClockMovedBackwards_ReturnsZero" methodname="Mood_SettleClosedDays_ClockMovedBackwards_ReturnsZero" classname="HabitDataLogicTests" runstate="Runnable" seed="1612208555" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000273" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1102" name="Mood_SettleClosedDays_FirstRun_ReturnsZero" fullname="HabitDataLogicTests.Mood_SettleClosedDays_FirstRun_ReturnsZero" methodname="Mood_SettleClosedDays_FirstRun_ReturnsZero" classname="HabitDataLogicTests" runstate="Runnable" seed="1797189441" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000190" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1099" name="Mood_SettleClosedDays_GapWithUnscheduledDays_SkipsThem" fullname="HabitDataLogicTests.Mood_SettleClosedDays_GapWithUnscheduledDays_SkipsThem" methodname="Mood_SettleClosedDays_GapWithUnscheduledDays_SkipsThem" classname="HabitDataLogicTests" runstate="Runnable" seed="377230919" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000249" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1097" name="Mood_SettleClosedDays_IncompleteLastDay_ReturnsOne" fullname="HabitDataLogicTests.Mood_SettleClosedDays_IncompleteLastDay_ReturnsOne" methodname="Mood_SettleClosedDays_IncompleteLastDay_ReturnsOne" classname="HabitDataLogicTests" runstate="Runnable" seed="528264807" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000234" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1098" name="Mood_SettleClosedDays_ThreeDayGap_ReturnsThree" fullname="HabitDataLogicTests.Mood_SettleClosedDays_ThreeDayGap_ReturnsThree" methodname="Mood_SettleClosedDays_ThreeDayGap_ReturnsThree" classname="HabitDataLogicTests" runstate="Runnable" seed="1946950419" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000256" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1095" name="Mood_UnscheduledHabit_DoesNotBlockCompletion" fullname="HabitDataLogicTests.Mood_UnscheduledHabit_DoesNotBlockCompletion" methodname="Mood_UnscheduledHabit_DoesNotBlockCompletion" classname="HabitDataLogicTests" runstate="Runnable" seed="846411723" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000323" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1087" name="Progress_Random_OpensEveryIndexExactlyOnce" fullname="HabitDataLogicTests.Progress_Random_OpensEveryIndexExactlyOnce" methodname="Progress_Random_OpensEveryIndexExactlyOnce" classname="HabitDataLogicTests" runstate="Runnable" seed="96433480" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000537" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1089" name="Progress_ResetClearsBothRepresentations" fullname="HabitDataLogicTests.Progress_ResetClearsBothRepresentations" methodname="Progress_ResetClearsBothRepresentations" classname="HabitDataLogicTests" runstate="Runnable" seed="449313263" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000220" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1086" name="Progress_Sequential_OpensInOrderAndCompletes" fullname="HabitDataLogicTests.Progress_Sequential_OpensInOrderAndCompletes" methodname="Progress_Sequential_OpensInOrderAndCompletes" classname="HabitDataLogicTests" runstate="Runnable" seed="756957384" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000354" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1088" name="Progress_UndoLastPiece_ReversesBothModes" fullname="HabitDataLogicTests.Progress_UndoLastPiece_ReversesBothModes" methodname="Progress_UndoLastPiece_ReversesBothModes" classname="HabitDataLogicTests" runstate="Runnable" seed="700977281" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000517" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1083" name="RollBackStreak_KeepsLongestStreak" fullname="HabitDataLogicTests.RollBackStreak_KeepsLongestStreak" methodname="RollBackStreak_KeepsLongestStreak" classname="HabitDataLogicTests" runstate="Runnable" seed="474018090" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000498" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1072" name="Save_RoundTrip_PreservesAllFields" fullname="HabitDataLogicTests.Save_RoundTrip_PreservesAllFields" methodname="Save_RoundTrip_PreservesAllFields" classname="HabitDataLogicTests" runstate="Runnable" seed="515364528" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.001201" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1073" name="Save_RoundTrip_PreservesDayOfWeekList" fullname="HabitDataLogicTests.Save_RoundTrip_PreservesDayOfWeekList" methodname="Save_RoundTrip_PreservesDayOfWeekList" classname="HabitDataLogicTests" runstate="Runnable" seed="335002710" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000571" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1103" name="HabitEditingTests" fullname="HabitEditingTests" classname="HabitEditingTests" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.007383" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1109" name="Resize_AlwaysMatchesActiveDefinitionPieceCount" fullname="HabitEditingTests.Resize_AlwaysMatchesActiveDefinitionPieceCount" methodname="Resize_AlwaysMatchesActiveDefinitionPieceCount" classname="HabitEditingTests" runstate="Runnable" seed="1126030564" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.001032" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1107" name="Resize_AwaitingChoice_DoesNotCarryProgress" fullname="HabitEditingTests.Resize_AwaitingChoice_DoesNotCarryProgress" methodname="Resize_AwaitingChoice_DoesNotCarryProgress" classname="HabitEditingTests" runstate="Runnable" seed="821538751" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000263" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1108" name="Resize_AwaitingChoice_DropsFlagAfterAssigning" fullname="HabitEditingTests.Resize_AwaitingChoice_DropsFlagAfterAssigning" methodname="Resize_AwaitingChoice_DropsFlagAfterAssigning" classname="HabitEditingTests" runstate="Runnable" seed="337927385" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000216" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1110" name="Resize_BucketMissing_ClampsCarryToRequestedSize" fullname="HabitEditingTests.Resize_BucketMissing_ClampsCarryToRequestedSize" methodname="Resize_BucketMissing_ClampsCarryToRequestedSize" classname="HabitEditingTests" runstate="Runnable" seed="1414442503" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.001138" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[
+IgnoreFailingMessages:true
+PaintingLibrary: 16 parcalik tablo yok, en yakin boyuta dusuluyor.
+
+IgnoreFailingMessages:false
+]]></output>
+        </test-case>
+        <test-case id="1111" name="Resize_CarryFillsNewPainting_ReportsCompleted" fullname="HabitEditingTests.Resize_CarryFillsNewPainting_ReportsCompleted" methodname="Resize_CarryFillsNewPainting_ReportsCompleted" classname="HabitEditingTests" runstate="Runnable" seed="1481079882" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000304" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[
+IgnoreFailingMessages:true
+
+IgnoreFailingMessages:false
+]]></output>
+        </test-case>
+        <test-case id="1106" name="Resize_Larger_CarriesAllOpened" fullname="HabitEditingTests.Resize_Larger_CarriesAllOpened" methodname="Resize_Larger_CarriesAllOpened" classname="HabitEditingTests" runstate="Runnable" seed="825349276" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000247" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1115" name="Resize_NoLibrary_ReturnsFalseAndKeepsProgress" fullname="HabitEditingTests.Resize_NoLibrary_ReturnsFalseAndKeepsProgress" methodname="Resize_NoLibrary_ReturnsFalseAndKeepsProgress" classname="HabitEditingTests" runstate="Runnable" seed="451340049" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000147" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1113" name="Resize_RandomTarget_UsesIndexList" fullname="HabitEditingTests.Resize_RandomTarget_UsesIndexList" methodname="Resize_RandomTarget_UsesIndexList" classname="HabitEditingTests" runstate="Runnable" seed="1754648772" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000893" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1104" name="Resize_SameSize_ReturnsFalseAndKeepsPainting" fullname="HabitEditingTests.Resize_SameSize_ReturnsFalseAndKeepsPainting" methodname="Resize_SameSize_ReturnsFalseAndKeepsPainting" classname="HabitEditingTests" runstate="Runnable" seed="159376310" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000234" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1112" name="Resize_SequentialTarget_UsesTotalPixelsPainted" fullname="HabitEditingTests.Resize_SequentialTarget_UsesTotalPixelsPainted" methodname="Resize_SequentialTarget_UsesTotalPixelsPainted" classname="HabitEditingTests" runstate="Runnable" seed="2110329107" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000255" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1114" name="Resize_SequentialToRandom_MovesProgressToTheOtherField" fullname="HabitEditingTests.Resize_SequentialToRandom_MovesProgressToTheOtherField" methodname="Resize_SequentialToRandom_MovesProgressToTheOtherField" classname="HabitEditingTests" runstate="Runnable" seed="1562699162" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000238" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1105" name="Resize_Smaller_CarriesMinOpened" fullname="HabitEditingTests.Resize_Smaller_CarriesMinOpened" methodname="Resize_Smaller_CarriesMinOpened" classname="HabitEditingTests" runstate="Runnable" seed="229798544" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000251" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1116" name="HabitUiLogicTests" fullname="HabitUiLogicTests" classname="HabitUiLogicTests" runstate="Runnable" testcasecount="32" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.016250" total="32" passed="32" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1139" name="DailyProgress_AllDone_RatioIsOne" fullname="HabitUiLogicTests.DailyProgress_AllDone_RatioIsOne" methodname="DailyProgress_AllDone_RatioIsOne" classname="HabitUiLogicTests" runstate="Runnable" seed="1748840701" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000835" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1137" name="DailyProgress_CountsOnlyDueHabits" fullname="HabitUiLogicTests.DailyProgress_CountsOnlyDueHabits" methodname="DailyProgress_CountsOnlyDueHabits" classname="HabitUiLogicTests" runstate="Runnable" seed="685873398" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000384" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1138" name="DailyProgress_NoDueHabits_RatioIsZero" fullname="HabitUiLogicTests.DailyProgress_NoDueHabits_RatioIsZero" methodname="DailyProgress_NoDueHabits_RatioIsZero" classname="HabitUiLogicTests" runstate="Runnable" seed="1979009960" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000233" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1141" name="HabitFilters_AllMatchesEverythingAndCounts" fullname="HabitUiLogicTests.HabitFilters_AllMatchesEverythingAndCounts" methodname="HabitFilters_AllMatchesEverythingAndCounts" classname="HabitUiLogicTests" runstate="Runnable" seed="1896753632" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000644" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1140" name="HabitFilters_MatchTypeAndCategory" fullname="HabitUiLogicTests.HabitFilters_MatchTypeAndCategory" methodname="HabitFilters_MatchTypeAndCategory" classname="HabitUiLogicTests" runstate="Runnable" seed="1187667782" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000189" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1142" name="HabitFilters_OrderCoversEveryKind" fullname="HabitUiLogicTests.HabitFilters_OrderCoversEveryKind" methodname="HabitFilters_OrderCoversEveryKind" classname="HabitUiLogicTests" runstate="Runnable" seed="593376822" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000169" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1120" name="HabitForm_BlankIsInvalid" fullname="HabitUiLogicTests.HabitForm_BlankIsInvalid" methodname="HabitForm_BlankIsInvalid" classname="HabitUiLogicTests" runstate="Runnable" seed="1791133870" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000247" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1126" name="HabitForm_FillFrequency_ConvertsSelectedDays" fullname="HabitUiLogicTests.HabitForm_FillFrequency_ConvertsSelectedDays" methodname="HabitForm_FillFrequency_ConvertsSelectedDays" classname="HabitUiLogicTests" runstate="Runnable" seed="959579338" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000906" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1124" name="HabitForm_FillFrequency_EmptySelectionStaysEmpty" fullname="HabitUiLogicTests.HabitForm_FillFrequency_EmptySelectionStaysEmpty" methodname="HabitForm_FillFrequency_EmptySelectionStaysEmpty" classname="HabitUiLogicTests" runstate="Runnable" seed="160310501" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000170" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1123" name="HabitForm_LoadFrom_MapsFrequencyToMondayIndices" fullname="HabitUiLogicTests.HabitForm_LoadFrom_MapsFrequencyToMondayIndices" methodname="HabitForm_LoadFrom_MapsFrequencyToMondayIndices" classname="HabitUiLogicTests" runstate="Runnable" seed="1726709681" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000322" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1129" name="HabitForm_ResetAndLoadFrom_ClearPaintingSelection" fullname="HabitUiLogicTests.HabitForm_ResetAndLoadFrom_ClearPaintingSelection" methodname="HabitForm_ResetAndLoadFrom_ClearPaintingSelection" classname="HabitUiLogicTests" runstate="Runnable" seed="1376707204" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000210" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1127" name="HabitForm_SetCanvasSize_ClearsPaintingSelection" fullname="HabitUiLogicTests.HabitForm_SetCanvasSize_ClearsPaintingSelection" methodname="HabitForm_SetCanvasSize_ClearsPaintingSelection" classname="HabitUiLogicTests" runstate="Runnable" seed="780870921" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000226" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1128" name="HabitForm_SetCanvasSize_SameSizeKeepsSelection" fullname="HabitUiLogicTests.HabitForm_SetCanvasSize_SameSizeKeepsSelection" methodname="HabitForm_SetCanvasSize_SameSizeKeepsSelection" classname="HabitUiLogicTests" runstate="Runnable" seed="938731478" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000131" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1125" name="HabitForm_ToggleDay_KeepsDaysSortedAndUnique" fullname="HabitUiLogicTests.HabitForm_ToggleDay_KeepsDaysSortedAndUnique" methodname="HabitForm_ToggleDay_KeepsDaysSortedAndUnique" classname="HabitUiLogicTests" runstate="Runnable" seed="1185965982" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000239" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1122" name="HabitForm_UnparsableEndDateIsInvalidOnlyWhenEnabled" fullname="HabitUiLogicTests.HabitForm_UnparsableEndDateIsInvalidOnlyWhenEnabled" methodname="HabitForm_UnparsableEndDateIsInvalidOnlyWhenEnabled" classname="HabitUiLogicTests" runstate="Runnable" seed="108984711" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000163" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1121" name="HabitForm_WhitespaceTitleIsInvalid" fullname="HabitUiLogicTests.HabitForm_WhitespaceTitleIsInvalid" methodname="HabitForm_WhitespaceTitleIsInvalid" classname="HabitUiLogicTests" runstate="Runnable" seed="382731182" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000138" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1148" name="MoodScale_EveryMoodPointMapsToASlot" fullname="HabitUiLogicTests.MoodScale_EveryMoodPointMapsToASlot" methodname="MoodScale_EveryMoodPointMapsToASlot" classname="HabitUiLogicTests" runstate="Runnable" seed="1189258506" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000336" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1145" name="MoodScale_NoDuplicateMoodInOrder" fullname="HabitUiLogicTests.MoodScale_NoDuplicateMoodInOrder" methodname="MoodScale_NoDuplicateMoodInOrder" classname="HabitUiLogicTests" runstate="Runnable" seed="196107538" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000379" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1143" name="MoodScale_OrderCoversEveryMood" fullname="HabitUiLogicTests.MoodScale_OrderCoversEveryMood" methodname="MoodScale_OrderCoversEveryMood" classname="HabitUiLogicTests" runstate="Runnable" seed="1568094562" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000187" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1144" name="MoodScale_OrderRunsFromWorstToBest" fullname="HabitUiLogicTests.MoodScale_OrderRunsFromWorstToBest" methodname="MoodScale_OrderRunsFromWorstToBest" classname="HabitUiLogicTests" runstate="Runnable" seed="1924776392" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000179" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1147" name="MoodScale_OutOfRangeSlotFallsBackToNormal" fullname="HabitUiLogicTests.MoodScale_OutOfRangeSlotFallsBackToNormal" methodname="MoodScale_OutOfRangeSlotFallsBackToNormal" classname="HabitUiLogicTests" runstate="Runnable" seed="329470005" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000117" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1146" name="MoodScale_SlotRoundTripsForEveryMood" fullname="HabitUiLogicTests.MoodScale_SlotRoundTripsForEveryMood" methodname="MoodScale_SlotRoundTripsForEveryMood" classname="HabitUiLogicTests" runstate="Runnable" seed="1896312171" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000205" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1132" name="PaintingGrid_BottomLeftCellIsLastRowPiece" fullname="HabitUiLogicTests.PaintingGrid_BottomLeftCellIsLastRowPiece" methodname="PaintingGrid_BottomLeftCellIsLastRowPiece" classname="HabitUiLogicTests" runstate="Runnable" seed="445106395" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000303" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1134" name="PaintingGrid_CellAndPieceRoundTrip" fullname="HabitUiLogicTests.PaintingGrid_CellAndPieceRoundTrip" methodname="PaintingGrid_CellAndPieceRoundTrip" classname="HabitUiLogicTests" runstate="Runnable" seed="1309042896" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000430" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1133" name="PaintingGrid_CellIndexEqualsPieceIndex" fullname="HabitUiLogicTests.PaintingGrid_CellIndexEqualsPieceIndex" methodname="PaintingGrid_CellIndexEqualsPieceIndex" classname="HabitUiLogicTests" runstate="Runnable" seed="610500726" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000663" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1135" name="PaintingGrid_OutOfRangeReturnsMinusOne" fullname="HabitUiLogicTests.PaintingGrid_OutOfRangeReturnsMinusOne" methodname="PaintingGrid_OutOfRangeReturnsMinusOne" classname="HabitUiLogicTests" runstate="Runnable" seed="1924503137" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000214" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1130" name="PaintingGrid_RowsFollowPieceCount" fullname="HabitUiLogicTests.PaintingGrid_RowsFollowPieceCount" methodname="PaintingGrid_RowsFollowPieceCount" classname="HabitUiLogicTests" runstate="Runnable" seed="279634428" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000302" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1131" name="PaintingGrid_TopLeftCellIsPieceZero" fullname="HabitUiLogicTests.PaintingGrid_TopLeftCellIsPieceZero" methodname="PaintingGrid_TopLeftCellIsPieceZero" classname="HabitUiLogicTests" runstate="Runnable" seed="1342660175" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000151" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1136" name="PaintPixels_PieceZeroIsTheTopTextureRow" fullname="HabitUiLogicTests.PaintPixels_PieceZeroIsTheTopTextureRow" methodname="PaintPixels_PieceZeroIsTheTopTextureRow" classname="HabitUiLogicTests" runstate="Runnable" seed="822578804" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000590" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1119" name="WeekDays_EmptyFrequencyMeansEveryDaySelected" fullname="HabitUiLogicTests.WeekDays_EmptyFrequencyMeansEveryDaySelected" methodname="WeekDays_EmptyFrequencyMeansEveryDaySelected" classname="HabitUiLogicTests" runstate="Runnable" seed="759339716" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000353" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1117" name="WeekDays_MondayIndexRoundTrips" fullname="HabitUiLogicTests.WeekDays_MondayIndexRoundTrips" methodname="WeekDays_MondayIndexRoundTrips" classname="HabitUiLogicTests" runstate="Runnable" seed="1486512405" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000193" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1118" name="WeekDays_MondayIsZeroAndSundayIsSix" fullname="HabitUiLogicTests.WeekDays_MondayIsZeroAndSundayIsSix" methodname="WeekDays_MondayIsZeroAndSundayIsSix" classname="HabitUiLogicTests" runstate="Runnable" seed="1761921845" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000142" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1149" name="MissedPieceTests" fullname="MissedPieceTests" classname="MissedPieceTests" runstate="Runnable" testcasecount="18" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:21Z" duration="0.008190" total="18" passed="18" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1155" name="CountMissedDueDays_ClockMovedBackwards_ReturnsZero" fullname="MissedPieceTests.CountMissedDueDays_ClockMovedBackwards_ReturnsZero" methodname="CountMissedDueDays_ClockMovedBackwards_ReturnsZero" classname="MissedPieceTests" runstate="Runnable" seed="2034944285" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000419" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1151" name="CountMissedDueDays_LastLoginCompleted_CountsZero" fullname="MissedPieceTests.CountMissedDueDays_LastLoginCompleted_CountsZero" methodname="CountMissedDueDays_LastLoginCompleted_CountsZero" classname="MissedPieceTests" runstate="Runnable" seed="1340461054" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000145" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1150" name="CountMissedDueDays_LastLoginDueNotCompleted_CountsOne" fullname="MissedPieceTests.CountMissedDueDays_LastLoginDueNotCompleted_CountsOne" methodname="CountMissedDueDays_LastLoginDueNotCompleted_CountsOne" classname="MissedPieceTests" runstate="Runnable" seed="1726719438" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000124" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1154" name="CountMissedDueDays_RespectsHabitStartDate" fullname="MissedPieceTests.CountMissedDueDays_RespectsHabitStartDate" methodname="CountMissedDueDays_RespectsHabitStartDate" classname="MissedPieceTests" runstate="Runnable" seed="1729379167" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000164" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1156" name="CountMissedDueDays_SameDay_ReturnsZero" fullname="MissedPieceTests.CountMissedDueDays_SameDay_ReturnsZero" methodname="CountMissedDueDays_SameDay_ReturnsZero" classname="MissedPieceTests" runstate="Runnable" seed="721215990" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000117" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1152" name="CountMissedDueDays_ThreeDayGap_EveryDayDue_CountsThree" fullname="MissedPieceTests.CountMissedDueDays_ThreeDayGap_EveryDayDue_CountsThree" methodname="CountMissedDueDays_ThreeDayGap_EveryDayDue_CountsThree" classname="MissedPieceTests" runstate="Runnable" seed="1047303287" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:20Z" duration="0.000143" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1153" name="CountMissedDueDays_UnscheduledDaysAreSkipped" fullname="MissedPieceTests.CountMissedDueDays_UnscheduledDaysAreSkipped" methodname="CountMissedDueDays_UnscheduledDaysAreSkipped" classname="MissedPieceTests" runstate="Runnable" seed="1511955300" result="Passed" start-time="2026-10-11 21:42:20Z" end-time="2026-10-11 21:42:21Z" duration="0.000191" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1165" name="IsComplete_OpenedAloneNotEnough_WhenHolesExist" fullname="MissedPieceTests.IsComplete_OpenedAloneNotEnough_WhenHolesExist" methodname="IsComplete_OpenedAloneNotEnough_WhenHolesExist" classname="MissedPieceTests" runstate="Runnable" seed="1641093693" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000151" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1164" name="IsComplete_OpenedPlusMissedReachesCanvasSize" fullname="MissedPieceTests.IsComplete_OpenedPlusMissedReachesCanvasSize" methodname="IsComplete_OpenedPlusMissedReachesCanvasSize" classname="MissedPieceTests" runstate="Runnable" seed="497791549" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000128" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1163" name="MissPiece_Random_NeverPicksOpenedOrAlreadyMissed" fullname="MissedPieceTests.MissPiece_Random_NeverPicksOpenedOrAlreadyMissed" methodname="MissPiece_Random_NeverPicksOpenedOrAlreadyMissed" classname="MissedPieceTests" runstate="Runnable" seed="1119302160" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.001158" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1161" name="OpenAndMiss_Sequential_ConsumeInTouchedOrder" fullname="MissedPieceTests.OpenAndMiss_Sequential_ConsumeInTouchedOrder" methodname="OpenAndMiss_Sequential_ConsumeInTouchedOrder" classname="MissedPieceTests" runstate="Runnable" seed="2078563436" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000251" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1167" name="Pipeline_MissedDayBurnsPieceAndBreaksStreak" fullname="MissedPieceTests.Pipeline_MissedDayBurnsPieceAndBreaksStreak" methodname="Pipeline_MissedDayBurnsPieceAndBreaksStreak" classname="MissedPieceTests" runstate="Runnable" seed="1540572969" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000845" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1166" name="ResetProgress_ClearsMissedPixelsToo" fullname="MissedPieceTests.ResetProgress_ClearsMissedPixelsToo" methodname="ResetProgress_ClearsMissedPixelsToo" classname="MissedPieceTests" runstate="Runnable" seed="1333845223" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000199" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1157" name="Settle_Sequential_BurnsOnePiecePerMissedDay" fullname="MissedPieceTests.Settle_Sequential_BurnsOnePiecePerMissedDay" methodname="Settle_Sequential_BurnsOnePiecePerMissedDay" classname="MissedPieceTests" runstate="Runnable" seed="1280178768" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000256" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1158" name="Settle_StopsWhenPaintingExhausted" fullname="MissedPieceTests.Settle_StopsWhenPaintingExhausted" methodname="Settle_StopsWhenPaintingExhausted" classname="MissedPieceTests" runstate="Runnable" seed="2069534629" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000227" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1159" name="SettleAll_FirstRun_NoLastLoginDate_ReturnsZero" fullname="MissedPieceTests.SettleAll_FirstRun_NoLastLoginDate_ReturnsZero" methodname="SettleAll_FirstRun_NoLastLoginDate_ReturnsZero" classname="MissedPieceTests" runstate="Runnable" seed="898318524" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000257" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1160" name="SettleAll_OnlyAffectedHabitsAreReturned" fullname="MissedPieceTests.SettleAll_OnlyAffectedHabitsAreReturned" methodname="SettleAll_OnlyAffectedHabitsAreReturned" classname="MissedPieceTests" runstate="Runnable" seed="1717408664" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000494" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1162" name="UndoLastPiece_Sequential_WithHoles_ReopensFollowingSlot" fullname="MissedPieceTests.UndoLastPiece_Sequential_WithHoles_ReopensFollowingSlot" methodname="UndoLastPiece_Sequential_WithHoles_ReopensFollowingSlot" classname="MissedPieceTests" runstate="Runnable" seed="1085919470" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000227" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1168" name="PaintingAssignmentTests" fullname="PaintingAssignmentTests" classname="PaintingAssignmentTests" runstate="Runnable" testcasecount="23" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.012822" total="23" passed="23" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1184" name="Assign_NullLibraryOrEmptyId_IsNoOp" fullname="PaintingAssignmentTests.Assign_NullLibraryOrEmptyId_IsNoOp" methodname="Assign_NullLibraryOrEmptyId_IsNoOp" classname="PaintingAssignmentTests" runstate="Runnable" seed="1500324462" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.001164" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1182" name="Assign_ResetsProgress" fullname="PaintingAssignmentTests.Assign_ResetsProgress" methodname="Assign_ResetsProgress" classname="PaintingAssignmentTests" runstate="Runnable" seed="1559885273" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000392" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1181" name="Assign_SetsPaintingAndResyncsCanvasSize" fullname="PaintingAssignmentTests.Assign_SetsPaintingAndResyncsCanvasSize" methodname="Assign_SetsPaintingAndResyncsCanvasSize" classname="PaintingAssignmentTests" runstate="Runnable" seed="609215673" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000306" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1183" name="Assign_UnknownId_ReturnsFalseAndKeepsHabitUntouched" fullname="PaintingAssignmentTests.Assign_UnknownId_ReturnsFalseAndKeepsHabitUntouched" methodname="Assign_UnknownId_ReturnsFalseAndKeepsHabitUntouched" classname="PaintingAssignmentTests" runstate="Runnable" seed="1364202264" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000244" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1171" name="AssignNext_NoLibrary_ReturnsFalseAndKeepsData" fullname="PaintingAssignmentTests.AssignNext_NoLibrary_ReturnsFalseAndKeepsData" methodname="AssignNext_NoLibrary_ReturnsFalseAndKeepsData" classname="PaintingAssignmentTests" runstate="Runnable" seed="795872675" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000248" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1170" name="AssignNext_ResetsProgress" fullname="PaintingAssignmentTests.AssignNext_ResetsProgress" methodname="AssignNext_ResetsProgress" classname="PaintingAssignmentTests" runstate="Runnable" seed="1499286549" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000250" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1169" name="AssignNext_ResyncsCanvasSizeToPickedPainting" fullname="PaintingAssignmentTests.AssignNext_ResyncsCanvasSizeToPickedPainting" methodname="AssignNext_ResyncsCanvasSizeToPickedPainting" classname="PaintingAssignmentTests" runstate="Runnable" seed="712163555" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000735" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[
+IgnoreFailingMessages:true
+PaintingLibrary: 16 parcalik tablo yok, en yakin boyuta dusuluyor.
+
+IgnoreFailingMessages:false
+]]></output>
+        </test-case>
+        <test-case id="1186" name="ChooseNext_EmptyId_FallsBackToAssignNext" fullname="PaintingAssignmentTests.ChooseNext_EmptyId_FallsBackToAssignNext" methodname="ChooseNext_EmptyId_FallsBackToAssignNext" classname="PaintingAssignmentTests" runstate="Runnable" seed="1382325874" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000270" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1185" name="ChooseNext_ExplicitId_AssignsAndDropsFlag" fullname="PaintingAssignmentTests.ChooseNext_ExplicitId_AssignsAndDropsFlag" methodname="ChooseNext_ExplicitId_AssignsAndDropsFlag" classname="PaintingAssignmentTests" runstate="Runnable" seed="1359097302" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000334" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1187" name="ChooseNext_UnresolvableId_FallsBackToAssignNext" fullname="PaintingAssignmentTests.ChooseNext_UnresolvableId_FallsBackToAssignNext" methodname="ChooseNext_UnresolvableId_FallsBackToAssignNext" classname="PaintingAssignmentTests" runstate="Runnable" seed="2813125" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000225" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1191" name="ForSize_MissingBucketIsEmptyWithoutNearestFallback" fullname="PaintingAssignmentTests.ForSize_MissingBucketIsEmptyWithoutNearestFallback" methodname="ForSize_MissingBucketIsEmptyWithoutNearestFallback" classname="PaintingAssignmentTests" runstate="Runnable" seed="878424923" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000297" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1190" name="ForSize_ReturnsOnlyExactBucket" fullname="PaintingAssignmentTests.ForSize_ReturnsOnlyExactBucket" methodname="ForSize_ReturnsOnlyExactBucket" classname="PaintingAssignmentTests" runstate="Runnable" seed="986264148" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000752" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1172" name="IsSequential_UnknownPainting_FallsBackToRandom" fullname="PaintingAssignmentTests.IsSequential_UnknownPainting_FallsBackToRandom" methodname="IsSequential_UnknownPainting_FallsBackToRandom" classname="PaintingAssignmentTests" runstate="Runnable" seed="1494010099" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000152" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1178" name="RepairAll_AlreadyAwaitingChoice_DoesNotChange" fullname="PaintingAssignmentTests.RepairAll_AlreadyAwaitingChoice_DoesNotChange" methodname="RepairAll_AlreadyAwaitingChoice_DoesNotChange" classname="PaintingAssignmentTests" runstate="Runnable" seed="1004803551" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000428" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1176" name="RepairAll_CanvasSizeMismatch_RealignsWithoutReassigning" fullname="PaintingAssignmentTests.RepairAll_CanvasSizeMismatch_RealignsWithoutReassigning" methodname="RepairAll_CanvasSizeMismatch_RealignsWithoutReassigning" classname="PaintingAssignmentTests" runstate="Runnable" seed="473487990" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000315" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1177" name="RepairAll_FinishedPainting_CompletesAndHolds" fullname="PaintingAssignmentTests.RepairAll_FinishedPainting_CompletesAndHolds" methodname="RepairAll_FinishedPainting_CompletesAndHolds" classname="PaintingAssignmentTests" runstate="Runnable" seed="1521924767" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000342" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1180" name="RepairAll_HealthyHabit_ReportsNoChange" fullname="PaintingAssignmentTests.RepairAll_HealthyHabit_ReportsNoChange" methodname="RepairAll_HealthyHabit_ReportsNoChange" classname="PaintingAssignmentTests" runstate="Runnable" seed="2131567932" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000207" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1175" name="RepairAll_MissingPainting_AssignsNew" fullname="PaintingAssignmentTests.RepairAll_MissingPainting_AssignsNew" methodname="RepairAll_MissingPainting_AssignsNew" classname="PaintingAssignmentTests" runstate="Runnable" seed="213764432" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000236" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1179" name="RepairAll_MissingPaintingWhileAwaitingChoice_DropsFlagAfterAssigning" fullname="PaintingAssignmentTests.RepairAll_MissingPaintingWhileAwaitingChoice_DropsFlagAfterAssigning" methodname="RepairAll_MissingPaintingWhileAwaitingChoice_DropsFlagAfterAssigning" classname="PaintingAssignmentTests" runstate="Runnable" seed="1937272778" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000240" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1174" name="TryCompleteActive_AddsToGalleryButKeepsPaintingAndSetsFlag" fullname="PaintingAssignmentTests.TryCompleteActive_AddsToGalleryButKeepsPaintingAndSetsFlag" methodname="TryCompleteActive_AddsToGalleryButKeepsPaintingAndSetsFlag" classname="PaintingAssignmentTests" runstate="Runnable" seed="190922200" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000290" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1173" name="TryCompleteActive_IncompletePainting_DoesNothing" fullname="PaintingAssignmentTests.TryCompleteActive_IncompletePainting_DoesNothing" methodname="TryCompleteActive_IncompletePainting_DoesNothing" classname="PaintingAssignmentTests" runstate="Runnable" seed="816129311" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000247" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1188" name="TryReleaseHold_DropsFlagWithoutTouchingGallery" fullname="PaintingAssignmentTests.TryReleaseHold_DropsFlagWithoutTouchingGallery" methodname="TryReleaseHold_DropsFlagWithoutTouchingGallery" classname="PaintingAssignmentTests" runstate="Runnable" seed="739392647" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000200" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1189" name="TryReleaseHold_NotAwaiting_ReturnsFalse" fullname="PaintingAssignmentTests.TryReleaseHold_NotAwaiting_ReturnsFalse" methodname="TryReleaseHold_NotAwaiting_ReturnsFalse" classname="PaintingAssignmentTests" runstate="Runnable" seed="45837269" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000091" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1192" name="PaintingChoiceTests" fullname="PaintingChoiceTests" classname="PaintingChoiceTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.005133" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1194" name="Collect_AllInGallery_ReturnsWholeBucket" fullname="PaintingChoiceTests.Collect_AllInGallery_ReturnsWholeBucket" methodname="Collect_AllInGallery_ReturnsWholeBucket" classname="PaintingChoiceTests" runstate="Runnable" seed="1493942833" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000986" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1196" name="Collect_ClearsBufferEveryCall" fullname="PaintingChoiceTests.Collect_ClearsBufferEveryCall" methodname="Collect_ClearsBufferEveryCall" classname="PaintingChoiceTests" runstate="Runnable" seed="819340167" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000493" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1195" name="Collect_EmptyBucket_ReturnsEmpty" fullname="PaintingChoiceTests.Collect_EmptyBucket_ReturnsEmpty" methodname="Collect_EmptyBucket_ReturnsEmpty" classname="PaintingChoiceTests" runstate="Runnable" seed="241992327" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000262" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1193" name="Collect_ExcludesGalleryEntries" fullname="PaintingChoiceTests.Collect_ExcludesGalleryEntries" methodname="Collect_ExcludesGalleryEntries" classname="PaintingChoiceTests" runstate="Runnable" seed="1905830025" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000584" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1197" name="Collect_NullLibraryOrHabit_ClearsBufferAndReturns" fullname="PaintingChoiceTests.Collect_NullLibraryOrHabit_ClearsBufferAndReturns" methodname="Collect_NullLibraryOrHabit_ClearsBufferAndReturns" classname="PaintingChoiceTests" runstate="Runnable" seed="335368069" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000267" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1199" name="IsPending_CompletedToday_ReturnsFalse" fullname="PaintingChoiceTests.IsPending_CompletedToday_ReturnsFalse" methodname="IsPending_CompletedToday_ReturnsFalse" classname="PaintingChoiceTests" runstate="Runnable" seed="507899359" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000156" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1201" name="IsPending_FlagNotSet_ReturnsFalse" fullname="PaintingChoiceTests.IsPending_FlagNotSet_ReturnsFalse" methodname="IsPending_FlagNotSet_ReturnsFalse" classname="PaintingChoiceTests" runstate="Runnable" seed="709499748" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000099" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1198" name="IsPending_FlagSetDueNotCompleted_ReturnsTrue" fullname="PaintingChoiceTests.IsPending_FlagSetDueNotCompleted_ReturnsTrue" methodname="IsPending_FlagSetDueNotCompleted_ReturnsTrue" classname="PaintingChoiceTests" runstate="Runnable" seed="26552511" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000104" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1200" name="IsPending_NotDueToday_ReturnsFalse" fullname="PaintingChoiceTests.IsPending_NotDueToday_ReturnsFalse" methodname="IsPending_NotDueToday_ReturnsFalse" classname="PaintingChoiceTests" runstate="Runnable" seed="1402980930" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000216" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1202" name="IsPending_NullHabit_ReturnsFalse" fullname="PaintingChoiceTests.IsPending_NullHabit_ReturnsFalse" methodname="IsPending_NullHabit_ReturnsFalse" classname="PaintingChoiceTests" runstate="Runnable" seed="1984233241" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000092" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1203" name="PaintingHoleTests" fullname="PaintingHoleTests" classname="PaintingHoleTests" runstate="Runnable" testcasecount="17" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.007065" total="17" passed="17" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1218" name="CollectOpenedIndices_Random_MatchesOpenedIndices" fullname="PaintingHoleTests.CollectOpenedIndices_Random_MatchesOpenedIndices" methodname="CollectOpenedIndices_Random_MatchesOpenedIndices" classname="PaintingHoleTests" runstate="Runnable" seed="1263483808" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000733" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1217" name="CollectOpenedIndices_Sequential_SkipsMissed" fullname="PaintingHoleTests.CollectOpenedIndices_Sequential_SkipsMissed" methodname="CollectOpenedIndices_Sequential_SkipsMissed" classname="PaintingHoleTests" runstate="Runnable" seed="382080742" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000268" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1219" name="For_DefinitionOverload_UsesItsOrderWithoutLibraryLookup" fullname="PaintingHoleTests.For_DefinitionOverload_UsesItsOrderWithoutLibraryLookup" methodname="For_DefinitionOverload_UsesItsOrderWithoutLibraryLookup" classname="PaintingHoleTests" runstate="Runnable" seed="80317320" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000224" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1220" name="For_NullDefinition_FallsBackToRandom" fullname="PaintingHoleTests.For_NullDefinition_FallsBackToRandom" methodname="For_NullDefinition_FallsBackToRandom" classname="PaintingHoleTests" runstate="Runnable" seed="1993307036" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000105" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1204" name="Record_AddsToGalleryOnceAndTracksHoles" fullname="PaintingHoleTests.Record_AddsToGalleryOnceAndTracksHoles" methodname="Record_AddsToGalleryOnceAndTracksHoles" classname="PaintingHoleTests" runstate="Runnable" seed="1635624686" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000271" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1209" name="Record_EmptyOrNullId_IsNoOp" fullname="PaintingHoleTests.Record_EmptyOrNullId_IsNoOp" methodname="Record_EmptyOrNullId_IsNoOp" classname="PaintingHoleTests" runstate="Runnable" seed="1844672330" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000219" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1205" name="Record_NoMissedPieces_NoHolesEntry" fullname="PaintingHoleTests.Record_NoMissedPieces_NoHolesEntry" methodname="Record_NoMissedPieces_NoHolesEntry" classname="PaintingHoleTests" runstate="Runnable" seed="1144722463" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000153" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1206" name="Record_SecondCompletion_OverwritesHolesWithoutDuplicateMembership" fullname="PaintingHoleTests.Record_SecondCompletion_OverwritesHolesWithoutDuplicateMembership" methodname="Record_SecondCompletion_OverwritesHolesWithoutDuplicateMembership" classname="PaintingHoleTests" runstate="Runnable" seed="1647271762" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000338" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1207" name="Record_SecondCompletionWithoutHoles_ClearsOldHolesEntry" fullname="PaintingHoleTests.Record_SecondCompletionWithoutHoles_ClearsOldHolesEntry" methodname="Record_SecondCompletionWithoutHoles_ClearsOldHolesEntry" classname="PaintingHoleTests" runstate="Runnable" seed="1554819896" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000175" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1212" name="Resize_CarriesMissedCountAfterOpenedPieces" fullname="PaintingHoleTests.Resize_CarriesMissedCountAfterOpenedPieces" methodname="Resize_CarriesMissedCountAfterOpenedPieces" classname="PaintingHoleTests" runstate="Runnable" seed="1716423740" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000281" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1214" name="Resize_Sequential_CarriesMissedCount" fullname="PaintingHoleTests.Resize_Sequential_CarriesMissedCount" methodname="Resize_Sequential_CarriesMissedCount" classname="PaintingHoleTests" runstate="Runnable" seed="1992443804" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000238" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1213" name="Resize_Smaller_PrioritizesOpenedOverMissedWhenClamping" fullname="PaintingHoleTests.Resize_Smaller_PrioritizesOpenedOverMissedWhenClamping" methodname="Resize_Smaller_PrioritizesOpenedOverMissedWhenClamping" classname="PaintingHoleTests" runstate="Runnable" seed="525765788" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000260" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1216" name="StatusOf_Random_WithHoles" fullname="PaintingHoleTests.StatusOf_Random_WithHoles" methodname="StatusOf_Random_WithHoles" classname="PaintingHoleTests" runstate="Runnable" seed="650644153" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000270" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1215" name="StatusOf_Sequential_WithHoles_MatchesTouchedPrefix" fullname="PaintingHoleTests.StatusOf_Sequential_WithHoles_MatchesTouchedPrefix" methodname="StatusOf_Sequential_WithHoles_MatchesTouchedPrefix" classname="PaintingHoleTests" runstate="Runnable" seed="752213345" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000247" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1211" name="TryCompleteActive_NoHoles_NoHolesEntryRecorded" fullname="PaintingHoleTests.TryCompleteActive_NoHoles_NoHolesEntryRecorded" methodname="TryCompleteActive_NoHoles_NoHolesEntryRecorded" classname="PaintingHoleTests" runstate="Runnable" seed="81669371" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000186" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1210" name="TryCompleteActive_WithHoles_RecordsHolesInGallery" fullname="PaintingHoleTests.TryCompleteActive_WithHoles_RecordsHolesInGallery" methodname="TryCompleteActive_WithHoles_RecordsHolesInGallery" classname="PaintingHoleTests" runstate="Runnable" seed="1315977175" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000245" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1208" name="TryGetHoles_UnknownId_ReturnsFalse" fullname="PaintingHoleTests.TryGetHoles_UnknownId_ReturnsFalse" methodname="TryGetHoles_UnknownId_ReturnsFalse" classname="PaintingHoleTests" runstate="Runnable" seed="1153507966" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000096" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1221" name="ResponsiveLayoutTests" fullname="ResponsiveLayoutTests" classname="ResponsiveLayoutTests" runstate="Runnable" testcasecount="24" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.008556" total="24" passed="24" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1232" name="EveryDevice_BandsAreOrderedAndPositive" fullname="ResponsiveLayoutTests.EveryDevice_BandsAreOrderedAndPositive" methodname="EveryDevice_BandsAreOrderedAndPositive" classname="ResponsiveLayoutTests" runstate="Runnable" seed="2059484947" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.001059" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1234" name="EveryDevice_BarHeightNeverShrinksBelowContent" fullname="ResponsiveLayoutTests.EveryDevice_BarHeightNeverShrinksBelowContent" methodname="EveryDevice_BarHeightNeverShrinksBelowContent" classname="ResponsiveLayoutTests" runstate="Runnable" seed="1002166108" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000187" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1222" name="EveryDevice_CanvasNeverSmallerThanDesign" fullname="ResponsiveLayoutTests.EveryDevice_CanvasNeverSmallerThanDesign" methodname="EveryDevice_CanvasNeverSmallerThanDesign" classname="ResponsiveLayoutTests" runstate="Runnable" seed="105948165" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000243" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1224" name="EveryDevice_ColumnIsCentred" fullname="ResponsiveLayoutTests.EveryDevice_ColumnIsCentred" methodname="EveryDevice_ColumnIsCentred" classname="ResponsiveLayoutTests" runstate="Runnable" seed="2027737875" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000243" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1223" name="EveryDevice_ContentColumnIsExactlyDesignWidth" fullname="ResponsiveLayoutTests.EveryDevice_ContentColumnIsExactlyDesignWidth" methodname="EveryDevice_ContentColumnIsExactlyDesignWidth" classname="ResponsiveLayoutTests" runstate="Runnable" seed="82399391" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000223" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1233" name="EveryDevice_FilterRowCoversTheSameStudioStrip" fullname="ResponsiveLayoutTests.EveryDevice_FilterRowCoversTheSameStudioStrip" methodname="EveryDevice_FilterRowCoversTheSameStudioStrip" classname="ResponsiveLayoutTests" runstate="Runnable" seed="798673089" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000218" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1228" name="EveryDevice_GridKeepsItsMinimumHeight" fullname="ResponsiveLayoutTests.EveryDevice_GridKeepsItsMinimumHeight" methodname="EveryDevice_GridKeepsItsMinimumHeight" classname="ResponsiveLayoutTests" runstate="Runnable" seed="1305802597" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000164" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1237" name="EveryDevice_NavBarAndGridNeverOverlapAvailable" fullname="ResponsiveLayoutTests.EveryDevice_NavBarAndGridNeverOverlapAvailable" methodname="EveryDevice_NavBarAndGridNeverOverlapAvailable" classname="ResponsiveLayoutTests" runstate="Runnable" seed="1888113225" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000254" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1229" name="EveryDevice_ShiftStaysWithinBounds" fullname="ResponsiveLayoutTests.EveryDevice_ShiftStaysWithinBounds" methodname="EveryDevice_ShiftStaysWithinBounds" classname="ResponsiveLayoutTests" runstate="Runnable" seed="1934595085" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000204" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1235" name="EveryDevice_VisibleBarHeightNeverBelowDesign" fullname="ResponsiveLayoutTests.EveryDevice_VisibleBarHeightNeverBelowDesign" methodname="EveryDevice_VisibleBarHeightNeverBelowDesign" classname="ResponsiveLayoutTests" runstate="Runnable" seed="820533960" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000158" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1230" name="Header_PainterHeadClearsHeader" fullname="ResponsiveLayoutTests.Header_PainterHeadClearsHeader" methodname="Header_PainterHeadClearsHeader" classname="ResponsiveLayoutTests" runstate="Runnable" seed="303034398" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000298" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1231" name="MinSceneHeight_IsDerivedFromHeaderHeight" fullname="ResponsiveLayoutTests.MinSceneHeight_IsDerivedFromHeaderHeight" methodname="MinSceneHeight_IsDerivedFromHeaderHeight" classname="ResponsiveLayoutTests" runstate="Runnable" seed="828618745" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000096" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1240" name="MoodRow_CirclesAreNotLargerThanBadges" fullname="ResponsiveLayoutTests.MoodRow_CirclesAreNotLargerThanBadges" methodname="MoodRow_CirclesAreNotLargerThanBadges" classname="ResponsiveLayoutTests" runstate="Runnable" seed="1616782560" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000092" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1239" name="MoodRow_FitsInsideHeaderHeight" fullname="ResponsiveLayoutTests.MoodRow_FitsInsideHeaderHeight" methodname="MoodRow_FitsInsideHeaderHeight" classname="ResponsiveLayoutTests" runstate="Runnable" seed="1026274963" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000093" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1238" name="MoodRow_FitsInsideHeaderWidth" fullname="ResponsiveLayoutTests.MoodRow_FitsInsideHeaderWidth" methodname="MoodRow_FitsInsideHeaderWidth" classname="ResponsiveLayoutTests" runstate="Runnable" seed="1053328034" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000197" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1241" name="MoodRow_LeavesSlackOnEachSide" fullname="ResponsiveLayoutTests.MoodRow_LeavesSlackOnEachSide" methodname="MoodRow_LeavesSlackOnEachSide" classname="ResponsiveLayoutTests" runstate="Runnable" seed="1908694146" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000108" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1226" name="Phones_CanvasHeightMatchesLegacyFormula" fullname="ResponsiveLayoutTests.Phones_CanvasHeightMatchesLegacyFormula" methodname="Phones_CanvasHeightMatchesLegacyFormula" classname="ResponsiveLayoutTests" runstate="Runnable" seed="2026834829" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000151" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1225" name="Phones_KeepPureWidthMatch" fullname="ResponsiveLayoutTests.Phones_KeepPureWidthMatch" methodname="Phones_KeepPureWidthMatch" classname="ResponsiveLayoutTests" runstate="Runnable" seed="706091863" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000280" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1244" name="SheetHeight_IsIdempotent" fullname="ResponsiveLayoutTests.SheetHeight_IsIdempotent" methodname="SheetHeight_IsIdempotent" classname="ResponsiveLayoutTests" runstate="Runnable" seed="1827629891" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000226" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1243" name="SheetHeight_LeavesTopMargin" fullname="ResponsiveLayoutTests.SheetHeight_LeavesTopMargin" methodname="SheetHeight_LeavesTopMargin" classname="ResponsiveLayoutTests" runstate="Runnable" seed="201474937" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000162" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1242" name="SheetHeight_NeverExceedsDesign" fullname="ResponsiveLayoutTests.SheetHeight_NeverExceedsDesign" methodname="SheetHeight_NeverExceedsDesign" classname="ResponsiveLayoutTests" runstate="Runnable" seed="1457585078" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000152" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1245" name="SheetHeight_ReturnsSkipWhenParentUnmeasured" fullname="ResponsiveLayoutTests.SheetHeight_ReturnsSkipWhenParentUnmeasured" methodname="SheetHeight_ReturnsSkipWhenParentUnmeasured" classname="ResponsiveLayoutTests" runstate="Runnable" seed="1363195918" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000126" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1236" name="TabWidth_FitsHabitsLabelAtDesignWidth" fullname="ResponsiveLayoutTests.TabWidth_FitsHabitsLabelAtDesignWidth" methodname="TabWidth_FitsHabitsLabelAtDesignWidth" classname="ResponsiveLayoutTests" runstate="Runnable" seed="258915890" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000126" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1227" name="WideScreens_SwitchToColumn" fullname="ResponsiveLayoutTests.WideScreens_SwitchToColumn" methodname="WideScreens_SwitchToColumn" classname="ResponsiveLayoutTests" runstate="Runnable" seed="841492823" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000205" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1246" name="SettingsLogicTests" fullname="SettingsLogicTests" classname="SettingsLogicTests" runstate="Runnable" testcasecount="56" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.015357" total="56" passed="56" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1279" name="AppSettings_Apply_MirrorsGivenData" fullname="SettingsLogicTests.AppSettings_Apply_MirrorsGivenData" methodname="AppSettings_Apply_MirrorsGivenData" classname="SettingsLogicTests" runstate="Runnable" seed="727136564" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000386" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1278" name="AppSettings_Apply_NullData_FallsBackToDefaults" fullname="SettingsLogicTests.AppSettings_Apply_NullData_FallsBackToDefaults" methodname="AppSettings_Apply_NullData_FallsBackToDefaults" classname="SettingsLogicTests" runstate="Runnable" seed="221577180" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000202" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1247" name="AppSettingsData_DefaultsMatchProductionBehavior" fullname="SettingsLogicTests.AppSettingsData_DefaultsMatchProductionBehavior" methodname="AppSettingsData_DefaultsMatchProductionBehavior" classname="SettingsLogicTests" runstate="Runnable" seed="1827010764" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000137" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1254" name="DeleteAll_ResetsSettingsToDefaults" fullname="SettingsLogicTests.DeleteAll_ResetsSettingsToDefaults" methodname="DeleteAll_ResetsSettingsToDefaults" classname="SettingsLogicTests" runstate="Runnable" seed="1031719050" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000234" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1249" name="Load_BlankPainterName_FallsBackToVincent" fullname="SettingsLogicTests.Load_BlankPainterName_FallsBackToVincent" methodname="Load_BlankPainterName_FallsBackToVincent" classname="SettingsLogicTests" runstate="Runnable" seed="27394063" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000134" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-suite type="ParameterizedMethod" id="1253" name="Load_InvalidReminderTime_FallsBackToDefault" fullname="SettingsLogicTests.Load_InvalidReminderTime_FallsBackToDefault" classname="SettingsLogicTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000899" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1250" name="Load_InvalidReminderTime_FallsBackToDefault(&quot;25:00&quot;)" fullname="SettingsLogicTests.Load_InvalidReminderTime_FallsBackToDefault(&quot;25:00&quot;)" methodname="Load_InvalidReminderTime_FallsBackToDefault" classname="SettingsLogicTests" runstate="Runnable" seed="818042691" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000206" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1251" name="Load_InvalidReminderTime_FallsBackToDefault(&quot;9:5&quot;)" fullname="SettingsLogicTests.Load_InvalidReminderTime_FallsBackToDefault(&quot;9:5&quot;)" methodname="Load_InvalidReminderTime_FallsBackToDefault" classname="SettingsLogicTests" runstate="Runnable" seed="147941538" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000051" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1252" name="Load_InvalidReminderTime_FallsBackToDefault(&quot;&quot;)" fullname="SettingsLogicTests.Load_InvalidReminderTime_FallsBackToDefault(&quot;&quot;)" methodname="Load_InvalidReminderTime_FallsBackToDefault" classname="SettingsLogicTests" runstate="Runnable" seed="249333343" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000047" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+        </test-suite>
+        <test-case id="1248" name="Load_OldSaveWithoutSettingsField_FillsDefaultsWithoutBumpingSaveVersion" fullname="SettingsLogicTests.Load_OldSaveWithoutSettingsField_FillsDefaultsWithoutBumpingSaveVersion" methodname="Load_OldSaveWithoutSettingsField_FillsDefaultsWithoutBumpingSaveVersion" classname="SettingsLogicTests" runstate="Runnable" seed="497843910" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000198" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-suite type="ParameterizedMethod" id="1263" name="NormalizePainterName_BlankFallsBackToVincent" fullname="SettingsLogicTests.NormalizePainterName_BlankFallsBackToVincent" classname="SettingsLogicTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000713" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1260" name="NormalizePainterName_BlankFallsBackToVincent(&quot;&quot;)" fullname="SettingsLogicTests.NormalizePainterName_BlankFallsBackToVincent(&quot;&quot;)" methodname="NormalizePainterName_BlankFallsBackToVincent" classname="SettingsLogicTests" runstate="Runnable" seed="369567537" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000152" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1261" name="NormalizePainterName_BlankFallsBackToVincent(&quot;   &quot;)" fullname="SettingsLogicTests.NormalizePainterName_BlankFallsBackToVincent(&quot;   &quot;)" methodname="NormalizePainterName_BlankFallsBackToVincent" classname="SettingsLogicTests" runstate="Runnable" seed="1578955452" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000041" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1262" name="NormalizePainterName_BlankFallsBackToVincent(null)" fullname="SettingsLogicTests.NormalizePainterName_BlankFallsBackToVincent(null)" methodname="NormalizePainterName_BlankFallsBackToVincent" classname="SettingsLogicTests" runstate="Runnable" seed="1397996256" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000036" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+        </test-suite>
+        <test-case id="1264" name="NormalizePainterName_ClampsToFourteenCharacters" fullname="SettingsLogicTests.NormalizePainterName_ClampsToFourteenCharacters" methodname="NormalizePainterName_ClampsToFourteenCharacters" classname="SettingsLogicTests" runstate="Runnable" seed="1259705153" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000110" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1265" name="NormalizePainterName_ShortNamePassesThroughUnchanged" fullname="SettingsLogicTests.NormalizePainterName_ShortNamePassesThroughUnchanged" methodname="NormalizePainterName_ShortNamePassesThroughUnchanged" classname="SettingsLogicTests" runstate="Runnable" seed="311693202" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000082" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1259" name="NormalizePainterName_TrimsWhitespace" fullname="SettingsLogicTests.NormalizePainterName_TrimsWhitespace" methodname="NormalizePainterName_TrimsWhitespace" classname="SettingsLogicTests" runstate="Runnable" seed="1912236596" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000079" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1287" name="ReminderSchedule_AfterTime_FiresTomorrow" fullname="SettingsLogicTests.ReminderSchedule_AfterTime_FiresTomorrow" methodname="ReminderSchedule_AfterTime_FiresTomorrow" classname="SettingsLogicTests" runstate="Runnable" seed="1074530718" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000430" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1286" name="ReminderSchedule_BeforeTime_FiresToday" fullname="SettingsLogicTests.ReminderSchedule_BeforeTime_FiresToday" methodname="ReminderSchedule_BeforeTime_FiresToday" classname="SettingsLogicTests" runstate="Runnable" seed="1180760982" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000183" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1297" name="ReminderSchedule_CrossesMonthBoundary" fullname="SettingsLogicTests.ReminderSchedule_CrossesMonthBoundary" methodname="ReminderSchedule_CrossesMonthBoundary" classname="SettingsLogicTests" runstate="Runnable" seed="296311891" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000144" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1298" name="ReminderSchedule_CrossesYearBoundary" fullname="SettingsLogicTests.ReminderSchedule_CrossesYearBoundary" methodname="ReminderSchedule_CrossesYearBoundary" classname="SettingsLogicTests" runstate="Runnable" seed="1188109810" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000196" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1288" name="ReminderSchedule_ExactlyAtTime_FiresTomorrow" fullname="SettingsLogicTests.ReminderSchedule_ExactlyAtTime_FiresTomorrow" methodname="ReminderSchedule_ExactlyAtTime_FiresTomorrow" classname="SettingsLogicTests" runstate="Runnable" seed="1435204058" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000139" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-suite type="ParameterizedMethod" id="1294" name="ReminderSchedule_FireTimeIsAlwaysInTheFuture" fullname="SettingsLogicTests.ReminderSchedule_FireTimeIsAlwaysInTheFuture" classname="SettingsLogicTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.001496" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1289" name="ReminderSchedule_FireTimeIsAlwaysInTheFuture(2026,1,15,0,0,0,&quot;00:00&quot;)" fullname="SettingsLogicTests.ReminderSchedule_FireTimeIsAlwaysInTheFuture(2026,1,15,0,0,0,&quot;00:00&quot;)" methodname="ReminderSchedule_FireTimeIsAlwaysInTheFuture" classname="SettingsLogicTests" runstate="Runnable" seed="1745834012" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000616" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1290" name="ReminderSchedule_FireTimeIsAlwaysInTheFuture(2026,1,15,12,0,0,&quot;12:00&quot;)" fullname="SettingsLogicTests.ReminderSchedule_FireTimeIsAlwaysInTheFuture(2026,1,15,12,0,0,&quot;12:00&quot;)" methodname="ReminderSchedule_FireTimeIsAlwaysInTheFuture" classname="SettingsLogicTests" runstate="Runnable" seed="1739330774" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000058" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1291" name="ReminderSchedule_FireTimeIsAlwaysInTheFuture(2026,1,15,23,59,59,&quot;00:00&quot;)" fullname="SettingsLogicTests.ReminderSchedule_FireTimeIsAlwaysInTheFuture(2026,1,15,23,59,59,&quot;00:00&quot;)" methodname="ReminderSchedule_FireTimeIsAlwaysInTheFuture" classname="SettingsLogicTests" runstate="Runnable" seed="1952472802" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000047" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1292" name="ReminderSchedule_FireTimeIsAlwaysInTheFuture(2026,12,31,23,59,59,&quot;23:59&quot;)" fullname="SettingsLogicTests.ReminderSchedule_FireTimeIsAlwaysInTheFuture(2026,12,31,23,59,59,&quot;23:59&quot;)" methodname="ReminderSchedule_FireTimeIsAlwaysInTheFuture" classname="SettingsLogicTests" runstate="Runnable" seed="211817760" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000050" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1293" name="ReminderSchedule_FireTimeIsAlwaysInTheFuture(2026,2,28,10,30,0,&quot;10:30&quot;)" fullname="SettingsLogicTests.ReminderSchedule_FireTimeIsAlwaysInTheFuture(2026,2,28,10,30,0,&quot;10:30&quot;)" methodname="ReminderSchedule_FireTimeIsAlwaysInTheFuture" classname="SettingsLogicTests" runstate="Runnable" seed="2055311581" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000045" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+        </test-suite>
+        <test-suite type="ParameterizedMethod" id="1307" name="ReminderSchedule_InvalidTime_ReturnsFalse" fullname="SettingsLogicTests.ReminderSchedule_InvalidTime_ReturnsFalse" classname="SettingsLogicTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.001144" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1300" name="ReminderSchedule_InvalidTime_ReturnsFalse(&quot;25:00&quot;)" fullname="SettingsLogicTests.ReminderSchedule_InvalidTime_ReturnsFalse(&quot;25:00&quot;)" methodname="ReminderSchedule_InvalidTime_ReturnsFalse" classname="SettingsLogicTests" runstate="Runnable" seed="1882651412" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000118" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1301" name="ReminderSchedule_InvalidTime_ReturnsFalse(&quot;21:60&quot;)" fullname="SettingsLogicTests.ReminderSchedule_InvalidTime_ReturnsFalse(&quot;21:60&quot;)" methodname="ReminderSchedule_InvalidTime_ReturnsFalse" classname="SettingsLogicTests" runstate="Runnable" seed="441409230" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000043" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1302" name="ReminderSchedule_InvalidTime_ReturnsFalse(&quot;9:5&quot;)" fullname="SettingsLogicTests.ReminderSchedule_InvalidTime_ReturnsFalse(&quot;9:5&quot;)" methodname="ReminderSchedule_InvalidTime_ReturnsFalse" classname="SettingsLogicTests" runstate="Runnable" seed="2140563911" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000038" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1303" name="ReminderSchedule_InvalidTime_ReturnsFalse(&quot;2100&quot;)" fullname="SettingsLogicTests.ReminderSchedule_InvalidTime_ReturnsFalse(&quot;2100&quot;)" methodname="ReminderSchedule_InvalidTime_ReturnsFalse" classname="SettingsLogicTests" runstate="Runnable" seed="139098454" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000036" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1304" name="ReminderSchedule_InvalidTime_ReturnsFalse(&quot;&quot;)" fullname="SettingsLogicTests.ReminderSchedule_InvalidTime_ReturnsFalse(&quot;&quot;)" methodname="ReminderSchedule_InvalidTime_ReturnsFalse" classname="SettingsLogicTests" runstate="Runnable" seed="1285869641" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000044" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1305" name="ReminderSchedule_InvalidTime_ReturnsFalse(null)" fullname="SettingsLogicTests.ReminderSchedule_InvalidTime_ReturnsFalse(null)" methodname="ReminderSchedule_InvalidTime_ReturnsFalse" classname="SettingsLogicTests" runstate="Runnable" seed="835882449" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000041" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1306" name="ReminderSchedule_InvalidTime_ReturnsFalse(&quot;ab:cd&quot;)" fullname="SettingsLogicTests.ReminderSchedule_InvalidTime_ReturnsFalse(&quot;ab:cd&quot;)" methodname="ReminderSchedule_InvalidTime_ReturnsFalse" classname="SettingsLogicTests" runstate="Runnable" seed="1516824188" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000039" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+        </test-suite>
+        <test-case id="1299" name="ReminderSchedule_Midnight_FiresNextMidnight" fullname="SettingsLogicTests.ReminderSchedule_Midnight_FiresNextMidnight" methodname="ReminderSchedule_Midnight_FiresNextMidnight" classname="SettingsLogicTests" runstate="Runnable" seed="574628922" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000193" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1296" name="ReminderSchedule_PreservesDateTimeKind" fullname="SettingsLogicTests.ReminderSchedule_PreservesDateTimeKind" methodname="ReminderSchedule_PreservesDateTimeKind" classname="SettingsLogicTests" runstate="Runnable" seed="1865114775" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000150" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1308" name="ReminderSchedule_RoundTripsTimeOfDayFormat" fullname="SettingsLogicTests.ReminderSchedule_RoundTripsTimeOfDayFormat" methodname="ReminderSchedule_RoundTripsTimeOfDayFormat" classname="SettingsLogicTests" runstate="Runnable" seed="1139072448" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000595" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1295" name="ReminderSchedule_TruncatesSecondsAndMilliseconds" fullname="SettingsLogicTests.ReminderSchedule_TruncatesSecondsAndMilliseconds" methodname="ReminderSchedule_TruncatesSecondsAndMilliseconds" classname="SettingsLogicTests" runstate="Runnable" seed="1416315141" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000249" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1277" name="SetReminder_InvalidTime_FallsBackToDefault" fullname="SettingsLogicTests.SetReminder_InvalidTime_FallsBackToDefault" methodname="SetReminder_InvalidTime_FallsBackToDefault" classname="SettingsLogicTests" runstate="Runnable" seed="1963460814" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000146" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1276" name="TimeOfDay_Format_RoundTripsTryParse" fullname="SettingsLogicTests.TimeOfDay_Format_RoundTripsTryParse" methodname="TimeOfDay_Format_RoundTripsTryParse" classname="SettingsLogicTests" runstate="Runnable" seed="1073466687" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000103" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1275" name="TimeOfDay_TryParse_ReturnsHourAndMinute" fullname="SettingsLogicTests.TimeOfDay_TryParse_ReturnsHourAndMinute" methodname="TimeOfDay_TryParse_ReturnsHourAndMinute" classname="SettingsLogicTests" runstate="Runnable" seed="493959025" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000111" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-suite type="ParameterizedMethod" id="1274" name="TimeOfDay_TryParse_ValidatesHhMm" fullname="SettingsLogicTests.TimeOfDay_TryParse_ValidatesHhMm" classname="SettingsLogicTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.001476" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1266" name="TimeOfDay_TryParse_ValidatesHhMm(&quot;21:00&quot;,True)" fullname="SettingsLogicTests.TimeOfDay_TryParse_ValidatesHhMm(&quot;21:00&quot;,True)" methodname="TimeOfDay_TryParse_ValidatesHhMm" classname="SettingsLogicTests" runstate="Runnable" seed="2100049667" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000288" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1267" name="TimeOfDay_TryParse_ValidatesHhMm(&quot;00:00&quot;,True)" fullname="SettingsLogicTests.TimeOfDay_TryParse_ValidatesHhMm(&quot;00:00&quot;,True)" methodname="TimeOfDay_TryParse_ValidatesHhMm" classname="SettingsLogicTests" runstate="Runnable" seed="1118124492" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000053" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1268" name="TimeOfDay_TryParse_ValidatesHhMm(&quot;23:59&quot;,True)" fullname="SettingsLogicTests.TimeOfDay_TryParse_ValidatesHhMm(&quot;23:59&quot;,True)" methodname="TimeOfDay_TryParse_ValidatesHhMm" classname="SettingsLogicTests" runstate="Runnable" seed="1990285288" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000049" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1269" name="TimeOfDay_TryParse_ValidatesHhMm(&quot;9:5&quot;,False)" fullname="SettingsLogicTests.TimeOfDay_TryParse_ValidatesHhMm(&quot;9:5&quot;,False)" methodname="TimeOfDay_TryParse_ValidatesHhMm" classname="SettingsLogicTests" runstate="Runnable" seed="1241990297" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000048" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1270" name="TimeOfDay_TryParse_ValidatesHhMm(&quot;25:00&quot;,False)" fullname="SettingsLogicTests.TimeOfDay_TryParse_ValidatesHhMm(&quot;25:00&quot;,False)" methodname="TimeOfDay_TryParse_ValidatesHhMm" classname="SettingsLogicTests" runstate="Runnable" seed="874542163" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000048" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1271" name="TimeOfDay_TryParse_ValidatesHhMm(&quot;12:60&quot;,False)" fullname="SettingsLogicTests.TimeOfDay_TryParse_ValidatesHhMm(&quot;12:60&quot;,False)" methodname="TimeOfDay_TryParse_ValidatesHhMm" classname="SettingsLogicTests" runstate="Runnable" seed="249817777" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000048" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1272" name="TimeOfDay_TryParse_ValidatesHhMm(&quot;&quot;,False)" fullname="SettingsLogicTests.TimeOfDay_TryParse_ValidatesHhMm(&quot;&quot;,False)" methodname="TimeOfDay_TryParse_ValidatesHhMm" classname="SettingsLogicTests" runstate="Runnable" seed="944211421" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000044" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1273" name="TimeOfDay_TryParse_ValidatesHhMm(null,False)" fullname="SettingsLogicTests.TimeOfDay_TryParse_ValidatesHhMm(null,False)" methodname="TimeOfDay_TryParse_ValidatesHhMm" classname="SettingsLogicTests" runstate="Runnable" seed="1776306301" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000047" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+        </test-suite>
+        <test-suite type="ParameterizedMethod" id="1285" name="TimeOfDay_Wrap_WrapsBothDirections" fullname="SettingsLogicTests.TimeOfDay_Wrap_WrapsBothDirections" classname="SettingsLogicTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000950" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1280" name="TimeOfDay_Wrap_WrapsBothDirections(24,24,0)" fullname="SettingsLogicTests.TimeOfDay_Wrap_WrapsBothDirections(24,24,0)" methodname="TimeOfDay_Wrap_WrapsBothDirections" classname="SettingsLogicTests" runstate="Runnable" seed="1926210110" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000176" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1281" name="TimeOfDay_Wrap_WrapsBothDirections(-1,24,23)" fullname="SettingsLogicTests.TimeOfDay_Wrap_WrapsBothDirections(-1,24,23)" methodname="TimeOfDay_Wrap_WrapsBothDirections" classname="SettingsLogicTests" runstate="Runnable" seed="537374560" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000041" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1282" name="TimeOfDay_Wrap_WrapsBothDirections(60,60,0)" fullname="SettingsLogicTests.TimeOfDay_Wrap_WrapsBothDirections(60,60,0)" methodname="TimeOfDay_Wrap_WrapsBothDirections" classname="SettingsLogicTests" runstate="Runnable" seed="1101557578" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000040" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1283" name="TimeOfDay_Wrap_WrapsBothDirections(-5,60,55)" fullname="SettingsLogicTests.TimeOfDay_Wrap_WrapsBothDirections(-5,60,55)" methodname="TimeOfDay_Wrap_WrapsBothDirections" classname="SettingsLogicTests" runstate="Runnable" seed="563262393" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000037" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1284" name="TimeOfDay_Wrap_WrapsBothDirections(23,24,23)" fullname="SettingsLogicTests.TimeOfDay_Wrap_WrapsBothDirections(23,24,23)" methodname="TimeOfDay_Wrap_WrapsBothDirections" classname="SettingsLogicTests" runstate="Runnable" seed="4933573" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000038" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+        </test-suite>
+        <test-case id="1255" name="WeekDays_Monday_SlotConversionIsIdentity" fullname="SettingsLogicTests.WeekDays_Monday_SlotConversionIsIdentity" methodname="WeekDays_Monday_SlotConversionIsIdentity" classname="SettingsLogicTests" runstate="Runnable" seed="1704125965" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000157" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1258" name="WeekDays_SlotAndMondayIndexConversionsAreInverses" fullname="SettingsLogicTests.WeekDays_SlotAndMondayIndexConversionsAreInverses" methodname="WeekDays_SlotAndMondayIndexConversionsAreInverses" classname="SettingsLogicTests" runstate="Runnable" seed="739289928" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000189" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1256" name="WeekDays_Sunday_AllSevenSlotsMapOneToOne" fullname="SettingsLogicTests.WeekDays_Sunday_AllSevenSlotsMapOneToOne" methodname="WeekDays_Sunday_AllSevenSlotsMapOneToOne" classname="SettingsLogicTests" runstate="Runnable" seed="1023429116" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000245" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1257" name="WeekDays_Sunday_SlotZeroIsPazar" fullname="SettingsLogicTests.WeekDays_Sunday_SlotZeroIsPazar" methodname="WeekDays_Sunday_SlotZeroIsPazar" classname="SettingsLogicTests" runstate="Runnable" seed="2414518" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000142" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1309" name="UiEasingTests" fullname="UiEasingTests" classname="UiEasingTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.003527" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1313" name="Breathe_EndpointsAreZero" fullname="UiEasingTests.Breathe_EndpointsAreZero" methodname="Breathe_EndpointsAreZero" classname="UiEasingTests" runstate="Runnable" seed="2050343068" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000193" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1316" name="Breathe_IsSymmetricAroundThePeak" fullname="UiEasingTests.Breathe_IsSymmetricAroundThePeak" methodname="Breathe_IsSymmetricAroundThePeak" classname="UiEasingTests" runstate="Runnable" seed="1920058887" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000097" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1314" name="Breathe_PeakIsAtHalfPeriod" fullname="UiEasingTests.Breathe_PeakIsAtHalfPeriod" methodname="Breathe_PeakIsAtHalfPeriod" classname="UiEasingTests" runstate="Runnable" seed="983795514" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000081" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1315" name="Breathe_StaysInZeroToOneRange" fullname="UiEasingTests.Breathe_StaysInZeroToOneRange" methodname="Breathe_StaysInZeroToOneRange" classname="UiEasingTests" runstate="Runnable" seed="1652771311" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000233" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1310" name="OutCubic_EndpointsAreExact" fullname="UiEasingTests.OutCubic_EndpointsAreExact" methodname="OutCubic_EndpointsAreExact" classname="UiEasingTests" runstate="Runnable" seed="41658525" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000113" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1312" name="OutCubic_FrontLoadsTheMotion" fullname="UiEasingTests.OutCubic_FrontLoadsTheMotion" methodname="OutCubic_FrontLoadsTheMotion" classname="UiEasingTests" runstate="Runnable" seed="383115859" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000117" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1311" name="OutCubic_IsMonotonicAndStaysInRange" fullname="UiEasingTests.OutCubic_IsMonotonicAndStaysInRange" methodname="OutCubic_IsMonotonicAndStaysInRange" classname="UiEasingTests" runstate="Runnable" seed="2102079350" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000270" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1317" name="OutEmphasized_EndpointsAreExact" fullname="UiEasingTests.OutEmphasized_EndpointsAreExact" methodname="OutEmphasized_EndpointsAreExact" classname="UiEasingTests" runstate="Runnable" seed="538141898" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000337" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1319" name="OutEmphasized_FrontLoadsTheMotion" fullname="UiEasingTests.OutEmphasized_FrontLoadsTheMotion" methodname="OutEmphasized_FrontLoadsTheMotion" classname="UiEasingTests" runstate="Runnable" seed="310507395" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000103" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1318" name="OutEmphasized_IsMonotonicAndStaysInRange" fullname="UiEasingTests.OutEmphasized_IsMonotonicAndStaysInRange" methodname="OutEmphasized_IsMonotonicAndStaysInRange" classname="UiEasingTests" runstate="Runnable" seed="864888631" result="Passed" start-time="2026-10-11 21:42:21Z" end-time="2026-10-11 21:42:21Z" duration="0.000577" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[Saving results to: C:/Users/pc/AppData/LocalLow/DefaultCompany/HabbitTracker\TestResults.xml
+]]></output>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

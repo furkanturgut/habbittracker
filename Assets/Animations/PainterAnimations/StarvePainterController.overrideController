@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: StarvePainterController
+  m_Controller: {fileID: 9100000, guid: a91dce658d7cbcd4d80441c4bfd9084a, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 09bc70f7e7924ce40b8a746834f50867, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c53370ce43189d44988be6c63a4c5580, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 959afb0c2ff831f42a0dda5262d5a70d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 34775225810d8134ea0b9012a7822a11, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 5832bcc3389273144b3e24ce46334bc8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7d41e5964de68d948bef668aa5139982, type: 2}

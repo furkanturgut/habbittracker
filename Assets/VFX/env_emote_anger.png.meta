@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 01d81ea3bab186d4696acc7fc342cd78
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4043107641702630872
+    second: env_emote_anger_0
+  - first:
+      213: -3703931324239742604
+    second: env_emote_anger_1
+  - first:
+      213: -4669205750235292034
+    second: env_emote_anger_2
+  - first:
+      213: 3399727556708594032
+    second: env_emote_anger_3
+  - first:
+      213: 2707622093805939595
+    second: env_emote_anger_4
+  - first:
+      213: -1693178595516185073
+    second: env_emote_anger_5
+  - first:
+      213: 2816464551919032359
+    second: env_emote_anger_6
+  - first:
+      213: 3352977503444007372
+    second: env_emote_anger_7
+  - first:
+      213: 7709722816561988815
+    second: env_emote_anger_8
+  - first:
+      213: 1278628323653451832
+    second: env_emote_anger_9
+  - first:
+      213: 3888274048806516378
+    second: env_emote_anger_10
+  - first:
+      213: -48701966653246571
+    second: env_emote_anger_11
+  - first:
+      213: 7398175539307361449
+    second: env_emote_anger_12
+  - first:
+      213: -201819783015484704
+    second: env_emote_anger_13
+  - first:
+      213: -8923698747242899874
+    second: env_emote_anger_14
+  - first:
+      213: 551139652234909447
+    second: env_emote_anger_15
+  - first:
+      213: 3530038542319497720
+    second: env_emote_anger_16
+  - first:
+      213: -3242641244802297459
+    second: env_emote_anger_17
+  - first:
+      213: -2300281988627607308
+    second: env_emote_anger_18
+  - first:
+      213: 8392002737722581138
+    second: env_emote_anger_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: env_emote_anger_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 39
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82ab5ab650ff3e7c0800000000000000
+      internalID: -4043107641702630872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_emote_anger_1
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 35
+        width: 98
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4797f3ab51ef89cc0800000000000000
+      internalID: -3703931324239742604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_emote_anger_2
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 67
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7e9302db16a33fb0800000000000000
+      internalID: -4669205750235292034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_emote_anger_3
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 39
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 071f8b643324e2f20800000000000000
+      internalID: 3399727556708594032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_emote_anger_4
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 67
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8b6d4fd2f7639520800000000000000
+      internalID: 2707622093805939595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_emote_anger_5
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 35
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0686f8c90f9088e0800000000000000
+      internalID: -1693178595516185073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_emote_anger_6
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 39
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7281d937697161720800000000000000
+      internalID: 2816464551919032359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_emote_anger_7
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 39
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc9f7a8464b288e20800000000000000
+      internalID: 3352977503444007372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_emote_anger_8
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 39
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc4c6e5cd007efa60800000000000000
+      internalID: 7709722816561988815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_emote_anger_9
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 39
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8300e179fa99eb110800000000000000
+      internalID: 1278628323653451832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_emote_anger_10
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 39
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a967b7c75ace5f530800000000000000
+      internalID: 3888274048806516378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_emote_anger_11
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 35
+        width: 98
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59335c1c1d9f25ff0800000000000000
+      internalID: -48701966653246571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_emote_anger_12
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 67
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a4366ea4799ba660800000000000000
+      internalID: 7398175539307361449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_emote_anger_13
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 39
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e237b40afdf23df0800000000000000
+      internalID: -201819783015484704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_emote_anger_14
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 67
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e561df7e447a82480800000000000000
+      internalID: -8923698747242899874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_emote_anger_15
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 35
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7071819f79a06a700800000000000000
+      internalID: 551139652234909447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_emote_anger_16
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 39
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f1346ee9573df030800000000000000
+      internalID: 3530038542319497720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_emote_anger_17
+      rect:
+        serializedVersion: 2
+        x: 1703
+        y: 39
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d815785d7f2dff2d0800000000000000
+      internalID: -3242641244802297459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_emote_anger_18
+      rect:
+        serializedVersion: 2
+        x: 1831
+        y: 39
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f05f9008b1c310e0800000000000000
+      internalID: -2300281988627607308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_emote_anger_19
+      rect:
+        serializedVersion: 2
+        x: 1959
+        y: 39
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2906f08f602667470800000000000000
+      internalID: 8392002737722581138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      env_emote_anger_0: -4043107641702630872
+      env_emote_anger_1: -3703931324239742604
+      env_emote_anger_10: 3888274048806516378
+      env_emote_anger_11: -48701966653246571
+      env_emote_anger_12: 7398175539307361449
+      env_emote_anger_13: -201819783015484704
+      env_emote_anger_14: -8923698747242899874
+      env_emote_anger_15: 551139652234909447
+      env_emote_anger_16: 3530038542319497720
+      env_emote_anger_17: -3242641244802297459
+      env_emote_anger_18: -2300281988627607308
+      env_emote_anger_19: 8392002737722581138
+      env_emote_anger_2: -4669205750235292034
+      env_emote_anger_3: 3399727556708594032
+      env_emote_anger_4: 2707622093805939595
+      env_emote_anger_5: -1693178595516185073
+      env_emote_anger_6: 2816464551919032359
+      env_emote_anger_7: 3352977503444007372
+      env_emote_anger_8: 7709722816561988815
+      env_emote_anger_9: 1278628323653451832
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

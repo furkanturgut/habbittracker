@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3549747c93869b94f89b089515ba45e6, type: 3}
+  m_Name: PaintingLibrary
+  m_EditorClassIdentifier: 
+  paintings:
+  - {fileID: 11400000, guid: b2b668b0d25823342bde7d48162b521c, type: 2}
+  - {fileID: 11400000, guid: 1b2a9cf020dac17439ef9a75bfe98c7b, type: 2}
+  - {fileID: 11400000, guid: 4ee5ddfea2af96249a3c4b6efdab7f14, type: 2}
+  - {fileID: 11400000, guid: 5192848deb612f64b9e583a4a59f5cf2, type: 2}
+  - {fileID: 11400000, guid: a92d6d29a20f8144c8d3c03981315127, type: 2}
+  - {fileID: 11400000, guid: d7876c3be7c4dcf44b2c37b31eff93e9, type: 2}
+  - {fileID: 11400000, guid: ebdeadb5a9efde541a48737d9d53b149, type: 2}
+  - {fileID: 11400000, guid: f2d61d9cc46339f4eb0a2c6041919def, type: 2}
+  - {fileID: 11400000, guid: 1933f672a52385746b37208494741c46, type: 2}
+  - {fileID: 11400000, guid: da4b5ccb34035be43989884fe4561313, type: 2}

@@ -1,0 +1,2306 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88d724cf8a0fc5644b5373f62aba0134, type: 3}
+  m_Name: LocalizationTable
+  m_EditorClassIdentifier: 
+  entries:
+  - key: common.cancel_button
+    values:
+    - "Vazge\xE7"
+    - Cancel
+    - Annuler
+    - Abbrechen
+    - Annulla
+    - Cancelar
+    - "\u041E\u0442\u043C\u0435\u043D\u0430"
+    - Cancelar
+  - key: common.close_button
+    values:
+    - Kapat
+    - Close
+    - Fermer
+    - "Schlie\xDFen"
+    - Chiudi
+    - Fechar
+    - "\u0417\u0430\u043A\u0440\u044B\u0442\u044C"
+    - Cerrar
+  - key: common.ok_button
+    values:
+    - Tamam
+    - OK
+    - OK
+    - OK
+    - OK
+    - OK
+    - "\u041E\u041A"
+    - Aceptar
+  - key: common.delete_button
+    values:
+    - Sil
+    - Delete
+    - Supprimer
+    - "L\xF6schen"
+    - Elimina
+    - Excluir
+    - "\u0423\u0434\u0430\u043B\u0438\u0442\u044C"
+    - Eliminar
+  - key: common.save_button
+    values:
+    - Kaydet
+    - Save
+    - Enregistrer
+    - Speichern
+    - Salva
+    - Salvar
+    - "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C"
+    - Guardar
+  - key: common.add_button
+    values:
+    - Ekle
+    - Add
+    - Ajouter
+    - "Hinzuf\xFCgen"
+    - Aggiungi
+    - Adicionar
+    - "\u0414\u043E\u0431\u0430\u0432\u0438\u0442\u044C"
+    - "A\xF1adir"
+  - key: common.archive_button
+    values:
+    - "Ar\u015Fivle"
+    - Archive
+    - Archiver
+    - Archivieren
+    - Archivia
+    - Arquivar
+    - "\u0412 \u0430\u0440\u0445\u0438\u0432"
+    - Archivar
+  - key: common.unarchive_button
+    values:
+    - Geri al
+    - Unarchive
+    - "D\xE9sarchiver"
+    - Wiederherstellen
+    - Ripristina
+    - Desarquivar
+    - "\u0418\u0437 \u0430\u0440\u0445\u0438\u0432\u0430"
+    - Desarchivar
+  - key: common.restore_button
+    values:
+    - "Geri y\xFCkle"
+    - Restore
+    - Restaurer
+    - Wiederherstellen
+    - Ripristina
+    - Restaurar
+    - "\u0412\u043E\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C"
+    - Restaurar
+  - key: common.reset_button
+    values:
+    - "S\u0131f\u0131rla"
+    - Reset
+    - "R\xE9initialiser"
+    - "Zur\xFCcksetzen"
+    - Reimposta
+    - Redefinir
+    - "\u0421\u0431\u0440\u043E\u0441\u0438\u0442\u044C"
+    - Restablecer
+  - key: nav.tab.workshop
+    values:
+    - "At\xF6lye"
+    - Studio
+    - Atelier
+    - Atelier
+    - Studio
+    - "Ateli\xEA"
+    - "\u0421\u0442\u0443\u0434\u0438\u044F"
+    - Estudio
+  - key: nav.tab.habits
+    values:
+    - "Al\u0131\u015Fkanl\u0131klar"
+    - Habits
+    - Habitudes
+    - Gewohnheiten
+    - Abitudini
+    - "H\xE1bitos"
+    - "\u041F\u0440\u0438\u0432\u044B\u0447\u043A\u0438"
+    - "H\xE1bitos"
+  - key: nav.tab.gallery
+    values:
+    - Galeri
+    - Gallery
+    - Galerie
+    - Galerie
+    - Galleria
+    - Galeria
+    - "\u0413\u0430\u043B\u0435\u0440\u0435\u044F"
+    - "Galer\xEDa"
+  - key: archive_sheet.title
+    values:
+    - "Ar\u015Fiv"
+    - Archive
+    - Archive
+    - Archiv
+    - Archivio
+    - Arquivo
+    - "\u0410\u0440\u0445\u0438\u0432"
+    - Archivo
+  - key: archive_sheet.empty_state
+    values:
+    - "Ar\u015Fivde al\u0131\u015Fkanl\u0131k yok"
+    - No habits in the archive
+    - "Aucune habitude archiv\xE9e"
+    - Keine Gewohnheiten im Archiv
+    - Nessuna abitudine archiviata
+    - "Nenhum h\xE1bito no arquivo"
+    - "\u0412 \u0430\u0440\u0445\u0438\u0432\u0435 \u043D\u0435\u0442 \u043F\u0440\u0438\u0432\u044B\u0447\u0435\u043A"
+    - "No hay h\xE1bitos archivados"
+  - key: category_picker.title
+    values:
+    - "Kategori se\xE7"
+    - Choose a category
+    - "Choisir une cat\xE9gorie"
+    - "Kategorie w\xE4hlen"
+    - Scegli una categoria
+    - Escolher categoria
+    - "\u0412\u044B\u0431\u0435\u0440\u0438\u0442\u0435 \u043A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u044E"
+    - "Elegir categor\xEDa"
+  - key: category_picker.create_row.placeholder
+    values:
+    - "Kategori ad\u0131"
+    - Category name
+    - "Nom de la cat\xE9gorie"
+    - Kategoriename
+    - Nome categoria
+    - Nome da categoria
+    - "\u041D\u0430\u0437\u0432\u0430\u043D\u0438\u0435 \u043A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u0438"
+    - "Nombre de categor\xEDa"
+  - key: category_picker.confirm_button
+    values:
+    - "Se\xE7"
+    - Choose
+    - Choisir
+    - "Ausw\xE4hlen"
+    - Scegli
+    - Escolher
+    - "\u0412\u044B\u0431\u0440\u0430\u0442\u044C"
+    - Elegir
+  - key: category_picker.create_chip_label
+    values:
+    - "+ Kategori olu\u015Ftur"
+    - + Create category
+    - "+ Cr\xE9er une cat\xE9gorie"
+    - + Kategorie erstellen
+    - + Crea categoria
+    - + Criar categoria
+    - "+ \u0421\u043E\u0437\u0434\u0430\u0442\u044C \u043A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u044E"
+    - "+ Crear categor\xEDa"
+  - key: category_picker.name_unavailable
+    values:
+    - "Bu ad kullan\u0131lamaz"
+    - This name isn't available
+    - Ce nom n'est pas disponible
+    - "Dieser Name ist nicht verf\xFCgbar"
+    - "Questo nome non \xE8 disponibile"
+    - "Esse nome n\xE3o est\xE1 dispon\xEDvel"
+    - "\u042D\u0442\u043E \u0438\u043C\u044F \u043D\u0435\u0434\u043E\u0441\u0442\u0443\u043F\u043D\u043E"
+    - "Este nombre no est\xE1 disponible"
+  - key: category_settings.title
+    values:
+    - Kategoriler ve filtreler
+    - Categories and filters
+    - "Cat\xE9gories et filtres"
+    - Kategorien und Filter
+    - Categorie e filtri
+    - Categorias e filtros
+    - "\u041A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u0438 \u0438 \u0444\u0438\u043B\u044C\u0442\u0440\u044B"
+    - "Categor\xEDas y filtros"
+  - key: category_settings.filters_caption
+    values:
+    - "F\u0130LTRELER"
+    - FILTERS
+    - FILTRES
+    - FILTER
+    - FILTRI
+    - FILTROS
+    - "\u0424\u0418\u041B\u042C\u0422\u0420\u042B"
+    - FILTROS
+  - key: category_settings.custom_caption
+    values:
+    - "KEND\u0130 KATEGOR\u0130LER\u0130M"
+    - MY CATEGORIES
+    - "MES CAT\xC9GORIES"
+    - MEINE KATEGORIEN
+    - LE MIE CATEGORIE
+    - MINHAS CATEGORIAS
+    - "\u041C\u041E\u0418 \u041A\u0410\u0422\u0415\u0413\u041E\u0420\u0418\u0418"
+    - "MIS CATEGOR\xCDAS"
+  - key: category_settings.custom_empty_state
+    values:
+    - "Hen\xFCz kendi kategorin yok"
+    - You don't have any categories yet
+    - "Vous n'avez pas encore de cat\xE9gorie"
+    - Du hast noch keine eigene Kategorie
+    - Non hai ancora nessuna categoria
+    - "Voc\xEA ainda n\xE3o tem categorias"
+    - "\u0423 \u0432\u0430\u0441 \u043F\u043E\u043A\u0430 \u043D\u0435\u0442 \u0441\u0432\u043E\u0438\u0445
+      \u043A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u0439"
+    - "A\xFAn no tienes categor\xEDas propias"
+  - key: settings.delete_category_confirm_title
+    values:
+    - Kategoriyi sil
+    - Delete category
+    - "Supprimer la cat\xE9gorie"
+    - "Kategorie l\xF6schen"
+    - Elimina categoria
+    - Excluir categoria
+    - "\u0423\u0434\u0430\u043B\u0438\u0442\u044C \u043A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u044E"
+    - "Eliminar categor\xEDa"
+  - key: settings.delete_category_confirm_body
+    values:
+    - "\"{0}\" kategorisini kullanan al\u0131\u015Fkanl\u0131klar \"{1}\"a ta\u015F\u0131nacak."
+    - Habits using "{0}" will be moved to "{1}".
+    - "Les habitudes utilisant \xAB {0} \xBB seront d\xE9plac\xE9es vers \xAB {1}
+      \xBB."
+    - "Gewohnheiten mit \u201E{0}\u201C werden nach \u201E{1}\u201C verschoben."
+    - Le abitudini che usano "{0}" saranno spostate in "{1}".
+    - "H\xE1bitos que usam \"{0}\" ser\xE3o movidos para \"{1}\"."
+    - "\u041F\u0440\u0438\u0432\u044B\u0447\u043A\u0438 \u0441 \u043A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u0435\u0439
+      \xAB{0}\xBB \u0431\u0443\u0434\u0443\u0442 \u043F\u0435\u0440\u0435\u043D\u0435\u0441\u0435\u043D\u044B
+      \u0432 \xAB{1}\xBB."
+    - "Los h\xE1bitos que usan \"{0}\" se mover\xE1n a \"{1}\"."
+  - key: settings.reset_progress_title
+    values:
+    - "\u0130lerlemeyi s\u0131f\u0131rla"
+    - Reset progress
+    - "R\xE9initialiser la progression"
+    - "Fortschritt zur\xFCcksetzen"
+    - Reimposta i progressi
+    - Redefinir progresso
+    - "\u0421\u0431\u0440\u043E\u0441\u0438\u0442\u044C \u043F\u0440\u043E\u0433\u0440\u0435\u0441\u0441"
+    - Restablecer progreso
+  - key: settings.reset_progress_confirm_body
+    values:
+    - "B\xFCt\xFCn al\u0131\u015Fkanl\u0131klar, tablolar ve galeri geri al\u0131namaz
+      \u015Fekilde silinecek."
+    - All habits, paintings, and the gallery will be permanently deleted.
+    - "Toutes les habitudes, tableaux et la galerie seront d\xE9finitivement supprim\xE9s."
+    - "Alle Gewohnheiten, Bilder und die Galerie werden unwiderruflich gel\xF6scht."
+    - Tutte le abitudini, i quadri e la galleria saranno eliminati definitivamente.
+    - "Todos os h\xE1bitos, quadros e a galeria ser\xE3o exclu\xEDdos permanentemente."
+    - "\u0412\u0441\u0435 \u043F\u0440\u0438\u0432\u044B\u0447\u043A\u0438, \u043A\u0430\u0440\u0442\u0438\u043D\u044B
+      \u0438 \u0433\u0430\u043B\u0435\u0440\u0435\u044F \u0431\u0443\u0434\u0443\u0442
+      \u0443\u0434\u0430\u043B\u0435\u043D\u044B \u0431\u0435\u0437 \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u0438
+      \u0432\u043E\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F."
+    - "Todos los h\xE1bitos, cuadros y la galer\xEDa se eliminar\xE1n de forma permanente."
+  - key: settings.version_label
+    values:
+    - "Painter Habits \xB7 s\xFCr\xFCm {0}"
+    - "Painter Habits \xB7 version {0}"
+    - "Painter Habits \xB7 version {0}"
+    - "Painter Habits \xB7 Version {0}"
+    - "Painter Habits \xB7 versione {0}"
+    - "Painter Habits \xB7 vers\xE3o {0}"
+    - "Painter Habits \xB7 \u0432\u0435\u0440\u0441\u0438\u044F {0}"
+    - "Painter Habits \xB7 versi\xF3n {0}"
+  - key: gallery_panel.title
+    values:
+    - Galeri
+    - Gallery
+    - Galerie
+    - Galerie
+    - Galleria
+    - Galeria
+    - "\u0413\u0430\u043B\u0435\u0440\u0435\u044F"
+    - "Galer\xEDa"
+  - key: gallery_detail.plan_caption
+    values:
+    - PLAN
+    - PLAN
+    - PLAN
+    - PLAN
+    - PIANO
+    - PLANO
+    - "\u041F\u041B\u0410\u041D"
+    - PLAN
+  - key: gallery_detail.works_caption
+    values:
+    - ESERLER
+    - WORKS
+    - "\u0152UVRES"
+    - WERKE
+    - OPERE
+    - OBRAS
+    - "\u0420\u0410\u0411\u041E\u0422\u042B"
+    - OBRAS
+  - key: gallery_detail.hero_label_quit
+    values:
+    - "temiz g\xFCn"
+    - clean days
+    - jours sans
+    - saubere Tage
+    - giorni puliti
+    - dias limpos
+    - "\u0447\u0438\u0441\u0442\u044B\u0445 \u0434\u043D\u0435\u0439"
+    - "d\xEDas limpios"
+  - key: gallery_detail.hero_label_build
+    values:
+    - "g\xFCn yap\u0131ld\u0131"
+    - days done
+    - "jours r\xE9alis\xE9s"
+    - Tage erledigt
+    - giorni completati
+    - "dias conclu\xEDdos"
+    - "\u0434\u043D\u0435\u0439 \u0432\u044B\u043F\u043E\u043B\u043D\u0435\u043D\u043E"
+    - "d\xEDas completados"
+  - key: gallery_detail.sub_label
+    values:
+    - "{0} \xB7 {1}"
+    - "{0} \xB7 {1}"
+    - "{0} \xB7 {1}"
+    - "{0} \xB7 {1}"
+    - "{0} \xB7 {1}"
+    - "{0} \xB7 {1}"
+    - "{0} \xB7 {1}"
+    - "{0} \xB7 {1}"
+  - key: gallery_detail.stat_current_streak
+    values:
+    - "\u015Eu anki seri"
+    - Current streak
+    - "S\xE9rie actuelle"
+    - Aktuelle Serie
+    - Serie attuale
+    - "Sequ\xEAncia atual"
+    - "\u0422\u0435\u043A\u0443\u0449\u0430\u044F \u0441\u0435\u0440\u0438\u044F"
+    - Racha actual
+  - key: gallery_detail.stat_best_streak
+    values:
+    - En iyi seri
+    - Best streak
+    - "Meilleure s\xE9rie"
+    - Beste Serie
+    - Serie migliore
+    - "Melhor sequ\xEAncia"
+    - "\u041B\u0443\u0447\u0448\u0430\u044F \u0441\u0435\u0440\u0438\u044F"
+    - Mejor racha
+  - key: gallery_detail.stat_works
+    values:
+    - Eser
+    - Works
+    - "\u0152uvres"
+    - Werke
+    - Opere
+    - Obras
+    - "\u0420\u0430\u0431\u043E\u0442\u044B"
+    - Obras
+  - key: gallery_detail.stat_completion
+    values:
+    - Tamamlanma
+    - Completion
+    - "R\xE9ussite"
+    - Abschluss
+    - Completamento
+    - "Conclus\xE3o"
+    - "\u0412\u044B\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u0435"
+    - "Finalizaci\xF3n"
+  - key: gallery_detail.stat_miss_rate
+    values:
+    - "Ka\xE7\u0131rma"
+    - Missed
+    - "Manqu\xE9"
+    - Verpasst
+    - Mancato
+    - Perdido
+    - "\u041F\u0440\u043E\u043F\u0443\u0441\u043A\u0438"
+    - Perdido
+  - key: gallery_detail.stat_days_per_work
+    values:
+    - "G\xFCn/eser"
+    - Days/work
+    - "Jours/\u0153uvre"
+    - Tage/Werk
+    - Giorni/opera
+    - Dias/obra
+    - "\u0414\u043D\u0435\u0439/\u0440\u0430\u0431\u043E\u0442\u0430"
+    - "D\xEDas/obra"
+  - key: gallery_detail.plan_days_per_week
+    values:
+    - "Haftada {0} g\xFCn"
+    - '{0} days a week'
+    - '{0} jours par semaine'
+    - '{0} Tage pro Woche'
+    - '{0} giorni a settimana'
+    - '{0} dias por semana'
+    - "{0} \u0434\u043D\u0435\u0439 \u0432 \u043D\u0435\u0434\u0435\u043B\u044E"
+    - "{0} d\xEDas a la semana"
+  - key: gallery_detail.plan_every_day
+    values:
+    - "Her g\xFCn"
+    - Every day
+    - Tous les jours
+    - Jeden Tag
+    - Ogni giorno
+    - Todos os dias
+    - "\u041A\u0430\u0436\u0434\u044B\u0439 \u0434\u0435\u043D\u044C"
+    - "Todos los d\xEDas"
+  - key: gallery_detail.works_count
+    values:
+    - "{0} tamamland\u0131"
+    - '{0} finished'
+    - "{0} termin\xE9es"
+    - '{0} fertig'
+    - '{0} completate'
+    - "{0} conclu\xEDdas"
+    - "{0} \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043D\u043E"
+    - '{0} terminadas'
+  - key: gallery_detail.no_works_yet
+    values:
+    - "Hen\xFCz eser yok"
+    - No works yet
+    - "Aucune \u0153uvre encore"
+    - Noch keine Werke
+    - Nessuna opera ancora
+    - Nenhuma obra ainda
+    - "\u041F\u043E\u043A\u0430 \u043D\u0435\u0442 \u0440\u0430\u0431\u043E\u0442"
+    - "A\xFAn no hay obras"
+  - key: gallery_detail.streak_max
+    values:
+    - "En b\xFCy\xFCk alev"
+    - Biggest flame
+    - Plus grande flamme
+    - "Gr\xF6\xDFte Flamme"
+    - "Fiamma pi\xF9 grande"
+    - Maior chama
+    - "\u0421\u0430\u043C\u043E\u0435 \u0431\u043E\u043B\u044C\u0448\u043E\u0435
+      \u043F\u043B\u0430\u043C\u044F"
+    - "Llama m\xE1s grande"
+  - key: gallery_detail.streak_next
+    values:
+    - "Yeni alev: {0} g\xFCn"
+    - 'New flame: {0} days'
+    - 'Nouvelle flamme : {0} jours'
+    - 'Neue Flamme: {0} Tage'
+    - 'Nuova fiamma: {0} giorni'
+    - 'Nova chama: {0} dias'
+    - "\u041D\u043E\u0432\u043E\u0435 \u043F\u043B\u0430\u043C\u044F: {0} \u0434\u043D\u0435\u0439"
+    - "Nueva llama: {0} d\xEDas"
+  - key: gallery_detail.missed_since
+    values:
+    - "{0} g\xFCn ka\xE7\u0131r\u0131ld\u0131 \xB7 {1} tarihinden beri"
+    - "{0} days missed \xB7 since {1}"
+    - "{0} jours manqu\xE9s \xB7 depuis le {1}"
+    - "{0} Tage verpasst \xB7 seit {1}"
+    - "{0} giorni persi \xB7 dal {1}"
+    - "{0} dias perdidos \xB7 desde {1}"
+    - "{0} \u0434\u043D\u0435\u0439 \u043F\u0440\u043E\u043F\u0443\u0449\u0435\u043D\u043E
+      \xB7 \u0441 {1}"
+    - "{0} d\xEDas perdidos \xB7 desde {1}"
+  - key: gallery_detail.missed_only
+    values:
+    - "{0} g\xFCn ka\xE7\u0131r\u0131ld\u0131"
+    - '{0} days missed'
+    - "{0} jours manqu\xE9s"
+    - '{0} Tage verpasst'
+    - '{0} giorni persi'
+    - '{0} dias perdidos'
+    - "{0} \u0434\u043D\u0435\u0439 \u043F\u0440\u043E\u043F\u0443\u0449\u0435\u043D\u043E"
+    - "{0} d\xEDas perdidos"
+  - key: gallery_detail.since_only
+    values:
+    - '{0} tarihinden beri'
+    - Since {0}
+    - Depuis le {0}
+    - Seit {0}
+    - Dal {0}
+    - Desde {0}
+    - "\u0421 {0}"
+    - Desde {0}
+  - key: gallery_card.works_count
+    values:
+    - '{0} eser'
+    - '{0} works'
+    - "{0} \u0153uvres"
+    - '{0} Werke'
+    - '{0} opere'
+    - '{0} obras'
+    - "{0} \u0440\u0430\u0431\u043E\u0442"
+    - '{0} obras'
+  - key: gallery_tile.finished_sub_pieces
+    values:
+    - "{0} par\xE7a"
+    - '{0} pieces'
+    - "{0} pi\xE8ces"
+    - '{0} Teile'
+    - '{0} pezzi'
+    - "{0} pe\xE7as"
+    - "{0} \u0447\u0430\u0441\u0442\u0435\u0439"
+    - '{0} piezas'
+  - key: gallery_tile.finished_sub_burned_suffix
+    values:
+    - " \xB7 {0} yand\u0131"
+    - " \xB7 {0} burned"
+    - " \xB7 {0} br\xFBl\xE9es"
+    - " \xB7 {0} verbrannt"
+    - " \xB7 {0} bruciati"
+    - " \xB7 {0} queimadas"
+    - " \xB7 {0} \u0441\u0433\u043E\u0440\u0435\u043B\u043E"
+    - " \xB7 {0} quemadas"
+  - key: gallery_tile.in_progress_sub
+    values:
+    - "S\xFCr\xFCyor \xB7 {0}/{1}"
+    - "In progress \xB7 {0}/{1}"
+    - "En cours \xB7 {0}/{1}"
+    - "L\xE4uft \xB7 {0}/{1}"
+    - "In corso \xB7 {0}/{1}"
+    - "Em andamento \xB7 {0}/{1}"
+    - "\u0412 \u043F\u0440\u043E\u0446\u0435\u0441\u0441\u0435 \xB7 {0}/{1}"
+    - "En curso \xB7 {0}/{1}"
+  - key: gallery_viewer.meta_finished
+    values:
+    - "{0} par\xE7a \xB7 {1}. eser"
+    - "{0} pieces \xB7 work {1}"
+    - "{0} pi\xE8ces \xB7 \u0153uvre {1}"
+    - "{0} Teile \xB7 Werk {1}"
+    - "{0} pezzi \xB7 opera {1}"
+    - "{0} pe\xE7as \xB7 obra {1}"
+    - "{0} \u0447\u0430\u0441\u0442\u0435\u0439 \xB7 \u0440\u0430\u0431\u043E\u0442\u0430
+      {1}"
+    - "{0} piezas \xB7 obra {1}"
+  - key: gallery_viewer.meta_in_progress
+    values:
+    - "{0} par\xE7a \xB7 \u015Fu an tuvalde"
+    - "{0} pieces \xB7 currently on the easel"
+    - "{0} pi\xE8ces \xB7 en cours sur le chevalet"
+    - "{0} Teile \xB7 gerade auf der Leinwand"
+    - "{0} pezzi \xB7 attualmente sul cavalletto"
+    - "{0} pe\xE7as \xB7 atualmente no cavalete"
+    - "{0} \u0447\u0430\u0441\u0442\u0435\u0439 \xB7 \u0441\u0435\u0439\u0447\u0430\u0441
+      \u043D\u0430 \u0445\u043E\u043B\u0441\u0442\u0435"
+    - "{0} piezas \xB7 ahora en el caballete"
+  - key: gallery_viewer.status_finished
+    values:
+    - "Tamamland\u0131"
+    - Finished
+    - "Termin\xE9"
+    - Fertig
+    - Completato
+    - "Conclu\xEDdo"
+    - "\u0417\u0430\u0432\u0435\u0440\u0448\u0435\u043D\u043E"
+    - Terminado
+  - key: gallery_viewer.holes_count_label
+    values:
+    - "{0} par\xE7a yand\u0131"
+    - '{0} pieces burned'
+    - "{0} pi\xE8ces br\xFBl\xE9es"
+    - '{0} Teile verbrannt'
+    - '{0} pezzi bruciati'
+    - "{0} pe\xE7as queimadas"
+    - "{0} \u0447\u0430\u0441\u0442\u0435\u0439 \u0441\u0433\u043E\u0440\u0435\u043B\u043E"
+    - '{0} piezas quemadas'
+  - key: gallery_viewer.holes_repair_action
+    values:
+    - Onar
+    - Repair
+    - "R\xE9parer"
+    - Reparieren
+    - Ripara
+    - Reparar
+    - "\u041F\u043E\u0447\u0438\u043D\u0438\u0442\u044C"
+    - Reparar
+  - key: rotus_restore.eyebrow
+    values:
+    - "R\xD6TU\u015E"
+    - RETOUCH
+    - RETOUCHE
+    - RETUSCHE
+    - RITOCCO
+    - RETOQUE
+    - "\u0420\u0415\u0422\u0423\u0428\u042C"
+    - RETOQUE
+  - key: rotus_restore.title
+    values:
+    - "Yanan par\xE7alar\u0131 onar"
+    - Repair the burned pieces
+    - "R\xE9parer les pi\xE8ces br\xFBl\xE9es"
+    - Verbrannte Teile reparieren
+    - Ripara i pezzi bruciati
+    - "Reparar as pe\xE7as queimadas"
+    - "\u041F\u043E\u0447\u0438\u043D\u0438\u0442\u044C \u0441\u0433\u043E\u0440\u0435\u0432\u0448\u0438\u0435
+      \u0447\u0430\u0441\u0442\u0438"
+    - Reparar las piezas quemadas
+  - key: rotus_restore.sub_with_holes
+    values:
+    - "{0} \xB7 {1} par\xE7a yan\u0131k"
+    - "{0} \xB7 {1} pieces burned"
+    - "{0} \xB7 {1} pi\xE8ces br\xFBl\xE9es"
+    - "{0} \xB7 {1} Teile verbrannt"
+    - "{0} \xB7 {1} pezzi bruciati"
+    - "{0} \xB7 {1} pe\xE7as queimadas"
+    - "{0} \xB7 {1} \u0447\u0430\u0441\u0442\u0435\u0439 \u0441\u0433\u043E\u0440\u0435\u043B\u043E"
+    - "{0} \xB7 {1} piezas quemadas"
+  - key: rotus_restore.sub_no_holes
+    values:
+    - "Yan\u0131k par\xE7a kalmad\u0131"
+    - No burned pieces left
+    - "Plus aucune pi\xE8ce br\xFBl\xE9e"
+    - Keine verbrannten Teile mehr
+    - Nessun pezzo bruciato rimasto
+    - "N\xE3o h\xE1 mais pe\xE7as queimadas"
+    - "\u0421\u0433\u043E\u0440\u0435\u0432\u0448\u0438\u0445 \u0447\u0430\u0441\u0442\u0435\u0439
+      \u043D\u0435 \u043E\u0441\u0442\u0430\u043B\u043E\u0441\u044C"
+    - No quedan piezas quemadas
+  - key: rotus_restore.primary_can_repair
+    values:
+    - "Bir par\xE7ay\u0131 onar"
+    - Repair one piece
+    - "R\xE9parer une pi\xE8ce"
+    - Ein Teil reparieren
+    - Ripara un pezzo
+    - "Reparar uma pe\xE7a"
+    - "\u041F\u043E\u0447\u0438\u043D\u0438\u0442\u044C \u043E\u0434\u043D\u0443
+      \u0447\u0430\u0441\u0442\u044C"
+    - Reparar una pieza
+  - key: rotus_restore.primary_fully_repaired
+    values:
+    - "Tablo onar\u0131ld\u0131 \u2713"
+    - "Painting repaired \u2713"
+    - "Tableau r\xE9par\xE9 \u2713"
+    - "Bild repariert \u2713"
+    - "Quadro riparato \u2713"
+    - "Quadro reparado \u2713"
+    - "\u041A\u0430\u0440\u0442\u0438\u043D\u0430 \u0432\u043E\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D\u0430
+      \u2713"
+    - "Cuadro reparado \u2713"
+  - key: rotus_restore.primary_no_rotus
+    values:
+    - "R\xF6tu\u015F kalmad\u0131"
+    - No retouches left
+    - Plus de retouches
+    - Keine Retuschen mehr
+    - Nessun ritocco rimasto
+    - "N\xE3o h\xE1 mais retoques"
+    - "\u0420\u0435\u0442\u0443\u0448\u0435\u0439 \u043D\u0435 \u043E\u0441\u0442\u0430\u043B\u043E\u0441\u044C"
+    - No quedan retoques
+  - key: rotus_restore.body
+    values:
+    - "Her r\xF6tu\u015F yanan bir par\xE7ay\u0131 geri getirir. Elinde {0} r\xF6tu\u015F
+      var."
+    - Each retouch brings back one burned piece. You have {0} retouches.
+    - "Chaque retouche restaure une pi\xE8ce br\xFBl\xE9e. Vous avez {0} retouches."
+    - "Jede Retusche bringt ein verbranntes Teil zur\xFCck. Du hast {0} Retuschen."
+    - Ogni ritocco recupera un pezzo bruciato. Hai {0} ritocchi.
+    - "Cada retoque recupera uma pe\xE7a queimada. Voc\xEA tem {0} retoques."
+    - "\u041A\u0430\u0436\u0434\u0430\u044F \u0440\u0435\u0442\u0443\u0448\u044C
+      \u0432\u043E\u0441\u0441\u0442\u0430\u043D\u0430\u0432\u043B\u0438\u0432\u0430\u0435\u0442
+      \u043E\u0434\u043D\u0443 \u0441\u0433\u043E\u0440\u0435\u0432\u0448\u0443\u044E
+      \u0447\u0430\u0441\u0442\u044C. \u0423 \u0432\u0430\u0441 {0} \u0440\u0435\u0442\u0443\u0448\u0438."
+    - Cada retoque recupera una pieza quemada. Tienes {0} retoques.
+  - key: painting_choice.title
+    values:
+    - "S\u0131radaki tablo"
+    - Next painting
+    - Prochain tableau
+    - "N\xE4chstes Bild"
+    - Prossimo quadro
+    - "Pr\xF3ximo quadro"
+    - "\u0421\u043B\u0435\u0434\u0443\u044E\u0449\u0430\u044F \u043A\u0430\u0440\u0442\u0438\u043D\u0430"
+    - Siguiente cuadro
+  - key: painting_choice.confirm_button
+    values:
+    - "Bu tabloyu se\xE7"
+    - Choose this painting
+    - Choisir ce tableau
+    - "Dieses Bild w\xE4hlen"
+    - Scegli questo quadro
+    - Escolher este quadro
+    - "\u0412\u044B\u0431\u0440\u0430\u0442\u044C \u044D\u0442\u0443 \u043A\u0430\u0440\u0442\u0438\u043D\u0443"
+    - Elegir este cuadro
+  - key: time_picker.title
+    values:
+    - Saat
+    - Time
+    - Heure
+    - Uhrzeit
+    - Ora
+    - "Hor\xE1rio"
+    - "\u0412\u0440\u0435\u043C\u044F"
+    - Hora
+  - key: settings_panel.title
+    values:
+    - Ayarlar
+    - Settings
+    - "Param\xE8tres"
+    - Einstellungen
+    - Impostazioni
+    - "Configura\xE7\xF5es"
+    - "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438"
+    - Ajustes
+  - key: premium_card.title
+    values:
+    - Painter Premium
+    - Painter Premium
+    - Painter Premium
+    - Painter Premium
+    - Painter Premium
+    - Painter Premium
+    - Painter Premium
+    - Painter Premium
+  - key: premium_card.perk.gallery_stats
+    values:
+    - "Galerideki her al\u0131\u015Fkanl\u0131\u011F\u0131n detayl\u0131 istatistikleri"
+    - Detailed stats for every habit in the gallery
+    - "Statistiques d\xE9taill\xE9es pour chaque habitude de la galerie"
+    - "Detaillierte Statistiken f\xFCr jede Gewohnheit in der Galerie"
+    - Statistiche dettagliate per ogni abitudine nella galleria
+    - "Estat\xEDsticas detalhadas de cada h\xE1bito na galeria"
+    - "\u041F\u043E\u0434\u0440\u043E\u0431\u043D\u0430\u044F \u0441\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043A\u0430
+      \u043F\u043E \u043A\u0430\u0436\u0434\u043E\u0439 \u043F\u0440\u0438\u0432\u044B\u0447\u043A\u0435
+      \u0432 \u0433\u0430\u043B\u0435\u0440\u0435\u0435"
+    - "Estad\xEDsticas detalladas de cada h\xE1bito en la galer\xEDa"
+  - key: premium_card.perk.export
+    values:
+    - "Verilerini d\u0131\u015Fa aktarma"
+    - Export your data
+    - "Exporter vos donn\xE9es"
+    - Deine Daten exportieren
+    - Esporta i tuoi dati
+    - Exportar seus dados
+    - "\u042D\u043A\u0441\u043F\u043E\u0440\u0442 \u0434\u0430\u043D\u043D\u044B\u0445"
+    - Exportar tus datos
+  - key: premium_card.perk.support
+    values:
+    - "Ba\u011F\u0131ms\u0131z bir geli\u015Ftiriciye destek"
+    - Support an independent developer
+    - "Soutenir un d\xE9veloppeur ind\xE9pendant"
+    - "Unterst\xFCtze einen unabh\xE4ngigen Entwickler"
+    - Sostieni uno sviluppatore indipendente
+    - Apoie um desenvolvedor independente
+    - "\u041F\u043E\u0434\u0434\u0435\u0440\u0436\u043A\u0430 \u043D\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043C\u043E\u0433\u043E
+      \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A\u0430"
+    - Apoya a un desarrollador independiente
+  - key: premium_card.purchase_button
+    values:
+    - "Premium'a ge\xE7"
+    - Upgrade to Premium
+    - "Passer \xE0 Premium"
+    - Auf Premium upgraden
+    - Passa a Premium
+    - Assinar o Premium
+    - "\u041F\u0435\u0440\u0435\u0439\u0442\u0438 \u043D\u0430 Premium"
+    - Pasar a Premium
+  - key: premium_active.title
+    values:
+    - Premium aktif
+    - Premium active
+    - Premium actif
+    - Premium aktiv
+    - Premium attivo
+    - Premium ativo
+    - "Premium \u0430\u043A\u0442\u0438\u0432\u0435\u043D"
+    - Premium activo
+  - key: premium_active.subtitle
+    values:
+    - "Ba\u011F\u0131ms\u0131z bir geli\u015Ftiriciye destek oldu\u011Fun i\xE7in
+      te\u015Fekk\xFCrler"
+    - Thanks for supporting an independent developer
+    - "Merci de soutenir un d\xE9veloppeur ind\xE9pendant"
+    - "Danke, dass du einen unabh\xE4ngigen Entwickler unterst\xFCtzt"
+    - Grazie per sostenere uno sviluppatore indipendente
+    - Obrigado por apoiar um desenvolvedor independente
+    - "\u0421\u043F\u0430\u0441\u0438\u0431\u043E \u0437\u0430 \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u043A\u0443
+      \u043D\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043C\u043E\u0433\u043E \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A\u0430"
+    - Gracias por apoyar a un desarrollador independiente
+  - key: settings_section.painter
+    values:
+    - Ressam
+    - Painter
+    - Peintre
+    - Maler
+    - Pittore
+    - Pintor
+    - "\u0425\u0443\u0434\u043E\u0436\u043D\u0438\u043A"
+    - Pintor
+  - key: settings_row.painter_name
+    values:
+    - "Ad\u0131"
+    - Name
+    - Nom
+    - Name
+    - Nome
+    - Nome
+    - "\u0418\u043C\u044F"
+    - Nombre
+  - key: settings_section.reminder
+    values:
+    - "Hat\u0131rlatma"
+    - Reminder
+    - Rappel
+    - Erinnerung
+    - Promemoria
+    - Lembrete
+    - "\u041D\u0430\u043F\u043E\u043C\u0438\u043D\u0430\u043D\u0438\u0435"
+    - Recordatorio
+  - key: settings_row.reminder_toggle
+    values:
+    - "G\xFCnl\xFCk hat\u0131rlatma"
+    - Daily reminder
+    - Rappel quotidien
+    - "T\xE4gliche Erinnerung"
+    - Promemoria giornaliero
+    - "Lembrete di\xE1rio"
+    - "\u0415\u0436\u0435\u0434\u043D\u0435\u0432\u043D\u043E\u0435 \u043D\u0430\u043F\u043E\u043C\u0438\u043D\u0430\u043D\u0438\u0435"
+    - Recordatorio diario
+  - key: settings_row.reminder_sublabel
+    values:
+    - "Her g\xFCn ayn\u0131 saatte"
+    - Same time every day
+    - "Chaque jour \xE0 la m\xEAme heure"
+    - Jeden Tag zur gleichen Zeit
+    - Ogni giorno alla stessa ora
+    - "Todos os dias no mesmo hor\xE1rio"
+    - "\u041A\u0430\u0436\u0434\u044B\u0439 \u0434\u0435\u043D\u044C \u0432 \u043E\u0434\u043D\u043E
+      \u0432\u0440\u0435\u043C\u044F"
+    - "Todos los d\xEDas a la misma hora"
+  - key: settings_row.reminder_time
+    values:
+    - Saat
+    - Time
+    - Heure
+    - Uhrzeit
+    - Ora
+    - "Hor\xE1rio"
+    - "\u0412\u0440\u0435\u043C\u044F"
+    - Hora
+  - key: settings_section.experience
+    values:
+    - Deneyim
+    - Experience
+    - "Exp\xE9rience"
+    - Erlebnis
+    - Esperienza
+    - "Experi\xEAncia"
+    - "\u041E\u043F\u044B\u0442 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F"
+    - Experiencia
+  - key: settings_row.sound
+    values:
+    - Ses efektleri
+    - Sound effects
+    - Effets sonores
+    - Soundeffekte
+    - Effetti sonori
+    - Efeitos sonoros
+    - "\u0417\u0432\u0443\u043A\u043E\u0432\u044B\u0435 \u044D\u0444\u0444\u0435\u043A\u0442\u044B"
+    - Efectos de sonido
+  - key: settings_row.haptics
+    values:
+    - "Titre\u015Fim"
+    - Vibration
+    - Vibration
+    - Vibration
+    - Vibrazione
+    - "Vibra\xE7\xE3o"
+    - "\u0412\u0438\u0431\u0440\u0430\u0446\u0438\u044F"
+    - "Vibraci\xF3n"
+  - key: settings_section.calendar
+    values:
+    - Takvim
+    - Calendar
+    - Calendrier
+    - Kalender
+    - Calendario
+    - "Calend\xE1rio"
+    - "\u041A\u0430\u043B\u0435\u043D\u0434\u0430\u0440\u044C"
+    - Calendario
+  - key: settings_row.week_start
+    values:
+    - "Hafta ba\u015Flang\u0131c\u0131"
+    - Start of week
+    - "D\xE9but de semaine"
+    - Wochenbeginn
+    - Inizio settimana
+    - "In\xEDcio da semana"
+    - "\u041D\u0430\u0447\u0430\u043B\u043E \u043D\u0435\u0434\u0435\u043B\u0438"
+    - Inicio de semana
+  - key: settings_section.language
+    values:
+    - Dil
+    - Language
+    - Langue
+    - Sprache
+    - Lingua
+    - Idioma
+    - "\u042F\u0437\u044B\u043A"
+    - Idioma
+  - key: language_picker.title
+    values:
+    - "Dil se\xE7"
+    - Choose a language
+    - Choisir une langue
+    - "Sprache w\xE4hlen"
+    - Scegli una lingua
+    - Escolher idioma
+    - "\u0412\u044B\u0431\u0435\u0440\u0438\u0442\u0435 \u044F\u0437\u044B\u043A"
+    - Elegir idioma
+  - key: language_picker.confirm_button
+    values:
+    - "Se\xE7"
+    - Choose
+    - Choisir
+    - "Ausw\xE4hlen"
+    - Scegli
+    - Escolher
+    - "\u0412\u044B\u0431\u0440\u0430\u0442\u044C"
+    - Elegir
+  - key: settings_section.categories
+    values:
+    - Kategoriler
+    - Categories
+    - "Cat\xE9gories"
+    - Kategorien
+    - Categorie
+    - Categorias
+    - "\u041A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u0438"
+    - "Categor\xEDas"
+  - key: settings_section.data
+    values:
+    - Veri
+    - Data
+    - "Donn\xE9es"
+    - Daten
+    - Dati
+    - Dados
+    - "\u0414\u0430\u043D\u043D\u044B\u0435"
+    - Datos
+  - key: settings_row.export
+    values:
+    - "Verileri d\u0131\u015Fa aktar"
+    - Export data
+    - "Exporter les donn\xE9es"
+    - Daten exportieren
+    - Esporta dati
+    - Exportar dados
+    - "\u042D\u043A\u0441\u043F\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u0430\u0442\u044C
+      \u0434\u0430\u043D\u043D\u044B\u0435"
+    - Exportar datos
+  - key: settings_row.import
+    values:
+    - "Verileri i\xE7e aktar"
+    - Import data
+    - "Importer les donn\xE9es"
+    - Daten importieren
+    - Importa dati
+    - Importar dados
+    - "\u0418\u043C\u043F\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u0430\u0442\u044C
+      \u0434\u0430\u043D\u043D\u044B\u0435"
+    - Importar datos
+  - key: settings_row.premium_badge
+    values:
+    - PREMIUM
+    - PREMIUM
+    - PREMIUM
+    - PREMIUM
+    - PREMIUM
+    - PREMIUM
+    - PREMIUM
+    - PREMIUM
+  - key: workshop.toast_all_done
+    values:
+    - Hepsi tamam! Ruh hali +1
+    - All done! Mood +1
+    - Tout est fait ! Humeur +1
+    - Alles erledigt! Stimmung +1
+    - Tutto fatto! Umore +1
+    - Tudo feito! Humor +1
+    - "\u0412\u0441\u0451 \u0433\u043E\u0442\u043E\u0432\u043E! \u041D\u0430\u0441\u0442\u0440\u043E\u0435\u043D\u0438\u0435
+      +1"
+    - "\xA1Todo listo! \xC1nimo +1"
+  - key: workshop.toast_painting_finished
+    values:
+    - Tablo bitti! Galeriye eklendi
+    - Painting finished! Added to the gallery
+    - "Tableau termin\xE9 ! Ajout\xE9 \xE0 la galerie"
+    - "Bild fertig! Zur Galerie hinzugef\xFCgt"
+    - Quadro completato! Aggiunto alla galleria
+    - "Quadro conclu\xEDdo! Adicionado \xE0 galeria"
+    - "\u041A\u0430\u0440\u0442\u0438\u043D\u0430 \u0433\u043E\u0442\u043E\u0432\u0430!
+      \u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0432 \u0433\u0430\u043B\u0435\u0440\u0435\u044E"
+    - "\xA1Cuadro terminado! A\xF1adido a la galer\xEDa"
+  - key: workshop.toast_rotus_earned
+    values:
+    - "R\xF6tu\u015F kazand\u0131n! Galeride yanan bir par\xE7ay\u0131 onarabilirsin"
+    - You earned a retouch! You can repair a burned piece in the gallery
+    - "Vous avez gagn\xE9 une retouche ! Vous pouvez r\xE9parer une pi\xE8ce br\xFBl\xE9e
+      dans la galerie"
+    - Du hast eine Retusche verdient! Du kannst ein verbranntes Teil in der Galerie
+      reparieren
+    - Hai guadagnato un ritocco! Puoi riparare un pezzo bruciato nella galleria
+    - "Voc\xEA ganhou um retoque! Pode reparar uma pe\xE7a queimada na galeria"
+    - "\u0412\u044B \u043F\u043E\u043B\u0443\u0447\u0438\u043B\u0438 \u0440\u0435\u0442\u0443\u0448\u044C!
+      \u041C\u043E\u0436\u043D\u043E \u043F\u043E\u0447\u0438\u043D\u0438\u0442\u044C
+      \u0441\u0433\u043E\u0440\u0435\u0432\u0448\u0443\u044E \u0447\u0430\u0441\u0442\u044C
+      \u0432 \u0433\u0430\u043B\u0435\u0440\u0435\u0435"
+    - "\xA1Ganaste un retoque! Puedes reparar una pieza quemada en la galer\xEDa"
+  - key: streak_celebration.eyebrow
+    values:
+    - "YEN\u0130 ALEV"
+    - NEW FLAME
+    - NOUVELLE FLAMME
+    - NEUE FLAMME
+    - NUOVA FIAMMA
+    - NOVA CHAMA
+    - "\u041D\u041E\u0412\u041E\u0415 \u041F\u041B\u0410\u041C\u042F"
+    - NUEVA LLAMA
+  - key: streak_celebration.title
+    values:
+    - "{0} g\xFCn seri!"
+    - '{0}-day streak!'
+    - "S\xE9rie de {0} jours !"
+    - '{0} Tage Serie!'
+    - Serie di {0} giorni!
+    - "Sequ\xEAncia de {0} dias!"
+    - "\u0421\u0435\u0440\u0438\u044F {0} \u0434\u043D\u0435\u0439!"
+    - "\xA1Racha de {0} d\xEDas!"
+  - key: streak_celebration.continue_button
+    values:
+    - Devam
+    - Continue
+    - Continuer
+    - Weiter
+    - Continua
+    - Continuar
+    - "\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C"
+    - Continuar
+  - key: streak_celebration.max_tier_line
+    values:
+    - "En b\xFCy\xFCk alevine ula\u015Ft\u0131n"
+    - You've reached your biggest flame
+    - Vous avez atteint votre plus grande flamme
+    - "Du hast deine gr\xF6\xDFte Flamme erreicht"
+    - "Hai raggiunto la tua fiamma pi\xF9 grande"
+    - "Voc\xEA alcan\xE7ou sua maior chama"
+    - "\u0412\u044B \u0434\u043E\u0441\u0442\u0438\u0433\u043B\u0438 \u0441\u0430\u043C\u043E\u0433\u043E
+      \u0431\u043E\u043B\u044C\u0448\u043E\u0433\u043E \u043F\u043B\u0430\u043C\u0435\u043D\u0438"
+    - "Has alcanzado tu llama m\xE1s grande"
+  - key: streak_celebration.next_tier_line
+    values:
+    - "Sonraki alev {0}. g\xFCnde"
+    - Next flame on day {0}
+    - Prochaine flamme au jour {0}
+    - "N\xE4chste Flamme an Tag {0}"
+    - Prossima fiamma al giorno {0}
+    - "Pr\xF3xima chama no dia {0}"
+    - "\u0421\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0435 \u043F\u043B\u0430\u043C\u044F
+      \u043D\u0430 {0}-\u0439 \u0434\u0435\u043D\u044C"
+    - "Pr\xF3xima llama en el d\xEDa {0}"
+  - key: habit_sheet.title_new
+    values:
+    - "Yeni al\u0131\u015Fkanl\u0131k"
+    - New habit
+    - Nouvelle habitude
+    - Neue Gewohnheit
+    - Nuova abitudine
+    - "Novo h\xE1bito"
+    - "\u041D\u043E\u0432\u0430\u044F \u043F\u0440\u0438\u0432\u044B\u0447\u043A\u0430"
+    - "Nuevo h\xE1bito"
+  - key: habit_sheet.title_edit
+    values:
+    - "D\xFCzenle"
+    - Edit
+    - Modifier
+    - Bearbeiten
+    - Modifica
+    - Editar
+    - "\u0418\u0437\u043C\u0435\u043D\u0438\u0442\u044C"
+    - Editar
+  - key: habit_sheet.section.title
+    values:
+    - "Ba\u015Fl\u0131k"
+    - Title
+    - Titre
+    - Titel
+    - Titolo
+    - "T\xEDtulo"
+    - "\u041D\u0430\u0437\u0432\u0430\u043D\u0438\u0435"
+    - "T\xEDtulo"
+  - key: habit_sheet.title_input.placeholder
+    values:
+    - "\xD6rn. Su i\xE7"
+    - e.g. Drink water
+    - ex. Boire de l'eau
+    - z. B. Wasser trinken
+    - es. Bevi acqua
+    - "ex. Beber \xE1gua"
+    - "\u043D\u0430\u043F\u0440. \u041F\u0438\u0442\u044C \u0432\u043E\u0434\u0443"
+    - ej. Beber agua
+  - key: habit_sheet.section.type
+    values:
+    - "T\xFCr"
+    - Type
+    - Type
+    - Art
+    - Tipo
+    - Tipo
+    - "\u0422\u0438\u043F"
+    - Tipo
+  - key: habit_type.build
+    values:
+    - Yap
+    - Build
+    - Faire
+    - Aufbauen
+    - Crea
+    - Construir
+    - "\u0412\u044B\u043F\u043E\u043B\u043D\u044F\u0442\u044C"
+    - Crear
+  - key: habit_type.build_hint
+    values:
+    - "Her g\xFCn yap\u0131nca tik at"
+    - Check it off every day you do it
+    - "Cochez chaque jour o\xF9 vous le faites"
+    - "H\xE4kchen setzen, wenn du es jeden Tag machst"
+    - Spunta ogni giorno in cui la fai
+    - "Marque todos os dias em que voc\xEA fizer"
+    - "\u041E\u0442\u043C\u0435\u0447\u0430\u0439\u0442\u0435 \u043A\u0430\u0436\u0434\u044B\u0439
+      \u0434\u0435\u043D\u044C, \u043A\u043E\u0433\u0434\u0430 \u0432\u044B\u043F\u043E\u043B\u043D\u044F\u0435\u0442\u0435"
+    - "M\xE1rcalo cada d\xEDa que lo hagas"
+  - key: habit_type.build_pill
+    values:
+    - YAP
+    - BUILD
+    - FAIRE
+    - AUFBAUEN
+    - CREA
+    - CONSTRUIR
+    - "\u0412\u042B\u041F\u041E\u041B\u041D\u042F\u0422\u042C"
+    - CREAR
+  - key: habit_type.quit
+    values:
+    - "B\u0131rak"
+    - Quit
+    - "Arr\xEAter"
+    - "Aufh\xF6ren"
+    - Smetti
+    - Parar
+    - "\u041E\u0442\u043A\u0430\u0437\u0430\u0442\u044C\u0441\u044F"
+    - Dejar
+  - key: habit_type.quit_hint
+    values:
+    - "Yapmad\u0131\u011F\u0131n g\xFCn tik at"
+    - Check it off on days you don't do it
+    - "Cochez les jours o\xF9 vous ne le faites pas"
+    - "H\xE4kchen setzen an Tagen, an denen du es nicht machst"
+    - Spunta i giorni in cui non la fai
+    - "Marque os dias em que voc\xEA n\xE3o fizer"
+    - "\u041E\u0442\u043C\u0435\u0447\u0430\u0439\u0442\u0435 \u0434\u043D\u0438,
+      \u043A\u043E\u0433\u0434\u0430 \u043D\u0435 \u0434\u0435\u043B\u0430\u0435\u0442\u0435
+      \u044D\u0442\u043E\u0433\u043E"
+    - "M\xE1rcalo los d\xEDas que no lo hagas"
+  - key: habit_type.quit_pill
+    values:
+    - BIRAK
+    - QUIT
+    - "ARR\xCATER"
+    - "AUFH\xD6REN"
+    - SMETTI
+    - PARAR
+    - "\u041E\u0422\u041A\u0410\u0417\u0410\u0422\u042C\u0421\u042F"
+    - DEJAR
+  - key: habit_sheet.section.category
+    values:
+    - Kategori
+    - Category
+    - "Cat\xE9gorie"
+    - Kategorie
+    - Categoria
+    - Categoria
+    - "\u041A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u044F"
+    - "Categor\xEDa"
+  - key: habit_sheet.section.days
+    values:
+    - "G\xFCnler"
+    - Days
+    - Jours
+    - Tage
+    - Giorni
+    - Dias
+    - "\u0414\u043D\u0438"
+    - "D\xEDas"
+  - key: habit_sheet.days_hint
+    values:
+    - "Se\xE7ilmezse her g\xFCn"
+    - Every day if none selected
+    - "Tous les jours si aucun n'est s\xE9lectionn\xE9"
+    - "Jeden Tag, wenn keiner ausgew\xE4hlt ist"
+    - "Ogni giorno se nessuno \xE8 selezionato"
+    - Todos os dias se nenhum for selecionado
+    - "\u041A\u0430\u0436\u0434\u044B\u0439 \u0434\u0435\u043D\u044C, \u0435\u0441\u043B\u0438
+      \u043D\u0438\u0447\u0435\u0433\u043E \u043D\u0435 \u0432\u044B\u0431\u0440\u0430\u043D\u043E"
+    - "Todos los d\xEDas si no se selecciona ninguno"
+  - key: habit_sheet.days_hint_selected
+    values:
+    - "{0} g\xFCn se\xE7ili"
+    - '{0} days selected'
+    - "{0} jours s\xE9lectionn\xE9s"
+    - "{0} Tage ausgew\xE4hlt"
+    - '{0} giorni selezionati'
+    - '{0} dias selecionados'
+    - "{0} \u0434\u043D\u0435\u0439 \u0432\u044B\u0431\u0440\u0430\u043D\u043E"
+    - "{0} d\xEDas seleccionados"
+  - key: habit_sheet.section.canvas
+    values:
+    - Tuval
+    - Canvas
+    - Toile
+    - Leinwand
+    - Tela
+    - Tela
+    - "\u0425\u043E\u043B\u0441\u0442"
+    - Lienzo
+  - key: habit_sheet.section.end_date
+    values:
+    - "Biti\u015F tarihi"
+    - End date
+    - Date de fin
+    - Enddatum
+    - Data di fine
+    - "Data de t\xE9rmino"
+    - "\u0414\u0430\u0442\u0430 \u043E\u043A\u043E\u043D\u0447\u0430\u043D\u0438\u044F"
+    - Fecha de fin
+  - key: habit_sheet.end_date_input.placeholder
+    values:
+    - YYYY-AA-GG
+    - YYYY-MM-DD
+    - AAAA-MM-JJ
+    - JJJJ-MM-TT
+    - AAAA-MM-GG
+    - AAAA-MM-DD
+    - "\u0413\u0413\u0413\u0413-\u041C\u041C-\u0414\u0414"
+    - AAAA-MM-DD
+  - key: habit_sheet.section.painting
+    values:
+    - Tablo
+    - Painting
+    - Tableau
+    - Bild
+    - Quadro
+    - Quadro
+    - "\u041A\u0430\u0440\u0442\u0438\u043D\u0430"
+    - Cuadro
+  - key: habits_panel.new_habit_button
+    values:
+    - "+  Yeni al\u0131\u015Fkanl\u0131k"
+    - +  New habit
+    - +  Nouvelle habitude
+    - +  Neue Gewohnheit
+    - +  Nuova abitudine
+    - "+  Novo h\xE1bito"
+    - "+  \u041D\u043E\u0432\u0430\u044F \u043F\u0440\u0438\u0432\u044B\u0447\u043A\u0430"
+    - "+  Nuevo h\xE1bito"
+  - key: habits.archive_count_label
+    values:
+    - "Ar\u015Fiv ({0})"
+    - Archive ({0})
+    - Archive ({0})
+    - Archiv ({0})
+    - Archivio ({0})
+    - Arquivo ({0})
+    - "\u0410\u0440\u0445\u0438\u0432 ({0})"
+    - Archivo ({0})
+  - key: habits.active_count_label
+    values:
+    - '{0} aktif'
+    - '{0} active'
+    - '{0} actives'
+    - '{0} aktiv'
+    - '{0} attive'
+    - '{0} ativos'
+    - "{0} \u0430\u043A\u0442\u0438\u0432\u043D\u044B\u0445"
+    - '{0} activos'
+  - key: archive_sheet.row_streak
+    values:
+    - seri {0}
+    - streak {0}
+    - "s\xE9rie {0}"
+    - Serie {0}
+    - serie {0}
+    - "sequ\xEAncia {0}"
+    - "\u0441\u0435\u0440\u0438\u044F {0}"
+    - racha {0}
+  - key: painting.random_label
+    values:
+    - Rastgele
+    - Random
+    - "Al\xE9atoire"
+    - "Zuf\xE4llig"
+    - Casuale
+    - "Aleat\xF3rio"
+    - "\u0421\u043B\u0443\u0447\u0430\u0439\u043D\u043E"
+    - Aleatorio
+  - key: filter.all_label
+    values:
+    - "T\xFCm\xFC"
+    - All
+    - Tous
+    - Alle
+    - Tutte
+    - Todos
+    - "\u0412\u0441\u0435"
+    - Todos
+  - key: habit_card.streak_label
+    values:
+    - "{0} g\xFCn \xB7 en iyi {1}"
+    - "{0} days \xB7 best {1}"
+    - "{0} jours \xB7 meilleur {1}"
+    - "{0} Tage \xB7 bester {1}"
+    - "{0} giorni \xB7 migliore {1}"
+    - "{0} dias \xB7 melhor {1}"
+    - "{0} \u0434\u043D\u0435\u0439 \xB7 \u043B\u0443\u0447\u0448\u0430\u044F {1}"
+    - "{0} d\xEDas \xB7 mejor {1}"
+  - key: mood.ultra_rich
+    values:
+    - "\xC7ok zengin"
+    - Thriving
+    - "\xC9panoui"
+    - "Bl\xFChend"
+    - Florido
+    - Radiante
+    - "\u041F\u0440\u043E\u0446\u0432\u0435\u0442\u0430\u0435\u0442"
+    - "Pr\xF3spero"
+  - key: mood.rich
+    values:
+    - Zengin
+    - Great
+    - Bien
+    - Gut
+    - Bene
+    - Bem
+    - "\u0425\u043E\u0440\u043E\u0448\u043E"
+    - Bien
+  - key: mood.happy
+    values:
+    - Mutlu
+    - Happy
+    - Heureux
+    - "Gl\xFCcklich"
+    - Felice
+    - Feliz
+    - "\u0421\u0447\u0430\u0441\u0442\u043B\u0438\u0432"
+    - Feliz
+  - key: mood.sad
+    values:
+    - "\xDCzg\xFCn"
+    - Sad
+    - Triste
+    - Traurig
+    - Triste
+    - Triste
+    - "\u041F\u0435\u0447\u0430\u043B\u0435\u043D"
+    - Triste
+  - key: mood.starve
+    values:
+    - "A\xE7"
+    - Starving
+    - "Affam\xE9"
+    - Hungrig
+    - Affamato
+    - Faminto
+    - "\u0413\u043E\u043B\u043E\u0434\u0435\u043D"
+    - Hambriento
+  - key: mood.normal
+    values:
+    - Normal
+    - Normal
+    - Normal
+    - Normal
+    - Normale
+    - Normal
+    - "\u041E\u0431\u044B\u0447\u043D\u043E"
+    - Normal
+  - key: canvas_size.piece_count_label
+    values:
+    - "{0} par\xE7a"
+    - '{0} pieces'
+    - "{0} pi\xE8ces"
+    - '{0} Teile'
+    - '{0} pezzi'
+    - "{0} pe\xE7as"
+    - "{0} \u0447\u0430\u0441\u0442\u0435\u0439"
+    - '{0} piezas'
+  - key: canvas_size.hint_short
+    values:
+    - "K\u0131sa"
+    - Short
+    - Court
+    - Kurz
+    - Corto
+    - Curto
+    - "\u041A\u043E\u0440\u043E\u0442\u043A\u0438\u0439"
+    - Corto
+  - key: canvas_size.hint_medium
+    values:
+    - Orta
+    - Medium
+    - Moyen
+    - Mittel
+    - Medio
+    - "M\xE9dio"
+    - "\u0421\u0440\u0435\u0434\u043D\u0438\u0439"
+    - Medio
+  - key: canvas_size.hint_long
+    values:
+    - Uzun
+    - Long
+    - Long
+    - Lang
+    - Lungo
+    - Longo
+    - "\u0414\u043B\u0438\u043D\u043D\u044B\u0439"
+    - Largo
+  - key: save_transfer.error.clipboard_empty
+    values:
+    - "Pano bo\u015F g\xF6r\xFCn\xFCyor."
+    - The clipboard looks empty.
+    - Le presse-papiers semble vide.
+    - Die Zwischenablage scheint leer zu sein.
+    - Gli appunti sembrano vuoti.
+    - "A \xE1rea de transfer\xEAncia parece vazia."
+    - "\u0411\u0443\u0444\u0435\u0440 \u043E\u0431\u043C\u0435\u043D\u0430 \u043F\u0443\u0441\u0442."
+    - "El portapapeles parece estar vac\xEDo."
+  - key: save_transfer.error.not_habittracker_backup
+    values:
+    - "Bu metin bir HabitTracker yede\u011Fi de\u011Fil."
+    - This text isn't a HabitTracker backup.
+    - Ce texte n'est pas une sauvegarde HabitTracker.
+    - Dieser Text ist keine HabitTracker-Sicherung.
+    - "Questo testo non \xE8 un backup di HabitTracker."
+    - "Esse texto n\xE3o \xE9 um backup do HabitTracker."
+    - "\u042D\u0442\u043E\u0442 \u0442\u0435\u043A\u0441\u0442 \u043D\u0435 \u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F
+      \u0440\u0435\u0437\u0435\u0440\u0432\u043D\u043E\u0439 \u043A\u043E\u043F\u0438\u0435\u0439
+      HabitTracker."
+    - Este texto no es una copia de seguridad de HabitTracker.
+  - key: save_transfer.error.backup_corrupt
+    values:
+    - "Yedek bozuk g\xF6r\xFCn\xFCyor."
+    - The backup looks corrupted.
+    - La sauvegarde semble corrompue.
+    - "Die Sicherung scheint besch\xE4digt zu sein."
+    - Il backup sembra danneggiato.
+    - O backup parece corrompido.
+    - "\u0420\u0435\u0437\u0435\u0440\u0432\u043D\u0430\u044F \u043A\u043E\u043F\u0438\u044F
+      \u043F\u043E\u0432\u0440\u0435\u0436\u0434\u0435\u043D\u0430."
+    - "La copia de seguridad parece estar da\xF1ada."
+  - key: save_transfer.error.backup_too_new
+    values:
+    - "Yedek daha yeni bir s\xFCr\xFCmden -- uygulamay\u0131 g\xFCncelle."
+    - The backup is from a newer version -- update the app.
+    - "La sauvegarde provient d'une version plus r\xE9cente -- mettez \xE0 jour l'application."
+    - Die Sicherung stammt von einer neueren Version -- aktualisiere die App.
+    - "Il backup proviene da una versione pi\xF9 recente -- aggiorna l'app."
+    - "O backup \xE9 de uma vers\xE3o mais recente -- atualize o aplicativo."
+    - "\u0420\u0435\u0437\u0435\u0440\u0432\u043D\u0430\u044F \u043A\u043E\u043F\u0438\u044F
+      \u0441\u043E\u0437\u0434\u0430\u043D\u0430 \u0432 \u0431\u043E\u043B\u0435\u0435
+      \u043D\u043E\u0432\u043E\u0439 \u0432\u0435\u0440\u0441\u0438\u0438 -- \u043E\u0431\u043D\u043E\u0432\u0438\u0442\u0435
+      \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0435."
+    - "La copia de seguridad es de una versi\xF3n m\xE1s reciente -- actualiza la
+      app."
+  - key: save_transfer.error.backup_incomplete
+    values:
+    - "Yedek eksik g\xF6r\xFCn\xFCyor."
+    - The backup looks incomplete.
+    - "La sauvegarde semble incompl\xE8te."
+    - "Die Sicherung scheint unvollst\xE4ndig zu sein."
+    - Il backup sembra incompleto.
+    - O backup parece incompleto.
+    - "\u0420\u0435\u0437\u0435\u0440\u0432\u043D\u0430\u044F \u043A\u043E\u043F\u0438\u044F
+      \u043D\u0435\u043F\u043E\u043B\u043D\u0430\u044F."
+    - La copia de seguridad parece incompleta.
+  - key: save_transfer.describe.summary
+    values:
+    - "{0} al\u0131\u015Fkanl\u0131k, {1} eser, {2} rotus -- {3} tarihli yedek"
+    - '{0} habits, {1} works, {2} retouches -- backup from {3}'
+    - "{0} habitudes, {1} \u0153uvres, {2} retouches -- sauvegarde du {3}"
+    - '{0} Gewohnheiten, {1} Werke, {2} Retuschen -- Sicherung vom {3}'
+    - '{0} abitudini, {1} opere, {2} ritocchi -- backup del {3}'
+    - "{0} h\xE1bitos, {1} obras, {2} retoques -- backup de {3}"
+    - "{0} \u043F\u0440\u0438\u0432\u044B\u0447\u0435\u043A, {1} \u0440\u0430\u0431\u043E\u0442,
+      {2} \u0440\u0435\u0442\u0443\u0448\u0435\u0439 -- \u0440\u0435\u0437\u0435\u0440\u0432\u043D\u0430\u044F
+      \u043A\u043E\u043F\u0438\u044F \u043E\u0442 {3}"
+    - "{0} h\xE1bitos, {1} obras, {2} retoques -- copia de seguridad del {3}"
+  - key: save_transfer.describe.library_mismatch
+    values:
+    - "Bu cihaz\u0131n tablo k\xFCt\xFCphanesi farkl\u0131: {0} eser/tablo yeniden
+      atanacak."
+    - 'This device''s painting library is different: {0} works/paintings will be
+      reassigned.'
+    - "La biblioth\xE8que de tableaux de cet appareil est diff\xE9rente : {0} \u0153uvres/tableaux
+      seront r\xE9attribu\xE9s."
+    - "Die Bilderbibliothek dieses Ger\xE4ts ist anders: {0} Werke/Bilder werden
+      neu zugewiesen."
+    - "La libreria di quadri di questo dispositivo \xE8 diversa: {0} opere/quadri
+      saranno riassegnati."
+    - "A biblioteca de quadros deste dispositivo \xE9 diferente: {0} obras/quadros
+      ser\xE3o reatribu\xEDdos."
+    - "\u0411\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0430 \u043A\u0430\u0440\u0442\u0438\u043D
+      \u043D\u0430 \u044D\u0442\u043E\u043C \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u0435
+      \u043E\u0442\u043B\u0438\u0447\u0430\u0435\u0442\u0441\u044F: {0} \u0440\u0430\u0431\u043E\u0442/\u043A\u0430\u0440\u0442\u0438\u043D
+      \u0431\u0443\u0434\u0443\u0442 \u043F\u0435\u0440\u0435\u043D\u0430\u0437\u043D\u0430\u0447\u0435\u043D\u044B."
+    - "La biblioteca de cuadros de este dispositivo es diferente: {0} obras/cuadros
+      se reasignar\xE1n."
+  - key: native_file.error.backup_not_found
+    values:
+    - "Kaydedilecek yedek dosyas\u0131 bulunamad\u0131."
+    - The backup file to save wasn't found.
+    - "Le fichier de sauvegarde \xE0 enregistrer n'a pas \xE9t\xE9 trouv\xE9."
+    - Die zu speichernde Sicherungsdatei wurde nicht gefunden.
+    - "Il file di backup da salvare non \xE8 stato trovato."
+    - "O arquivo de backup a ser salvo n\xE3o foi encontrado."
+    - "\u0424\u0430\u0439\u043B \u0440\u0435\u0437\u0435\u0440\u0432\u043D\u043E\u0439
+      \u043A\u043E\u043F\u0438\u0438 \u0434\u043B\u044F \u0441\u043E\u0445\u0440\u0430\u043D\u0435\u043D\u0438\u044F
+      \u043D\u0435 \u043D\u0430\u0439\u0434\u0435\u043D."
+    - "No se encontr\xF3 el archivo de copia de seguridad para guardar."
+  - key: native_file.error.save_dialog_failed
+    values:
+    - "Dosya kaydetme penceresi a\xE7\u0131lamad\u0131."
+    - The save dialog couldn't be opened.
+    - "La fen\xEAtre d'enregistrement n'a pas pu s'ouvrir."
+    - "Der Speicherdialog konnte nicht ge\xF6ffnet werden."
+    - "La finestra di salvataggio non si \xE8 aperta."
+    - "A janela de salvar arquivo n\xE3o p\xF4de ser aberta."
+    - "\u041D\u0435 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u043E\u0442\u043A\u0440\u044B\u0442\u044C
+      \u043E\u043A\u043D\u043E \u0441\u043E\u0445\u0440\u0430\u043D\u0435\u043D\u0438\u044F
+      \u0444\u0430\u0439\u043B\u0430."
+    - No se pudo abrir la ventana para guardar el archivo.
+  - key: native_file.error.temp_path_failed
+    values:
+    - "Ge\xE7ici dosya yolu haz\u0131rlanamad\u0131."
+    - The temporary file path couldn't be prepared.
+    - "Le chemin de fichier temporaire n'a pas pu \xEAtre pr\xE9par\xE9."
+    - "Der tempor\xE4re Dateipfad konnte nicht vorbereitet werden."
+    - "Il percorso del file temporaneo non \xE8 stato preparato."
+    - "O caminho do arquivo tempor\xE1rio n\xE3o p\xF4de ser preparado."
+    - "\u041D\u0435 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u0438\u0442\u044C
+      \u043F\u0443\u0442\u044C \u043A \u0432\u0440\u0435\u043C\u0435\u043D\u043D\u043E\u043C\u0443
+      \u0444\u0430\u0439\u043B\u0443."
+    - No se pudo preparar la ruta del archivo temporal.
+  - key: native_file.error.pick_dialog_failed
+    values:
+    - "Dosya se\xE7me penceresi a\xE7\u0131lamad\u0131."
+    - The file picker couldn't be opened.
+    - "Le s\xE9lecteur de fichier n'a pas pu s'ouvrir."
+    - "Der Dateiauswahldialog konnte nicht ge\xF6ffnet werden."
+    - "Il selettore file non si \xE8 aperto."
+    - "O seletor de arquivos n\xE3o p\xF4de ser aberto."
+    - "\u041D\u0435 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u043E\u0442\u043A\u0440\u044B\u0442\u044C
+      \u043E\u043A\u043D\u043E \u0432\u044B\u0431\u043E\u0440\u0430 \u0444\u0430\u0439\u043B\u0430."
+    - No se pudo abrir el selector de archivos.
+  - key: native_file.error.no_picker_on_device
+    values:
+    - "Bu cihazda dosya se\xE7ici yok."
+    - This device has no file picker.
+    - "Cet appareil n'a pas de s\xE9lecteur de fichier."
+    - "Dieses Ger\xE4t hat keinen Dateiauswahldialog."
+    - Questo dispositivo non ha un selettore file.
+    - "Este dispositivo n\xE3o tem um seletor de arquivos."
+    - "\u041D\u0430 \u044D\u0442\u043E\u043C \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u0435
+      \u043D\u0435\u0442 \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430 \u0432\u044B\u0431\u043E\u0440\u0430
+      \u0444\u0430\u0439\u043B\u043E\u0432."
+    - Este dispositivo no tiene selector de archivos.
+  - key: native_file.error.operation_in_progress
+    values:
+    - "Ba\u015Fka bir dosya i\u015Flemi s\xFCr\xFCyor."
+    - Another file operation is in progress.
+    - "Une autre op\xE9ration de fichier est en cours."
+    - "Ein anderer Dateivorgang l\xE4uft bereits."
+    - "\xC8 in corso un'altra operazione sui file."
+    - "Outra opera\xE7\xE3o de arquivo est\xE1 em andamento."
+    - "\u0412\u044B\u043F\u043E\u043B\u043D\u044F\u0435\u0442\u0441\u044F \u0434\u0440\u0443\u0433\u0430\u044F
+      \u043E\u043F\u0435\u0440\u0430\u0446\u0438\u044F \u0441 \u0444\u0430\u0439\u043B\u043E\u043C."
+    - "Hay otra operaci\xF3n de archivo en curso."
+  - key: native_file.error.result_unreadable
+    values:
+    - "Dosya i\u015Fleminin sonucu okunamad\u0131."
+    - The file operation's result couldn't be read.
+    - "Le r\xE9sultat de l'op\xE9ration de fichier n'a pas pu \xEAtre lu."
+    - Das Ergebnis des Dateivorgangs konnte nicht gelesen werden.
+    - "Il risultato dell'operazione sul file non \xE8 leggibile."
+    - "O resultado da opera\xE7\xE3o de arquivo n\xE3o p\xF4de ser lido."
+    - "\u041D\u0435 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u043F\u0440\u043E\u0447\u0438\u0442\u0430\u0442\u044C
+      \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442 \u043E\u043F\u0435\u0440\u0430\u0446\u0438\u0438
+      \u0441 \u0444\u0430\u0439\u043B\u043E\u043C."
+    - "No se pudo leer el resultado de la operaci\xF3n de archivo."
+  - key: native_file.error.operation_failed_generic
+    values:
+    - "Dosya i\u015Flemi tamamlanamad\u0131."
+    - The file operation couldn't be completed.
+    - "L'op\xE9ration de fichier n'a pas pu \xEAtre termin\xE9e."
+    - Der Dateivorgang konnte nicht abgeschlossen werden.
+    - "L'operazione sul file non \xE8 stata completata."
+    - "A opera\xE7\xE3o de arquivo n\xE3o p\xF4de ser conclu\xEDda."
+    - "\u041D\u0435 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C
+      \u043E\u043F\u0435\u0440\u0430\u0446\u0438\u044E \u0441 \u0444\u0430\u0439\u043B\u043E\u043C."
+    - "No se pudo completar la operaci\xF3n de archivo."
+  - key: native_file.error.write_failed
+    values:
+    - "Yedek se\xE7ilen yere yaz\u0131lamad\u0131."
+    - The backup couldn't be written to the chosen location.
+    - "La sauvegarde n'a pas pu \xEAtre \xE9crite \xE0 l'emplacement choisi."
+    - "Die Sicherung konnte nicht am gew\xE4hlten Ort gespeichert werden."
+    - "Il backup non \xE8 stato scritto nella posizione scelta."
+    - "O backup n\xE3o p\xF4de ser gravado no local escolhido."
+    - "\u041D\u0435 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u0437\u0430\u043F\u0438\u0441\u0430\u0442\u044C
+      \u0440\u0435\u0437\u0435\u0440\u0432\u043D\u0443\u044E \u043A\u043E\u043F\u0438\u044E
+      \u0432 \u0432\u044B\u0431\u0440\u0430\u043D\u043D\u043E\u0435 \u043C\u0435\u0441\u0442\u043E."
+    - "No se pudo escribir la copia de seguridad en la ubicaci\xF3n elegida."
+  - key: native_file.error.read_failed
+    values:
+    - "Se\xE7ilen dosya okunamad\u0131."
+    - The chosen file couldn't be read.
+    - "Le fichier choisi n'a pas pu \xEAtre lu."
+    - "Die gew\xE4hlte Datei konnte nicht gelesen werden."
+    - "Il file scelto non \xE8 leggibile."
+    - "O arquivo escolhido n\xE3o p\xF4de ser lido."
+    - "\u041D\u0435 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u043F\u0440\u043E\u0447\u0438\u0442\u0430\u0442\u044C
+      \u0432\u044B\u0431\u0440\u0430\u043D\u043D\u044B\u0439 \u0444\u0430\u0439\u043B."
+    - No se pudo leer el archivo elegido.
+  - key: native_file.error.no_picker_found
+    values:
+    - "Bu cihazda dosya se\xE7ici bulunamad\u0131."
+    - No file picker was found on this device.
+    - "Aucun s\xE9lecteur de fichier trouv\xE9 sur cet appareil."
+    - "Auf diesem Ger\xE4t wurde kein Dateiauswahldialog gefunden."
+    - Nessun selettore file trovato su questo dispositivo.
+    - Nenhum seletor de arquivos foi encontrado neste dispositivo.
+    - "\u041D\u0430 \u044D\u0442\u043E\u043C \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u0435
+      \u043D\u0435 \u043D\u0430\u0439\u0434\u0435\u043D\u043E \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u043E
+      \u0432\u044B\u0431\u043E\u0440\u0430 \u0444\u0430\u0439\u043B\u043E\u0432."
+    - "No se encontr\xF3 selector de archivos en este dispositivo."
+  - key: save_export.error.write_failed
+    values:
+    - "Yedek ne panoya ne cihaza yaz\u0131labildi."
+    - The backup couldn't be written to the clipboard or the device.
+    - "La sauvegarde n'a pu \xEAtre \xE9crite ni dans le presse-papiers ni sur l'appareil."
+    - "Die Sicherung konnte weder in die Zwischenablage noch auf das Ger\xE4t geschrieben
+      werden."
+    - "Il backup non \xE8 stato scritto n\xE9 negli appunti n\xE9 sul dispositivo."
+    - "O backup n\xE3o p\xF4de ser salvo na \xE1rea de transfer\xEAncia nem no dispositivo."
+    - "\u0420\u0435\u0437\u0435\u0440\u0432\u043D\u0443\u044E \u043A\u043E\u043F\u0438\u044E
+      \u043D\u0435 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u0437\u0430\u043F\u0438\u0441\u0430\u0442\u044C
+      \u043D\u0438 \u0432 \u0431\u0443\u0444\u0435\u0440 \u043E\u0431\u043C\u0435\u043D\u0430,
+      \u043D\u0438 \u043D\u0430 \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u043E."
+    - No se pudo escribir la copia de seguridad ni en el portapapeles ni en el dispositivo.
+  - key: save_export.error.no_backup_on_device
+    values:
+    - "Cihazda kay\u0131tl\u0131 bir yedek yok."
+    - There's no saved backup on this device.
+    - "Il n'y a pas de sauvegarde enregistr\xE9e sur cet appareil."
+    - "Es gibt keine gespeicherte Sicherung auf diesem Ger\xE4t."
+    - "Non c'\xE8 nessun backup salvato su questo dispositivo."
+    - "N\xE3o h\xE1 backup salvo neste dispositivo."
+    - "\u041D\u0430 \u044D\u0442\u043E\u043C \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u0435
+      \u043D\u0435\u0442 \u0441\u043E\u0445\u0440\u0430\u043D\u0451\u043D\u043D\u043E\u0439
+      \u0440\u0435\u0437\u0435\u0440\u0432\u043D\u043E\u0439 \u043A\u043E\u043F\u0438\u0438."
+    - No hay copia de seguridad guardada en este dispositivo.
+  - key: save_export.error.backup_file_unreadable
+    values:
+    - "Yedek dosyas\u0131 okunamad\u0131."
+    - The backup file couldn't be read.
+    - "Le fichier de sauvegarde n'a pas pu \xEAtre lu."
+    - Die Sicherungsdatei konnte nicht gelesen werden.
+    - "Il file di backup non \xE8 leggibile."
+    - "O arquivo de backup n\xE3o p\xF4de ser lido."
+    - "\u041D\u0435 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u043F\u0440\u043E\u0447\u0438\u0442\u0430\u0442\u044C
+      \u0444\u0430\u0439\u043B \u0440\u0435\u0437\u0435\u0440\u0432\u043D\u043E\u0439
+      \u043A\u043E\u043F\u0438\u0438."
+    - No se pudo leer el archivo de copia de seguridad.
+  - key: save_export.error.empty_path
+    values:
+    - "Dosya yolu bo\u015F."
+    - The file path is empty.
+    - Le chemin du fichier est vide.
+    - Der Dateipfad ist leer.
+    - "Il percorso del file \xE8 vuoto."
+    - "O caminho do arquivo est\xE1 vazio."
+    - "\u041F\u0443\u0442\u044C \u043A \u0444\u0430\u0439\u043B\u0443 \u043F\u0443\u0441\u0442."
+    - "La ruta del archivo est\xE1 vac\xEDa."
+  - key: reminder.channel_name
+    values:
+    - "Hat\u0131rlat\u0131c\u0131lar"
+    - Reminders
+    - Rappels
+    - Erinnerungen
+    - Promemoria
+    - Lembretes
+    - "\u041D\u0430\u043F\u043E\u043C\u0438\u043D\u0430\u043D\u0438\u044F"
+    - Recordatorios
+  - key: reminder.channel_description
+    values:
+    - "G\xFCnl\xFCk f\u0131r\xE7an\u0131 bekleyen hat\u0131rlatmalar."
+    - Reminders waiting for your daily brushstroke.
+    - Rappels en attente de votre coup de pinceau quotidien.
+    - "Erinnerungen, die auf deinen t\xE4glichen Pinselstrich warten."
+    - Promemoria che aspettano la tua pennellata quotidiana.
+    - "Lembretes esperando sua pincelada di\xE1ria."
+    - "\u041D\u0430\u043F\u043E\u043C\u0438\u043D\u0430\u043D\u0438\u044F, \u0436\u0434\u0443\u0449\u0438\u0435
+      \u0432\u0430\u0448\u0435\u0433\u043E \u0435\u0436\u0435\u0434\u043D\u0435\u0432\u043D\u043E\u0433\u043E
+      \u043C\u0430\u0437\u043A\u0430 \u043A\u0438\u0441\u0442\u044C\u044E."
+    - Recordatorios esperando tu pincelada diaria.
+  - key: reminder.notification_title
+    values:
+    - "{0} f\u0131r\xE7ay\u0131 bekliyor"
+    - '{0} is waiting for the brush'
+    - '{0} attend le pinceau'
+    - '{0} wartet auf den Pinsel'
+    - '{0} aspetta il pennello'
+    - "{0} est\xE1 esperando o pincel"
+    - "{0} \u0436\u0434\u0451\u0442 \u043A\u0438\u0441\u0442\u044C"
+    - '{0} espera el pincel'
+  - key: reminder.notification_text
+    values:
+    - "Her g\xFCn ayn\u0131 saatte -- bug\xFCnk\xFC tuvaline bir dokunu\u015F daha."
+    - Same time every day -- one more touch on today's canvas.
+    - "Chaque jour \xE0 la m\xEAme heure -- une touche de plus sur votre toile du
+      jour."
+    - Jeden Tag zur gleichen Zeit -- noch ein Pinselstrich auf deiner heutigen Leinwand.
+    - Ogni giorno alla stessa ora -- un altro tocco sulla tua tela di oggi.
+    - "Todos os dias no mesmo hor\xE1rio -- mais um toque na sua tela de hoje."
+    - "\u041A\u0430\u0436\u0434\u044B\u0439 \u0434\u0435\u043D\u044C \u0432 \u043E\u0434\u043D\u043E
+      \u0432\u0440\u0435\u043C\u044F -- \u0435\u0449\u0451 \u043E\u0434\u0438\u043D
+      \u0448\u0442\u0440\u0438\u0445 \u043D\u0430 \u0441\u0435\u0433\u043E\u0434\u043D\u044F\u0448\u043D\u0435\u043C
+      \u0445\u043E\u043B\u0441\u0442\u0435."
+    - "Todos los d\xEDas a la misma hora -- un toque m\xE1s en tu lienzo de hoy."
+  - key: data.export_failed_title
+    values:
+    - "D\u0131\u015Fa aktar\u0131lamad\u0131"
+    - Couldn't export
+    - Impossible d'exporter
+    - Export fehlgeschlagen
+    - Esportazione non riuscita
+    - "N\xE3o foi poss\xEDvel exportar"
+    - "\u041D\u0435 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u044D\u043A\u0441\u043F\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u0430\u0442\u044C"
+    - No se pudo exportar
+  - key: data.backup_ready_title
+    values:
+    - "Yedek haz\u0131r"
+    - Backup ready
+    - "Sauvegarde pr\xEAte"
+    - Sicherung bereit
+    - Backup pronto
+    - Backup pronto
+    - "\u0420\u0435\u0437\u0435\u0440\u0432\u043D\u0430\u044F \u043A\u043E\u043F\u0438\u044F
+      \u0433\u043E\u0442\u043E\u0432\u0430"
+    - Copia de seguridad lista
+  - key: data.backup_saved_title
+    values:
+    - Yedek kaydedildi
+    - Backup saved
+    - "Sauvegarde enregistr\xE9e"
+    - Sicherung gespeichert
+    - Backup salvato
+    - Backup salvo
+    - "\u0420\u0435\u0437\u0435\u0440\u0432\u043D\u0430\u044F \u043A\u043E\u043F\u0438\u044F
+      \u0441\u043E\u0445\u0440\u0430\u043D\u0435\u043D\u0430"
+    - Copia de seguridad guardada
+  - key: data.backup_saved_body
+    values:
+    - "{0} al\u0131\u015Fkanl\u0131k {1} KB olarak kaydedildi: {2}"
+    - '{0} habits saved as {1} KB: {2}'
+    - "{0} habitudes enregistr\xE9es, {1} Ko : {2}"
+    - '{0} Gewohnheiten als {1} KB gespeichert: {2}'
+    - '{0} abitudini salvate, {1} KB: {2}'
+    - "{0} h\xE1bitos salvos, {1} KB: {2}"
+    - "{0} \u043F\u0440\u0438\u0432\u044B\u0447\u0435\u043A \u0441\u043E\u0445\u0440\u0430\u043D\u0435\u043D\u043E,
+      {1} \u041A\u0411: {2}"
+    - "{0} h\xE1bitos guardados, {1} KB: {2}"
+  - key: data.backup_copied_title
+    values:
+    - "Yedek panoya kopyaland\u0131"
+    - Backup copied to clipboard
+    - "Sauvegarde copi\xE9e dans le presse-papiers"
+    - Sicherung in die Zwischenablage kopiert
+    - Backup copiato negli appunti
+    - "Backup copiado para a \xE1rea de transfer\xEAncia"
+    - "\u0420\u0435\u0437\u0435\u0440\u0432\u043D\u0430\u044F \u043A\u043E\u043F\u0438\u044F
+      \u0441\u043A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u043D\u0430 \u0432 \u0431\u0443\u0444\u0435\u0440
+      \u043E\u0431\u043C\u0435\u043D\u0430"
+    - Copia de seguridad copiada al portapapeles
+  - key: data.save_cancelled_suffix
+    values:
+    - Dosyaya kaydetme iptal edildi.
+    - Saving to file was cancelled.
+    - "L'enregistrement du fichier a \xE9t\xE9 annul\xE9."
+    - Das Speichern in eine Datei wurde abgebrochen.
+    - "Il salvataggio su file \xE8 stato annullato."
+    - O salvamento em arquivo foi cancelado.
+    - "\u0421\u043E\u0445\u0440\u0430\u043D\u0435\u043D\u0438\u0435 \u0432 \u0444\u0430\u0439\u043B
+      \u043E\u0442\u043C\u0435\u043D\u0435\u043D\u043E."
+    - "Se cancel\xF3 el guardado en archivo."
+  - key: data.import_failed_title
+    values:
+    - "\u0130\xE7e aktar\u0131lamad\u0131"
+    - Couldn't import
+    - Impossible d'importer
+    - Import fehlgeschlagen
+    - Importazione non riuscita
+    - "N\xE3o foi poss\xEDvel importar"
+    - "\u041D\u0435 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u0438\u043C\u043F\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u0430\u0442\u044C"
+    - No se pudo importar
+  - key: data.restore_confirm_suffix
+    values:
+    - "Mevcut b\xFCt\xFCn veriler silinip bu yedekle de\u011Fi\u015Ftirilecek."
+    - All current data will be deleted and replaced with this backup.
+    - "Toutes les donn\xE9es actuelles seront supprim\xE9es et remplac\xE9es par
+      cette sauvegarde."
+    - "Alle aktuellen Daten werden gel\xF6scht und durch diese Sicherung ersetzt."
+    - Tutti i dati attuali saranno eliminati e sostituiti con questo backup.
+    - "Todos os dados atuais ser\xE3o exclu\xEDdos e substitu\xEDdos por este backup."
+    - "\u0412\u0441\u0435 \u0442\u0435\u043A\u0443\u0449\u0438\u0435 \u0434\u0430\u043D\u043D\u044B\u0435
+      \u0431\u0443\u0434\u0443\u0442 \u0443\u0434\u0430\u043B\u0435\u043D\u044B \u0438
+      \u0437\u0430\u043C\u0435\u043D\u0435\u043D\u044B \u044D\u0442\u043E\u0439 \u0440\u0435\u0437\u0435\u0440\u0432\u043D\u043E\u0439
+      \u043A\u043E\u043F\u0438\u0435\u0439."
+    - "Se eliminar\xE1n todos los datos actuales y se sustituir\xE1n por esta copia
+      de seguridad."
+  - key: data.restore_confirm_title
+    values:
+    - "Yede\u011Fi geri y\xFCkle"
+    - Restore backup
+    - Restaurer la sauvegarde
+    - Sicherung wiederherstellen
+    - Ripristina backup
+    - Restaurar backup
+    - "\u0412\u043E\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C \u0440\u0435\u0437\u0435\u0440\u0432\u043D\u0443\u044E
+      \u043A\u043E\u043F\u0438\u044E"
+    - Restaurar copia de seguridad
+  - key: data.clipboard_copied_body
+    values:
+    - "{0} al\u0131\u015Fkanl\u0131k panoya kopyaland\u0131 ({1} KB)."
+    - '{0} habits copied to the clipboard ({1} KB).'
+    - "{0} habitudes copi\xE9es dans le presse-papiers ({1} Ko)."
+    - '{0} Gewohnheiten in die Zwischenablage kopiert ({1} KB).'
+    - '{0} abitudini copiate negli appunti ({1} KB).'
+    - "{0} h\xE1bitos copiados para a \xE1rea de transfer\xEAncia ({1} KB)."
+    - "{0} \u043F\u0440\u0438\u0432\u044B\u0447\u0435\u043A \u0441\u043A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u043D\u043E
+      \u0432 \u0431\u0443\u0444\u0435\u0440 \u043E\u0431\u043C\u0435\u043D\u0430
+      ({1} \u041A\u0411)."
+    - "{0} h\xE1bitos copiados al portapapeles ({1} KB)."
+  - key: data.recovery_copy_suffix
+    values:
+    - "Cihazda ayr\u0131ca bir kurtarma kopyas\u0131 sakland\u0131: {0}"
+    - 'A recovery copy was also saved on the device: {0}'
+    - "Une copie de secours a aussi \xE9t\xE9 enregistr\xE9e sur l'appareil : {0}"
+    - "Auf dem Ger\xE4t wurde zus\xE4tzlich eine Wiederherstellungskopie gespeichert:
+      {0}"
+    - "Sul dispositivo \xE8 stata salvata anche una copia di recupero: {0}"
+    - "Uma c\xF3pia de recupera\xE7\xE3o tamb\xE9m foi salva no dispositivo: {0}"
+    - "\u041D\u0430 \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u0435
+      \u0442\u0430\u043A\u0436\u0435 \u0441\u043E\u0445\u0440\u0430\u043D\u0435\u043D\u0430
+      \u043A\u043E\u043F\u0438\u044F \u0434\u043B\u044F \u0432\u043E\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F:
+      {0}"
+    - "Tambi\xE9n se guard\xF3 una copia de recuperaci\xF3n en el dispositivo: {0}"
+  - key: category.nutrition
+    values:
+    - Beslenme
+    - Nutrition
+    - Nutrition
+    - "Ern\xE4hrung"
+    - Nutrizione
+    - "Nutri\xE7\xE3o"
+    - "\u041F\u0438\u0442\u0430\u043D\u0438\u0435"
+    - "Nutrici\xF3n"
+  - key: category.finance
+    values:
+    - Finans
+    - Finance
+    - Finances
+    - Finanzen
+    - Finanze
+    - "Finan\xE7as"
+    - "\u0424\u0438\u043D\u0430\u043D\u0441\u044B"
+    - Finanzas
+  - key: category.fitness
+    values:
+    - Fitness
+    - Fitness
+    - Fitness
+    - Fitness
+    - Fitness
+    - Fitness
+    - "\u0424\u0438\u0442\u043D\u0435\u0441"
+    - Fitness
+  - key: category.art
+    values:
+    - Sanat
+    - Art
+    - Art
+    - Kunst
+    - Arte
+    - Arte
+    - "\u0418\u0441\u043A\u0443\u0441\u0441\u0442\u0432\u043E"
+    - Arte
+  - key: category.health
+    values:
+    - "Sa\u011Fl\u0131k"
+    - Health
+    - "Sant\xE9"
+    - Gesundheit
+    - Salute
+    - "Sa\xFAde"
+    - "\u0417\u0434\u043E\u0440\u043E\u0432\u044C\u0435"
+    - Salud
+  - key: category.social
+    values:
+    - Sosyal
+    - Social
+    - Social
+    - Sozial
+    - Sociale
+    - Social
+    - "\u041E\u0431\u0449\u0435\u043D\u0438\u0435"
+    - Social
+  - key: category.study
+    values:
+    - "\xC7al\u0131\u015Fma"
+    - Study
+    - "\xC9tude"
+    - Lernen
+    - Studio
+    - Estudo
+    - "\u0423\u0447\u0451\u0431\u0430"
+    - Estudio
+  - key: category.work
+    values:
+    - "\u0130\u015F"
+    - Work
+    - Travail
+    - Arbeit
+    - Lavoro
+    - Trabalho
+    - "\u0420\u0430\u0431\u043E\u0442\u0430"
+    - Trabajo
+  - key: category.other
+    values:
+    - "Di\u011Fer"
+    - Other
+    - Autre
+    - Sonstiges
+    - Altro
+    - Outro
+    - "\u0414\u0440\u0443\u0433\u043E\u0435"
+    - Otro
+  - key: category.morning
+    values:
+    - Sabah
+    - Morning
+    - Matin
+    - Morgen
+    - Mattina
+    - "Manh\xE3"
+    - "\u0423\u0442\u0440\u043E"
+    - "Ma\xF1ana"
+  - key: category.day
+    values:
+    - "G\xFCn"
+    - Day
+    - Jour
+    - Tag
+    - Giorno
+    - Dia
+    - "\u0414\u0435\u043D\u044C"
+    - "D\xEDa"
+  - key: category.evening
+    values:
+    - "Ak\u015Fam"
+    - Evening
+    - Soir
+    - Abend
+    - Sera
+    - Noite
+    - "\u0412\u0435\u0447\u0435\u0440"
+    - Noche
+  - key: category.mind
+    values:
+    - Zihin
+    - Mind
+    - Esprit
+    - Geist
+    - Mente
+    - Mente
+    - "\u0420\u0430\u0437\u0443\u043C"
+    - Mente
+  - key: category.productivity
+    values:
+    - "\xDCretkenlik"
+    - Productivity
+    - "Productivit\xE9"
+    - "Produktivit\xE4t"
+    - "Produttivit\xE0"
+    - Produtividade
+    - "\u041F\u0440\u043E\u0434\u0443\u043A\u0442\u0438\u0432\u043D\u043E\u0441\u0442\u044C"
+    - Productividad
+  - key: weekday.0.short
+    values:
+    - Pt
+    - Mo
+    - Lu
+    - Mo
+    - Lu
+    - Seg
+    - "\u041F\u043D"
+    - Lu
+  - key: weekday.0.initial
+    values:
+    - P
+    - M
+    - L
+    - M
+    - L
+    - S
+    - "\u041F"
+    - L
+  - key: weekday.1.short
+    values:
+    - Sa
+    - Tu
+    - Ma
+    - Di
+    - Ma
+    - Ter
+    - "\u0412\u0442"
+    - Ma
+  - key: weekday.1.initial
+    values:
+    - S
+    - T
+    - M
+    - D
+    - M
+    - T
+    - "\u0412"
+    - M
+  - key: weekday.2.short
+    values:
+    - "\xC7a"
+    - We
+    - Me
+    - Mi
+    - Me
+    - Qua
+    - "\u0421\u0440"
+    - Mi
+  - key: weekday.2.initial
+    values:
+    - "\xC7"
+    - W
+    - M
+    - M
+    - M
+    - Q
+    - "\u0421"
+    - M
+  - key: weekday.3.short
+    values:
+    - Pe
+    - Th
+    - Je
+    - Do
+    - Gi
+    - Qui
+    - "\u0427\u0442"
+    - Ju
+  - key: weekday.3.initial
+    values:
+    - P
+    - T
+    - J
+    - D
+    - G
+    - Q
+    - "\u0427"
+    - J
+  - key: weekday.4.short
+    values:
+    - Cu
+    - Fr
+    - Ve
+    - Fr
+    - Ve
+    - Sex
+    - "\u041F\u0442"
+    - Vi
+  - key: weekday.4.initial
+    values:
+    - C
+    - F
+    - V
+    - F
+    - V
+    - S
+    - "\u041F"
+    - V
+  - key: weekday.5.short
+    values:
+    - Ct
+    - Sa
+    - Sa
+    - Sa
+    - Sa
+    - "S\xE1b"
+    - "\u0421\u0431"
+    - "S\xE1"
+  - key: weekday.5.initial
+    values:
+    - C
+    - S
+    - S
+    - S
+    - S
+    - S
+    - "\u0421"
+    - S
+  - key: weekday.6.short
+    values:
+    - Pz
+    - Su
+    - Di
+    - So
+    - Do
+    - Dom
+    - "\u0412\u0441"
+    - Do
+  - key: weekday.6.initial
+    values:
+    - P
+    - S
+    - D
+    - S
+    - D
+    - D
+    - "\u0412"
+    - D
+  - key: month.1
+    values:
+    - Oca
+    - Jan
+    - Jan
+    - Jan
+    - Gen
+    - Jan
+    - "\u044F\u043D\u0432"
+    - Ene
+  - key: month.2
+    values:
+    - "\u015Eub"
+    - Feb
+    - "F\xE9v"
+    - Feb
+    - Feb
+    - Fev
+    - "\u0444\u0435\u0432"
+    - Feb
+  - key: month.3
+    values:
+    - Mar
+    - Mar
+    - Mar
+    - "M\xE4r"
+    - Mar
+    - Mar
+    - "\u043C\u0430\u0440"
+    - Mar
+  - key: month.4
+    values:
+    - Nis
+    - Apr
+    - Avr
+    - Apr
+    - Apr
+    - Abr
+    - "\u0430\u043F\u0440"
+    - Abr
+  - key: month.5
+    values:
+    - May
+    - May
+    - Mai
+    - Mai
+    - Mag
+    - Mai
+    - "\u043C\u0430\u0439"
+    - May
+  - key: month.6
+    values:
+    - Haz
+    - Jun
+    - Jun
+    - Jun
+    - Giu
+    - Jun
+    - "\u0438\u044E\u043D"
+    - Jun
+  - key: month.7
+    values:
+    - Tem
+    - Jul
+    - Jul
+    - Jul
+    - Lug
+    - Jul
+    - "\u0438\u044E\u043B"
+    - Jul
+  - key: month.8
+    values:
+    - "A\u011Fu"
+    - Aug
+    - "Ao\xFB"
+    - Aug
+    - Ago
+    - Ago
+    - "\u0430\u0432\u0433"
+    - Ago
+  - key: month.9
+    values:
+    - Eyl
+    - Sep
+    - Sep
+    - Sep
+    - Set
+    - Set
+    - "\u0441\u0435\u043D"
+    - Sep
+  - key: month.10
+    values:
+    - Eki
+    - Oct
+    - Oct
+    - Okt
+    - Ott
+    - Out
+    - "\u043E\u043A\u0442"
+    - Oct
+  - key: month.11
+    values:
+    - Kas
+    - Nov
+    - Nov
+    - Nov
+    - Nov
+    - Nov
+    - "\u043D\u043E\u044F"
+    - Nov
+  - key: month.12
+    values:
+    - Ara
+    - Dec
+    - "D\xE9c"
+    - Dez
+    - Dic
+    - Dez
+    - "\u0434\u0435\u043A"
+    - Dic

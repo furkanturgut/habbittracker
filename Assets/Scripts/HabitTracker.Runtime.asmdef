@@ -1,0 +1,25 @@
+{
+    "name": "HabitTracker.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "UnityEngine.UI",
+        "Unity.TextMeshPro",
+        "Unity.InputSystem",
+        "Unity.Notifications.Unified"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.mobile.notifications",
+            "expression": "2.3.0",
+            "define": "HABIT_NOTIFICATIONS"
+        }
+    ],
+    "noEngineReferences": false
+}
