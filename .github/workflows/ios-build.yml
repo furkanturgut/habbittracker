@@ -75,10 +75,20 @@ jobs:
         env:
           TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
         run: |
-          cd build/iOS
+          XCPROJ=$(find build/iOS -maxdepth 3 -name "*.xcodeproj" | head -1)
+          echo "Bulunan proje: $XCPROJ"
+          if [ -z "$XCPROJ" ]; then
+            echo "HATA: .xcodeproj bulunamadı"
+            find build -maxdepth 4
+            exit 1
+          fi
+          PROJ_DIR=$(dirname "$XCPROJ")
+          SCHEME=$(basename "$XCPROJ" .xcodeproj)
+          cd "$PROJ_DIR"
+          xcodebuild -list -project "$SCHEME.xcodeproj"
           xcodebuild \
-            -project Unity-iPhone.xcodeproj \
-            -scheme Unity-iPhone \
+            -project "$SCHEME.xcodeproj" \
+            -scheme "$SCHEME" \
             -sdk iphoneos \
             -configuration Release \
             -archivePath "$RUNNER_TEMP/app.xcarchive" \
