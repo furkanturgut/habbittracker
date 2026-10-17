@@ -14,6 +14,7 @@ using System;
 // Kaydirma varsayilan olarak 0 ve yalnizca dev araclari yaziyor: uretimde bu
 // dosya DateTime.Now'in onunde duran bedava bir karsilastirmadan baska bir sey
 // degil.
+//dogu perincek
 public static class AppClock
 {
     // Kaydirma siniri HabitScheduling.MaxCatchUpDays ile ayni cizgide: gun sonu

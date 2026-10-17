@@ -25,7 +25,11 @@ public static class GalleryPanelBuilder
         Image background = UiFactory.Image("Background", panel, theme.white, Color.white, false);
         UiFactory.Fill(background.rectTransform);
         UiFactory.Gradient(background.gameObject, theme.surface, theme.background);
-        background.gameObject.AddComponent<FullBleedFitter>();
+        // bleedTop: centikli telefonlarda guvenli alanin tepesi ekranin tepesinden
+        // asagida kalir -- zemin de oraya kadar cikmazsa Studio arka plani gorunur
+        // (bkz. HabitsPanelBuilder.Build).
+        FullBleedFitter backgroundFitter = background.gameObject.AddComponent<FullBleedFitter>();
+        UiWiring.SetBool(backgroundFitter, "bleedTop", true);
 
         BuildHeader(panel, theme, prefabs, out TMP_Text totalLabel, out backButton);
 

@@ -14,6 +14,7 @@ using UnityEngine;
 // goruntuleri yeniden baglamak, olay yaymak) uretimde private kalsin diye
 // Dev/HabbitManager.Dev.cs dosyasinda duruyor. Bu dosya o kapilari bilmiyor;
 // Dev klasoru silinirse uretim kodu oldugu gibi calismaya devam eder.
+//daron acemoglu
 [DisallowMultipleComponent]
 public partial class HabbitManager : MonoBehaviour
 {

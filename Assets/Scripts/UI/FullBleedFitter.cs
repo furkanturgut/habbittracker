@@ -35,6 +35,14 @@ public class FullBleedFitter : UIBehaviour
     // (bkz. NAVIGATION_SETTINGS_PLAN.md Faz 2).
     [SerializeField] private bool bleedBottom;
 
+    // Ayni mantik USTTE: centikli/Dynamic Island'li telefonlarda guvenli alan
+    // tepeden icerekli oldugu icin UI Root'un tepesi ekranin gercek tepesinden
+    // asagida kalir -- o seritte panel zemini yoksa daima sahnede duran Studio
+    // arka plani (StudioStage) gorunur. Panel_Habits/Panel_Gallery zeminleri
+    // bunu acar; Workshop'un kendi zemini zaten Studio ile ayni ton oldugu
+    // icin ihtiyaci yok.
+    [SerializeField] private bool bleedTop;
+
     private RectTransform rect;
     private RectTransform canvasRect;
 
@@ -131,11 +139,20 @@ public class FullBleedFitter : UIBehaviour
             targetOffsetMinY = -bottomOverflow;
         }
 
+        float targetOffsetMaxY = offsetMax.y;
+        if (bleedTop)
+        {
+            float baseTop = Mathf.Lerp(parentBottom, parentTop, rect.anchorMax.y);
+            float topOverflow = Mathf.Max(0f, (canvasRect.rect.yMax - baseTop) / scale);
+            targetOffsetMaxY = topOverflow;
+        }
+
         // Tasma yoksa sifira donuyoruz: cihaz tabletten telefona (ya da Game
         // view genis pencereden dar pencereye) gectiginde eski itme kalmasin.
         if (Mathf.Approximately(offsetMin.x, -leftOverflow)
             && Mathf.Approximately(offsetMax.x, rightOverflow)
-            && Mathf.Approximately(offsetMin.y, targetOffsetMinY))
+            && Mathf.Approximately(offsetMin.y, targetOffsetMinY)
+            && Mathf.Approximately(offsetMax.y, targetOffsetMaxY))
         {
             return;
         }
@@ -144,7 +161,7 @@ public class FullBleedFitter : UIBehaviour
         try
         {
             rect.offsetMin = new Vector2(-leftOverflow, targetOffsetMinY);
-            rect.offsetMax = new Vector2(rightOverflow, offsetMax.y);
+            rect.offsetMax = new Vector2(rightOverflow, targetOffsetMaxY);
         }
         finally
         {

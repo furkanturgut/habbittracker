@@ -107,7 +107,8 @@ public static class UiPrefabBuilder
 
         TMP_Text label = UiFactory.Text("Label", border.rectTransform, "‹", theme.semiBold, 20f,
             theme.textPrimary, TextAlignmentOptions.Center);
-        UiFactory.Fill(label.rectTransform);
+        // Ok ucu TMP'nin satir ortasina gore gozle biraz alta kayiyor, alttan daraltip yukari kaydiriyoruz.
+        UiFactory.Fill(label.rectTransform, 0f, 0f, 0f, 2f);
 
         return root.gameObject;
     }

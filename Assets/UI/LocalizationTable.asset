@@ -75,7 +75,7 @@ MonoBehaviour:
     - "A\xF1adir"
   - key: common.archive_button
     values:
-    - "Ar\u015Fivle"
+    - Arsivle
     - Archive
     - Archiver
     - Archivieren
@@ -125,7 +125,7 @@ MonoBehaviour:
     - Estudio
   - key: nav.tab.habits
     values:
-    - "Al\u0131\u015Fkanl\u0131klar"
+    - "Al\u0131skanl\u0131klar"
     - Habits
     - Habitudes
     - Gewohnheiten
@@ -145,7 +145,7 @@ MonoBehaviour:
     - "Galer\xEDa"
   - key: archive_sheet.title
     values:
-    - "Ar\u015Fiv"
+    - Arsiv
     - Archive
     - Archive
     - Archiv
@@ -155,7 +155,7 @@ MonoBehaviour:
     - Archivo
   - key: archive_sheet.empty_state
     values:
-    - "Ar\u015Fivde al\u0131\u015Fkanl\u0131k yok"
+    - "Arsivde al\u0131skanl\u0131k yok"
     - No habits in the archive
     - "Aucune habitude archiv\xE9e"
     - Keine Gewohnheiten im Archiv
@@ -195,7 +195,7 @@ MonoBehaviour:
     - Elegir
   - key: category_picker.create_chip_label
     values:
-    - "+ Kategori olu\u015Ftur"
+    - + Kategori olustur
     - + Create category
     - "+ Cr\xE9er une cat\xE9gorie"
     - + Kategorie erstellen
@@ -225,7 +225,7 @@ MonoBehaviour:
     - "Categor\xEDas y filtros"
   - key: category_settings.filters_caption
     values:
-    - "F\u0130LTRELER"
+    - FILTRELER
     - FILTERS
     - FILTRES
     - FILTER
@@ -235,7 +235,7 @@ MonoBehaviour:
     - FILTROS
   - key: category_settings.custom_caption
     values:
-    - "KEND\u0130 KATEGOR\u0130LER\u0130M"
+    - KENDI KATEGORILERIM
     - MY CATEGORIES
     - "MES CAT\xC9GORIES"
     - MEINE KATEGORIEN
@@ -266,7 +266,7 @@ MonoBehaviour:
     - "Eliminar categor\xEDa"
   - key: settings.delete_category_confirm_body
     values:
-    - "\"{0}\" kategorisini kullanan al\u0131\u015Fkanl\u0131klar \"{1}\"a ta\u015F\u0131nacak."
+    - "\"{0}\" kategorisini kullanan al\u0131skanl\u0131klar \"{1}\"a tas\u0131nacak."
     - Habits using "{0}" will be moved to "{1}".
     - "Les habitudes utilisant \xAB {0} \xBB seront d\xE9plac\xE9es vers \xAB {1}
       \xBB."
@@ -279,7 +279,7 @@ MonoBehaviour:
     - "Los h\xE1bitos que usan \"{0}\" se mover\xE1n a \"{1}\"."
   - key: settings.reset_progress_title
     values:
-    - "\u0130lerlemeyi s\u0131f\u0131rla"
+    - "Ilerlemeyi s\u0131f\u0131rla"
     - Reset progress
     - "R\xE9initialiser la progression"
     - "Fortschritt zur\xFCcksetzen"
@@ -289,8 +289,8 @@ MonoBehaviour:
     - Restablecer progreso
   - key: settings.reset_progress_confirm_body
     values:
-    - "B\xFCt\xFCn al\u0131\u015Fkanl\u0131klar, tablolar ve galeri geri al\u0131namaz
-      \u015Fekilde silinecek."
+    - "B\xFCt\xFCn al\u0131skanl\u0131klar, tablolar ve galeri geri al\u0131namaz
+      sekilde silinecek."
     - All habits, paintings, and the gallery will be permanently deleted.
     - "Toutes les habitudes, tableaux et la galerie seront d\xE9finitivement supprim\xE9s."
     - "Alle Gewohnheiten, Bilder und die Galerie werden unwiderruflich gel\xF6scht."
@@ -373,7 +373,7 @@ MonoBehaviour:
     - "{0} \xB7 {1}"
   - key: gallery_detail.stat_current_streak
     values:
-    - "\u015Eu anki seri"
+    - Su anki seri
     - Current streak
     - "S\xE9rie actuelle"
     - Aktuelle Serie
@@ -576,7 +576,7 @@ MonoBehaviour:
     - "{0} piezas \xB7 obra {1}"
   - key: gallery_viewer.meta_in_progress
     values:
-    - "{0} par\xE7a \xB7 \u015Fu an tuvalde"
+    - "{0} par\xE7a \xB7 su an tuvalde"
     - "{0} pieces \xB7 currently on the easel"
     - "{0} pi\xE8ces \xB7 en cours sur le chevalet"
     - "{0} Teile \xB7 gerade auf der Leinwand"
@@ -617,7 +617,7 @@ MonoBehaviour:
     - Reparar
   - key: rotus_restore.eyebrow
     values:
-    - "R\xD6TU\u015E"
+    - "R\xD6TUS"
     - RETOUCH
     - RETOUCHE
     - RETUSCHE
@@ -681,7 +681,7 @@ MonoBehaviour:
     - "Cuadro reparado \u2713"
   - key: rotus_restore.primary_no_rotus
     values:
-    - "R\xF6tu\u015F kalmad\u0131"
+    - "R\xF6tus kalmad\u0131"
     - No retouches left
     - Plus de retouches
     - Keine Retuschen mehr
@@ -691,8 +691,7 @@ MonoBehaviour:
     - No quedan retoques
   - key: rotus_restore.body
     values:
-    - "Her r\xF6tu\u015F yanan bir par\xE7ay\u0131 geri getirir. Elinde {0} r\xF6tu\u015F
-      var."
+    - "Her r\xF6tus yanan bir par\xE7ay\u0131 geri getirir. Elinde {0} r\xF6tus var."
     - Each retouch brings back one burned piece. You have {0} retouches.
     - "Chaque retouche restaure une pi\xE8ce br\xFBl\xE9e. Vous avez {0} retouches."
     - "Jede Retusche bringt ein verbranntes Teil zur\xFCck. Du hast {0} Retuschen."
@@ -755,7 +754,7 @@ MonoBehaviour:
     - Painter Premium
   - key: premium_card.perk.gallery_stats
     values:
-    - "Galerideki her al\u0131\u015Fkanl\u0131\u011F\u0131n detayl\u0131 istatistikleri"
+    - "Galerideki her al\u0131skanl\u0131g\u0131n detayl\u0131 istatistikleri"
     - Detailed stats for every habit in the gallery
     - "Statistiques d\xE9taill\xE9es pour chaque habitude de la galerie"
     - "Detaillierte Statistiken f\xFCr jede Gewohnheit in der Galerie"
@@ -767,7 +766,7 @@ MonoBehaviour:
     - "Estad\xEDsticas detalladas de cada h\xE1bito en la galer\xEDa"
   - key: premium_card.perk.export
     values:
-    - "Verilerini d\u0131\u015Fa aktarma"
+    - "Verilerini d\u0131sa aktarma"
     - Export your data
     - "Exporter vos donn\xE9es"
     - Deine Daten exportieren
@@ -777,7 +776,7 @@ MonoBehaviour:
     - Exportar tus datos
   - key: premium_card.perk.support
     values:
-    - "Ba\u011F\u0131ms\u0131z bir geli\u015Ftiriciye destek"
+    - "Bag\u0131ms\u0131z bir gelistiriciye destek"
     - Support an independent developer
     - "Soutenir un d\xE9veloppeur ind\xE9pendant"
     - "Unterst\xFCtze einen unabh\xE4ngigen Entwickler"
@@ -808,8 +807,7 @@ MonoBehaviour:
     - Premium activo
   - key: premium_active.subtitle
     values:
-    - "Ba\u011F\u0131ms\u0131z bir geli\u015Ftiriciye destek oldu\u011Fun i\xE7in
-      te\u015Fekk\xFCrler"
+    - "Bag\u0131ms\u0131z bir gelistiriciye destek oldugun i\xE7in tesekk\xFCrler"
     - Thanks for supporting an independent developer
     - "Merci de soutenir un d\xE9veloppeur ind\xE9pendant"
     - "Danke, dass du einen unabh\xE4ngigen Entwickler unterst\xFCtzt"
@@ -901,7 +899,7 @@ MonoBehaviour:
     - Efectos de sonido
   - key: settings_row.haptics
     values:
-    - "Titre\u015Fim"
+    - Titresim
     - Vibration
     - Vibration
     - Vibration
@@ -921,7 +919,7 @@ MonoBehaviour:
     - Calendario
   - key: settings_row.week_start
     values:
-    - "Hafta ba\u015Flang\u0131c\u0131"
+    - "Hafta baslang\u0131c\u0131"
     - Start of week
     - "D\xE9but de semaine"
     - Wochenbeginn
@@ -981,7 +979,7 @@ MonoBehaviour:
     - Datos
   - key: settings_row.export
     values:
-    - "Verileri d\u0131\u015Fa aktar"
+    - "Verileri d\u0131sa aktar"
     - Export data
     - "Exporter les donn\xE9es"
     - Daten exportieren
@@ -1035,7 +1033,7 @@ MonoBehaviour:
     - "\xA1Cuadro terminado! A\xF1adido a la galer\xEDa"
   - key: workshop.toast_rotus_earned
     values:
-    - "R\xF6tu\u015F kazand\u0131n! Galeride yanan bir par\xE7ay\u0131 onarabilirsin"
+    - "R\xF6tus kazand\u0131n! Galeride yanan bir par\xE7ay\u0131 onarabilirsin"
     - You earned a retouch! You can repair a burned piece in the gallery
     - "Vous avez gagn\xE9 une retouche ! Vous pouvez r\xE9parer une pi\xE8ce br\xFBl\xE9e
       dans la galerie"
@@ -1050,7 +1048,7 @@ MonoBehaviour:
     - "\xA1Ganaste un retoque! Puedes reparar una pieza quemada en la galer\xEDa"
   - key: streak_celebration.eyebrow
     values:
-    - "YEN\u0130 ALEV"
+    - YENI ALEV
     - NEW FLAME
     - NOUVELLE FLAMME
     - NEUE FLAMME
@@ -1080,7 +1078,7 @@ MonoBehaviour:
     - Continuar
   - key: streak_celebration.max_tier_line
     values:
-    - "En b\xFCy\xFCk alevine ula\u015Ft\u0131n"
+    - "En b\xFCy\xFCk alevine ulast\u0131n"
     - You've reached your biggest flame
     - Vous avez atteint votre plus grande flamme
     - "Du hast deine gr\xF6\xDFte Flamme erreicht"
@@ -1102,7 +1100,7 @@ MonoBehaviour:
     - "Pr\xF3xima llama en el d\xEDa {0}"
   - key: habit_sheet.title_new
     values:
-    - "Yeni al\u0131\u015Fkanl\u0131k"
+    - "Yeni al\u0131skanl\u0131k"
     - New habit
     - Nouvelle habitude
     - Neue Gewohnheit
@@ -1122,7 +1120,7 @@ MonoBehaviour:
     - Editar
   - key: habit_sheet.section.title
     values:
-    - "Ba\u015Fl\u0131k"
+    - "Basl\u0131k"
     - Title
     - Titre
     - Titel
@@ -1193,7 +1191,7 @@ MonoBehaviour:
     - Dejar
   - key: habit_type.quit_hint
     values:
-    - "Yapmad\u0131\u011F\u0131n g\xFCn tik at"
+    - "Yapmad\u0131g\u0131n g\xFCn tik at"
     - Check it off on days you don't do it
     - "Cochez les jours o\xF9 vous ne le faites pas"
     - "H\xE4kchen setzen an Tagen, an denen du es nicht machst"
@@ -1266,7 +1264,7 @@ MonoBehaviour:
     - Lienzo
   - key: habit_sheet.section.end_date
     values:
-    - "Biti\u015F tarihi"
+    - Bitis tarihi
     - End date
     - Date de fin
     - Enddatum
@@ -1296,7 +1294,7 @@ MonoBehaviour:
     - Cuadro
   - key: habits_panel.new_habit_button
     values:
-    - "+  Yeni al\u0131\u015Fkanl\u0131k"
+    - "+  Yeni al\u0131skanl\u0131k"
     - +  New habit
     - +  Nouvelle habitude
     - +  Neue Gewohnheit
@@ -1306,7 +1304,7 @@ MonoBehaviour:
     - "+  Nuevo h\xE1bito"
   - key: habits.archive_count_label
     values:
-    - "Ar\u015Fiv ({0})"
+    - Arsiv ({0})
     - Archive ({0})
     - Archive ({0})
     - Archiv ({0})
@@ -1466,7 +1464,7 @@ MonoBehaviour:
     - Largo
   - key: save_transfer.error.clipboard_empty
     values:
-    - "Pano bo\u015F g\xF6r\xFCn\xFCyor."
+    - "Pano bos g\xF6r\xFCn\xFCyor."
     - The clipboard looks empty.
     - Le presse-papiers semble vide.
     - Die Zwischenablage scheint leer zu sein.
@@ -1476,7 +1474,7 @@ MonoBehaviour:
     - "El portapapeles parece estar vac\xEDo."
   - key: save_transfer.error.not_habittracker_backup
     values:
-    - "Bu metin bir HabitTracker yede\u011Fi de\u011Fil."
+    - Bu metin bir HabitTracker yedegi degil.
     - This text isn't a HabitTracker backup.
     - Ce texte n'est pas une sauvegarde HabitTracker.
     - Dieser Text ist keine HabitTracker-Sicherung.
@@ -1524,7 +1522,7 @@ MonoBehaviour:
     - La copia de seguridad parece incompleta.
   - key: save_transfer.describe.summary
     values:
-    - "{0} al\u0131\u015Fkanl\u0131k, {1} eser, {2} rotus -- {3} tarihli yedek"
+    - "{0} al\u0131skanl\u0131k, {1} eser, {2} rotus -- {3} tarihli yedek"
     - '{0} habits, {1} works, {2} retouches -- backup from {3}'
     - "{0} habitudes, {1} \u0153uvres, {2} retouches -- sauvegarde du {3}"
     - '{0} Gewohnheiten, {1} Werke, {2} Retuschen -- Sicherung vom {3}'
@@ -1615,7 +1613,7 @@ MonoBehaviour:
     - Este dispositivo no tiene selector de archivos.
   - key: native_file.error.operation_in_progress
     values:
-    - "Ba\u015Fka bir dosya i\u015Flemi s\xFCr\xFCyor."
+    - "Baska bir dosya islemi s\xFCr\xFCyor."
     - Another file operation is in progress.
     - "Une autre op\xE9ration de fichier est en cours."
     - "Ein anderer Dateivorgang l\xE4uft bereits."
@@ -1626,7 +1624,7 @@ MonoBehaviour:
     - "Hay otra operaci\xF3n de archivo en curso."
   - key: native_file.error.result_unreadable
     values:
-    - "Dosya i\u015Fleminin sonucu okunamad\u0131."
+    - "Dosya isleminin sonucu okunamad\u0131."
     - The file operation's result couldn't be read.
     - "Le r\xE9sultat de l'op\xE9ration de fichier n'a pas pu \xEAtre lu."
     - Das Ergebnis des Dateivorgangs konnte nicht gelesen werden.
@@ -1638,7 +1636,7 @@ MonoBehaviour:
     - "No se pudo leer el resultado de la operaci\xF3n de archivo."
   - key: native_file.error.operation_failed_generic
     values:
-    - "Dosya i\u015Flemi tamamlanamad\u0131."
+    - "Dosya islemi tamamlanamad\u0131."
     - The file operation couldn't be completed.
     - "L'op\xE9ration de fichier n'a pas pu \xEAtre termin\xE9e."
     - Der Dateivorgang konnte nicht abgeschlossen werden.
@@ -1722,7 +1720,7 @@ MonoBehaviour:
     - No se pudo leer el archivo de copia de seguridad.
   - key: save_export.error.empty_path
     values:
-    - "Dosya yolu bo\u015F."
+    - Dosya yolu bos.
     - The file path is empty.
     - Le chemin du fichier est vide.
     - Der Dateipfad ist leer.
@@ -1764,21 +1762,19 @@ MonoBehaviour:
     - '{0} espera el pincel'
   - key: reminder.notification_text
     values:
-    - "Her g\xFCn ayn\u0131 saatte -- bug\xFCnk\xFC tuvaline bir dokunu\u015F daha."
-    - Same time every day -- one more touch on today's canvas.
-    - "Chaque jour \xE0 la m\xEAme heure -- une touche de plus sur votre toile du
-      jour."
-    - Jeden Tag zur gleichen Zeit -- noch ein Pinselstrich auf deiner heutigen Leinwand.
-    - Ogni giorno alla stessa ora -- un altro tocco sulla tua tela di oggi.
-    - "Todos os dias no mesmo hor\xE1rio -- mais um toque na sua tela de hoje."
-    - "\u041A\u0430\u0436\u0434\u044B\u0439 \u0434\u0435\u043D\u044C \u0432 \u043E\u0434\u043D\u043E
-      \u0432\u0440\u0435\u043C\u044F -- \u0435\u0449\u0451 \u043E\u0434\u0438\u043D
-      \u0448\u0442\u0440\u0438\u0445 \u043D\u0430 \u0441\u0435\u0433\u043E\u0434\u043D\u044F\u0448\u043D\u0435\u043C
-      \u0445\u043E\u043B\u0441\u0442\u0435."
-    - "Todos los d\xEDas a la misma hora -- un toque m\xE1s en tu lienzo de hoy."
+    - "K\xFC\xE7\xFCk bir ad\u0131m, tuvaline bir dokunus daha."
+    - A small step, one more touch on your canvas.
+    - Un petit pas, une touche de plus sur votre toile.
+    - Ein kleiner Schritt, noch ein Pinselstrich auf deiner Leinwand.
+    - Un piccolo passo, un altro tocco sulla tua tela.
+    - Um pequeno passo, mais um toque na sua tela.
+    - "\u041C\u0430\u043B\u0435\u043D\u044C\u043A\u0438\u0439 \u0448\u0430\u0433,
+      \u0435\u0449\u0451 \u043E\u0434\u0438\u043D \u0448\u0442\u0440\u0438\u0445
+      \u043D\u0430 \u0442\u0432\u043E\u0451\u043C \u0445\u043E\u043B\u0441\u0442\u0435."
+    - "Un peque\xF1o paso, un toque m\xE1s en tu lienzo."
   - key: data.export_failed_title
     values:
-    - "D\u0131\u015Fa aktar\u0131lamad\u0131"
+    - "D\u0131sa aktar\u0131lamad\u0131"
     - Couldn't export
     - Impossible d'exporter
     - Export fehlgeschlagen
@@ -1810,7 +1806,7 @@ MonoBehaviour:
     - Copia de seguridad guardada
   - key: data.backup_saved_body
     values:
-    - "{0} al\u0131\u015Fkanl\u0131k {1} KB olarak kaydedildi: {2}"
+    - "{0} al\u0131skanl\u0131k {1} KB olarak kaydedildi: {2}"
     - '{0} habits saved as {1} KB: {2}'
     - "{0} habitudes enregistr\xE9es, {1} Ko : {2}"
     - '{0} Gewohnheiten als {1} KB gespeichert: {2}'
@@ -1844,7 +1840,7 @@ MonoBehaviour:
     - "Se cancel\xF3 el guardado en archivo."
   - key: data.import_failed_title
     values:
-    - "\u0130\xE7e aktar\u0131lamad\u0131"
+    - "I\xE7e aktar\u0131lamad\u0131"
     - Couldn't import
     - Impossible d'importer
     - Import fehlgeschlagen
@@ -1854,7 +1850,7 @@ MonoBehaviour:
     - No se pudo importar
   - key: data.restore_confirm_suffix
     values:
-    - "Mevcut b\xFCt\xFCn veriler silinip bu yedekle de\u011Fi\u015Ftirilecek."
+    - "Mevcut b\xFCt\xFCn veriler silinip bu yedekle degistirilecek."
     - All current data will be deleted and replaced with this backup.
     - "Toutes les donn\xE9es actuelles seront supprim\xE9es et remplac\xE9es par
       cette sauvegarde."
@@ -1869,7 +1865,7 @@ MonoBehaviour:
       de seguridad."
   - key: data.restore_confirm_title
     values:
-    - "Yede\u011Fi geri y\xFCkle"
+    - "Yedegi geri y\xFCkle"
     - Restore backup
     - Restaurer la sauvegarde
     - Sicherung wiederherstellen
@@ -1880,7 +1876,7 @@ MonoBehaviour:
     - Restaurar copia de seguridad
   - key: data.clipboard_copied_body
     values:
-    - "{0} al\u0131\u015Fkanl\u0131k panoya kopyaland\u0131 ({1} KB)."
+    - "{0} al\u0131skanl\u0131k panoya kopyaland\u0131 ({1} KB)."
     - '{0} habits copied to the clipboard ({1} KB).'
     - "{0} habitudes copi\xE9es dans le presse-papiers ({1} Ko)."
     - '{0} Gewohnheiten in die Zwischenablage kopiert ({1} KB).'
@@ -1946,7 +1942,7 @@ MonoBehaviour:
     - Arte
   - key: category.health
     values:
-    - "Sa\u011Fl\u0131k"
+    - "Sagl\u0131k"
     - Health
     - "Sant\xE9"
     - Gesundheit
@@ -1966,7 +1962,7 @@ MonoBehaviour:
     - Social
   - key: category.study
     values:
-    - "\xC7al\u0131\u015Fma"
+    - "\xC7al\u0131sma"
     - Study
     - "\xC9tude"
     - Lernen
@@ -1976,7 +1972,7 @@ MonoBehaviour:
     - Estudio
   - key: category.work
     values:
-    - "\u0130\u015F"
+    - Is
     - Work
     - Travail
     - Arbeit
@@ -1986,7 +1982,7 @@ MonoBehaviour:
     - Trabajo
   - key: category.other
     values:
-    - "Di\u011Fer"
+    - Diger
     - Other
     - Autre
     - Sonstiges
@@ -2016,7 +2012,7 @@ MonoBehaviour:
     - "D\xEDa"
   - key: category.evening
     values:
-    - "Ak\u015Fam"
+    - Aksam
     - Evening
     - Soir
     - Abend
@@ -2196,7 +2192,7 @@ MonoBehaviour:
     - Ene
   - key: month.2
     values:
-    - "\u015Eub"
+    - Sub
     - Feb
     - "F\xE9v"
     - Feb
@@ -2256,7 +2252,7 @@ MonoBehaviour:
     - Jul
   - key: month.8
     values:
-    - "A\u011Fu"
+    - Agu
     - Aug
     - "Ao\xFB"
     - Aug

@@ -39,9 +39,31 @@ public static class UiFontBuilder
                 result[i] = fallback;
                 usedFallback = true;
             }
+            else if (fallback != null)
+            {
+                EnsureGlyphFallback(result[i], fallback);
+            }
         }
 
         return result;
+    }
+
+    // Fredoka TTF'de bazi harfler yok: yumusak ge, noktali buyuk I, s-cedilla
+    // (Turkce'ye ozgu) ve butun Kiril alfabesi (Rusca) hic yok -- TTF'nin cmap'i
+    // dogrulandi. Boyle bir karakterle karsilasinca kare gostermek yerine
+    // LiberationSans'a (ve onun kendi Dynamic fallback zincirine, zaten TMP
+    // Essentials ile birlikte gelen "- Fallback" varligina) dusuyor. Dinamik
+    // atlas ayni mantikla calisiyor: talep edilen karakter burada da yoksa
+    // LiberationSans'in kendi fallback'i onu TTF'den isteyince ekliyor.
+    private static void EnsureGlyphFallback(TMP_FontAsset font, TMP_FontAsset glyphFallback)
+    {
+        if (font.fallbackFontAssetTable.Contains(glyphFallback))
+        {
+            return;
+        }
+
+        font.fallbackFontAssetTable.Add(glyphFallback);
+        EditorUtility.SetDirty(font);
     }
 
     private static TMP_FontAsset BuildOne(string weight)

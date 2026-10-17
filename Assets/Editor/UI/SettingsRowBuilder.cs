@@ -85,15 +85,19 @@ public static class SettingsRowBuilder
     }
 
     // Bir alt etiket satiri (orn. "Tik atilmamis aliskanlik varsa") -- ana
-    // etiketin ALTINA, ayni rowRoot'un icinde.
-    public static TMP_Text SubLabel(RectTransform row, UiTheme theme, string textKey)
+    // etiketin ALTINA, ayni rowRoot'un icinde. titleLabel burada yukari
+    // kaydiriliyor ki iki satir ust uste binmesin, aralarinda bosluk kalsin.
+    public static TMP_Text SubLabel(RectTransform row, UiTheme theme, string textKey, TMP_Text titleLabel)
     {
+        RectTransform titleRect = titleLabel.rectTransform;
+        titleRect.anchoredPosition = new Vector2(titleRect.anchoredPosition.x, 6f);
+
         TMP_Text sub = UiFactory.LocalizedText("SubLabel", row, textKey, theme.regular, 12f, theme.textMuted);
         RectTransform rect = sub.rectTransform;
         rect.anchorMin = new Vector2(0f, 0.5f);
         rect.anchorMax = new Vector2(0f, 0.5f);
         rect.pivot = new Vector2(0f, 0.5f);
-        rect.anchoredPosition = new Vector2(RowSidePadding, -9f);
+        rect.anchoredPosition = new Vector2(RowSidePadding, -15f);
         rect.sizeDelta = new Vector2(220f, 16f);
         sub.textWrappingMode = TextWrappingModes.Normal;
         return sub;

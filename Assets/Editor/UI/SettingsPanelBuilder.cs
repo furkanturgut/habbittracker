@@ -330,14 +330,12 @@ public static class SettingsPanelBuilder
         RectTransform card = SettingsRowBuilder.Card(section, theme);
 
         RectTransform remindRowRect = SettingsRowBuilder.Row(
-            card, theme, "settings_row.reminder_toggle", 62f, out _, out RectTransform remindTrailing);
+            card, theme, "settings_row.reminder_toggle", 62f, out TMP_Text remindLabel, out RectTransform remindTrailing);
         // Basit-gunluk-tekrar karari dogru olani kisa soyluyor -- eski metin
         // ("Tik atilmamis aliskanlik varsa" kosulu) artik Faz 3'un tek
         // NotificationRepeatInterval.Daily bildirimiyle UYUMSUZ.
-        SettingsRowBuilder.SubLabel(remindRowRect, theme, "settings_row.reminder_sublabel");
+        SettingsRowBuilder.SubLabel(remindRowRect, theme, "settings_row.reminder_sublabel", remindLabel);
         reminderToggle = SettingsRowBuilder.Toggle(remindRowRect, remindTrailing, theme);
-
-        SettingsRowBuilder.Divider(card, theme);
 
         RectTransform timeRowRect = SettingsRowBuilder.Row(card, theme, "settings_row.reminder_time", 56f, out _, out RectTransform timeTrailing);
         timeRow = timeRowRect.gameObject;

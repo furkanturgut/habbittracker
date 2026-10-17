@@ -13,6 +13,8 @@
 // kullanici kendi dosyasini sectigi icin izin modeli zaten karsilanmis
 // sayiliyor.
 //
+// Secme modu asCopy:YES acilir (sistem dosyayi uygulamanin Inbox klasorune
+// kopyalar); yine de okuma oncesi security-scoped erisim acilir/kapatilir.
 // BU DOSYA JSON TASIMAZ, DOSYA KOPYALAR: kaydetmede C#'in verdigi yerel
 // dosyayi kullanicinin sectigi yere, secmede secilen dosyayi C#'in verdigi
 // yerel yola.
@@ -128,7 +130,11 @@ didPickDocumentsAtURLs:(NSArray<NSURL*>*)urls
     }
 
     // Secme modunda icerigi C#'in verdigi yerel yola kopyaliyoruz. Dosya
-    // uygulama kutusunun DISINDA oldugu icin koordineli okuma sart.
+    // uygulama kutusunun DISINDA olabilir; kopya modunda (asCopy) NO doner ve
+    // zararsizdir, ama "yerinde ac" modunda bu cagri olmadan okuma izin
+    // hatasiyla duser -- savunma olarak her durumda cagiriyoruz.
+    BOOL scoped = [url startAccessingSecurityScopedResource];
+
     NSError* coordinateError = nil;
     __block BOOL copied = NO;
     __block NSString* pickedName = [url lastPathComponent];
@@ -139,25 +145,35 @@ didPickDocumentsAtURLs:(NSArray<NSURL*>*)urls
                                      error:&coordinateError
                                 byAccessor:^(NSURL* readable)
     {
-        NSFileManager* manager = [NSFileManager defaultManager];
+        // copyItemAtPath yerine veri kopyasi: bazi dosya saglayicilarinda
+        // oznitelik kopyalamasi dusuyor; atomik yazim eski dosyayi silme
+        // ihtiyacini da ortadan kaldiriyor. Dosya kucuk (40-80 KB).
+        NSError* readError = nil;
+        NSData* data = [NSData dataWithContentsOfURL:readable options:0 error:&readError];
 
-        if ([manager fileExistsAtPath:self.localPath])
+        if (data == nil)
         {
-            [manager removeItemAtPath:self.localPath error:nil];
+            NSLog(@"NativeFileBridge: okuma basarisiz %@", readError);
+            return;
         }
 
-        NSError* copyError = nil;
-        copied = [manager copyItemAtPath:[readable path] toPath:self.localPath error:&copyError];
+        NSError* writeError = nil;
+        copied = [data writeToFile:self.localPath options:NSDataWritingAtomic error:&writeError];
 
         if (!copied)
         {
-            NSLog(@"NativeFileBridge: kopyalama basarisiz %@", copyError);
+            NSLog(@"NativeFileBridge: yazma basarisiz %@", writeError);
         }
     }];
 
+    if (scoped)
+    {
+        [url stopAccessingSecurityScopedResource];
+    }
+
     if (!copied)
     {
-        NSLog(@"NativeFileBridge: koordineli okuma basarisiz %@", coordinateError);
+        NSLog(@"NativeFileBridge: koordineli okuma sonucu %@", coordinateError);
         [self finishWithOutcome:@"error" displayName:@"" error:@"read" path:@""];
         return;
     }
@@ -267,7 +283,10 @@ extern "C" void HabitNativePickFile(const char* destPath)
         // JSON'un yaninda duz metin de: bazi kaynaklar .json dosyasini
         // public.text olarak isaretliyor ve yalnizca UTTypeJSON ile
         // secilemez hale geliyor.
-        picker = [[UIDocumentPickerViewController alloc] initForOpeningContentTypes:@[UTTypeJSON, UTTypeText]];
+        // asCopy:YES -- sistem dosyayi uygulamanin kendi Inbox klasorune
+        // kopyalayip o URL'i veriyor; security-scoped erisim sorunu kalmiyor
+        // (disa aktarmadaki initForExportingURLs:asCopy:YES ile simetrik).
+        picker = [[UIDocumentPickerViewController alloc] initForOpeningContentTypes:@[UTTypeJSON, UTTypeText] asCopy:YES];
     }
 #endif
 

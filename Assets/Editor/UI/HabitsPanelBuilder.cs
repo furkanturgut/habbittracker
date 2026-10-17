@@ -29,8 +29,11 @@ public static class HabitsPanelBuilder
 
         // Zemin kanvasin tam genisligine yayilsin: genis bir ekranda panel
         // 366 birimlik kolona kelepceli (SafeAreaFitter) ve gradyan orada
-        // kalirsa kenarda ton farki gorunur.
-        background.gameObject.AddComponent<FullBleedFitter>();
+        // kalirsa kenarda ton farki gorunur. bleedTop: centikli telefonlarda
+        // guvenli alanin tepesi ekranin tepesinden asagida kalir -- zemin de
+        // oraya kadar cikmazsa o seritte Studio arka plani gorunur.
+        FullBleedFitter backgroundFitter = background.gameObject.AddComponent<FullBleedFitter>();
+        UiWiring.SetBool(backgroundFitter, "bleedTop", true);
 
         BuildHeader(panel, theme, prefabs, out TMP_Text activeCount, out backButton);
 
