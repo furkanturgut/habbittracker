@@ -768,7 +768,11 @@ public partial class HabbitManager : MonoBehaviour
         int canvasSize = HabitData.DefaultCanvasSize,
         bool hasEndDate = false,
         string endDate = null,
-        string paintingId = null)
+        string paintingId = null,
+
+        // Sonda ve istege bagli: hedefi vermeyen eski cagrilar (DevSampleHabits)
+        // bugunku davranisi aynen alir.
+        int targetPerDay = HabitReps.MinTarget)
     {
         // Tarihi tazelemeden yaratmak, gece yarisini gecmis bir oturumda yeni
         // aliskanliga DUNUN startDate'ini verirdi.
@@ -785,7 +789,8 @@ public partial class HabbitManager : MonoBehaviour
             hasEndDate = hasEndDate,
             startDate = HabitScheduling.ToKey(now),
             endDate = endDate,
-            canvasSize = canvasSize
+            canvasSize = canvasSize,
+            targetPerDay = HabitReps.ClampTarget(targetPerDay)
         };
 
         if (frequency != null)
@@ -835,7 +840,8 @@ public partial class HabbitManager : MonoBehaviour
         List<DayOfWeek> frequency,
         int canvasSize,
         bool hasEndDate,
-        string endDate)
+        string endDate,
+        int targetPerDay)
     {
         if (!habitsById.TryGetValue(habitId, out HabitData habit))
         {
@@ -849,6 +855,11 @@ public partial class HabbitManager : MonoBehaviour
         habit.habitType = string.IsNullOrEmpty(habitType) ? HabitTypes.Build : habitType;
         habit.hasEndDate = hasEndDate;
         habit.endDate = endDate;
+
+        // Hedef degisikligi bugunku TAMAMLANMA durumuna dokunmuyor, yalnizca
+        // sayaci mesru araliga cekiyor -- frequency/endDate duzenlemelerinin
+        // bugune dokunmamasiyla ayni sinif (bkz. HabitReps.ApplyTarget).
+        HabitReps.ApplyTarget(habit, targetPerDay);
 
         // Liste YERINDE tazeleniyor: yeni bir List atamak her duzenlemede cop
         // uretir ve disaridaki referanslari bayatlatirdi.
@@ -918,8 +929,10 @@ public partial class HabbitManager : MonoBehaviour
         return true;
     }
 
-    // Bugun icin tik atar: streak ilerler, tablodan bir piksel acilir. Bugun planli
-    // degilse, zaten tikliyse ya da tarih araligi disindaysa false doner.
+    // Bugun icin tik atar. Hedef (HabitReps.Target) 1 ise ilk tik gunu kapatir:
+    // streak ilerler, tablodan bir piksel acilir. Hedef daha buyukse yalnizca
+    // SON tik gunu kapatir, oncekiler sayaci ilerletir ve yine true doner.
+    // Bugun planli degilse, zaten tikliyse ya da tarih araligi disindaysa false doner.
     public bool CompleteHabit(string habitId)
     {
         if (!habitsById.TryGetValue(habitId, out HabitData habit) || habit.isCompletedToday)
@@ -949,6 +962,18 @@ public partial class HabbitManager : MonoBehaviour
         if (!HabitScheduling.IsDueOn(habit, now))
         {
             return false;
+        }
+
+        // Gunluk tur: hedefe ULASMAYAN tik yalnizca sayaci ilerletiyor --
+        // streak, tablo parcasi, mood odulu, rotus ve kutlama hepsi
+        // dokunulmamis kaliyor. Gunun kapandigini hala tek bir yer soyluyor
+        // (isCompletedToday), yani alt sistemlerin hicbiri bu ozelligi
+        // bilmiyor (bkz. HabitReps).
+        if (!HabitReps.Advance(habit))
+        {
+            MarkDirtyDeferred();
+            HabitChanged?.Invoke(habit);
+            return true;
         }
 
         habit.isCompletedToday = true;
@@ -986,8 +1011,13 @@ public partial class HabbitManager : MonoBehaviour
         return true;
     }
 
-    // Tiki geri alir. Acilmis pikseli kapatmanin yolu modulde yok, bu yuzden
-    // goruntu sifirdan baglanip guncel ilerlemeye getiriliyor.
+    // Bugunku tamamlamayi geri alir: seri geri sarilir, acilan parca kapanir ve
+    // gunluk tur sayaci SIFIRA doner. Acilmis pikseli kapatmanin yolu modulde
+    // yok, bu yuzden goruntu sifirdan baglanip guncel ilerlemeye getiriliyor.
+    //
+    // Kismi bir gun (ornegin 1/2) buradan GECMEZ: giris kosulu hala
+    // isCompletedToday -- kismi tik hicbir sey odullendirmedigi icin geri
+    // alinacak bir sey de yok (bkz. DAILY_REPS_PLAN.md).
     public bool UncompleteHabit(string habitId)
     {
         if (!habitsById.TryGetValue(habitId, out HabitData habit) || !habit.isCompletedToday)
@@ -1007,6 +1037,14 @@ public partial class HabbitManager : MonoBehaviour
         DateTime now = AppClock.Now;
 
         habit.isCompletedToday = false;
+
+        // Geri alma gunu TAMAMEN sifirliyor (hedef 3 ise 2/3'e degil 0/3'e):
+        // asagidaki geri sarma tek seferde ve tam olarak isliyor, sayaci
+        // "hedef - 1"de birakmak o atomik geri almayi bolerdi. Ayrica hedefe
+        // ulasmis bir tile'a dokunmanin sifira donusun TEK yolu olmasi
+        // bundan geliyor (bkz. HabitReps.Reset).
+        HabitReps.Reset(habit);
+
         DailyResetService.RollBackStreak(habit, now);
 
         // Tiki geri almak biten tabloyu da geri alir -- yoksa ilerlemesi artik

@@ -261,6 +261,26 @@ public static class WorkshopSceneBuilder
         if (component != null)
         {
             UiWiring.Set(component, "inputCamera", mainCamera);
+
+            // Vurus efekti HER kurulumda yeniden baglaniyor. Ressam
+            // PaintersScene'den kopyalandiginda bu alan BOS gelir (o sahnenin
+            // Painter'i alan eklenmeden once serialize edildi) ve boslugun
+            // sonucu sessiz: painter'a vurmak animasyonu hala oynatir, yalnizca
+            // dokunulan noktadaki patlama hic dogmaz -- ne derleme hatasi ne
+            // uyari. Tek atama yolu "Build Anger Burst Vfx" menusu oldugu
+            // surece tek bir sahne yeniden kurulumu efekti kalici olarak
+            // dusuruyordu; bu yuzden ayni atama buraya da kondu.
+            AngerBurstVfx vfx = AngerBurstVfxBuilder.LoadPrefab();
+            if (vfx != null)
+            {
+                UiWiring.Set(component, "angerVfxPrefab", vfx);
+            }
+            else
+            {
+                Debug.LogWarning(
+                    "WorkshopSceneBuilder: " + AngerBurstVfxBuilder.PrefabPath + " yok, Painter'in " +
+                    "vurus efekti bos kaldi. HabitTracker/Build Anger Burst Vfx komutunu calistirin.");
+            }
         }
     }
 

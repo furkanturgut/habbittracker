@@ -20,7 +20,10 @@ public static class AngerBurstVfxBuilder
 {
     private const string SheetPath = "Assets/VFX/env_emote_anger.png";
     private const string Folder = "Assets/Prefabs/Vfx";
-    private const string PrefabPath = Folder + "/AngerBurstVfx.prefab";
+
+    // Public: WorkshopSceneBuilder her kurulumda ayni prefabi Painter'a geri
+    // bagliyor (bkz. LoadPrefab).
+    public const string PrefabPath = Folder + "/AngerBurstVfx.prefab";
     private const string BaseFrameName = "env_emote_anger_0";
     private const string PeakFrameName = "env_emote_anger_1";
 
@@ -83,6 +86,16 @@ public static class AngerBurstVfxBuilder
                 ? assigned + " Painter'a otomatik atandi (sahneyi kaydetmeyi unutmayin)."
                 : "Acik sahnede atanacak Painter bulunamadi; alani elle atayin."),
             asset);
+    }
+
+    // Kurulmus prefabi okur (yoksa null). Sahne kurucusu bunu kullaniyor:
+    // prefabi yeniden URETMEK sahne kurulumunun isi degil, var olani
+    // BAGLAMAK ise -- cunku bos kalan bir referans hicbir yerde uyari
+    // uretmeden efekti tamamen yok ediyor.
+    public static AngerBurstVfx LoadPrefab()
+    {
+        GameObject asset = AssetDatabase.LoadAssetAtPath<GameObject>(PrefabPath);
+        return asset != null ? asset.GetComponent<AngerBurstVfx>() : null;
     }
 
     private static Sprite LoadSprite(string frameName)

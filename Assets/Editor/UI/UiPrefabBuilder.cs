@@ -552,6 +552,32 @@ public static class UiPrefabBuilder
         Image check = UiFactory.Image("Check", badge, theme.checkmark, theme.textOnGold, false);
         UiFactory.Fill(check.rectTransform, 5f, 5f, 5f, 5f);
 
+        // Gunluk tur sayaci pili: karenin SOL UST kosesi -- tamamlandi rozeti
+        // sag ustte duruyor ve ikisi ayni anda gorunebiliyor. Mutlak konumlu
+        // (frame'in cocugu), yani alttaki "Info" kolonunun layout grubuna hic
+        // girmiyor: hedefi 1'den buyuk bir aliskanlik tile yuksekligini
+        // degistirmiyor. Hedef 1 ise HabitTile bunu kapatiyor -- prefab da
+        // KAPALI doguyor, boylece eski bir kayitla acilan ilk kare bile
+        // bir an icin "1/1" gostermiyor.
+        RectTransform repsBadge = UiFactory.Rect("RepsBadge", frame.rectTransform);
+        repsBadge.anchorMin = new Vector2(0f, 1f);
+        repsBadge.anchorMax = new Vector2(0f, 1f);
+        repsBadge.pivot = new Vector2(0f, 1f);
+        repsBadge.anchoredPosition = new Vector2(-8f, 8f);
+        repsBadge.sizeDelta = new Vector2(32f, 18f);
+
+        Image repsBackground = repsBadge.gameObject.AddComponent<Image>();
+        repsBackground.sprite = theme.Rounded(9);
+        repsBackground.type = Image.Type.Sliced;
+        repsBackground.color = theme.flameChipBackground;
+        repsBackground.raycastTarget = false;
+
+        TMP_Text repsLabel = UiFactory.Text("Label", repsBadge, "1/2", theme.semiBold, 10f,
+            theme.textPrimary, TextAlignmentOptions.Center);
+        UiFactory.Fill(repsLabel.rectTransform);
+
+        repsBadge.gameObject.SetActive(false);
+
         TMP_Text typeLabel = UiFactory.Text("TypeLabel", frame.rectTransform, "YAP",
             theme.semiBold, 10f, theme.buildColor);
         UiFactory.TopLeft(typeLabel.rectTransform, 8f, 0f, 60f, 14f);
@@ -633,6 +659,8 @@ public static class UiPrefabBuilder
         UiWiring.Set(tile, "cover", cover);
         UiWiring.Set(tile, "rendered", rendered);
         UiWiring.Set(tile, "doneBadge", badge.gameObject);
+        UiWiring.Set(tile, "repsBadge", repsBadge.gameObject);
+        UiWiring.Set(tile, "repsLabel", repsLabel);
         UiWiring.Set(tile, "choiceGlow", choiceGlow);
         UiWiring.Set(tile, "typeLabel", typeLabel);
         UiWiring.Set(tile, "title", title);
@@ -702,6 +730,23 @@ public static class UiPrefabBuilder
             theme.buildColor, TextAlignmentOptions.Center);
         UiFactory.Fill(typeLabel.rectTransform);
 
+        // Gunluk tur sayaci: tur pilinin hemen sagi, ayni recete. Hedef 1 ise
+        // HabitCard kapatiyor (bkz. HabitReps.IsMulti) -- prefab da KAPALI
+        // doguyor, yani tek tiklik aliskanliklarin karti bugunkunun aynisi.
+        RectTransform repsPill = UiFactory.Rect("RepsPill", titleRow);
+        Image repsBackground = repsPill.gameObject.AddComponent<Image>();
+        repsBackground.sprite = theme.Rounded(6);
+        repsBackground.type = Image.Type.Sliced;
+        repsBackground.color = theme.flameChipBackground;
+        repsBackground.raycastTarget = false;
+        UiFactory.Size(repsPill.gameObject, 34f, 18f);
+
+        TMP_Text repsLabel = UiFactory.Text("Label", repsPill, "1/2", theme.semiBold, 10f,
+            theme.textPrimary, TextAlignmentOptions.Center);
+        UiFactory.Fill(repsLabel.rectTransform);
+
+        repsPill.gameObject.SetActive(false);
+
         // 2. satir: gun rozetleri
         RectTransform dayRow = UiFactory.Rect("Days", body);
         UiFactory.Row(dayRow, 4f);
@@ -745,6 +790,8 @@ public static class UiPrefabBuilder
         UiWiring.Set(card, "cover", cover);
         UiWiring.Set(card, "title", title);
         UiWiring.Set(card, "typeLabel", typeLabel);
+        UiWiring.Set(card, "repsBadge", repsPill.gameObject);
+        UiWiring.Set(card, "repsLabel", repsLabel);
         UiWiring.Set(card, "days", days);
         UiWiring.Set(card, "progressFill", progressFill.rectTransform);
         UiWiring.Set(card, "streakLabel", streak);

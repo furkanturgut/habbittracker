@@ -102,6 +102,48 @@ public class HabitDataLogicTests
         CollectionAssert.AreEqual(new[] { "finished-painting" }, loaded.habitGallery);
     }
 
+    // Iki yeni alan saveVersion ARTMADAN eklendi: eski bir kayitta anahtarlar
+    // hic yok. Bu testin dogruladigi sey tam olarak o iddia -- anahtarsiz bir
+    // JSON "gunde tek tik, bugun hic tiklanmamis" olarak okunuyor, yani
+    // migrasyon gerekmiyor (bkz. PlayerSaveData yorumu).
+    [Test]
+    public void Load_OldSaveWithoutRepsKeys_ReadsAsSingleTick()
+    {
+        MemoryStorage storage = new MemoryStorage
+        {
+            Json = "{\"saveVersion\":1,\"habits\":[{\"id\":\"h1\",\"title\":\"Su ic\",\"canvasSize\":16}]}"
+        };
+
+        HabitSaveSystem reader = new HabitSaveSystem(storage);
+        Assert.IsTrue(reader.Load());
+
+        HabitData loaded = reader.Data.habits[0];
+        Assert.AreEqual(1, HabitReps.Target(loaded), "Eski kayit gunde tek tik demek.");
+        Assert.AreEqual(0, loaded.todayReps);
+        Assert.IsFalse(HabitReps.IsMulti(loaded));
+    }
+
+    [Test]
+    public void Save_RoundTrip_PreservesRepsFields()
+    {
+        MemoryStorage storage = new MemoryStorage();
+        HabitSaveSystem writer = new HabitSaveSystem(storage);
+
+        HabitData habit = MakeHabit("habit-reps", 16);
+        habit.targetPerDay = 3;
+        habit.todayReps = 2;
+        writer.Data.habits.Add(habit);
+
+        writer.SaveNow();
+
+        HabitSaveSystem reader = new HabitSaveSystem(storage);
+        reader.Load();
+
+        HabitData loaded = reader.Data.habits[0];
+        Assert.AreEqual(3, loaded.targetPerDay);
+        Assert.AreEqual(2, loaded.todayReps, "Yarim kalan gun uygulama kapanip acilinca korunmali.");
+    }
+
     // JsonUtility'nin enum LISTESINI dogru tasidigini ayrica dogruluyoruz:
     // List<DayOfWeek> desteklenmeseydi frequency sessizce bosalir ve butun
     // program mantigi "her gun planli" gibi davranirdi.
@@ -179,6 +221,38 @@ public class HabitDataLogicTests
         Assert.IsFalse(habit.isCompletedToday, "Yeni gunde tik sifirlanmali.");
         Assert.AreEqual(HabitScheduling.ToKey(today), data.lastLoginDate);
         Assert.AreEqual(3, habit.currentStreak, "Dun tamamlanmisti, seri korunmali.");
+    }
+
+    // Gunluk tur sayaci tikin kendisiyle AYNI dongude sifirlaniyor: biri
+    // calisip oteki calismasa ekran "0 tik ama 1/2" gibi bir ara durum
+    // gosterirdi (bkz. HabitReps degismeyen sozu).
+    [Test]
+    public void DailyReset_NewDay_ClearsTodayReps()
+    {
+        DateTime yesterday = new DateTime(2026, 9, 1);
+        DateTime today = new DateTime(2026, 9, 2);
+
+        PlayerSaveData data = new PlayerSaveData { lastLoginDate = HabitScheduling.ToKey(yesterday) };
+
+        HabitData partial = MakeHabit("partial");
+        partial.targetPerDay = 3;
+        partial.todayReps = 2;
+
+        HabitData finished = MakeHabit("finished");
+        finished.targetPerDay = 2;
+        finished.todayReps = 2;
+        finished.isCompletedToday = true;
+
+        data.habits.Add(partial);
+        data.habits.Add(finished);
+
+        Assert.IsTrue(DailyResetService.ApplyDailyReset(data, today));
+
+        Assert.AreEqual(0, partial.todayReps, "Yarim kalan sayac yeni gunde sifirlanmali.");
+        Assert.AreEqual(0, finished.todayReps, "Tamamlanmis gunun sayaci da sifirlanmali.");
+        Assert.IsFalse(finished.isCompletedToday);
+        Assert.AreEqual(3, partial.targetPerDay, "Hedef bir AYAR -- gun donusu ona dokunmamali.");
+        Assert.AreEqual(2, finished.targetPerDay);
     }
 
     [Test]

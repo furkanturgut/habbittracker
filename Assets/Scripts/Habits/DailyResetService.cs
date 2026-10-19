@@ -48,6 +48,12 @@ public static class DailyResetService
         for (int i = 0; i < data.habits.Count; i++)
         {
             data.habits[i].isCompletedToday = false;
+
+            // Gunluk tur sayaci tikin KENDISIYLE ayni dongude sifirlaniyor:
+            // ayri bir dongu/damga olsa biri calisip oteki calismadiginda
+            // "0 tik ama 1/2 yaziyor" gibi bir ara duruma yer acardi
+            // (bkz. HabitReps degismeyen sozu).
+            HabitReps.Reset(data.habits[i]);
         }
 
         data.lastLoginDate = todayKey;

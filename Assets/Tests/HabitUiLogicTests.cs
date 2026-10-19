@@ -190,6 +190,49 @@ public class HabitUiLogicTests
         Assert.AreEqual("painting_19", form.PaintingId);
     }
 
+    // Adimlayici sinirlarin disina CIKAMAZ: HabitSheet dugmeyi sinirda zaten
+    // kapatiyor, ama kural burada (HabitReps.ClampTarget) tek yerde durdugu
+    // icin ikinci kat koruma da bedava geliyor.
+    [Test]
+    public void HabitForm_StepTarget_StaysWithinBounds()
+    {
+        HabitForm form = new HabitForm();
+
+        Assert.AreEqual(HabitReps.MinTarget, form.TargetPerDay, "Varsayilan gunde tek tik.");
+
+        form.StepTarget(-1);
+        Assert.AreEqual(HabitReps.MinTarget, form.TargetPerDay);
+
+        form.StepTarget(1);
+        Assert.AreEqual(2, form.TargetPerDay);
+
+        for (int i = 0; i < HabitReps.MaxTarget + 5; i++)
+        {
+            form.StepTarget(1);
+        }
+
+        Assert.AreEqual(HabitReps.MaxTarget, form.TargetPerDay);
+    }
+
+    [Test]
+    public void HabitForm_LoadFrom_ReadsTargetThroughHabitReps()
+    {
+        HabitData habit = new HabitData { id = "h1", title = "Kediyle oyna", targetPerDay = 2 };
+        HabitForm form = new HabitForm();
+
+        form.LoadFrom(habit);
+        Assert.AreEqual(2, form.TargetPerDay);
+
+        // Eski kayit (alan hic yok -> 0): form bunu 1 olarak gostermeli, yoksa
+        // kaydet'e basmak hedefi 0'a yazardi.
+        habit.targetPerDay = 0;
+        form.LoadFrom(habit);
+        Assert.AreEqual(HabitReps.MinTarget, form.TargetPerDay);
+
+        form.Reset();
+        Assert.AreEqual(HabitReps.MinTarget, form.TargetPerDay);
+    }
+
     [Test]
     public void HabitForm_ResetAndLoadFrom_ClearPaintingSelection()
     {

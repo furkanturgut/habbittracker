@@ -153,6 +153,27 @@ public class HabitData
     // List<> degil, eski kayitta false zaten dogru okuma ("hic arsivlenmemis").
     public bool isArchived;
 
+    // --- Gunluk tur sayisi ---
+    //
+    // Bu aliskanligin bir gunu kapanmasi icin kac tik gerekiyor (1 == bugunku
+    // davranis, "kediyle oyna 2 tur" icin 2). Tek okuma kapisi HabitReps.Target --
+    // elle bozulmus/eski bir kayitta 0 gelirse orada 1 olarak okunur.
+    //
+    // saveVersion BILEREK artmiyor: rotusProgress/isArchived ile ayni gerekce --
+    // eski kayitta bu anahtar hic yok, JsonUtility alan baslaticisini (1)
+    // birakiyor ve bu zaten dogru okuma ("gunde tek tik"). canvasSize ile ayni
+    // kalip; List<> olmadigi icin RepairHabits'in null-onarimina girmiyor.
+    public int targetPerDay = 1;
+
+    // Bugun atilan tik sayisi. OTORITE DEGIL: gunun kapandigini hala yalnizca
+    // isCompletedToday soyluyor (mood, streak, sovale sayaci, filtreler hepsi
+    // oraya bakiyor). Degismeyen soz (bkz. HabitReps):
+    //   isCompletedToday == true  ->  todayReps == hedef
+    //   isCompletedToday == false ->  todayReps <  hedef
+    // Gun donusunde isCompletedToday ile AYNI dongude sifirlaniyor
+    // (DailyResetService.ApplyDailyReset).
+    public int todayReps;
+
     // --- Tablo siparisi ve ilerlemesi ---
     public string activePaintingId;
 

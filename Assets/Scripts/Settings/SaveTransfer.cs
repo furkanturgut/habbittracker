@@ -291,6 +291,11 @@ public static class SaveTransfer
             habit.longestStreak = habit.currentStreak;
         }
 
+        // RepairHabits'teki satirin ikizi: disaridan gelen bir kayit hedefi
+        // 0/99, sayaci da hedefin ustunde verebilir. Kural HabitReps.Repair'de
+        // tek yerde duruyor.
+        HabitReps.Repair(habit);
+
         if (habit.rotusProgress < 0)
         {
             habit.rotusProgress = 0;

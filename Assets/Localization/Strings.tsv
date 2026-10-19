@@ -119,6 +119,9 @@ habit_sheet.section.category	Kategori	Category	Catégorie	Kategorie	Categoria	Ca
 habit_sheet.section.days	Günler	Days	Jours	Tage	Giorni	Dias	Дни	Días
 habit_sheet.days_hint	Seçilmezse her gün	Every day if none selected	Tous les jours si aucun n'est sélectionné	Jeden Tag, wenn keiner ausgewählt ist	Ogni giorno se nessuno è selezionato	Todos os dias se nenhum for selecionado	Каждый день, если ничего не выбрано	Todos los días si no se selecciona ninguno
 habit_sheet.days_hint_selected	{0} gün seçili	{0} days selected	{0} jours sélectionnés	{0} Tage ausgewählt	{0} giorni selezionati	{0} dias selecionados	{0} дней выбрано	{0} días seleccionados
+habit_sheet.section.reps	Günlük tur	Daily reps	Séries par jour	Durchgänge pro Tag	Serie al giorno	Rodadas por dia	Подходов в день	Series por día
+habit_sheet.reps_hint	Gün kapanması için kaç tik	Taps needed to finish the day	Validations pour finir la journée	Haken, bis der Tag zählt	Tocchi per chiudere la giornata	Toques para fechar o dia	Сколько отметок закроет день	Toques para cerrar el día
+habit.reps_progress	{0}/{1}	{0}/{1}	{0}/{1}	{0}/{1}	{0}/{1}	{0}/{1}	{0}/{1}	{0}/{1}
 habit_sheet.section.canvas	Tuval	Canvas	Toile	Leinwand	Tela	Tela	Холст	Lienzo
 habit_sheet.section.end_date	Bitis tarihi	End date	Date de fin	Enddatum	Data di fine	Data de término	Дата окончания	Fecha de fin
 habit_sheet.end_date_input.placeholder	YYYY-AA-GG	YYYY-MM-DD	AAAA-MM-JJ	JJJJ-MM-TT	AAAA-MM-GG	AAAA-MM-DD	ГГГГ-ММ-ДД	AAAA-MM-DD

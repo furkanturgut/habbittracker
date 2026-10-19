@@ -42,6 +42,13 @@ public class HabitSheet : MonoBehaviour
     [SerializeField] private PaintingPickerRow paintingRow;
     [SerializeField] private TMP_Text paintingHint;
 
+    [Header("Gunluk tur")]
+    [Tooltip("Hedefi bir azaltir. 1'de kendiliginden kapanir.")]
+    [SerializeField] private Button repsMinusButton;
+    [Tooltip("Hedefi bir arttirir. HabitReps.MaxTarget'ta kendiliginden kapanir.")]
+    [SerializeField] private Button repsPlusButton;
+    [SerializeField] private TMP_Text repsValueLabel;
+
     [Header("Bitis tarihi")]
     [SerializeField] private Button endDateToggle;
     [SerializeField] private Image endDateTrack;
@@ -212,6 +219,22 @@ public class HabitSheet : MonoBehaviour
             Bind(canvasOptions[i].Option, () => SetCanvasSize(size));
         }
 
+        // Adimlayici: ButtonPressFeedback her dokunulabilir dugmede var
+        // (kategori/kaydet/sil ile ayni kalip). Sinir denetimi RefreshAll'da --
+        // dugme sinirda `interactable = false` oluyor, yani StepTarget'in
+        // kirpmasi ikinci kat koruma.
+        if (repsMinusButton != null)
+        {
+            repsMinusButton.onClick.AddListener(() => StepTarget(-1));
+            ButtonPressFeedback.EnsureOn(repsMinusButton);
+        }
+
+        if (repsPlusButton != null)
+        {
+            repsPlusButton.onClick.AddListener(() => StepTarget(1));
+            ButtonPressFeedback.EnsureOn(repsPlusButton);
+        }
+
         if (paintingRow != null)
         {
             paintingRow.PaintingSelected += SetPainting;
@@ -359,6 +382,21 @@ public class HabitSheet : MonoBehaviour
             paintingHint.text = PaintingHint();
         }
 
+        if (repsValueLabel != null)
+        {
+            repsValueLabel.text = form.TargetPerDay.ToString();
+        }
+
+        if (repsMinusButton != null)
+        {
+            repsMinusButton.interactable = form.TargetPerDay > HabitReps.MinTarget;
+        }
+
+        if (repsPlusButton != null)
+        {
+            repsPlusButton.interactable = form.TargetPerDay < HabitReps.MaxTarget;
+        }
+
         dayToggles.ShowForm(form, instant);
         daysHint.text = form.DaysHint();
 
@@ -422,6 +460,12 @@ public class HabitSheet : MonoBehaviour
         {
             categoryPicker.Open(form.Category);
         }
+    }
+
+    private void StepTarget(int delta)
+    {
+        form.StepTarget(delta);
+        RefreshAll(instant: false);
     }
 
     private void SetCanvasSize(int size)
@@ -490,7 +534,8 @@ public class HabitSheet : MonoBehaviour
                 form.CanvasSize,
                 form.HasEndDate,
                 endDate,
-                form.PaintingId);
+                form.PaintingId,
+                form.TargetPerDay);
         }
         else
         {
@@ -502,7 +547,8 @@ public class HabitSheet : MonoBehaviour
                 frequencyBuffer,
                 form.CanvasSize,
                 form.HasEndDate,
-                endDate);
+                endDate,
+                form.TargetPerDay);
         }
 
         Submitted?.Invoke();

@@ -12,6 +12,10 @@ public class HabitForm
     public string HabitType = HabitTypes.Build;
     public string Category = HabitCategories.Default;
     public int CanvasSize = HabitData.DefaultCanvasSize;
+
+    // Gunde kac tik gerekiyor (bkz. HabitReps). 1 == bugunku davranis.
+    public int TargetPerDay = HabitReps.MinTarget;
+
     public bool HasEndDate;
     public string EndDate = string.Empty;
 
@@ -36,6 +40,7 @@ public class HabitForm
         HabitType = HabitTypes.Build;
         Category = HabitCategories.Default;
         CanvasSize = HabitData.DefaultCanvasSize;
+        TargetPerDay = HabitReps.MinTarget;
         HasEndDate = false;
         EndDate = string.Empty;
         PaintingId = string.Empty;
@@ -48,6 +53,7 @@ public class HabitForm
         HabitType = string.IsNullOrEmpty(habit.habitType) ? HabitTypes.Build : habit.habitType;
         Category = habit.categoryGroup;
         CanvasSize = habit.canvasSize;
+        TargetPerDay = HabitReps.Target(habit);
         HasEndDate = habit.hasEndDate;
         EndDate = habit.endDate == null ? string.Empty : habit.endDate;
 
@@ -79,6 +85,14 @@ public class HabitForm
         {
             AddDay(mondayIndex);
         }
+    }
+
+    // Adimlayicinin tek yazma kapisi: sinirlarin ASILMASI diye bir durum yok,
+    // HabitSheet dugmeleri de zaten sinirda kapaniyor (iki kat koruma, ama
+    // kural tek yerde -- HabitReps.ClampTarget).
+    public void StepTarget(int delta)
+    {
+        TargetPerDay = HabitReps.ClampTarget(TargetPerDay + delta);
     }
 
     // Tuval boyutu degisince tablo secimi DUSUYOR: secili tablonun parca

@@ -1252,6 +1252,37 @@ MonoBehaviour:
     - '{0} dias selecionados'
     - "{0} \u0434\u043D\u0435\u0439 \u0432\u044B\u0431\u0440\u0430\u043D\u043E"
     - "{0} d\xEDas seleccionados"
+  - key: habit_sheet.section.reps
+    values:
+    - "G\xFCnl\xFCk tur"
+    - Daily reps
+    - "S\xE9ries par jour"
+    - "Durchg\xE4nge pro Tag"
+    - Serie al giorno
+    - Rodadas por dia
+    - "\u041F\u043E\u0434\u0445\u043E\u0434\u043E\u0432 \u0432 \u0434\u0435\u043D\u044C"
+    - "Series por d\xEDa"
+  - key: habit_sheet.reps_hint
+    values:
+    - "G\xFCn kapanmas\u0131 i\xE7in ka\xE7 tik"
+    - Taps needed to finish the day
+    - "Validations pour finir la journ\xE9e"
+    - "Haken, bis der Tag z\xE4hlt"
+    - Tocchi per chiudere la giornata
+    - Toques para fechar o dia
+    - "\u0421\u043A\u043E\u043B\u044C\u043A\u043E \u043E\u0442\u043C\u0435\u0442\u043E\u043A
+      \u0437\u0430\u043A\u0440\u043E\u0435\u0442 \u0434\u0435\u043D\u044C"
+    - "Toques para cerrar el d\xEDa"
+  - key: habit.reps_progress
+    values:
+    - '{0}/{1}'
+    - '{0}/{1}'
+    - '{0}/{1}'
+    - '{0}/{1}'
+    - '{0}/{1}'
+    - '{0}/{1}'
+    - '{0}/{1}'
+    - '{0}/{1}'
   - key: habit_sheet.section.canvas
     values:
     - Tuval

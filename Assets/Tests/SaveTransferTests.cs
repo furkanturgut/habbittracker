@@ -315,6 +315,42 @@ public class SaveTransferTests
         Assert.AreEqual(10, habit.longestStreak);
     }
 
+    // Disaridan gelen kayit hedefi/sayaci sacma verebilir. Kural HabitReps.
+    // Repair'de tek yerde duruyor; burada ice aktarim yolunun gercekten oradan
+    // gectigi dogrulaniyor.
+    [Test]
+    public void Sanitize_IllegalRepsTargetAndCounter_AreRepaired()
+    {
+        PlayerSaveData data = new PlayerSaveData();
+
+        HabitData zeroTarget = MakeHabit("zero");
+        zeroTarget.targetPerDay = 0;
+        zeroTarget.todayReps = 7;
+
+        HabitData hugeTarget = MakeHabit("huge");
+        hugeTarget.targetPerDay = 9999;
+        hugeTarget.todayReps = -4;
+
+        HabitData completed = MakeHabit("done");
+        completed.targetPerDay = 3;
+        completed.todayReps = 0;
+        completed.isCompletedToday = true;
+
+        data.habits.Add(zeroTarget);
+        data.habits.Add(hugeTarget);
+        data.habits.Add(completed);
+
+        SaveTransfer.Sanitize(data, DateTime.Now);
+
+        Assert.AreEqual(1, zeroTarget.targetPerDay);
+        Assert.AreEqual(0, zeroTarget.todayReps, "Hedef 1 ise tamamlanmamis gun 0 tik gosterir.");
+
+        Assert.AreEqual(HabitReps.MaxTarget, hugeTarget.targetPerDay);
+        Assert.AreEqual(0, hugeTarget.todayReps, "Negatif sayac sifira cekilmeli.");
+
+        Assert.AreEqual(3, completed.todayReps, "Tamamlanmis gunun sayaci hedefe esitlenmeli.");
+    }
+
     [Test]
     public void Sanitize_IllegalFrequencyValues_AreDropped()
     {

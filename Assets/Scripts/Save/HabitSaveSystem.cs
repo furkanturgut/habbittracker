@@ -220,6 +220,12 @@ public class HabitSaveSystem
                 habit.canvasSize = HabitData.DefaultCanvasSize;
             }
 
+            // Hedef/sayac ikilisi: eski kayitta bu anahtarlar hic yok (alan
+            // baslaticilari zaten dogru okuma), ama elle duzenlenmis bir JSON
+            // hedefi 0/99 ya da sayaci hedefin ustunde verebilir. Kural tek
+            // yerde: HabitReps.Repair (bkz. SaveTransfer.Sanitize ikizi).
+            HabitReps.Repair(habit);
+
             if (habit.rotusProgress < 0 || habit.rotusProgress >= RotusCycle.CycleLength)
             {
                 habit.rotusProgress = Mathf.Clamp(habit.rotusProgress, 0, RotusCycle.CycleLength - 1);

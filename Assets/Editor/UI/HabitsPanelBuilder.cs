@@ -241,6 +241,9 @@ public static class HabitsPanelBuilder
             out DayChipRow dayToggles,
             out TMP_Text daysHint,
             out CanvasSizeOption[] canvasOptions,
+            out Button repsMinusButton,
+            out Button repsPlusButton,
+            out TMP_Text repsValueLabel,
             out GameObject paintingSectionRoot,
             out PaintingPickerRow paintingRow,
             out TMP_Text paintingHint,
@@ -276,6 +279,9 @@ public static class HabitsPanelBuilder
         UiWiring.Set(component, "dayToggles", dayToggles);
         UiWiring.Set(component, "daysHint", daysHint);
         UiWiring.SetArray(component, "canvasOptions", canvasOptions);
+        UiWiring.Set(component, "repsMinusButton", repsMinusButton);
+        UiWiring.Set(component, "repsPlusButton", repsPlusButton);
+        UiWiring.Set(component, "repsValueLabel", repsValueLabel);
         UiWiring.Set(component, "paintingSectionRoot", paintingSectionRoot);
         UiWiring.Set(component, "paintingRow", paintingRow);
         UiWiring.Set(component, "paintingHint", paintingHint);
@@ -347,6 +353,9 @@ public static class HabitsPanelBuilder
         out DayChipRow dayToggles,
         out TMP_Text daysHint,
         out CanvasSizeOption[] canvasOptions,
+        out Button repsMinusButton,
+        out Button repsPlusButton,
+        out TMP_Text repsValueLabel,
         out GameObject paintingSectionRoot,
         out PaintingPickerRow paintingRow,
         out TMP_Text paintingHint,
@@ -437,6 +446,39 @@ public static class HabitsPanelBuilder
         UiWiring.SetBool(dayToggles, "useInitials", false);
         UiWiring.SetBool(dayToggles, "interactable", true);
 
+        // Gunluk tur: "kediyle oyna 2 tur" gibi gunde birden fazla tik
+        // isteyen aliskanlik icin hedef. Gunler ile Tuval arasinda duruyor --
+        // ikisi de "ne zaman / ne kadar" sorusunun parcasi, tablo secimi ise
+        // bambaska bir karar.
+        //
+        // Adimlayici TimePickerSheetBuilder.StepperButton gorsel kalibinin
+        // YATAY hali: orada dugmeler mutlak anchoredPosition ile yerlestiriliyor
+        // (sheet'in kendi izgarasi), burada satirin HorizontalLayoutGroup'u
+        // yerlestiriyor -- kare dugme Column'un DOGRUDAN cocugu olsaydi tam
+        // genislige yayilirdi (bkz. UiFactory.Column childForceExpandWidth).
+        RectTransform repsSection = Section(content, theme, "habit_sheet.section.reps", out TMP_Text repsCaption);
+
+        TMP_Text repsHint = UiFactory.LocalizedText("Hint", repsCaption.transform.parent, "habit_sheet.reps_hint",
+            theme.regular, 12f, theme.textMuted, TextAlignmentOptions.Right);
+        RectTransform repsHintRect = repsHint.rectTransform;
+        repsHintRect.anchorMin = new Vector2(1f, 1f);
+        repsHintRect.anchorMax = new Vector2(1f, 1f);
+        repsHintRect.pivot = new Vector2(1f, 1f);
+        repsHintRect.anchoredPosition = Vector2.zero;
+        repsHintRect.sizeDelta = new Vector2(200f, 16f);
+
+        RectTransform repsRow = UiFactory.Rect("Reps", repsSection);
+        UiFactory.Row(repsRow, 14f, TextAnchor.MiddleLeft);
+        UiFactory.Size(repsRow.gameObject, -1f, 44f);
+
+        repsMinusButton = RepsStepperButton(repsRow, theme, "-");
+
+        repsValueLabel = UiFactory.Text("Value", repsRow, "1", theme.bold, 20f,
+            theme.textPrimary, TextAlignmentOptions.Center);
+        UiFactory.Size(repsValueLabel.gameObject, 44f, 40f);
+
+        repsPlusButton = RepsStepperButton(repsRow, theme, "+");
+
         // Tuval
         RectTransform canvasSection = Section(content, theme, "habit_sheet.section.canvas", out _);
         RectTransform canvasRow = UiFactory.Rect("Options", canvasSection);
@@ -466,6 +508,24 @@ public static class HabitsPanelBuilder
         endDateRow.SetActive(false);
 
         return content;
+    }
+
+    // Kare adimlayici dugmesi. TimePickerSheetBuilder.StepperButton ile ayni
+    // gorsel recete (kenarlikli yuvarlak kutu + ortali glif), tek fark konumu
+    // satirin layout grubundan almasi: boylece "-" ve "+" arasindaki deger
+    // etiketi de ayni satirda akiyor.
+    private static Button RepsStepperButton(RectTransform parent, UiTheme theme, string glyph)
+    {
+        Image background = UiFactory.Image("Stepper " + glyph, parent, theme.Rounded(18), theme.borderFaint);
+        UiFactory.Size(background.gameObject, 40f, 40f);
+
+        TMP_Text label = UiFactory.Text("Label", background.rectTransform, glyph, theme.semiBold, 20f,
+            theme.textPrimary, TextAlignmentOptions.Center);
+        UiFactory.Fill(label.rectTransform);
+
+        Button button = UiFactory.Button(background);
+        ButtonPressFeedback.EnsureOn(button);
+        return button;
     }
 
     // Tablo izgarasi: "Rastgele" + secili tuval boyutundaki her tablo.

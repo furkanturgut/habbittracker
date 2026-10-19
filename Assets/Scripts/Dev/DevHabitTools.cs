@@ -24,9 +24,22 @@ public static class DevHabitTools
 
         // Planli olmayan / zaten tikli olanlari CompleteHabit kendisi reddediyor;
         // burada ikinci bir kural yazmiyoruz.
+        //
+        // Ic dongu gunluk tur icin: hedefi 1'den buyuk bir aliskanligi TEK
+        // cagri kapatmiyor (ilk tikler yalnizca sayaci ilerletiyor), bu yuzden
+        // gun kapanana kadar tikliyoruz. Dongu kendiliginden sonlu --
+        // HabitReps.Advance her cagride sayaci bir arttiriyor ve hedefe
+        // ulasinca isCompletedToday true oluyor.
         for (int i = 0; i < habits.Count; i++)
         {
-            if (manager.CompleteHabit(habits[i].id))
+            bool ticked = false;
+
+            while (!habits[i].isCompletedToday && manager.CompleteHabit(habits[i].id))
+            {
+                ticked = true;
+            }
+
+            if (ticked)
             {
                 count++;
             }

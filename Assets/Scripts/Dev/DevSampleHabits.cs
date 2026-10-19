@@ -27,10 +27,22 @@ public static class DevSampleHabits
 
         public readonly int Streak;
 
+        // Gunde kac tik gerekiyor (bkz. HabitReps). Varsayilan 1 -- listedeki
+        // bir tohum bunu 2 veriyor ki coklu tur elle test edilebilir olsun.
+        public readonly int TargetPerDay;
+
         // Aktif tabloda acilacak oran (0..1).
         public readonly float Progress;
 
-        public SampleHabit(string title, string category, string type, int canvasSize, int[] days, int streak, float progress)
+        public SampleHabit(
+            string title,
+            string category,
+            string type,
+            int canvasSize,
+            int[] days,
+            int streak,
+            float progress,
+            int targetPerDay = HabitReps.MinTarget)
         {
             Title = title;
             Category = category;
@@ -39,6 +51,7 @@ public static class DevSampleHabits
             Days = days;
             Streak = streak;
             Progress = progress;
+            TargetPerDay = targetPerDay;
         }
     }
 
@@ -58,7 +71,7 @@ public static class DevSampleHabits
     // bunu zorluyor.
     public static readonly SampleHabit[] All =
     {
-        new SampleHabit("Su iç", HabitCategories.Nutrition, HabitTypes.Build, 16, null, 12, 0.9f),
+        new SampleHabit("Su iç", HabitCategories.Nutrition, HabitTypes.Build, 16, null, 12, 0.9f, 2),
         new SampleHabit("Bütçe takip et", HabitCategories.Finance, HabitTypes.Build, 16, MonWedFri, 4, 0.4f),
         new SampleHabit("Spor yap", HabitCategories.Fitness, HabitTypes.Build, 32, MonWedFri, 5, 0.5f),
         new SampleHabit("Resim çiz", HabitCategories.Art, HabitTypes.Build, 32, Weekend, 2, 0.2f),
@@ -101,7 +114,8 @@ public static class DevSampleHabits
                 sample.Category,
                 sample.Type,
                 BuildFrequency(sample.Days),
-                sample.CanvasSize);
+                sample.CanvasSize,
+                targetPerDay: sample.TargetPerDay);
 
             if (habit == null)
             {

@@ -42,6 +42,10 @@ public class HabitTile : MonoBehaviour
     [SerializeField] private RawImage rendered;
     [SerializeField] private GameObject doneBadge;
 
+    [Tooltip("Gunluk tur sayaci pili (1/2). Hedef 1 ise kapali. Eski (yeniden derlenmemis) prefabda bos kalabilir.")]
+    [SerializeField] private GameObject repsBadge;
+    [SerializeField] private TMP_Text repsLabel;
+
     [Tooltip("PaintingBox'in son cocugu: secim beklerken uzerinde aydinlik/karanlik nefes alan ortu.")]
     [SerializeField] private Image choiceGlow;
     [SerializeField] private TMP_Text typeLabel;
@@ -208,6 +212,22 @@ public class HabitTile : MonoBehaviour
         typeLabel.color = theme.TypeColor(habit);
 
         doneBadge.SetActive(habit.isCompletedToday);
+
+        // Gunluk tur sayaci: yalnizca hedef 1'den buyukse gorunuyor -- tek
+        // tiklik aliskanliklarda ekranda yeni hicbir sey yok (bkz.
+        // HabitReps.IsMulti). Rozet SOL ustte, tamamlandi rozeti SAG ustte:
+        // ikisi ayni anda gorunebiliyor ve carpismiyorlar.
+        bool multiReps = HabitReps.IsMulti(habit);
+
+        if (repsBadge != null)
+        {
+            repsBadge.SetActive(multiReps);
+        }
+
+        if (multiReps && repsLabel != null)
+        {
+            repsLabel.text = HabitReps.Label(habit);
+        }
 
         // Disteki serit beklerken de altin KALIR -- yalnizca sabit, nabiz
         // kenarlikta degil ortadaki ortude (asagida).

@@ -27,6 +27,11 @@ public class HabitCard : MonoBehaviour
     [SerializeField] private PaintingCoverGrid cover;
     [SerializeField] private TMP_Text title;
     [SerializeField] private TMP_Text typeLabel;
+
+    [Tooltip("Gunluk tur sayaci pili (1/2). Hedef 1 ise kapali. Eski (yeniden derlenmemis) prefabda bos kalabilir.")]
+    [SerializeField] private GameObject repsBadge;
+    [SerializeField] private TMP_Text repsLabel;
+
     [SerializeField] private DayChipRow days;
     [SerializeField] private RectTransform progressFill;
     [SerializeField] private TMP_Text streakLabel;
@@ -138,6 +143,20 @@ public class HabitCard : MonoBehaviour
         title.text = habit.title;
         typeLabel.text = UiTheme.TypeLabel(habit);
         typeLabel.color = theme.TypeColor(habit);
+
+        // Gunluk tur sayaci: HabitTile ile ayni kural -- hedef 1 ise pil hic
+        // gorunmuyor, yani tek tiklik aliskanliklarin karti degismiyor.
+        bool multiReps = HabitReps.IsMulti(habit);
+
+        if (repsBadge != null)
+        {
+            repsBadge.SetActive(multiReps);
+        }
+
+        if (multiReps && repsLabel != null)
+        {
+            repsLabel.text = HabitReps.Label(habit);
+        }
 
         days.ShowFrequency(habit.frequency);
 

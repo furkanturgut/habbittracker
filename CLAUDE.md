@@ -49,12 +49,12 @@ The root-level copy `CompileCheck.csproj` doesn't define `HABIT_NOTIFICATIONS`, 
 check the real branch without reopening the Editor.
 
 In-editor: **Window > General > Test Runner > EditMode**. There are no PlayMode tests. Tests live in
-~18 files under `Assets/Tests/`, one per subsystem (habit data/streaks/scheduling, painting assignment,
+~20 files under `Assets/Tests/`, one per subsystem (habit data/streaks/scheduling, painting assignment,
 painting choice, habit editing/resize, UI logic, responsive layout, settings, easing, dev tools, missed
 pieces, painting holes, burned-art rendering, streak flame, rotus, archiving, save transfer, native
-file bridge). The file
-name matches the subsystem it covers under `Scripts/`; grep the test file before writing new logic in
-that area. `Tests/ResponsiveLayoutTests.cs` runs `LayoutMetrics`/`WorkshopBands`/`BottomNavBands` over a
+file bridge, daily reps). The file name matches the subsystem it covers under `Scripts/`; grep
+the test file before writing new logic in that area. `Tests/ResponsiveLayoutTests.cs` runs
+`LayoutMetrics`/`WorkshopBands`/`BottomNavBands` over a
 12-device matrix (phones, tablets, square/landscape windows) — **any change to a layout constant
 belongs in that matrix first**, so tablet breakage is caught here instead of device by device.
 
@@ -133,6 +133,11 @@ time as a parameter and never reads `DateTime.Now`.**
 - `RotusCycle.cs` — per-habit 7-tick earn cycle (`Advance`/`RollBack`, exact inverses, including "0
   means it just wrapped, claw the reward back too"). Deliberately not tied to `WeekStart` — the save
   format stays Monday-indexed regardless of display preference.
+- `HabitReps.cs` — daily rep target: how many ticks close a habit's day (`targetPerDay`) and how
+  many were tapped today (`todayReps`). `Target` is the one read gate (an old/hand-edited save's 0
+  reads as 1), `Advance` returns "this tick closed the day", `ApplyTarget` is the edit rule,
+  `Repair` restores the invariant for `RepairHabits`/`SaveTransfer.Sanitize`. Owns no completion
+  logic — see the authority invariant below.
 - `WeekDays.cs` — the only Monday-first-index ↔ `DayOfWeek` converter, plus Turkish labels, plus
   `MondayIndexForSlot`/`SlotForMondayIndex` for `WeekStart` display reordering (save stays Monday-indexed).
 - `HabitCategories.cs` — 12 built-in categories; `Mind`/`Productivity` are legacy (kept as consts,
@@ -369,6 +374,18 @@ touches nothing about the painting (progress/holes/rotus/pooled view all freeze 
 loophole: archiving before ticking a due day retroactively forgives that day — same class of loophole
 `frequency`/`endDate` edits already have; don't "fix" it by adding a timestamp nothing else reads.
 
+**`isCompletedToday` is the sole authority on "this habit's day is closed" — the daily rep counter
+never becomes a second one.** A habit needing several ticks a day (`targetPerDay > 1`) still closes
+its day in exactly one place: `HabbitManager.CompleteHabit` runs `HabitReps.Advance` and only runs
+the completion tail (streak + piece + mood + rotus + celebration) when that returns true. Every
+downstream subsystem (`MoodService`, `DailyProgress`, `HabitFilters`, `StreakFlame`,
+`MissedPieceService`, the gallery) therefore needed no change at all. The invariant that keeps it
+honest: `isCompletedToday` ⇒ `todayReps == Target`, and `!isCompletedToday` ⇒ `todayReps < Target`
+— enforced by `Advance`/`Reset`/`ApplyTarget`/`Repair`, and by nothing else writing those two fields.
+`UncompleteHabit` resets the counter to 0 rather than stepping back one, because its rollback is
+atomic; that is also why tapping a finished tile is the one route back to zero. Editing the target
+deliberately does **not** close or reopen today (same accepted-loophole class as a `frequency` edit).
+
 **`HabitListChanged` is structure, `HabitChanged` is content.** `DeleteHabit` must never raise
 `HabitChanged` with the removed habit — subscribers would look the id up and fail.
 
@@ -503,8 +520,8 @@ never rewritten."** `RenameCustomCategory` rewrites `categoryGroup` on every hab
 Both end in `ApplySettingsChange`, which is what lets `CategorySettingsSheet` refresh itself for free.
 
 **`AppSettingsData` and other fields (`missedPixels`, `galleryHoles`, `lastCelebratedTier/Date`,
-`rotusCount`/`rotusProgress`, `isArchived`) all extended the save format without bumping
-`saveVersion`.** An old save has no key for any of them; `JsonUtility` leaves the C# default, which
+`rotusCount`/`rotusProgress`, `isArchived`, `targetPerDay`/`todayReps`) all extended the save
+format without bumping `saveVersion`.** An old save has no key for any of them; `JsonUtility` leaves the C# default, which
 already reads as "never used this feature" — not a migration. `customCategories`/`filterTokens` are
 the one pair where *empty* is also treated as missing (unlike every other list field), because
 `Kind.All` must always be showing and an empty filter list is never a state the UI could produce on
@@ -612,8 +629,9 @@ Mood lives in the same blob: `painterMoodPoint`, `lastMoodSettledDate`. Settings
 `PlayerSaveData.settings` (`AppSettingsData` — painter name, reminder on/time, sound/haptics,
 `WeekStart`, `isPremium`, `customCategories`, `filterTokens`). Per-habit: `lastCelebratedTier`/`Date`,
 `missedPixels` (burned indices of the *active* painting), `galleryHoles` (holes on *finished*
-paintings), `rotusProgress`, `isArchived`. `PlayerSaveData.rotusCount` is global. All added without a
-`saveVersion` bump — see the invariant above for why that's safe.
+paintings), `rotusProgress`, `isArchived`, `targetPerDay`/`todayReps`.
+`PlayerSaveData.rotusCount` is global. All added without a `saveVersion` bump — see the
+invariant above for why that's safe.
 
 ## Scenes
 
